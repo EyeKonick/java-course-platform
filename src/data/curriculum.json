@@ -1,0 +1,489 @@
+{
+  "courseTitle": "Java Full Course",
+  "totalDurationHours": 12,
+  "chapters": [
+    {
+      "id": "ch-01",
+      "title": "Part 1: Core Java Fundamentals",
+      "description": "The essential building blocks of Java — your first program, data types, user input, arithmetic, and conditional logic.",
+      "lessons": [
+        {
+          "id": "le-01-01",
+          "title": "Introduction to Java",
+          "slides": [
+            {
+              "id": "sl-01-01-01",
+              "timestamp": "0:00",
+              "title": "What is Java?",
+              "content": "Java is a compiled, platform-independent language that runs on any OS via the JVM.",
+              "bullets": [
+                "Write Once, Run Anywhere — Java source compiles to bytecode that runs on any OS via the JVM",
+                "Strongly typed: every variable must be declared with a specific data type before it can be used",
+                "javac (the compiler) converts .java source files into .class bytecode files",
+                "The JVM (Java Virtual Machine) executes the bytecode — you never run .java files directly"
+              ],
+              "code": "// The Java execution pipeline:\n// 1. Write:   Main.java  (your source code)\n// 2. Compile: Main.class (bytecode via javac)\n// 3. Run:     JVM executes bytecode on any OS\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}",
+              "instructorNotes": "Video: 0:00"
+            },
+            {
+              "id": "sl-01-01-02",
+              "timestamp": "0:30",
+              "title": "Setting Up Your Environment",
+              "content": "Install the JDK to compile Java and IntelliJ IDEA as your IDE.",
+              "bullets": [
+                "Install the JDK (Java Development Kit) from oracle.com — includes javac (compiler) and the JVM runtime",
+                "Install IntelliJ IDEA Community Edition (free) as your IDE — it handles compile and run for you",
+                "In IntelliJ: New Project → select your JDK version → uncheck 'Add sample code'",
+                "Create a class named Main inside the src/ folder — the filename must always match the class name"
+              ],
+              "code": "",
+              "instructorNotes": "Video: 0:30"
+            },
+            {
+              "id": "sl-01-01-03",
+              "timestamp": "4:44",
+              "title": "The main() Method — Entry Point",
+              "content": "Every Java program starts execution at main() — its exact signature is mandatory.",
+              "bullets": [
+                "Java programs start at public static void main(String[] args) — this exact signature is required",
+                "public: accessible by the JVM;  static: called without creating an object;  void: returns nothing",
+                "Missing or misspelling main gives a runtime error: 'Main method not found in class Main'",
+                "Everything your program does lives inside the { } braces of main"
+              ],
+              "code": "public class Main {\n\n    public static void main(String[] args) {\n        // Execution starts here\n        // Add your code inside these braces\n    }\n\n}",
+              "instructorNotes": "Video: 4:44"
+            },
+            {
+              "id": "sl-01-01-04",
+              "timestamp": "6:09",
+              "title": "Printing to the Console",
+              "content": "System.out.println() and System.out.print() write text to the console output window.",
+              "bullets": [
+                "System.out.println() prints text then moves the cursor to a new line automatically",
+                "System.out.print() prints text and keeps the cursor on the same line",
+                "Use the escape sequence \\n inside a string to insert a manual line break anywhere",
+                "IntelliJ shortcut: type sout then press Tab to auto-generate System.out.println()"
+              ],
+              "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");   // prints + newline\n        System.out.print(\"Java is \");           // no newline\n        System.out.print(\"awesome!\\n\");         // \\n = manual newline\n        System.out.println(\"This is line 3\");  // next line\n    }\n}",
+              "instructorNotes": "Video: 6:09"
+            },
+            {
+              "id": "sl-01-01-05",
+              "timestamp": "8:35",
+              "title": "Comments in Java",
+              "content": "Comments are notes in your code that the compiler completely ignores at compile time.",
+              "bullets": [
+                "Single-line comment: // everything after this is ignored on this line",
+                "Multi-line comment: /* ... */ — useful for longer explanations spanning multiple lines",
+                "Comments are for humans — future you, teammates, your instructor — not the compiler",
+                "Commenting out code is a debugging trick: temporarily disable a line without deleting it"
+              ],
+              "code": "public class Main {\n    public static void main(String[] args) {\n\n        // This is a single-line comment\n\n        /* This is a multi-line comment.\n           It can span as many lines as needed.\n           The compiler ignores all of it. */\n\n        System.out.println(\"Comments don't affect output\");\n\n        // System.out.println(\"Commented out — won't run\");\n    }\n}",
+              "instructorNotes": "Video: 8:35"
+            }
+          ]
+        },
+        {
+          "id": "le-01-02",
+          "title": "Variables & Data Types",
+          "slides": [
+            {
+              "id": "sl-01-02-01",
+              "timestamp": "10:59",
+              "title": "What is a Variable?",
+              "content": "A variable is a named container in memory that holds a value you can use and update.",
+              "bullets": [
+                "Declaration: state the data type and name — int age;",
+                "Assignment: give it a value — age = 21;",
+                "Combined (most common): int age = 21; — declares and assigns in one line",
+                "Primitive types (int, double, char, boolean) store the value directly; String stores a memory address"
+              ],
+              "code": "// Step 1: Declaration\nint age;\n\n// Step 2: Assignment\nage = 21;\n\n// Combined — most common form\nint year = 2025;\n\nSystem.out.println(\"Age: \" + age);    // Age: 21\nSystem.out.println(\"Year: \" + year);  // Year: 2025",
+              "instructorNotes": "Video: 10:59"
+            },
+            {
+              "id": "sl-01-02-02",
+              "timestamp": "12:36",
+              "title": "int — Whole Numbers",
+              "content": "int stores whole numbers without a decimal portion — ideal for counts, ages, and quantities.",
+              "bullets": [
+                "int holds whole numbers in the range -2,147,483,648 to 2,147,483,647",
+                "Use int for ages, years, quantities, counts — anything guaranteed to be a whole number",
+                "Storing a decimal in an int causes a compile error: incompatible types",
+                "Tip: use underscores to make large numbers readable — 1_000_000 is the same as 1000000"
+              ],
+              "code": "int age      = 21;\nint year     = 2025;\nint quantity = 5;\n\nSystem.out.println(\"Age: \" + age);\nSystem.out.println(\"Year: \" + year);\nSystem.out.println(\"Quantity: \" + quantity);\n\n// COMPILE ERROR — cannot store a decimal in an int:\n// int price = 9.99;  <- incompatible types: possible lossy conversion",
+              "instructorNotes": "Video: 12:36"
+            },
+            {
+              "id": "sl-01-02-03",
+              "timestamp": "16:23",
+              "title": "double — Decimal Numbers",
+              "content": "double stores 64-bit floating-point numbers — the default choice for any decimal value in Java.",
+              "bullets": [
+                "double stores numbers with a decimal — use it for prices, GPAs, temperatures, measurements",
+                "Storing a whole number in a double adds .0 automatically — the value 5 becomes 5.0",
+                "Prefer double over float — double has 64-bit precision vs float's 32-bit, and is the Java default",
+                "float literals need an f suffix: 3.14f — without it Java treats the literal as a double"
+              ],
+              "code": "double price       = 9.99;\ndouble gpa         = 3.75;\ndouble temperature = 98.6;\n\nSystem.out.println(\"Price: $\" + price);              // $9.99\nSystem.out.println(\"GPA: \" + gpa);                  // 3.75\nSystem.out.println(\"Temperature: \" + temperature);  // 98.6\n\ndouble wholeAsDouble = 5;  // stored as 5.0\nSystem.out.println(wholeAsDouble);  // 5.0",
+              "instructorNotes": "Video: 16:23"
+            },
+            {
+              "id": "sl-01-02-04",
+              "timestamp": "18:04",
+              "title": "char and boolean",
+              "content": "char holds a single character in single quotes; boolean holds exactly true or false.",
+              "bullets": [
+                "char holds exactly one character — always use single quotes: 'A', not \"A\"",
+                "boolean holds true or false — represents yes/no, on/off, pass/fail states",
+                "Naming convention: boolean variables start with is, has, or can — isStudent, hasDiscount",
+                "Common mistake: 'A' is a char; \"A\" is a String — they are completely different types"
+              ],
+              "code": "char    grade      = 'A';   // single quotes required for char\nchar    initial    = 'J';\nboolean isStudent  = true;\nboolean forSale    = false;\n\nSystem.out.println(\"Grade: \" + grade);           // A\nSystem.out.println(\"Is student: \" + isStudent);  // true\nSystem.out.println(\"For sale: \" + forSale);      // false\n\n// COMPILE ERROR — String assigned to char:\n// char wrong = \"A\";  <- use single quotes",
+              "instructorNotes": "Video: 18:04"
+            },
+            {
+              "id": "sl-01-02-05",
+              "timestamp": "22:52",
+              "title": "String — Text Data",
+              "content": "String is a reference type that stores a sequence of characters, always wrapped in double quotes.",
+              "bullets": [
+                "String is a reference type (not primitive) — it stores a memory address pointing to heap data",
+                "Always use double quotes for Strings: \"Hello\" — single quotes are for char only",
+                "Concatenate (join) Strings with +: \"Hello, \" + name produces a combined String",
+                "You can concatenate any primitive with a String — Java converts the primitive to text automatically"
+              ],
+              "code": "String name  = \"Alex\";\nString food  = \"pizza\";\nString email = \"student@example.com\";\n\nSystem.out.println(\"Hello, \" + name + \"!\");      // Hello, Alex!\nSystem.out.println(\"Favourite food: \" + food);  // Favourite food: pizza\n\n// Concatenating a String with a number\nint age = 20;\nSystem.out.println(name + \" is \" + age + \" years old.\");\n// Alex is 20 years old.",
+              "instructorNotes": "Video: 22:52"
+            },
+            {
+              "id": "sl-01-02-06",
+              "timestamp": "19:22",
+              "title": "Naming Conventions & Best Practices",
+              "content": "Java uses camelCase for variables — descriptive names make code self-documenting.",
+              "bullets": [
+                "Use camelCase for variable names: firstName, isStudent, totalPrice — first word lowercase, each subsequent word capitalised",
+                "Names must be descriptive — age beats a, userName beats un",
+                "Java is case-sensitive: myVar and MyVar are completely different variables",
+                "Constants (values that never change) are named ALL_CAPS with final: final int MAX_SIZE = 100;"
+              ],
+              "code": "// Good naming — descriptive and camelCase\nString  firstName = \"Alex\";\nint     studentAge = 21;\ndouble  itemPrice  = 4.99;\nboolean isOnline   = true;\n\n// Bad naming — avoid these\nString s = \"Alex\";  // not descriptive\nint    x = 21;       // meaningless\ndouble p = 4.99;     // ambiguous\n\n// Constants — ALL_CAPS by convention\nfinal int    PASSING_GRADE = 60;\nfinal double TAX_RATE      = 0.08;",
+              "instructorNotes": "Video: 19:22"
+            }
+          ]
+        },
+        {
+          "id": "le-01-03",
+          "title": "User Input with Scanner",
+          "slides": [
+            {
+              "id": "sl-01-03-01",
+              "timestamp": "31:40",
+              "title": "The Scanner Class",
+              "content": "Scanner is a Java class that reads keyboard input — import it before use and close it when done.",
+              "bullets": [
+                "Add import java.util.Scanner; at the top of your file, before the class declaration",
+                "Create one Scanner connected to the keyboard: Scanner scanner = new Scanner(System.in);",
+                "System.in tells Scanner to read from standard input (the keyboard)",
+                "Always call scanner.close() at the end — leaving resources open causes unexpected behaviour"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        Scanner scanner = new Scanner(System.in);\n\n        // ... use scanner here to read input ...\n\n        scanner.close(); // always close when done\n    }\n}",
+              "instructorNotes": "Video: 31:40"
+            },
+            {
+              "id": "sl-01-03-02",
+              "timestamp": "33:36",
+              "title": "Reading Strings and Integers",
+              "content": "Use nextLine() to read a full line of text and nextInt() to read a whole number.",
+              "bullets": [
+                "scanner.nextLine() reads an entire line of text, including spaces — stops at Enter",
+                "scanner.next() reads one word only — stops at the first space character",
+                "scanner.nextInt() reads a whole number — entering a decimal causes InputMismatchException",
+                "Always prompt the user with System.out.print() before each scanner call"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.print(\"Enter your name: \");\n        String name = scanner.nextLine();\n\n        System.out.print(\"Enter your age: \");\n        int age = scanner.nextInt();\n\n        System.out.println(\"Hello, \" + name + \"! You are \" + age + \" years old.\");\n        scanner.close();\n    }\n}",
+              "instructorNotes": "Video: 33:36"
+            },
+            {
+              "id": "sl-01-03-03",
+              "timestamp": "37:22",
+              "title": "Reading Doubles and Booleans",
+              "content": "Use nextDouble() for decimals and nextBoolean() for true/false keyboard input.",
+              "bullets": [
+                "scanner.nextDouble() reads a decimal — entering a whole number is fine (stored as 3.0)",
+                "scanner.nextBoolean() reads true or false — case-insensitive: TRUE, True, and true all work",
+                "Entering the wrong type (letters when expecting a number) crashes with InputMismatchException",
+                "Always prompt clearly so the user knows whether to enter a number, word, or true/false"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.print(\"Enter your GPA: \");\n        double gpa = scanner.nextDouble();\n\n        System.out.print(\"Are you a student? (true/false): \");\n        boolean isStudent = scanner.nextBoolean();\n\n        System.out.println(\"GPA: \" + gpa);\n        System.out.println(\"Student: \" + isStudent);\n        scanner.close();\n    }\n}",
+              "instructorNotes": "Video: 37:22"
+            },
+            {
+              "id": "sl-01-03-04",
+              "timestamp": "41:15",
+              "title": "The Newline Buffer Bug",
+              "content": "After nextInt() or nextDouble(), a leftover newline silently skips the next nextLine() call.",
+              "bullets": [
+                "When you type a number and press Enter, the '\\n' character stays in the input buffer",
+                "The next nextLine() immediately reads that leftover newline as an empty string and returns",
+                "Fix: call scanner.nextLine() once directly after nextInt() or nextDouble() to flush the buffer",
+                "This is one of the most common beginner bugs — watch for it whenever you mix input types"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.print(\"Enter your age: \");\n        int age = scanner.nextInt();\n        scanner.nextLine(); // flush the leftover '\\n'\n\n        System.out.print(\"Enter your favourite colour: \");\n        String colour = scanner.nextLine(); // now works correctly\n\n        System.out.println(\"Age: \" + age + \", Colour: \" + colour);\n        scanner.close();\n    }\n}",
+              "instructorNotes": "Video: 41:15"
+            },
+            {
+              "id": "sl-01-03-05",
+              "timestamp": "43:55",
+              "title": "Practice: Rectangle Area Calculator",
+              "content": "Build a program that accepts width and height from the user and calculates the rectangle's area.",
+              "bullets": [
+                "Declare all variables at the top with initial values before collecting input",
+                "Standard flow: Prompt -> Accept -> Calculate -> Display",
+                "Use double for measurements to support decimal values like 3.5 cm",
+                "Multiply width x height to compute area — combine the result with a unit label in the output"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        double width = 0, height = 0;\n\n        System.out.print(\"Enter width (cm): \");\n        width = scanner.nextDouble();\n\n        System.out.print(\"Enter height (cm): \");\n        height = scanner.nextDouble();\n\n        double area = width * height;\n        System.out.println(\"Area = \" + area + \" cm2\");\n        scanner.close();\n    }\n}",
+              "instructorNotes": "Video: 43:55"
+            }
+          ]
+        },
+        {
+          "id": "le-01-04",
+          "title": "Mad Libs Project",
+          "slides": [
+            {
+              "id": "sl-01-04-01",
+              "timestamp": "47:27",
+              "title": "Mad Libs — Project Overview",
+              "content": "Mad Libs collects words from the user and slots them into a story template — great Scanner and concatenation practice.",
+              "bullets": [
+                "Mad Libs: collect several words (adjective, noun, verb) then insert them into a pre-written story",
+                "This project combines Scanner input, String variables, and concatenation with +",
+                "An adjective describes something (fast, loud), a noun is a person/place/thing, a verb is an action",
+                "Plan your story template first, identify each blank, then code the input collection"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class MadLibs {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.print(\"Enter an adjective (describing word): \");\n        String adjective1 = scanner.nextLine();\n\n        System.out.print(\"Enter a noun (animal or person): \");\n        String noun1 = scanner.nextLine();\n\n        // ... collect more words, then print the story below\n        scanner.close();\n    }\n}",
+              "instructorNotes": "Video: 47:27"
+            },
+            {
+              "id": "sl-01-04-02",
+              "timestamp": "49:10",
+              "title": "Building the Story",
+              "content": "Collect all words first, then print the completed story using String concatenation.",
+              "bullets": [
+                "Declare all String variables before the first prompt to avoid 'variable not initialised' errors",
+                "Collect all input before printing — do not interleave prompts and story output",
+                "Build each story line: System.out.println(\"literal \" + variable + \" more text\");",
+                "Close the Scanner after collecting all input, before printing the story"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class MadLibs {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.print(\"Adjective: \");             String adj1  = scanner.nextLine();\n        System.out.print(\"Noun (animal/person): \");  String noun1 = scanner.nextLine();\n        System.out.print(\"Adjective: \");             String adj2  = scanner.nextLine();\n        System.out.print(\"Verb (ending in -ing): \"); String verb1 = scanner.nextLine();\n        System.out.print(\"Adjective: \");             String adj3  = scanner.nextLine();\n        scanner.close();\n\n        System.out.println(\"\\nToday I went to a \" + adj1 + \" zoo.\");\n        System.out.println(\"In an exhibit I saw a \" + noun1 + \".\");\n        System.out.println(noun1 + \" was \" + adj2 + \" and \" + verb1 + \".\");\n        System.out.println(\"I was \" + adj3 + \".\");\n    }\n}",
+              "instructorNotes": "Video: 49:10"
+            },
+            {
+              "id": "sl-01-04-03",
+              "timestamp": "52:05",
+              "title": "Mad Libs — Challenge",
+              "content": "Extend Mad Libs with a number input and a second story line.",
+              "bullets": [
+                "Write your own story template with at least 6 blanks — make it funny!",
+                "Add a number input using nextInt() — remember to flush the buffer with nextLine() afterwards",
+                "Include the number in the story: \"I counted \" + count + \" wild \" + animal + \"(s) today!\"",
+                "Try mixing nextInt() and nextLine() — this is exactly where the buffer bug appears"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class MadLibsChallenge {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.print(\"Enter a number: \");\n        int count = scanner.nextInt();\n        scanner.nextLine(); // flush buffer after nextInt()\n\n        System.out.print(\"Enter an animal: \");\n        String animal = scanner.nextLine();\n\n        System.out.print(\"Enter an adjective: \");\n        String adjective = scanner.nextLine();\n        scanner.close();\n\n        System.out.println(\"\\nI counted \" + count + \" \" + adjective + \" \" + animal + \"(s) today!\");\n    }\n}",
+              "instructorNotes": "Video: 52:05"
+            }
+          ]
+        },
+        {
+          "id": "le-01-05",
+          "title": "Arithmetic Operators",
+          "slides": [
+            {
+              "id": "sl-01-05-01",
+              "timestamp": "54:04",
+              "title": "Basic Arithmetic Operators",
+              "content": "Java supports five standard arithmetic operators — addition, subtraction, multiplication, division, and modulus.",
+              "bullets": [
+                "+  addition,  -  subtraction,  *  multiplication,  /  division,  %  modulus (remainder)",
+                "Store the result in a variable: int result = x + y;",
+                "All five operators work on both int and double — the result type matches the wider operand",
+                "The modulus operator % returns the remainder after division: 10 % 3 = 1"
+              ],
+              "code": "int x = 10, y = 3;\n\nSystem.out.println(x + y);  // 13  — addition\nSystem.out.println(x - y);  // 7   — subtraction\nSystem.out.println(x * y);  // 30  — multiplication\nSystem.out.println(x / y);  // 3   — integer division (see next slide)\nSystem.out.println(x % y);  // 1   — remainder: 10 / 3 = 3 remainder 1\n\n// Common use of % — check even or odd\nSystem.out.println(10 % 2);  // 0 -> even\nSystem.out.println(11 % 2);  // 1 -> odd",
+              "instructorNotes": "Video: 54:04"
+            },
+            {
+              "id": "sl-01-05-02",
+              "timestamp": "57:49",
+              "title": "Integer Division vs Double Division",
+              "content": "Dividing two ints truncates the decimal — use a double operand or a cast to keep the fractional part.",
+              "bullets": [
+                "int / int performs integer division — the decimal is truncated, not rounded",
+                "10 / 3 = 3, not 3.33 — both operands are int so the result is an int",
+                "To keep the decimal, make at least one operand a double: 10 / 3.0 = 3.333...",
+                "Type casting: (double) x / y temporarily promotes x to double for this calculation"
+              ],
+              "code": "int a = 10, b = 3;\n\n// Integer division — decimal is dropped\nSystem.out.println(a / b);           // 3   (not 3.33!)\n\n// Force double division — keep the decimal\nSystem.out.println(a / 3.0);         // 3.3333...\nSystem.out.println((double) a / b);  // 3.3333...  (cast)\n\n// double operand — result is always double\ndouble price = 7.50;\nint    items = 2;\nSystem.out.println(price / items);   // 3.75",
+              "instructorNotes": "Video: 57:49"
+            },
+            {
+              "id": "sl-01-05-03",
+              "timestamp": "56:20",
+              "title": "Augmented Assignment Operators",
+              "content": "Augmented assignment operators update a variable in place — shorter syntax, same result.",
+              "bullets": [
+                "x += 5 is the same as x = x + 5 — updates x using its own current value",
+                "All five: +=  -=  *=  /=  %=",
+                "The variable on the left is both read (old value) and overwritten (new value)",
+                "Commonly used inside loops to accumulate a running total or counter"
+              ],
+              "code": "int x = 10;\n\nx += 5;   System.out.println(x);  // 15  (10 + 5)\nx -= 3;   System.out.println(x);  // 12  (15 - 3)\nx *= 2;   System.out.println(x);  // 24  (12 * 2)\nx /= 4;   System.out.println(x);  // 6   (24 / 4)\nx %= 4;   System.out.println(x);  // 2   (6 % 4)\n\n// Expanded form of x += 5:\n// x = x + 5;  — identical result, more typing",
+              "instructorNotes": "Video: 56:20"
+            },
+            {
+              "id": "sl-01-05-04",
+              "timestamp": "59:04",
+              "title": "Increment & Decrement",
+              "content": "++ and -- add or subtract exactly 1 — the most concise update operators in Java.",
+              "bullets": [
+                "x++ adds 1 to x — equivalent to x += 1 and x = x + 1",
+                "x-- subtracts 1 from x — equivalent to x -= 1",
+                "Each ++ or -- permanently changes the value stored in x",
+                "You will see i++ in virtually every for loop — it is the most common use"
+              ],
+              "code": "int x = 5;\n\nx++;  System.out.println(x);  // 6\nx++;  System.out.println(x);  // 7\nx--;  System.out.println(x);  // 6\nx--;  System.out.println(x);  // 5  (back to start)\n\n// All three are identical:\nx = x + 1;  // explicit assignment\nx += 1;     // augmented assignment\nx++;        // increment — most concise\n\n// Preview — you'll see this in every for loop:\n// for (int i = 0; i < 10; i++) { ... }",
+              "instructorNotes": "Video: 59:04"
+            },
+            {
+              "id": "sl-01-05-05",
+              "timestamp": "1:00:23",
+              "title": "Order of Operations (PEMDAS)",
+              "content": "Java follows standard mathematical precedence — use parentheses to make intent explicit.",
+              "bullets": [
+                "Evaluation order: Parentheses -> Multiply/Divide -> Add/Subtract (left to right within each tier)",
+                "Multiplication and division are evaluated before addition and subtraction",
+                "When in doubt, add parentheses — they cost nothing and prevent silent bugs",
+                "Integer division within a larger expression still truncates — always check your operand types"
+              ],
+              "code": "// 3 + 4 * (7 - 5) / 2.0\n// Step 1: (7-5)   = 2\n// Step 2: 4 * 2   = 8\n// Step 3: 8 / 2.0 = 4.0\n// Step 4: 3 + 4.0 = 7.0\ndouble r1 = 3 + 4 * (7 - 5) / 2.0;\nSystem.out.println(r1);  // 7.0\n\n// Parentheses change the grouping:\ndouble r2 = (3 + 4) * 7 - 5 / 2.0;\n// (7) * 7 = 49,  5 / 2.0 = 2.5,  49 - 2.5 = 46.5\nSystem.out.println(r2);  // 46.5",
+              "instructorNotes": "Video: 1:00:23"
+            }
+          ]
+        },
+        {
+          "id": "le-01-06",
+          "title": "Shopping Cart Program",
+          "slides": [
+            {
+              "id": "sl-01-06-01",
+              "timestamp": "1:02:31",
+              "title": "Shopping Cart — Project Overview",
+              "content": "Build a program that collects an item, price, and quantity from the user and prints a formatted total.",
+              "bullets": [
+                "Collect three inputs: item name (String), price per unit (double), quantity (int)",
+                "Total = price x quantity — simple multiplication of two user-provided values",
+                "Use a char for the currency symbol so you can swap $ to EUR without changing every print line",
+                "This project applies Scanner, data types, arithmetic, and String concatenation together"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class ShoppingCart {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        String item;\n        double price, total;\n        int    quantity;\n        char   currency = '$';\n\n        // Input collection and total — see next slide\n        scanner.close();\n    }\n}",
+              "instructorNotes": "Video: 1:02:31"
+            },
+            {
+              "id": "sl-01-06-02",
+              "timestamp": "1:02:56",
+              "title": "Collecting Input & Computing Total",
+              "content": "Prompt for each value in sequence, then multiply price by quantity to get the total.",
+              "bullets": [
+                "Use System.out.print() for prompts — keeps the cursor on the same line as user input",
+                "After all inputs are collected, compute: total = price * quantity",
+                "Display the formatted receipt using concatenation — include the currency char on each line",
+                "Declare variables before Scanner calls — avoids 'variable not initialised' errors"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class ShoppingCart {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        char currency = '$';\n\n        System.out.print(\"What would you like to buy? \");\n        String item = scanner.nextLine();\n\n        System.out.print(\"Price per item (\" + currency + \"): \");\n        double price = scanner.nextDouble();\n\n        System.out.print(\"How many? \");\n        int quantity = scanner.nextInt();\n        scanner.close();\n\n        double total = price * quantity;\n        System.out.println(\"\\nYou bought \" + quantity + \" x \" + item);\n        System.out.println(\"Total: \" + currency + total);\n    }\n}",
+              "instructorNotes": "Video: 1:02:56"
+            },
+            {
+              "id": "sl-01-06-03",
+              "timestamp": "1:08:54",
+              "title": "Shopping Cart — Challenge",
+              "content": "Extend the cart to support two items and apply a 10% discount when the total exceeds $50.",
+              "bullets": [
+                "Compute a grand total: grandTotal = (price1 * qty1) + (price2 * qty2)",
+                "Apply a 10% discount conditionally: if (grandTotal > 50) grandTotal *= 0.90;",
+                "This preview uses an if statement — the next lesson covers if in full detail",
+                "Try adding a third item: repeating code starts to feel wrong — loops solve this (coming soon)"
+              ],
+              "code": "// Two-item cart with optional discount\ndouble price1 = 24.99, price2 = 14.99;\nint    qty1   = 2,     qty2   = 3;\n\ndouble grandTotal = (price1 * qty1) + (price2 * qty2);\n\nSystem.out.println(\"Subtotal: $\" + grandTotal);\n\nif (grandTotal > 50) {\n    grandTotal *= 0.90;  // apply 10% discount\n    System.out.println(\"10% discount applied!\");\n}\n\nSystem.out.println(\"Total: $\" + grandTotal);",
+              "instructorNotes": "Video: 1:08:54"
+            }
+          ]
+        },
+        {
+          "id": "le-01-07",
+          "title": "If Statements",
+          "slides": [
+            {
+              "id": "sl-01-07-01",
+              "timestamp": "1:09:01",
+              "title": "The if Statement",
+              "content": "An if statement executes a block of code only when its condition evaluates to true.",
+              "bullets": [
+                "Syntax: if (condition) { // code that runs only when condition is true }",
+                "The condition must be a boolean expression — something that evaluates to true or false",
+                "If the condition is false, the entire block is skipped — no error, just ignored",
+                "Comparison operators: == (equal)  !=  >  <  >=  <="
+              ],
+              "code": "int age = 20;\n\nif (age >= 18) {\n    System.out.println(\"You are an adult.\"); // runs — 20 >= 18\n}\n\nint score = 45;\nif (score >= 60) {\n    System.out.println(\"Passing.\"); // skipped — 45 < 60\n}\n\nSystem.out.println(\"Program continues here regardless.\");",
+              "instructorNotes": "Video: 1:09:01"
+            },
+            {
+              "id": "sl-01-07-02",
+              "timestamp": "1:10:24",
+              "title": "else and else if",
+              "content": "else provides a fallback when if is false; else if checks additional conditions in sequence.",
+              "bullets": [
+                "else runs when the if condition is false — it is the default fallback branch",
+                "else if checks a second condition only if all previous conditions were false",
+                "Only ONE branch ever executes — Java evaluates top-to-bottom and stops at the first true match",
+                "The final else (no condition) catches everything not matched by any if or else if above"
+              ],
+              "code": "int age = 14;\n\nif (age >= 18) {\n    System.out.println(\"Adult\");\n} else if (age >= 13) {\n    System.out.println(\"Teenager\");    // <- this branch runs\n} else if (age >= 0) {\n    System.out.println(\"Child\");\n} else {\n    System.out.println(\"Invalid age\"); // fallback\n}\n\n// Only one message is ever printed.",
+              "instructorNotes": "Video: 1:10:24"
+            },
+            {
+              "id": "sl-01-07-03",
+              "timestamp": "1:12:04",
+              "title": "Comparison Operators",
+              "content": "Comparison operators produce a boolean result — use double == for equality, never single =.",
+              "bullets": [
+                "== checks equality (double equals) — single = is assignment and causes a compile error in a condition",
+                "!= means 'not equal to'",
+                "> greater than,  < less than,  >= greater or equal,  <= less or equal",
+                "For Strings use .equals() not == : name.equals(\"Alice\") — == on Strings compares references, not content"
+              ],
+              "code": "int score = 75;\n\nif (score == 100) System.out.println(\"Perfect!\");\nif (score != 100) System.out.println(\"Not perfect.\");  // runs\nif (score >= 60)  System.out.println(\"Passing.\");       // runs\nif (score < 50)   System.out.println(\"Failing.\");       // skipped\n\n// String equality — always use .equals()\nString name = \"Alice\";\nif (name.equals(\"Alice\")) {\n    System.out.println(\"Hello, Alice!\");\n}\n// WRONG: if (name == \"Alice\") -- unreliable for Strings",
+              "instructorNotes": "Video: 1:12:04"
+            },
+            {
+              "id": "sl-01-07-04",
+              "timestamp": "1:12:55",
+              "title": "Booleans as Conditions",
+              "content": "A boolean variable is already a condition — no need to compare it with == true.",
+              "bullets": [
+                "if (isStudent) is identical to if (isStudent == true) — the shorter form is preferred",
+                "Use ! (logical NOT) to negate: if (!isStudent) means 'if NOT a student'",
+                "&& (AND) requires both sides true;  || (OR) requires at least one side true",
+                "Boolean flags are the standard way to track state — is something on, available, or active?"
+              ],
+              "code": "boolean isStudent   = true;\nboolean hasDiscount = false;\n\n// Clean boolean checks — no == true needed\nif (isStudent) {\n    System.out.println(\"Student rate applied.\");\n}\n\nif (!hasDiscount) {\n    System.out.println(\"No discount on file.\");\n}\n\n// Logical AND — both must be true\nif (isStudent && !hasDiscount) {\n    System.out.println(\"You qualify for a student discount!\");\n}",
+              "instructorNotes": "Video: 1:12:55"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

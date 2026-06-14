@@ -1,0 +1,1067 @@
+line once we have our prompt we're going to assign our player choice variable player choice equals we will use our
+6:02:30 6 hours, 2 minutes, 30 seconds
+scanner to get some user input we need to accept a string so we can use the next line
+6:02:37 6 hours, 2 minutes, 37 seconds
+method to accept a line of text in case a user types in any uppercase characters for example Rock we could follow this
+6:02:46 6 hours, 2 minutes, 46 seconds
+with the two lowercase method just to make it all lowercase whatever the user types
+6:02:53 6 hours, 2 minutes, 53 seconds
+in accept the next line of user input then make it lowercase just for consistency now we should have our
+6:03:01 6 hours, 3 minutes, 1 second
+player choice we need a way to determine to see if this user input is valid did the user pick rock paper or scissors or something
+6:03:10 6 hours, 3 minutes, 10 seconds
+else entirely well we could use an if statement for that we're going to be checking to see
+6:03:20 6 hours, 3 minutes, 20 seconds
+if our player choice doesn't equal Rock and doesn't equal paper and doesn't equal scissors so we can write the
+6:03:29 6 hours, 3 minutes, 29 seconds
+following statement we're going to use the not logical operator first not will give you the opposite the
+6:03:38 6 hours, 3 minutes, 38 seconds
+inverse if player choice use the equals method pass in a string of rock if the
+6:03:46 6 hours, 3 minutes, 46 seconds
+Player's Choice doesn't equal Rock then we'll use the and logical
+6:03:53 6 hours, 3 minutes, 53 seconds
+operator and the Player's Choice doesn't again I'm using the not logical
+6:04:00 6 hours, 4 minutes
+operator equals paper again we're going to use the and logical
+6:04:08 6 hours, 4 minutes, 8 seconds
+operator and just to help with readability cuz we're going to have one really long line I'm going to place
+6:04:15 6 hours, 4 minutes, 15 seconds
+these conditions on a new line each this will help with readability and take our player
+6:04:25 6 hours, 4 minutes, 25 seconds
+choice not equals
+6:04:33 6 hours, 4 minutes, 33 seconds
+scissors we're linking three conditions together if our player choice doesn't equal Rock
+6:04:40 6 hours, 4 minutes, 40 seconds
+and our player choice doesn't equal paper and our player choice doesn't equal
+6:04:48 6 hours, 4 minutes, 48 seconds
+scissors if all of these conditions are true that means a user didn't type in something that's valid so let's do the
+6:04:55 6 hours, 4 minutes, 55 seconds
+following again I'm within my set of curly braces we'll output the following we'll say something like
+6:05:04 6 hours, 5 minutes, 4 seconds
+invalid choice all right let's perform a test
+6:05:12 6 hours, 5 minutes, 12 seconds
+run enter your move rock paper scissors let's choose Rock nothing happens that's
+6:05:20 6 hours, 5 minutes, 20 seconds
+good paper nothing happens scissors nothing happens all right I'm
+6:05:29 6 hours, 5 minutes, 29 seconds
+going to type in something that's not rock paper or scissors uh I choose the gun invalid
+6:05:37 6 hours, 5 minutes, 37 seconds
+Choice that's good that's what we want we're picking something that's not rock and is not paper and is not
+6:05:45 6 hours, 5 minutes, 45 seconds
+scissors so we execute this if statement if that's the case now for the next step we have to get a random choice for the
+6:05:54 6 hours, 5 minutes, 54 seconds
+computer we don't need user input this time we will assign our variable of computer
+6:06:01 6 hours, 6 minutes, 1 second
+Choice equals access our array of choices at a given
+6:06:09 6 hours, 6 minutes, 9 seconds
+index zero would be Rock because it's the first value in our array one would be paper two would be
+6:06:18 6 hours, 6 minutes, 18 seconds
+scissors well why don't we use our random object random and call the next int method then pass in
+6:06:26 6 hours, 6 minutes, 26 seconds
+three this method of a random object would return a random number between 0 and two zero for rock one for p paper
+6:06:36 6 hours, 6 minutes, 36 seconds
+two for scissors then we'll output it using a print line statement let's say computer Choice col
+6:06:45 6 hours, 6 minutes, 45 seconds
+in space then add our variable of computer Choice let's do a test
+6:06:53 6 hours, 6 minutes, 53 seconds
+run I'll type in rock the computer picks paper I will pick paper the computer
+6:07:02 6 hours, 7 minutes, 2 seconds
+picks scissors I will will pick scissors the computer picks scissors as
+6:07:09 6 hours, 7 minutes, 9 seconds
+well all right we know that that works using this method of a random object we're generating a random number
+6:07:18 6 hours, 7 minutes, 18 seconds
+as the index now here's the tricky part we have to check all the win conditions I feel like the best way to
+6:07:25 6 hours, 7 minutes, 25 seconds
+handle this would be to create an if statement followed by an else if statement followed by an else
+6:07:33 6 hours, 7 minutes, 33 seconds
+statement within our if statement this will be for a tie let's output the following it's a
+6:07:42 6 hours, 7 minutes, 42 seconds
+tie our Eli statement will be used if you win we'll output you
+6:07:49 6 hours, 7 minutes, 49 seconds
+win else will be used for you lose you
+6:07:56 6 hours, 7 minutes, 56 seconds
+lose if we have a tie that means the Player's Choice is equal to the computer's Choice that's how you get a tie within
+6:08:05 6 hours, 8 minutes, 5 seconds
+the of statement we can check the following condition if our player choice variable use the equals method of
+6:08:14 6 hours, 8 minutes, 14 seconds
+strings then pass in the variable of computer choice we're comparing two strings the're reference data types so we're
+6:08:23 6 hours, 8 minutes, 23 seconds
+going to use the equals method you can't use double equals because then you're comparing memory addresses of two different strings we're going to be
+6:08:31 6 hours, 8 minutes, 31 seconds
+using equals the equals method if these two strings are equal will print it's a tie now for the wi conditions within
+6:08:39 6 hours, 8 minutes, 39 seconds
+this LF statement this is where things are going to get kind of tricky we're going to list all of the different win conditions within our LF statement first
+6:08:48 6 hours, 8 minutes, 48 seconds
+we'll check if the player picks Rock and the computer picks scissors if our player choice use the equals
+6:08:57 6 hours, 8 minutes, 57 seconds
+method if the player picks Rock a string of
+6:09:03 6 hours, 9 minutes, 3 seconds
+rock and the the computer's Choice equals let me zoom out a little
+6:09:12 6 hours, 9 minutes, 12 seconds
+bit scissors that means we win within our condition of our LF statement we'll be adding the different
+6:09:20 6 hours, 9 minutes, 20 seconds
+win conditions but temporarily I'm going to add a few else if statements just to help me explain this so if we pick Rock
+6:09:28 6 hours, 9 minutes, 28 seconds
+and the computer pick scissors that means we win but we will also win if the player
+6:09:36 6 hours, 9 minutes, 36 seconds
+pick paper and the computer let's add that right
+6:09:42 6 hours, 9 minutes, 42 seconds
+here picks rock that means we also win and then temporarily I'll add another LF
+6:09:51 6 hours, 9 minutes, 51 seconds
+statement else if the player picks scissors and the computer picks
+6:10:01 6 hours, 10 minutes, 1 second
+paper that also means we win we could condense all of these LF statements into one but we'll do that in
+6:10:10 6 hours, 10 minutes, 10 seconds
+a moment I just want to be sure that it all works first let's do a test run I will pick Rock the computer picks
+6:10:18 6 hours, 10 minutes, 18 seconds
+scissors that means we win I will pick paper the computer picks paper it's a
+6:10:26 6 hours, 10 minutes, 26 seconds
+tie I'll keep playing until I lose I will pick scissors the computer picks paper we win let's try scissors again
+6:10:36 6 hours, 10 minutes, 36 seconds
+the computer picks Rock we lose we know that these different wi conditions are working this is fairly readable but if
+6:10:45 6 hours, 10 minutes, 45 seconds
+you prefer we can condense all of these steps down together into one else if statement optionally what you could do
+6:10:53 6 hours, 10 minutes, 53 seconds
+with our first win condition let's enclose them within a set of parentheses then I will use the or
+6:11:02 6 hours, 11 minutes, 2 seconds
+logical Operator Let Me zoom in so you can see it I'm adding or to the end
+6:11:12 6 hours, 11 minutes, 12 seconds
+or let's take the entire condition within our LS if statement then paste it after the or logical
+6:11:20 6 hours, 11 minutes, 20 seconds
+operator and these do need to be enclosed within a set of parentheses and we can delete this LF
+6:11:30 6 hours, 11 minutes, 30 seconds
+statement We'll add the or logical operator to the end cut this condition for the next LF
+6:11:39 6 hours, 11 minutes, 39 seconds
+statement and delete this LF statement and paste
+6:11:45 6 hours, 11 minutes, 45 seconds
+it so here's our LF statement there is a lot going on here this should work too but if you prefer to keep it the other
+6:11:53 6 hours, 11 minutes, 53 seconds
+way just for readability feel free to do so if you like to condense some of the code here's how you could do that so let
+6:12:00 6 hours, 12 minutes
+me just be sure that everything's working fine I will pick Rock computer picks Rock it's a
+6:12:08 6 hours, 12 minutes, 8 seconds
+tie I will pick paper computer picks scissors you lose I will pick scissors computer picks
+6:12:16 6 hours, 12 minutes, 16 seconds
+paper you win all right this LF statement does work again if you would prefer to add more LF statements feel
+6:12:25 6 hours, 12 minutes, 25 seconds
+free to keep it the other way now we need to ask the user if they want to play again after displaying either it's a tie
+6:12:32 6 hours, 12 minutes, 32 seconds
+you win or you lose We'll add a prompt I will use print instead of print
+6:12:39 6 hours, 12 minutes, 39 seconds
+line I'll ask play again yes slash
+6:12:47 6 hours, 12 minutes, 47 seconds
+no we have one variable we haven't used yet our play again variable and currently it's
+6:12:54 6 hours, 12 minutes, 54 seconds
+yes play again equals use our scanner use the next line method and I will take the user's input
+6:13:02 6 hours, 13 minutes, 2 seconds
+and make it lowercase right away to lowercase method we're going to enclose all of our
+6:13:09 6 hours, 13 minutes, 9 seconds
+code right before the variables within a loop a do while loop so we'll say do all
+6:13:16 6 hours, 13 minutes, 16 seconds
+this code while some condition remains true let's cut all of our
+6:13:24 6 hours, 13 minutes, 24 seconds
+code cut it and then paste it within this do while loop so with the do while loop we do all
+6:13:33 6 hours, 13 minutes, 33 seconds
+of this code once and then check the condition at the end what's our condition going to be
+6:13:41 6 hours, 13 minutes, 41 seconds
+we'll continue playing while our play again variable equals a string of yes
+6:13:47 6 hours, 13 minutes, 47 seconds
+play again equals yes one more change we're going to
+6:13:54 6 hours, 13 minutes, 54 seconds
+make if the user picks something that isn't valid we're going to skip the current iteration of this Loop we can
+6:14:01 6 hours, 14 minutes, 1 second
+use continue for that we want to go back to the beginning if a user types in something that is
+6:14:10 6 hours, 14 minutes, 10 seconds
+invalid then the last step is to create a goodbye message we're doing this outside of the while loop cuz when we're outside of the while loop that means
+6:14:18 6 hours, 14 minutes, 18 seconds
+we're no longer playing let's print the following thanks for
+6:14:25 6 hours, 14 minutes, 25 seconds
+playing all right let's run this one last time I will pick Rock computer pick
+6:14:33 6 hours, 14 minutes, 33 seconds
+scissors you win play again again I'm going to type yes enter your move I will pick paper computer picks rock you win I
+6:14:41 6 hours, 14 minutes, 41 seconds
+will play again I will pick scissors the computer picks Rock You Lose I'm going to type no to play again
+6:14:51 6 hours, 14 minutes, 51 seconds
+and we escape that Doh Loop thanks for playing all right everybody so that is a game of rock paper scissors you can make
+6:14:58 6 hours, 14 minutes, 58 seconds
+using Java hello everybody in this video we're going to create a slot machine program
+6:15:06 6 hours, 15 minutes, 6 seconds
+using Java a user is going to bet an amount for the symbols of our slot machine we'll be using emojis if a user gets any matching symbols they'll
+6:15:15 6 hours, 15 minutes, 15 seconds
+receive a payout then at the end we'll give a final balance if that sounds good to you let's get started all right
+6:15:23 6 hours, 15 minutes, 23 seconds
+everybody when working on a project it might be helpful to you to tackle your project one step at a time as comments we'll list the different steps that our
+6:15:31 6 hours, 15 minutes, 31 seconds
+program is going to take this will give us a rough outline of our project the first thing we'll do is declare our
+6:15:39 6 hours, 15 minutes, 39 seconds
+variables then display a welcome message display welcome
+6:15:46 6 hours, 15 minutes, 46 seconds
+message we will play if our balance meaning the money that we have is greater than
+6:15:54 6 hours, 15 minutes, 54 seconds
+zero if we don't have any money we can't play it is a slot machine after all a user is going to enter bet amount then
+6:16:03 6 hours, 16 minutes, 3 seconds
+I'll write a few Subs steps underneath here we need to verify if the bet is greater than the
+6:16:12 6 hours, 16 minutes, 12 seconds
+balance you can't bet money that you don't have then
+6:16:19 6 hours, 16 minutes, 19 seconds
+verify if bet is greater than zero you can't bet negative money so we'll need to check
+6:16:27 6 hours, 16 minutes, 27 seconds
+that then subtract bet from our balance
+6:16:34 6 hours, 16 minutes, 34 seconds
+once we subtract the BET from the balance then we will spin our row our row is going to contain emojis
+6:16:43 6 hours, 16 minutes, 43 seconds
+but we'll need to display it we'll create a method to print our row of emojis once we display our row we need
+6:16:52 6 hours, 16 minutes, 52 seconds
+to get a payout if we win something if we have any matches then ask to play
+6:17:01 6 hours, 17 minutes, 1 second
+again if the user doesn't want to play we will display an exit message display
+6:17:09 6 hours, 17 minutes, 9 seconds
+exit message so here's a rough outline of our project we will Begin by declaring our
+6:17:16 6 hours, 17 minutes, 16 seconds
+variables we will be accepting user input we'll need a scanner for that scanner scanner equals new
+6:17:23 6 hours, 17 minutes, 23 seconds
+scanner type system.in within the set of parentheses import this class import
+6:17:30 6 hours, 17 minutes, 30 seconds
+java.util.scanner then when we're done with our scanner we'll want want to close it scanner.
+6:17:40 6 hours, 17 minutes, 40 seconds
+close we'll need a balance how much money do we have I will set that to be 100 100 as in
+6:17:48 6 hours, 17 minutes, 48 seconds
+$100 this could also be done with other units of currency we'll need an amount for our bet int bet how much are we
+6:17:56 6 hours, 17 minutes, 56 seconds
+betting how much are we risking int payout how much money do we win we'll be
+6:18:04 6 hours, 18 minutes, 4 seconds
+adding our pay pay out to our balance if we win and a string array named
+6:18:11 6 hours, 18 minutes, 11 seconds
+row our row is going to contain our symbols our emojis that will display to the output window that's why we're
+6:18:18 6 hours, 18 minutes, 18 seconds
+creating a string array to store all of them here are the variables we'll need we'll move on to the next step our next
+6:18:25 6 hours, 18 minutes, 25 seconds
+step is to display a welcome message let's say something like this I'll use a print line statement we'll
+6:18:33 6 hours, 18 minutes, 33 seconds
+say welcome to Java slots underneath this line we'll add
+6:18:40 6 hours, 18 minutes, 40 seconds
+another print line statement I will print the word symbols and here we'll list all the different symbols we would like to use within our program I'll be
+6:18:49 6 hours, 18 minutes, 49 seconds
+using emojis to pull up the Emoji menu if you're on Windows hold on the window key then hit the semicolon
+6:18:57 6 hours, 18 minutes, 57 seconds
+button so pick some emojis that you like here's a few that I typically see cherries watermelon
+6:19:05 6 hours, 19 minutes, 5 seconds
+lemons bells and stars if you would like to stick to a certain theme feel free to change
+6:19:14 6 hours, 19 minutes, 14 seconds
+these but these are a few symbols you may see on a slot machine and I'm just going to work on the spacing a little bit that looks
+6:19:23 6 hours, 19 minutes, 23 seconds
+pretty good just to make this a little more fancy I'm going to add a bunch of asterisks as separators before and after
+6:19:31 6 hours, 19 minutes, 31 seconds
+not necessary I just think it looks cool and that's a good enough reason let's perform a test run just to
+6:19:38 6 hours, 19 minutes, 38 seconds
+be sure that this looks fine I think that looks pretty good all right we have our welcome
+6:19:47 6 hours, 19 minutes, 47 seconds
+message our next step is to play our game if our balance is greater than zero this can be done with the while
+6:19:54 6 hours, 19 minutes, 54 seconds
+loop while our balance is greater than zero we will continue playing then we have to enter the BET
+6:20:03 6 hours, 20 minutes, 3 seconds
+amount that's the next step first we'll display our current balance current balance colon
+6:20:12 6 hours, 20 minutes, 12 seconds
+space pick unit of currency I'll pick American dollars plus we will display our balance
+6:20:20 6 hours, 20 minutes, 20 seconds
+variable we will ask a user for some input place your bet
+6:20:27 6 hours, 20 minutes, 27 seconds
+amount I'll use print rather than print line because I like the user input on the same line we will assign our bet
+6:20:37 6 hours, 20 minutes, 37 seconds
+variable use our scanner to accept some input let's say next int we won't deal
+6:20:44 6 hours, 20 minutes, 44 seconds
+with cents we'll just bet whole dollars then we have a couple substeps we have to verify if our bet is greater
+6:20:53 6 hours, 20 minutes, 53 seconds
+than our balance we'll write an if statement if bet is greater than our
+6:21:02 6 hours, 21 minutes, 2 seconds
+balance we'll output the following let's say insufficient
+6:21:10 6 hours, 21 minutes, 10 seconds
+funds we'll want to skip the current cycle of this Loop we'll use continue to go back to the
+6:21:17 6 hours, 21 minutes, 17 seconds
+beginning then we'll verify if the bet is greater than zero we don't want a user to bet
+6:21:24 6 hours, 21 minutes, 24 seconds
+negative money else if our bet let's say less than or equal
+6:21:34 6 hours, 21 minutes, 34 seconds
+to zero we don't want to use our betting no money bet must be greater than
+6:21:45 6 hours, 21 minutes, 45 seconds
+zero else we have to subtract the BET from the balance we could say balance equals
+6:21:54 6 hours, 21 minutes, 54 seconds
+balance minus bet but we can shorten this using the augmented assignment operator we can say balance minus equals
+6:22:03 6 hours, 22 minutes, 3 seconds
+bet Within our LF statement we're going to use the continue keyword to skip the current iteration of this Loop so
+6:22:11 6 hours, 22 minutes, 11 seconds
+temporarily within my else statement I'm just going to print our balance right after just to be sure that it's all
+6:22:20 6 hours, 22 minutes, 20 seconds
+working let's do a test run okay welcome to Java slots current
+6:22:26 6 hours, 22 minutes, 26 seconds
+balance $100 place your bet amount I will bet money that I don't have one1 kajillion dollars insufficient funds
+6:22:35 6 hours, 22 minutes, 35 seconds
+current balance $100 place your bet amount we can't bet negative money I'll bet1 bet must be greater than zero then
+6:22:44 6 hours, 22 minutes, 44 seconds
+we're brought back to the beginning I will bet $10 and our new balance is
+6:22:51 6 hours, 22 minutes, 51 seconds
+$90 all right we know that that works we can delete this print line statement we no longer need it we were
+6:22:59 6 hours, 22 minutes, 59 seconds
+just testing something our next step is that we're going to spin our row of symbols our
+6:23:06 6 hours, 23 minutes, 6 seconds
+emojis after we subtract our bet from our balance it's here that we'll spin our Row first I'll print the following
+6:23:14 6 hours, 23 minutes, 14 seconds
+message let's say the word spinning then we will call a method to spin our row but we will need to declare
+6:23:23 6 hours, 23 minutes, 23 seconds
+this method we will do that outside of the main method this will be a static method the
+6:23:32 6 hours, 23 minutes, 32 seconds
+return type is going to be an array of strings string array and the name of the method will be spin
+6:23:41 6 hours, 23 minutes, 41 seconds
+row we'll be creating a few local variables within this method but first we do need to return
+6:23:48 6 hours, 23 minutes, 48 seconds
+something because we promised that we're going to return a string array in order for this program to run a compile fine I
+6:23:55 6 hours, 23 minutes, 55 seconds
+will add The Following return statement return a new empty array of strings we'll be replacing this later but we do
+6:24:03 6 hours, 24 minutes, 3 seconds
+have to return something in order for this method to at least work we'll be creating a few local variables the first
+6:24:11 6 hours, 24 minutes, 11 seconds
+is a string array named symbols equals then within a set of cly
+6:24:18 6 hours, 24 minutes, 18 seconds
+braces we need our emojis let's go back to the beginning copy our
+6:24:25 6 hours, 24 minutes, 25 seconds
+emojis then place them within this array they do need to be surrounded with a set of double quotes because this is an
+6:24:32 6 hours, 24 minutes, 32 seconds
+array of strings so let's take a moment to take care of
+6:24:43 6 hours, 24 minutes, 43 seconds
+that all right that is good we will declare a string array named row our row
+6:24:51 6 hours, 24 minutes, 51 seconds
+is going to be empty it's going to be a new string array that can hold three elements row is an empty array that can
+6:25:00 6 hours, 25 minutes
+hold three strings which will be picked at random we will be generating random numbers we
+6:25:07 6 hours, 25 minutes, 7 seconds
+need a random object random random equals new random then import this
+6:25:15 6 hours, 25 minutes, 15 seconds
+class at the top import java.util
+6:25:22 6 hours, 25 minutes, 22 seconds
+random temporarily there's something I'm going to demonstrate let's display our aray of symbols at index of zero that
+6:25:31 6 hours, 25 minutes, 31 seconds
+should output this first Emoji a cherry I'll just bet a dollar doesn't matter
+6:25:38 6 hours, 25 minutes, 38 seconds
+and we have our Cherry one should be our
+6:25:46 6 hours, 25 minutes, 46 seconds
+watermelon watermelon then four should be our
+6:25:53 6 hours, 25 minutes, 53 seconds
+star star we need to choose a random number between zero and four when we select our
+6:26:02 6 hours, 26 minutes, 2 seconds
+array of symbols within the straight brackets where we list an index we will take our random object call the next int
+6:26:12 6 hours, 26 minutes, 12 seconds
+method we will generate a random number between zero and five the first number is inclusive the
+6:26:20 6 hours, 26 minutes, 20 seconds
+second number is exclusive if your range starts with zero you don't technically need this first number you could just say five let's run this a few times just to
+6:26:29 6 hours, 26 minutes, 29 seconds
+see what happens so that time I got a bell
+6:26:36 6 hours, 26 minutes, 36 seconds
+a cherry and a watermelon if we have more or less
+6:26:44 6 hours, 26 minutes, 44 seconds
+emojis we would need to change this number why don't we use the length of our symbols instead symbols then give me
+6:26:52 6 hours, 26 minutes, 52 seconds
+the length property of this array if we were to add more or less symbols our length is going to change automatically when we run and compile
+6:27:01 6 hours, 27 minutes, 1 second
+this program so we'll do a test run again again and that seems to
+6:27:10 6 hours, 27 minutes, 10 seconds
+work you're getting a random symbol each time let's delete the print line statement portion of
+6:27:18 6 hours, 27 minutes, 18 seconds
+this we need to generate three random symbols we can use a for Loop for that
+6:27:24 6 hours, 27 minutes, 24 seconds
+for in I equals 0 we will continue as long as I is less than three then
+6:27:32 6 hours, 27 minutes, 32 seconds
+increment I by One we will take our row at index of I in the beginning I is going to equal zero
+6:27:41 6 hours, 27 minutes, 41 seconds
+then one then two then the four Loop ends we will assign row at index of I
+6:27:47 6 hours, 27 minutes, 47 seconds
+equal to cut this line of code we're picking a random symbol from
+6:27:54 6 hours, 27 minutes, 54 seconds
+our array of strings our array of emojis at the end we will return our row
+6:28:01 6 hours, 28 minutes, 1 second
+we're returning our array of strings just to test it I'm going to Output
+6:28:07 6 hours, 28 minutes, 7 seconds
+using print row at index zero plus row at index
+6:28:18 6 hours, 28 minutes, 18 seconds
+one plus row at index 2 I just want to be sure that we get three random
+6:28:27 6 hours, 28 minutes, 27 seconds
+symbols there we go we get three random symbols we'll format the output later so don't
+6:28:36 6 hours, 28 minutes, 36 seconds
+wor we can delete this statement we were just testing something now this method is complete we
+6:28:43 6 hours, 28 minutes, 43 seconds
+can close it we're returning a string array back to the place in which we called this
+6:28:49 6 hours, 28 minutes, 49 seconds
+method we can assign this array back to the beginning we will assign our string array of
+6:28:58 6 hours, 28 minutes, 58 seconds
+row our row equals call the spin row method and this will return a string array which we're assigning to row once
+6:29:08 6 hours, 29 minutes, 8 seconds
+we have our row we're going to print our row we'll need to create another method for that we will create a static method
+6:29:16 6 hours, 29 minutes, 16 seconds
+it's not going to return anything the return type is void the name will be print
+6:29:23 6 hours, 29 minutes, 23 seconds
+row there will be one parameter we accept a string array which we will name
+6:29:31 6 hours, 29 minutes, 31 seconds
+row after assigning our row we will call call the print row method but we have to pass in our
+6:29:38 6 hours, 29 minutes, 38 seconds
+row because we have one parameter we have to pass in a string array which we are so here's where we'll print and
+6:29:47 6 hours, 29 minutes, 47 seconds
+display our row of emojis let's output the following I will display a space character plus now the string class has
+6:29:56 6 hours, 29 minutes, 56 seconds
+a few useful methods type string with a capital s dot call the join method
+6:30:04 6 hours, 30 minutes, 4 seconds
+for each character within a string we can join them together with another character I will join them by a space a
+6:30:12 6 hours, 30 minutes, 12 seconds
+vertical bar then a space comma Row for every string in my string array
+6:30:19 6 hours, 30 minutes, 19 seconds
+of row we're going to join them with the vertical bar along with a space before and after here's the output
+6:30:26 6 hours, 30 minutes, 26 seconds
+currently I'll just bet a dollar here's what we have we have three emojis each separated with the IAL
+6:30:36 6 hours, 30 minutes, 36 seconds
+bar I'll add some of those separators too those asterisks 14 Aster risks should be
+6:30:51 6 hours, 30 minutes, 51 seconds
+enough all right let's take another look I'll bet $10 that looks pretty good I'm happy with that our next step is to get a
+6:31:00 6 hours, 31 minutes
+payout if there's any matches we can collapse this method we no longer need
+6:31:07 6 hours, 31 minutes, 7 seconds
+it now we need to get our payout after printing our row we will call a method of get payout which we
+6:31:15 6 hours, 31 minutes, 15 seconds
+still need to declare we'll pass in two things our string array of row and our bet how much
+6:31:24 6 hours, 31 minutes, 24 seconds
+money did we bet we need to declare this method after the print row method we
+6:31:31 6 hours, 31 minutes, 31 seconds
+will declare a static method this method is going to return an integer our payout the method name will be get
+6:31:40 6 hours, 31 minutes, 40 seconds
+payout we have to set up the parameters we're accepting a string array we will name the string array
+6:31:49 6 hours, 31 minutes, 49 seconds
+row and a bet our bet is an integer int bet we do need to return something just
+6:31:58 6 hours, 31 minutes, 58 seconds
+temporarily at the end I'm going to return zero we need to check to see if we have any
+6:32:05 6 hours, 32 minutes, 5 seconds
+matches what we could do first is check to see if all three elements match are all these strings the same symbol here's
+6:32:13 6 hours, 32 minutes, 13 seconds
+how we can do that let's write an if statement if our
+6:32:20 6 hours, 32 minutes, 20 seconds
+row at index of zero that's the first symbol now you can't use the comparison operator for Strings cuz they're
+6:32:28 6 hours, 32 minutes, 28 seconds
+reference data types you would think you could say if row at index 0 is equal to row at index
+6:32:36 6 hours, 32 minutes, 36 seconds
+one but you actually need to use equals if row at index
+6:32:42 6 hours, 32 minutes, 42 seconds
+zero equals row at index
+6:32:50 6 hours, 32 minutes, 50 seconds
+one if the first two symbols match row at index0 and row at index one well then the first two symbols match but not only
+6:32:59 6 hours, 32 minutes, 59 seconds
+that we have to compare row at index one and row at index 2 do those match as well we're checking to see if all three
+6:33:06 6 hours, 33 minutes, 6 seconds
+symbols match we will use the and logical operator and we can copy this
+6:33:12 6 hours, 33 minutes, 12 seconds
+check paste it and if row at index one equals row at index 2 if all three
+6:33:20 6 hours, 33 minutes, 20 seconds
+symbols match then we execute this if statement why don't we use an enhanced switch a switch can return something
+6:33:28 6 hours, 33 minutes, 28 seconds
+we'll use the return keyword create a switch within the switch where are we examining let's
+6:33:36 6 hours, 33 minutes, 36 seconds
+examine one of these symbols we can just pick any I'll just pick the first one we are examining our row at index
+6:33:43 6 hours, 33 minutes, 43 seconds
+zero all three symbols are going to be the same so it doesn't matter which one you pick we'll examine this value this
+6:33:51 6 hours, 33 minutes, 51 seconds
+Emoji against any matching cases the first case will be our first symbol of a
+6:33:57 6 hours, 33 minutes, 57 seconds
+cherry if these two values match we'll do the following we'll write an arrow and we're going to be returning
+6:34:05 6 hours, 34 minutes, 5 seconds
+something let's return our bet times three let's say we get a payout of three times what
+6:34:13 6 hours, 34 minutes, 13 seconds
+we bet for our next case that was a
+6:34:19 6 hours, 34 minutes, 19 seconds
+watermelon the payout will be four for a
+6:34:28 6 hours, 34 minutes, 28 seconds
+lemon let's set the payout to be five a
+6:34:39 6 hours, 34 minutes, 39 seconds
+Bell three matching Bells will be worth 10 three stars let's say is
+6:34:50 6 hours, 34 minutes, 50 seconds
+20 bet times 20 We'll add a default case too in case there's no
+6:34:56 6 hours, 34 minutes, 56 seconds
+matches default Arrow return zero looks like I'm missing a semicolon
+6:35:04 6 hours, 35 minutes, 4 seconds
+at the end if all three symbols match return our bet times a certain amount depending on which symbols
+6:35:12 6 hours, 35 minutes, 12 seconds
+match the get payout method is going to return an integer we will assign our variable of
+6:35:19 6 hours, 35 minutes, 19 seconds
+payout equal to get payout if our payout is greater than
+6:35:28 6 hours, 35 minutes, 28 seconds
+zero we'll do the following that means we won something if that's the case let's let's output U1 pick a unit of
+6:35:38 6 hours, 35 minutes, 38 seconds
+currency plus our payout whatever we win then we will add that to our balance
+6:35:45 6 hours, 35 minutes, 45 seconds
+balance equals balance plus our payout but we can shorten this using the augmented assignment operator for
+6:35:53 6 hours, 35 minutes, 53 seconds
+addition balance plus equals our payout else if we don't get a payout if
+6:36:01 6 hours, 36 minutes, 1 second
+our payout is zero that means we didn't win anything we'll output sorry you lost this round okay
+6:36:11 6 hours, 36 minutes, 11 seconds
+let's do a few test runs I'm going to keep on running this until we get three matching symbols just to be sure that it all works I will bet a
+6:36:20 6 hours, 36 minutes, 20 seconds
+dollar our message is sorry you lost this round and the current balance is $99 I'll bet another dollar you lost you
+6:36:29 6 hours, 36 minutes, 29 seconds
+lost you lost it's hard to get three matching
+6:36:35 6 hours, 36 minutes, 35 seconds
+symbols here we go I have three matching cherries you won $3 and my current balance is
+6:36:43 6 hours, 36 minutes, 43 seconds
+$86 now if you would like to check to see if the first two symbols match or the second two you can add the following
+6:36:51 6 hours, 36 minutes, 51 seconds
+code let's copy our if statement paste it change if to be else
+6:36:57 6 hours, 36 minutes, 57 seconds
+if we'll only be checking the first two symbols we can delete the second condition
+6:37:04 6 hours, 37 minutes, 4 seconds
+if the first two symbols match we'll give a reduced payout let's say for two matching cherries that will be two for
+6:37:12 6 hours, 37 minutes, 12 seconds
+watermelon that will be three 4 5 and then 10 if the second symbol matches the
+6:37:21 6 hours, 37 minutes, 21 seconds
+third one we'll write another L statement index one and index two will
+6:37:29 6 hours, 37 minutes, 29 seconds
+give the same payout hello this is from the future there's just one bug that I need to fix the else if statement where we check if
+6:37:38 6 hours, 37 minutes, 38 seconds
+our second symbol matches the third within our switch we have to examine one of these two symbols I forgot to change
+6:37:45 6 hours, 37 minutes, 45 seconds
+that originally both these symbols should be the same so it doesn't matter which one we pick I'll just pick the index at one back to the previous LF
+6:37:54 6 hours, 37 minutes, 54 seconds
+statement index zero is fine because the first two symbols should match I just needed to fix that that is all let's
+6:38:02 6 hours, 38 minutes, 2 seconds
+check to be sure that works I'll bet a dollar so my first two symbols match we
+6:38:10 6 hours, 38 minutes, 10 seconds
+have a reduced payout of $3 but if it was three watermelons we would win $4
+6:38:18 6 hours, 38 minutes, 18 seconds
+instead we can close this get payout method we're done with it here we'll ask the user to play again
+6:38:24 6 hours, 38 minutes, 24 seconds
+if they would like to continue we'll create a
+6:38:31 6 hours, 38 minutes, 31 seconds
+prompt do you want to play again I'll use print rather than print
+6:38:39 6 hours, 38 minutes, 39 seconds
+line there's one more variable we'll need that I'm forgetting let's create a string
+6:38:46 6 hours, 38 minutes, 46 seconds
+variable of play
+6:38:54 6 hours, 38 minutes, 54 seconds
+again we will assign play again equal to use our scanner call the next line
+6:39:01 6 hours, 39 minutes, 1 second
+method we'll want a user to type in either capital y or capital N after accepting
+6:39:10 6 hours, 39 minutes, 10 seconds
+user input we'll make it uppercase using the two uppercase
+6:39:17 6 hours, 39 minutes, 17 seconds
+method using an if statement we'll check we'll check if play again doesn't
+6:39:26 6 hours, 39 minutes, 26 seconds
+equal for comparing strings we use equals if play again doesn't equal a capital Y then we will break to break
+6:39:35 6 hours, 39 minutes, 35 seconds
+out of the loop that we're in then go to the exit the exit message one more thing we need to add
+6:39:43 6 hours, 39 minutes, 43 seconds
+though I'm going to play a bet we get that prompt to play again but
+6:39:50 6 hours, 39 minutes, 50 seconds
+the program exits after typing in a number there's still a new line character within the input
+6:39:57 6 hours, 39 minutes, 57 seconds
+buffer because we're using next int next integer we need to clear that input buffer
+6:40:04 6 hours, 40 minutes, 4 seconds
+after this line of codee where we call the next int method we can take our scanner called the next line method to
+6:40:11 6 hours, 40 minutes, 11 seconds
+get rid of that new line character and that should work I'll bet a dollar then we can play
+6:40:18 6 hours, 40 minutes, 18 seconds
+again if we type in y we display our current balance we can place another
+6:40:25 6 hours, 40 minutes, 25 seconds
+bet hey $50 that time I'll type n to not play again then we exit
+6:40:33 6 hours, 40 minutes, 33 seconds
+the last thing we're going to do is display an exit message we'll take care of that right here once we're out of the
+6:40:41 6 hours, 40 minutes, 41 seconds
+loop let's output the following game over your final
+6:40:50 6 hours, 40 minutes, 50 seconds
+balance is pick unit of currency then I will add our variable of
+6:40:57 6 hours, 40 minutes, 57 seconds
+balance okay let's run this one last time welcome to Java slots I'll bet a
+6:41:04 6 hours, 41 minutes, 4 seconds
+dollar sorry you lost would you like to play again I will type y for yes current balance $99 I will bet a dollar
+6:41:13 6 hours, 41 minutes, 13 seconds
+again I lost I'll just keep playing till I win hey I won $10 we have two matching Stars
+6:41:22 6 hours, 41 minutes, 22 seconds
+I'll play one more time I will bet $10 and I won 20 we have two matching
+6:41:29 6 hours, 41 minutes, 29 seconds
+symbols I will type in no to not play again and we get our game over message your final balance is
+6:41:37 6 hours, 41 minutes, 37 seconds
+$117 so we came out ahead all right everybody that is a slot machine game you can create using
+6:41:46 6 hours, 41 minutes, 46 seconds
+Java yo we have finally made it to object-oriented programming in Java so what is an object exactly look around
+6:41:54 6 hours, 41 minutes, 54 seconds
+wherever you're sitting right now you are surrounded by different objects for example next to me I have my phone a cup
+6:42:03 6 hours, 42 minutes, 3 seconds
+of coffee and a microphone in programming an object can represent a real world entity they can do one of a
+6:42:11 6 hours, 42 minutes, 11 seconds
+few things objects can hold data and they can perform actions the data they hold are known as attributes the actions
+6:42:20 6 hours, 42 minutes, 20 seconds
+that they can perform are known as methods objects can have things and they can do things some attributes that a
+6:42:27 6 hours, 42 minutes, 27 seconds
+person may have would be a name their age their height and their weight a few methods meaning actions that a human
+6:42:36 6 hours, 42 minutes, 36 seconds
+could do a person well they could eat and they could sleep objects are reference data types we store the data
+6:42:43 6 hours, 42 minutes, 43 seconds
+for an object in a location known as the Heap in this demonstration we're going to be creating some car objects but
+6:42:50 6 hours, 42 minutes, 50 seconds
+we'll need a Class A Class can serve as a blueprint to create objects so what we're going to do is create a new Java
+6:42:59 6 hours, 42 minutes, 59 seconds
+class we will create a class of car we have two classes our main class and
+6:43:07 6 hours, 43 minutes, 7 seconds
+our car Class A Class can behave as a blueprint for creating objects we'll start by listing the different attributes that a
+6:43:15 6 hours, 43 minutes, 15 seconds
+car may have so what does a car have exactly well a car could have a make that would be a
+6:43:22 6 hours, 43 minutes, 22 seconds
+string we can assign it if we would like think of a car you'd like or a car you drive I'll pick my favorite car the make
+6:43:30 6 hours, 43 minutes, 30 seconds
+will be Ford another attribute could be a model and I will pick a
+6:43:38 6 hours, 43 minutes, 38 seconds
+Mustang cars could have a year that would be an integer into Year I'll pick the year 2025 a price that could be a double
+6:43:47 6 hours, 43 minutes, 47 seconds
+double price equals let's say $58,000
+6:43:55 6 hours, 43 minutes, 55 seconds
+99 a car's engine could be running that could be a Boolean Boolean is running I will set that to be true
+6:44:03 6 hours, 44 minutes, 3 seconds
+or false if the car is turned off things that an object has in this case car these are known as attributes they are
+6:44:12 6 hours, 44 minutes, 12 seconds
+things that an object has now heading back to our main class we will create a car object we're already a little familiar
+6:44:21 6 hours, 44 minutes, 21 seconds
+with working with objects for example a scanner is an object to create a scanner we would type scanner scanner equals new
+6:44:32 6 hours, 44 minutes, 32 seconds
+scanner then you type system.in or with random objects we would type random random equals new
+6:44:42 6 hours, 44 minutes, 42 seconds
+random Now to create a car object we're going to be utilizing this class we'll type car then think of a
+6:44:50 6 hours, 44 minutes, 50 seconds
+name for this car we'll just say car all lowercase equals new car we're following a similar
+6:44:57 6 hours, 44 minutes, 57 seconds
+pattern car car equals new car we don't need the scanner or the random object I was just demonstrating
+6:45:06 6 hours, 45 minutes, 6 seconds
+something we now have a car object that we can use our car object has these attributes these
+6:45:15 6 hours, 45 minutes, 15 seconds
+things if I was to print my car object here's what we can see well since objects are a reference
+6:45:24 6 hours, 45 minutes, 24 seconds
+data type if you were to print your car directly you get a memory address if you need to access one of
+6:45:32 6 hours, 45 minutes, 32 seconds
+these attributes you have to follow the object name with a DOT a DOT is known as the dot operator
+6:45:41 6 hours, 45 minutes, 41 seconds
+it allows you to access things within an object if I need the model of my car I would take my object name use the dot
+6:45:50 6 hours, 45 minutes, 50 seconds
+operator followed by the attribute name if I was to print the model of my car that would output
+6:45:59 6 hours, 45 minutes, 59 seconds
+Mustang let's print some of the other attributes car. make who manufactures the car
+6:46:08 6 hours, 46 minutes, 8 seconds
+Ford what is the year of my car car.
+6:46:14 6 hours, 46 minutes, 14 seconds
+year 2025 what's the price car.
+6:46:23 6 hours, 46 minutes, 23 seconds
+price $58,000 and 99 is my car running or not car do is
+6:46:32 6 hours, 46 minutes, 32 seconds
+running false the car is not currently running
+6:46:40 6 hours, 46 minutes, 40 seconds
+you can modify and change these attributes too with our car object let's access the is running attribute I will
+6:46:48 6 hours, 46 minutes, 48 seconds
+set that to be true like we're turning the car on is running is now true because we
+6:46:55 6 hours, 46 minutes, 55 seconds
+changed the attribute of is running not only do objects have the capability to hold data meaning
+6:47:03 6 hours, 47 minutes, 3 seconds
+attributes they can perform actions they can have their own methods going back to our car class we'll Define a few
+6:47:11 6 hours, 47 minutes, 11 seconds
+methods what sorts of actions can a car take well we could start a car within this class we will Define a method we
+6:47:20 6 hours, 47 minutes, 20 seconds
+don't need that static keyword this time we need a return type we'll say void we're not returning anything we will Define a method of
+6:47:29 6 hours, 47 minutes, 29 seconds
+start let's do the following let's output you start the
+6:47:36 6 hours, 47 minutes, 36 seconds
+engine we'll create another method void
+6:47:47 6 hours, 47 minutes, 47 seconds
+stop let's say you stop the engine so now with our
+6:47:54 6 hours, 47 minutes, 54 seconds
+car we can delete these print line statements we'll take our car object use the dot operator call the start method
+6:48:03 6 hours, 48 minutes, 3 seconds
+method this should output you start the engine or we can stop car.
+6:48:13 6 hours, 48 minutes, 13 seconds
+stop you start the engine you stop the engine not only that Within These methods let's change one of these
+6:48:20 6 hours, 48 minutes, 20 seconds
+variables one of these attributes within our start method let's take is running set that to be
+6:48:28 6 hours, 48 minutes, 28 seconds
+true within the stop method we'll take is running set that to be false going back to our main
+6:48:38 6 hours, 48 minutes, 38 seconds
+class before starting the car let's output car do is running after starting the car let's
+6:48:47 6 hours, 48 minutes, 47 seconds
+output car dot is running and then stopping the car will output car dot is
+6:48:55 6 hours, 48 minutes, 55 seconds
+running the car is currently not running that's false you start the engine the car is now running that's set to true
+6:49:02 6 hours, 49 minutes, 2 seconds
+you stop the engine the car is no longer running that is false let's add two more methods we can
+6:49:10 6 hours, 49 minutes, 10 seconds
+start we can stop we can drive we'll create a method to drive void
+6:49:19 6 hours, 49 minutes, 19 seconds
+Drive let's output you drive the I'm going to use string concatenation we'll
+6:49:26 6 hours, 49 minutes, 26 seconds
+concatenate the model of the car so my car is a Mustang
+6:49:33 6 hours, 49 minutes, 33 seconds
+we will create a method to break
+6:49:40 6 hours, 49 minutes, 40 seconds
+you break the plus our model variable our model
+6:49:47 6 hours, 49 minutes, 47 seconds
+attribute we can delete these lines of code let's drive the car car.
+6:49:54 6 hours, 49 minutes, 54 seconds
+drive you drive the Mustang and here's the model of the car and we can break car. break
+6:50:05 6 hours, 50 minutes, 5 seconds
+you drive the Mustang you break the Mustang there's one issue with this though with our class of car every car
+6:50:14 6 hours, 50 minutes, 14 seconds
+that we make has the same attributes and methods we can only create 225 Ford
+6:50:22 6 hours, 50 minutes, 22 seconds
+Mustangs if I was to create another car object let's say car car 2 equals new
+6:50:31 6 hours, 50 minutes, 31 seconds
+car we'll rename the first car as car 1 and I'll output some of their
+6:50:38 6 hours, 50 minutes, 38 seconds
+attributes Car 1make Plus a space plus car
+6:50:47 6 hours, 50 minutes, 47 seconds
+1 model we'll do this with our second car object too Car 2 car 2. make car 2.
+6:50:56 6 hours, 50 minutes, 56 seconds
+model these cars have the same attributes it would be nice if we had a way to customize them so that each car
+6:51:04 6 hours, 51 minutes, 4 seconds
+is unique because currently they're all the same they're different cars but they have the same attributes and methods which is kind of lame that's why in the
+6:51:12 6 hours, 51 minutes, 12 seconds
+next video we're going to discuss Constructors by passing in arguments we can create unique objects in summary an
+6:51:20 6 hours, 51 minutes, 20 seconds
+object is an entity that holds data it has attributes and they can perform actions they can perform
+6:51:28 6 hours, 51 minutes, 28 seconds
+methods they have things and they can do things and and well everybody those are objects in
+6:51:37 6 hours, 51 minutes, 37 seconds
+Java hey yeah today we're talking about Constructors in Java a Constructor is just a special method within a class
+6:51:44 6 hours, 51 minutes, 44 seconds
+it's used to initialize objects by using a Constructor we can create objects with unique values when you create an object
+6:51:52 6 hours, 51 minutes, 52 seconds
+you can pass arguments to a Constructor to set up the initial values here's a demonstration what we're going to do is
+6:52:00 6 hours, 52 minutes
+create a new class let's go to file new Java class let's create a class of students
+6:52:09 6 hours, 52 minutes, 9 seconds
+this will be the student class what are some attributes that a student should have they should have a
+6:52:17 6 hours, 52 minutes, 17 seconds
+name let me zoom in a little so you can read it NH AG int ag ag GPA meaning grade point
+6:52:26 6 hours, 52 minutes, 26 seconds
+average let's create a Boolean of is enrolled that is good enough for now there's one
+6:52:35 6 hours, 52 minutes, 35 seconds
+issue with this let's say that all students that I create using this class they're all going to be named
+6:52:43 6 hours, 52 minutes, 43 seconds
+SpongeBob going back to my Java file I'll create a few students we type the name of the class and name for this object let's say
+6:52:51 6 hours, 52 minutes, 51 seconds
+student one equals new student the name of the class again then we'll create a second
+6:52:59 6 hours, 52 minutes, 59 seconds
+student student two I'm going to Output student one's name
+6:53:06 6 hours, 53 minutes, 6 seconds
+student 1. name as well as student 2's name the issue that we have is that all
+6:53:16 6 hours, 53 minutes, 16 seconds
+students that we create all student objects they're all named SpongeBob what if we would like to give
+6:53:24 6 hours, 53 minutes, 24 seconds
+each object a unique name well we can do that with the help of a Constructor a Constructor is just a special method
+6:53:31 6 hours, 53 minutes, 31 seconds
+within a class to set up a Constructor we type the name of the class in this case student you
+6:53:38 6 hours, 53 minutes, 38 seconds
+need a set of parentheses then a set of curly braces we automatically call this
+6:53:45 6 hours, 53 minutes, 45 seconds
+Constructor when we instantiate an object of that class when we say new then the name of the class
+6:53:53 6 hours, 53 minutes, 53 seconds
+parenthesis behind the scenes we're calling this Constructor and we can pass in arguments within the set of parentheses
+6:54:01 6 hours, 54 minutes, 1 second
+we can pass in arguments so let's pass in what are we missing a name age GPA is enrolled as well but we'll take care of
+6:54:10 6 hours, 54 minutes, 10 seconds
+that momentarily let's pass in a name age and GPA student one's name will be
+6:54:19 6 hours, 54 minutes, 19 seconds
+SpongeBob SpongeBob's age will be let's say 30 he seems about 30 SpongeBob's GPA
+6:54:25 6 hours, 54 minutes, 25 seconds
+can be 3.2 that's pretty good we have a warning our Constructor isn't set up to take these arguments
+6:54:35 6 hours, 54 minutes, 35 seconds
+going back to our Constructor since we're receiving arguments we need a matching set of parameters just like any
+6:54:41 6 hours, 54 minutes, 41 seconds
+other method we have a string for name integer of age double GPA we'll take care of these three first we have string
+6:54:50 6 hours, 54 minutes, 50 seconds
+name int age double GPA to assign some of these attributes
+6:54:59 6 hours, 54 minutes, 59 seconds
+we're going to use the this keyword this dot the name of the attribute this do
+6:55:06 6 hours, 55 minutes, 6 seconds
+name equals our parameter of name this. AG equals the age that we
+6:55:15 6 hours, 55 minutes, 15 seconds
+receive this. GPA equals the GPA that we receive going back to our Java file we
+6:55:23 6 hours, 55 minutes, 23 seconds
+can now construct an object if I attempt to run this currently we are receiving a
+6:55:30 6 hours, 55 minutes, 30 seconds
+warning our Constructor expects three arguments but we don't pass in any zero are found if I were to run
+6:55:38 6 hours, 55 minutes, 38 seconds
+this we get this error message actual and formal argument lists differ in length in order for us to create a scent
+6:55:47 6 hours, 55 minutes, 47 seconds
+object we have to pass in these three things a string for the name an integer for the age and a double for the
+6:55:55 6 hours, 55 minutes, 55 seconds
+GPA if we are missing these three we can't construct an object but previously we could with without the Constructor
+6:56:03 6 hours, 56 minutes, 3 seconds
+for our second student let's pass in a name of Patrick Patrick will be
+6:56:09 6 hours, 56 minutes, 9 seconds
+34 Patrick's GPA isn't too good it's a 1.5 all right let's test this we're
+6:56:18 6 hours, 56 minutes, 18 seconds
+printing student one's name and student 2's name we get SpongeBob and
+6:56:25 6 hours, 56 minutes, 25 seconds
+Patrick let's display some of the other attributes we have
+6:56:33 6 hours, 56 minutes, 33 seconds
+name age GPA we'll do this with student 2 as well student 2.age student 2.
+6:56:44 6 hours, 56 minutes, 44 seconds
+GPA SpongeBob SpongeBob is 30 years old SpongeBob's GPA is 3.2 these are all the unique attributes
+6:56:53 6 hours, 56 minutes, 53 seconds
+of our student object student one student 2's attributes are Patrick
+6:56:59 6 hours, 56 minutes, 59 seconds
+age is 34 GPA is 1.5 with the this keyword this refers to the
+6:57:07 6 hours, 57 minutes, 7 seconds
+object we're currently constructing or otherwise working with imagine that when we construct student
+6:57:14 6 hours, 57 minutes, 14 seconds
+one imagine we replace the this keyword with the name of the object we're assigning student one's name equal to
+6:57:22 6 hours, 57 minutes, 22 seconds
+the name that we receive same thing applies with our age and our GPA the same thing would apply with
+6:57:30 6 hours, 57 minutes, 30 seconds
+student 2 when we construct student 2 imagine during the process we replace this with student
+6:57:39 6 hours, 57 minutes, 39 seconds
+2 this refers to the object we're currently working with or constructing with these parameter names
+6:57:46 6 hours, 57 minutes, 46 seconds
+they don't necessarily need to be the same as your attribute names just to demonstrate let's rename name as a age as B GPA as C this.name equals a this.
+6:57:59 6 hours, 57 minutes, 59 seconds
+age equals B this. GPA equals c this should work
+6:58:05 6 hours, 58 minutes, 5 seconds
+too each object still has their unique attributes but I like to keep the
+6:58:12 6 hours, 58 minutes, 12 seconds
+parameter names the same as the attributes it makes the code easier to read and understand we haven't assigned to this attribute of is
+6:58:21 6 hours, 58 minutes, 21 seconds
+enrolled each object that we create using this Constructor let's assign this objects is enrolled attribute equal to
+6:58:29 6 hours, 58 minutes, 29 seconds
+you don't always necessarily need to assign arguments to these attributes for example let's just say that when you
+6:58:36 6 hours, 58 minutes, 36 seconds
+become a student you are enrolled that is true we don't necessarily need to pass in an argument for that going back
+6:58:44 6 hours, 58 minutes, 44 seconds
+to our main class let's print take student ones is enrolled attribute and
+6:58:51 6 hours, 58 minutes, 51 seconds
+then print it we'll do the same thing with student two Patrick when we create a student object
+6:59:00 6 hours, 59 minutes
+we're automatically setting is a enrolled to be true they are enrolled in classes and that applies to Patrick as well student to Let's create another
+6:59:09 6 hours, 59 minutes, 9 seconds
+student object just so that we get the hang of this repetition is going to help you remember let's create student 3
+6:59:17 6 hours, 59 minutes, 17 seconds
+student 3 is an object new student to create a student we have to pass in three things a string for the
+6:59:25 6 hours, 59 minutes, 25 seconds
+name an integer for the age and a double for the GPA student 3 will be be
+6:59:33 6 hours, 59 minutes, 33 seconds
+Sandy Sandy is 27 let's say Sandy is smart she'll have a 4.0
+6:59:40 6 hours, 59 minutes, 40 seconds
+GPA and then we'll print student 3's attributes student 3. name student 3's
+6:59:47 6 hours, 59 minutes, 47 seconds
+age student 3's GPA student 3 is enrolled our object of student 3 has
+6:59:55 6 hours, 59 minutes, 55 seconds
+these attributes Sandy 27 4.0 and true if if your class has any methods
+7:00:03 7 hours, 3 seconds
+for example all students have the method to study void study I'll just output the
+7:00:13 7 hours, 13 seconds
+following let's take our name attribute but I'm going to use
+7:00:19 7 hours, 19 seconds
+this.name plus the text of is studying let's delete these print line
+7:00:27 7 hours, 27 seconds
+statements we'll take student one call the study method then we'll do this with student two and
+7:00:35 7 hours, 35 seconds
+student 3 SpongeBob is studying Patrick is
+7:00:42 7 hours, 42 seconds
+studying Sandy is studying after assigning values to your attributes using a Constructor you can
+7:00:50 7 hours, 50 seconds
+use them within methods too or change them this refers to the object we're currently working with if student 3
+7:00:58 7 hours, 58 seconds
+meaning Sandy was to call her study method imagine we're replacing this with student 3 student 3's name
+7:01:08 7 hours, 1 minute, 8 seconds
+attribute all right everybody those are Constructors they're a special method found within a class to initialize
+7:01:14 7 hours, 1 minute, 14 seconds
+objects you can pass arguments to a Constructor when you initialize them they're used to set up the initial values when you construct an object a
+7:01:24 7 hours, 1 minute, 24 seconds
+Constructor is automatically called when you create a new object but you need a matching set of arguments if there's any
+7:01:31 7 hours, 1 minute, 31 seconds
+parameter setup just like any other method by using a Constructor we can create objects with unique values and
+7:01:40 7 hours, 1 minute, 40 seconds
+well everybody those are Constructors in Java what is going on people today I'm
+7:01:47 7 hours, 1 minute, 47 seconds
+going to explain overloaded Constructors overloaded Constructors allow a class to have multiple Constructors with different parameter lists much like
+7:01:56 7 hours, 1 minute, 56 seconds
+overloaded methods they enable an object to be initialized in various ways here's a demonstration we are going to create a
+7:02:04 7 hours, 2 minutes, 4 seconds
+new class let's go to file new Java class we will create a class for users
+7:02:11 7 hours, 2 minutes, 11 seconds
+we will create a user class let's say that users have three things they will have a string of
+7:02:21 7 hours, 2 minutes, 21 seconds
+username a string of email and an integer in age let's say that when we create a user
+7:02:30 7 hours, 2 minutes, 30 seconds
+object these three fields are optional if these three attributes are optional we may or may not receive them when we
+7:02:38 7 hours, 2 minutes, 38 seconds
+construct a user object so let's do this let's create a Constructor if somebody were to create a user object with just a
+7:02:46 7 hours, 2 minutes, 46 seconds
+username to create a Constructor we type the name of the class in this case user we need to set up a parameter for
+7:02:55 7 hours, 2 minutes, 55 seconds
+our username we will receive a string of username we will assign this St user
+7:03:01 7 hours, 3 minutes, 1 second
+usern name equal to the username that we receive as an argument let's go back to our main Java
+7:03:10 7 hours, 3 minutes, 10 seconds
+file we will create a new user let's say user user one equals new
+7:03:20 7 hours, 3 minutes, 20 seconds
+user we're receiving a warning though in order to create a user object we have to pass in a string of
+7:03:29 7 hours, 3 minutes, 29 seconds
+username let's say that our user is going to be SpongeBob because that's the first thing that came to mind for me we'll use this Constructor where we
+7:03:37 7 hours, 3 minutes, 37 seconds
+have a username we can also set up the default values for our attributes too let's say this. email equals a string of
+7:03:46 7 hours, 3 minutes, 46 seconds
+not provided this. AG equals 0 going back to user
+7:03:55 7 hours, 3 minutes, 55 seconds
+one I will output the following user one dot
+7:04:05 7 hours, 4 minutes, 5 seconds
+username user one's email user 1's age here's what we got
+7:04:13 7 hours, 4 minutes, 13 seconds
+currently username is SpongeBob email is not provided age is zero these attributes were optional when
+7:04:23 7 hours, 4 minutes, 23 seconds
+we construct this object we're just assigning them to some default values what if we create a user that has an email well we could create another
+7:04:31 7 hours, 4 minutes, 31 seconds
+Constructor with the same name but we need a different set of parameters this is very similar to
+7:04:39 7 hours, 4 minutes, 39 seconds
+Method overloading you can have methods with the same name but they need different parameters not only do we have a string
+7:04:47 7 hours, 4 minutes, 47 seconds
+of username we'll have a string of email our email attribute equals the
+7:04:54 7 hours, 4 minutes, 54 seconds
+email that we receive we can use either of these Constructors depending on the arguments that are passed in
+7:05:01 7 hours, 5 minutes, 1 second
+let's create a second user user user 2 equals new
+7:05:09 7 hours, 5 minutes, 9 seconds
+user the username will be Patrick Patrick's email is let's say
+7:05:17 7 hours, 5 minutes, 17 seconds
+p Patrick is probably still using AOL for some reason let's say aol.com then we'll print user 2's attributes user 2. username user two.
+7:05:29 7 hours, 5 minutes, 29 seconds
+email user 2.age here's what we got we have all the attributes for user one and user two
+7:05:38 7 hours, 5 minutes, 38 seconds
+Patrick P star aol.com our age is still zero we can create different objects
+7:05:45 7 hours, 5 minutes, 45 seconds
+with a varying number of arguments let's create a third user this time we'll have a parameter for our age
+7:05:54 7 hours, 5 minutes, 54 seconds
+attribute I'm just going to copy this cuz I'm lazy we'll have an INT age we will assign our age variable
+7:06:02 7 hours, 6 minutes, 2 seconds
+with the age argument we receive we'll create user 3 user user 3 equals new
+7:06:14 7 hours, 6 minutes, 14 seconds
+user username will be Sandy email will be S
+7:06:22 7 hours, 6 minutes, 22 seconds
+cheeks gmail.com then an age let's say 27 then I'll print user 3's attributes
+7:06:31 7 hours, 6 minutes, 31 seconds
+user 3. username email then age here is all of sy's attributes
+7:06:40 7 hours, 6 minutes, 40 seconds
+username email age let's set up a Constructor that accepts no
+7:06:50 7 hours, 6 minutes, 50 seconds
+arguments this will be kind of an anonymous profile this. username will equal guest
+7:06:58 7 hours, 6 minutes, 58 seconds
+or a guest profile this . email equals not
+7:07:08 7 hours, 7 minutes, 8 seconds
+provided this. AG equals z now we could create a user object then
+7:07:15 7 hours, 7 minutes, 15 seconds
+pass in no arguments user user 4 equals new user this time we don't have any
+7:07:23 7 hours, 7 minutes, 23 seconds
+arguments then I'll display user Force attributes username
+7:07:38 7 hours, 7 minutes, 38 seconds
+email age here's what we got username guessed email not provided age is
+7:07:46 7 hours, 7 minutes, 46 seconds
+zero in a way by creating an object and passing in no arguments you can set up some default values all right everybody those are
+7:07:55 7 hours, 7 minutes, 55 seconds
+overloaded Constructors they allow a class to have multiple Constructors they just need different parameter lists they
+7:08:03 7 hours, 8 minutes, 3 seconds
+enable objects to be initialized in various Ways by passing in a varying amount of arguments this would be great in a
+7:08:11 7 hours, 8 minutes, 11 seconds
+situation where some fields are optional when creating an object and well everybody those are overloaded Constructors in
+7:08:21 7 hours, 8 minutes, 21 seconds
+Java hey everybody in this video I'm going to show you how we can create an array of objects using Java it's pretty useful at times and you should probably
+7:08:28 7 hours, 8 minutes, 28 seconds
+know how to do it we'll Begin by creating a new class let's go to file new class we will create a car
+7:08:36 7 hours, 8 minutes, 36 seconds
+class let's say that cars have the following attributes we'll just pick two to keep it simple a string of model and a string
+7:08:45 7 hours, 8 minutes, 45 seconds
+of color we'll need a car Constructor we will pass in a string of model and a string of color we will
+7:08:55 7 hours, 8 minutes, 55 seconds
+assign this. model equals the model we receive this. color equals the color
+7:09:02 7 hours, 9 minutes, 2 seconds
+that we receive we'll add one method void drive all cars can drive well I'll
+7:09:10 7 hours, 9 minutes, 10 seconds
+put the following using a print line statement you drive
+7:09:17 7 hours, 9 minutes, 17 seconds
+the plus this. color plus a space plus this. model okay we are done with the
+7:09:26 7 hours, 9 minutes, 26 seconds
+car class we'll construct a few car objects let's start with car one car car 1
+7:09:34 7 hours, 9 minutes, 34 seconds
+equals a new car we have to pass in a model and a color think of some cars that you like I
+7:09:42 7 hours, 9 minutes, 42 seconds
+will pick a red Mustang for one car let's create Car 2 Car 2 equals a new
+7:09:48 7 hours, 9 minutes, 48 seconds
+car I will pick a Corvette that is blue one more car car 3
+7:09:57 7 hours, 9 minutes, 57 seconds
+car car 3 equals a new car a yellow
+7:10:05 7 hours, 10 minutes, 5 seconds
+charger all right we have our three car objects we can create an array but for an array you have to list the data type
+7:10:12 7 hours, 10 minutes, 12 seconds
+of what you're storing we're going to be storing car objects the data type of the array is going to be car objects car
+7:10:20 7 hours, 10 minutes, 20 seconds
+then for an array we need a set of straight brackets what is the name of this array going to be well I think cars would be
+7:10:27 7 hours, 10 minutes, 27 seconds
+appropriate cars equals if you're creating an empty array you're going to use the new keyword list the data type of
+7:10:35 7 hours, 10 minutes, 35 seconds
+car within the straight brackets specify the size of this array let's say three elements Max or we could go ahead and
+7:10:43 7 hours, 10 minutes, 43 seconds
+just assign these right away too using a set of cly braces let's Place car 1 Car 2 and car 3 within this array we'll
+7:10:52 7 hours, 10 minutes, 52 seconds
+place these three car objects within this array of cars now you could use a for Loop to iterate through this array
+7:10:59 7 hours, 10 minutes, 59 seconds
+here's how we'll start with the standard for Loop we'll need an index in I equals z we'll continue as long as I is less
+7:11:09 7 hours, 11 minutes, 9 seconds
+than our cars length property then increment I by one we'll access our array of cars at index of I which is
+7:11:18 7 hours, 11 minutes, 18 seconds
+going to increase each time but it starts at zero we will call the drive method and let's see what
+7:11:27 7 hours, 11 minutes, 27 seconds
+happens you drive the red Mustang you drive the blue Corvette you drive the yellow charger now an enhanced for Loop would
+7:11:35 7 hours, 11 minutes, 35 seconds
+probably be more appropriate for this if you want to use an enhanced for Loop type four parentheses curly
+7:11:44 7 hours, 11 minutes, 44 seconds
+braces what is the data type of each element within this array car objects we'll need a nickname for each element
+7:11:52 7 hours, 11 minutes, 52 seconds
+within this array let's say car colon think of colon as in then our array of
+7:11:59 7 hours, 11 minutes, 59 seconds
+cars for every car object in our array of cars do the following we'll take each car object call the drive
+7:12:08 7 hours, 12 minutes, 8 seconds
+method and that's going to do the same thing you drive the red Mustang you drive the blue Corvette you drive the yellow charger another thing you can do to when
+7:12:17 7 hours, 12 minutes, 17 seconds
+creating an array of objects you can pass in Anonymous objects rather than first instantiating the objects then assigning them to the array here's how
+7:12:26 7 hours, 12 minutes, 26 seconds
+you can do that for each element we're going to call the car Constructor with the new
+7:12:34 7 hours, 12 minutes, 34 seconds
+keyword call the car Constructor then pass in the details for each car the necessary arguments we'll pass in our
+7:12:42 7 hours, 12 minutes, 42 seconds
+Mustang that's red that's the first element I'll just copy it to save some time then we're creating a new car but
+7:12:50 7 hours, 12 minutes, 50 seconds
+this will be a Corvette that's blue and I'll put each of these on a new
+7:12:56 7 hours, 12 minutes, 56 seconds
+line just for readability and then we have our
+7:13:05 7 hours, 13 minutes, 5 seconds
+charger that's yellow and this will do the same thing
+7:13:13 7 hours, 13 minutes, 13 seconds
+too we have our three cars constructing a new object without giving the object a unique identifier
+7:13:20 7 hours, 13 minutes, 20 seconds
+like car 1 Car 2 or car 3 these are known as Anonymous objects So within an array you can
+7:13:28 7 hours, 13 minutes, 28 seconds
+create Anonymous objects if you would rather not give each of the car is a unique identifier another thing you can do too with an array of objects is let's
+7:13:36 7 hours, 13 minutes, 36 seconds
+change the color of each car using our enhanced for Loop car do color let's change the color to be black
+7:13:44 7 hours, 13 minutes, 44 seconds
+for each car we'll use another enhanced for Loop to display each car car die
+7:13:53 7 hours, 13 minutes, 53 seconds
+drive you drive the black Mustang you drive the black Corvette you drive the black charger all all right everybody those
+7:14:01 7 hours, 14 minutes, 1 second
+are a few things you can do with an array of objects in Java hello everybody today I'm going to
+7:14:09 7 hours, 14 minutes, 9 seconds
+explain the static keyword using Java static is a keyword it modifies a variable or method so that it belongs to
+7:14:17 7 hours, 14 minutes, 17 seconds
+the class rather than any specific object we see the static keyword within the main method when you modify a variable or method with the static
+7:14:25 7 hours, 14 minutes, 25 seconds
+keyword static is used to create utility methods or other shared resources let me give you a demonstration we're going to
+7:14:32 7 hours, 14 minutes, 32 seconds
+create a new class let's go to file new class we'll create a front class we will create some friend objects because
+7:14:41 7 hours, 14 minutes, 41 seconds
+you're lonely let's say that all friends will have a name attribute string name we need a Constructor it's the same
+7:14:50 7 hours, 14 minutes, 50 seconds
+as the class name parenthesis curly braces when we construct a friend object we have to pass in a string of name we

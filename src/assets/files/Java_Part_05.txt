@@ -1,0 +1,1067 @@
+4:49:39 4 hours, 49 minutes, 39 seconds
+$100 I will try and withdraw like a kajillion dollars insufficient funds we don't have
+4:49:48 4 hours, 49 minutes, 48 seconds
+a kajillion dollar let's withdraw again I will try and withdraw negative money $
+4:49:58 4 hours, 49 minutes, 58 seconds
+42069 amount can't be negative we can't withdraw negative money okay let's try and withdraw something that's valid
+4:50:08 4 hours, 50 minutes, 8 seconds
+$501 that seems to have worked let's show our balance our balance is now
+4:50:15 4 hours, 50 minutes, 15 seconds
+$49.99 the last step is to exit and display a goodby message let's print the
+4:50:24 4 hours, 50 minutes, 24 seconds
+following thank you have a nice day just so the user knows that they have exited the
+4:50:32 4 hours, 50 minutes, 32 seconds
+program and for fun I'm going to add some text decoration some separators not necessary but I think
+4:50:40 4 hours, 50 minutes, 40 seconds
+it'll look nice all right let's run this one last
+4:50:48 4 hours, 50 minutes, 48 seconds
+time banking program enter your choice I will show our balance we have 0 I will make a deposit I will deposit
+4:50:56 4 hours, 50 minutes, 56 seconds
+$11,000 show our balance we have $1,000 I will withdraw let's withdraw a single penny
+4:51:05 4 hours, 51 minutes, 5 seconds
+0.01 show our balance we now have $999.99 sense I will press for to exit and we
+4:51:14 4 hours, 51 minutes, 14 seconds
+exit thank you have a nice day all right everybody that is a Java
+4:51:21 4 hours, 51 minutes, 21 seconds
+banking program that you can write as a beginner hey there everybody in this video we're going to create a dice
+4:51:29 4 hours, 51 minutes, 29 seconds
+rolling program a user is going to type in a number of dice they would like to roll based on the roll of each die we will displace masy art then at the end
+4:51:37 4 hours, 51 minutes, 37 seconds
+we will give the user a total the sum of all the dice that they have rolled so if that sounds good to you let's begin as a beginner it might be helpful to you to
+4:51:46 4 hours, 51 minutes, 46 seconds
+break down a large project into smaller steps let's list the order of steps we're going to take we will Begin by declaring our
+4:51:54 4 hours, 51 minutes, 54 seconds
+variables declare variables then we need to get the number
+4:52:01 4 hours, 52 minutes, 1 second
+of Dice from the user after we have the number of dice let's check to see if it's greater than
+4:52:09 4 hours, 52 minutes, 9 seconds
+zero we don't want somebody rolling negative dice check if number of
+4:52:15 4 hours, 52 minutes, 15 seconds
+dice is greater than zero we will roll all the
+4:52:24 4 hours, 52 minutes, 24 seconds
+dice get the total or the sum you could say the final part of this project we will display the
+4:52:32 4 hours, 52 minutes, 32 seconds
+asy art of dice all right here's a rough outline of our project the first step is to declare
+4:52:41 4 hours, 52 minutes, 41 seconds
+our variables we're accepting user input so we'll need a scanner scanner scanner equals new
+4:52:49 4 hours, 52 minutes, 49 seconds
+scanner type system.in import this class import java.util.scanner and then close our scanner when we're done with it scanner.
+4:53:01 4 hours, 53 minutes, 1 second
+close we'll be working with random numbers we'll need a random object to Generate random numbers random random
+4:53:08 4 hours, 53 minutes, 8 seconds
+equals new random import the class import java. u. random we'll need
+4:53:18 4 hours, 53 minutes, 18 seconds
+a number of dice the user is going to fill this in int num of dice how many
+4:53:25 4 hours, 53 minutes, 25 seconds
+dice are we rolling and a total int total we'll sum up all the dice for a
+4:53:33 4 hours, 53 minutes, 33 seconds
+total all right now we need to get the number of Dice from the user we'll need some input but we'll create a prompt
+4:53:41 4 hours, 53 minutes, 41 seconds
+first enter the number of dice to
+4:53:48 4 hours, 53 minutes, 48 seconds
+roll I'll use print rather than print line we will assign our variable of
+4:53:54 4 hours, 53 minutes, 54 seconds
+number of dice number of dice we will use our scanner to accept some user input we are looking for an integer
+4:54:03 4 hours, 54 minutes, 3 seconds
+we'll use the next int method of our scanner scanner. next in now we need to to check to see if the
+4:54:11 4 hours, 54 minutes, 11 seconds
+number of dice number of dice is greater than zero so let's take care of that we'll
+4:54:18 4 hours, 54 minutes, 18 seconds
+use an if statement to check that if num of dice is greater than zero
+4:54:26 4 hours, 54 minutes, 26 seconds
+then we'll roll some dice we'll get to that momentarily else we will print the
+4:54:34 4 hours, 54 minutes, 34 seconds
+following let's say number of dice must be greater than
+4:54:42 4 hours, 54 minutes, 42 seconds
+zero within our if statement let's say just temporarily you
+4:54:49 4 hours, 54 minutes, 49 seconds
+roll the dice okay we're doing a test run enter the number of dice to roll
+4:54:57 4 hours, 54 minutes, 57 seconds
+let's say I try and roll zero dice number of dice must be greater than zero let's try this again let's say I roll
+4:55:06 4 hours, 55 minutes, 6 seconds
+three Dice and then we're just printing a test message you rolled the dice okay we know that that works we can delete this print
+4:55:15 4 hours, 55 minutes, 15 seconds
+statement we no longer need it we were just testing it now we actually need to roll all the dice we'll take care of that within our
+4:55:23 4 hours, 55 minutes, 23 seconds
+if statement if the number of dice is greater than zero then we will roll the dice we're going to create a for Loop
+4:55:30 4 hours, 55 minutes, 30 seconds
+that will iterate once based on the number of dice we have so let's create a for Loop for in I will be our index in I
+4:55:41 4 hours, 55 minutes, 41 seconds
+equals z we will continue as long as I is less than our number of dice then increment our index of I by
+4:55:49 4 hours, 55 minutes, 49 seconds
+One during each cycle within this for loop we're going to generate a random number I will
+4:55:56 4 hours, 55 minutes, 56 seconds
+create a local variable of r r will equal now we'll use a random object to generate a random number a random number
+4:56:05 4 hours, 56 minutes, 5 seconds
+between 1 and six we will use the next int method of our random object
+4:56:11 4 hours, 56 minutes, 11 seconds
+we will specify our range 1 through 7 the first number is inclusive the second number is exclusive this will give us a
+4:56:20 4 hours, 56 minutes, 20 seconds
+random number between 1 and six then once we have our roll let's print it
+4:56:27 4 hours, 56 minutes, 27 seconds
+temporarily let's print you rolled colon
+4:56:33 4 hours, 56 minutes, 33 seconds
+space plus our local variable of Ro
+4:56:41 4 hours, 56 minutes, 41 seconds
+let's say we would like to roll four dice you rolled five you rolled five you rolled one you rolled two then we'll add
+4:56:49 4 hours, 56 minutes, 49 seconds
+these numbers together for a sum or total let's take our
+4:56:55 4 hours, 56 minutes, 55 seconds
+total total equals our total plus our roll and this is within the for Loop so
+4:57:04 4 hours, 57 minutes, 4 seconds
+Java does want us to initialize this variable so set total equal to zero when
+4:57:10 4 hours, 57 minutes, 10 seconds
+you declare it so total equals total whatever it currently is in this case zero plus roll we can shorten this too
+4:57:19 4 hours, 57 minutes, 19 seconds
+we could just say total plus equals roll we'll use the augmented assignment operator for addition then when we escape the for
+4:57:28 4 hours, 57 minutes, 28 seconds
+Loop we will print the total let's say total colon space plus
+4:57:35 4 hours, 57 minutes, 35 seconds
+our variable of total let's do a test run I Will Roll three dice we have 3 2 2
+4:57:44 4 hours, 57 minutes, 44 seconds
+for a total of seven 3 5 7 okay we know that that works we have rolled all the dice and
+4:57:52 4 hours, 57 minutes, 52 seconds
+get the total now here comes the hard part we're going to display some ASI art based on
+4:58:00 4 hours, 58 minutes
+the result of each die that is rolled so we're going to declare a method to take care of that for
+4:58:07 4 hours, 58 minutes, 7 seconds
+us let's do so outside of the main method we will create a static method that's
+4:58:14 4 hours, 58 minutes, 14 seconds
+not going to return anything the return type is void let's name this method print
+4:58:21 4 hours, 58 minutes, 21 seconds
+D D is the singular version of the word dice we're going to set up one parameter
+4:58:28 4 hours, 58 minutes, 28 seconds
+int roll what did we roll we're going to call this method before we display the
+4:58:34 4 hours, 58 minutes, 34 seconds
+output of you rolled whatever the RO is we will call the method of printing die and pass in our
+4:58:43 4 hours, 58 minutes, 43 seconds
+roll it's going to be a number between 1 and six let's head back to our print die method within the print die method we're
+4:58:53 4 hours, 58 minutes, 53 seconds
+going to create some asky art the asky art is going to be made of strings let's create a string of dice one equals now
+4:59:01 4 hours, 59 minutes, 1 second
+instead of a standard string that takes up one line we're going to create a multi-line string we need a triple set
+4:59:09 4 hours, 59 minutes, 9 seconds
+of double quotes anything between these two lines is a multi-line string it's within here that
+4:59:17 4 hours, 59 minutes, 17 seconds
+we're going to create some dice some asy art of dice so this will be an art lesson today let's start with seven
+4:59:26 4 hours, 59 minutes, 26 seconds
+dashes on the next line we'll create a vertical bar and on the other side we need a vertical bar
+4:59:33 4 hours, 59 minutes, 33 seconds
+too I'm going to shift these dashes over by one same thing with the vertical bar we need a another set of vertical
+4:59:41 4 hours, 59 minutes, 41 seconds
+bars another set and then we can copy our dashes again so we should have a shape like
+4:59:50 4 hours, 59 minutes, 50 seconds
+this right in the middle we're going to add a bullet point the easiest way to do this is to pull up the charm map
+4:59:57 4 hours, 59 minutes, 57 seconds
+application so if you hold windows and type R you can look up charm map hit
+5:00:05 5 hours, 5 seconds
+enter if you scroll all the way down to the bottom and up a little bit
+5:00:13 5 hours, 13 seconds
+it there should be a bullet point let's select it copy it close character
+5:00:21 5 hours, 21 seconds
+map and paste that bullet point or otherwise you can find it from someplace else online let's print it just
+5:00:29 5 hours, 29 seconds
+once I'm just going to print dice one let's do a test run I'm just going
+5:00:36 5 hours, 36 seconds
+to roll one dice and this isn't going to be accurate right away but we do have an asky art of a one-sided
+5:00:46 5 hours, 46 seconds
+dice then we need dice two really we can copy everything for dice one paste it
+5:00:53 5 hours, 53 seconds
+change dice one to dice two and move this bullet point around so this is Dice two then we need
+5:01:02 5 hours, 1 minute, 2 seconds
+dice three dice three there will be a bullet right in the middle
+5:01:11 5 hours, 1 minute, 11 seconds
+dice four we need the bullets in each
+5:01:19 5 hours, 1 minute, 19 seconds
+corner and none in the center that's dice four dice
+5:01:27 5 hours, 1 minute, 27 seconds
+five we'll have a bullet point right in the middle along with the corners and dice
+5:01:38 5 hours, 1 minute, 38 seconds
+six we have two rows of bullet points and those are the dice that we
+5:01:44 5 hours, 1 minute, 44 seconds
+need now we'll create an enhanced switch what are we
+5:01:52 5 hours, 1 minute, 52 seconds
+examining so going back to our parameters right here we're examining the role that we pass in it's going to
+5:01:59 5 hours, 1 minute, 59 seconds
+be a number 1 through six we'll examine our role against matching cases if roll matches a case of one
+5:02:07 5 hours, 2 minutes, 7 seconds
+we'll do this we will print rather than print line dice
+5:02:17 5 hours, 2 minutes, 17 seconds
+one dice one is this image the
+5:02:24 5 hours, 2 minutes, 24 seconds
+string if roll matches a case of two we will print dice
+5:02:30 5 hours, 2 minutes, 30 seconds
+two if Case is three we will print dice three four if Case is four print dice
+5:02:39 5 hours, 2 minutes, 39 seconds
+four five print dice five and
+5:02:46 5 hours, 2 minutes, 46 seconds
+six print dice six and a default case we might as well add
+5:02:54 5 hours, 2 minutes, 54 seconds
+one if there are no matches we'll print the following we'll say invalid
+5:03:02 5 hours, 3 minutes, 2 seconds
+roll all right and that's it let's run this enter the number of dice to roll
+5:03:09 5 hours, 3 minutes, 9 seconds
+I'll roll three Dice and here's what we got I rolled a six a two and a
+5:03:17 5 hours, 3 minutes, 17 seconds
+six all right everybody so that is a dice rolling program that you can make using
+5:03:25 5 hours, 3 minutes, 25 seconds
+Java what is going on everybody in this video I'm going to discuss arrays in Java an array is a collection of values
+5:03:33 5 hours, 3 minutes, 33 seconds
+of the same data type as a beginner it might be helpful to think of an array as a variable that can store more than one
+5:03:40 5 hours, 3 minutes, 40 seconds
+value it's a little more complicated than that but that might be a good way to think of it let me give you a demonstration suppose we have a string
+5:03:48 5 hours, 3 minutes, 48 seconds
+variable a fruit pick a fruit I will pick an apple and then you know we can print our
+5:03:55 5 hours, 3 minutes, 55 seconds
+variable of fruit which would give me an Apple well what if I told you that this
+5:04:03 5 hours, 4 minutes, 3 seconds
+variable can store more than one value if we were to turn it into an array here's how after the data type of our
+5:04:10 5 hours, 4 minutes, 10 seconds
+variable add a set of straight brackets enclose any values within a set of curly braces and there we go we now have an
+5:04:19 5 hours, 4 minutes, 19 seconds
+array we have an array of strings this array can store more than one value but they all have to be the
+5:04:26 5 hours, 4 minutes, 26 seconds
+same data type in this case strings let's add some more fruit let's add an
+5:04:34 5 hours, 4 minutes, 34 seconds
+orange a banana and a coconut the name of your array should be
+5:04:42 5 hours, 4 minutes, 42 seconds
+descriptive of what it contains let's say fruits instead of fruit technically in the English
+5:04:48 5 hours, 4 minutes, 48 seconds
+language fruit would still be plural but by adding an S it's more descriptive that it contains more than one value I know English is a weird language at
+5:04:57 5 hours, 4 minutes, 57 seconds
+times if I was to print my array of fruits here's the result while we get a memory address
+5:05:06 5 hours, 5 minutes, 6 seconds
+arrays fall under the category of a reference data type if we access the name of our array we're given a memory
+5:05:13 5 hours, 5 minutes, 13 seconds
+address each value within an array is known as an element to access an element we have to indicate an index number
+5:05:22 5 hours, 5 minutes, 22 seconds
+after our array name let's add a set of straight brackets and then an index number as is the case with many things
+5:05:29 5 hours, 5 minutes, 29 seconds
+in programming toxis the first of something it usually has an index of zero that applies to arrays as well
+5:05:37 5 hours, 5 minutes, 37 seconds
+print our array of fruits at index of zero that's going to give you the first element of Apple for the next element
+5:05:45 5 hours, 5 minutes, 45 seconds
+that would be an index of one which is orange two would be
+5:05:54 5 hours, 5 minutes, 54 seconds
+banana three coconut if we attempt to access an element that doesn't exist here's what
+5:06:03 5 hours, 6 minutes, 3 seconds
+happens we get an exception an exception is similar to an error we have an array in index out of bounds
+5:06:11 5 hours, 6 minutes, 11 seconds
+exception this error message appears when you try and access an element that doesn't exist within an array there is
+5:06:18 5 hours, 6 minutes, 18 seconds
+no index of four there's only 0 1 2 3 in this case now you do have the capability
+5:06:26 5 hours, 6 minutes, 26 seconds
+to change the value at a given index to do so we will take the name of our array in this case fruits specify an
+5:06:34 5 hours, 6 minutes, 34 seconds
+index using the set of straight brackets at index of zero let's set that equal to a string of pineapple rather than
+5:06:43 5 hours, 6 minutes, 43 seconds
+Apple and then we'll print it print our array of fruits at index of zero that would give us a pineapple
+5:06:52 5 hours, 6 minutes, 52 seconds
+rather than an apple by specifying the index you can change any element so fruits at index of one is now a
+5:07:03 5 hours, 7 minutes, 3 seconds
+pineapple if at any time you need the length of an array there's a built-in property for that let's say say we have an integer variable of
+5:07:12 5 hours, 7 minutes, 12 seconds
+num of fruits meaning number of fruits to access the length of an array
+5:07:19 5 hours, 7 minutes, 19 seconds
+take our array in this case fruits use dot which is the axis modifier then type
+5:07:28 5 hours, 7 minutes, 28 seconds
+length give me the length of my array of fruits how many elements are within this array take a
+5:07:37 5 hours, 7 minutes, 37 seconds
+guess four there's four elements within this array 1 2 3 4 if you ever need the length of
+5:07:46 5 hours, 7 minutes, 46 seconds
+an array use the length property of your array this will return an integer which you can assign to a variable if you
+5:07:53 5 hours, 7 minutes, 53 seconds
+would like if you need to print all of the elements of an array you could use a for Loop here's
+5:08:01 5 hours, 8 minutes, 1 second
+how well declare for Loop we'll create an index of I equal to zero
+5:08:09 5 hours, 8 minutes, 9 seconds
+how many times do we want to iterate this Loop let's continue as long as I is less than we need to determine the
+5:08:17 5 hours, 8 minutes, 17 seconds
+length of this array well we can use that length property that we discussed take our array of fruits access the
+5:08:24 5 hours, 8 minutes, 24 seconds
+length property this should return the number four continue as long as I is less than four then we will increment
+5:08:32 5 hours, 8 minutes, 32 seconds
+our index of I so our for Loop in this case is going to iterate four times let's perform a test run if I was to
+5:08:41 5 hours, 8 minutes, 41 seconds
+print my array of fruits at index of zero this is what happens exactly it's going to print fruits at
+5:08:50 5 hours, 8 minutes, 50 seconds
+index zero four times apple apple apple apple what I need is to print each
+5:08:58 5 hours, 8 minutes, 58 seconds
+element of this array we could use our index V for that so replace zero with i i is going to change during each
+5:09:06 5 hours, 9 minutes, 6 seconds
+iteration of this loop we're increasing it by one after we complete each cycle of the loop so here's what happens now
+5:09:15 5 hours, 9 minutes, 15 seconds
+we get all the elements of our array Apple orange banana coconut this index of I is going to
+5:09:23 5 hours, 9 minutes, 23 seconds
+increase after each cycle of this Loop each iteration alternatively rather than printing each fruit on a new line we
+5:09:31 5 hours, 9 minutes, 31 seconds
+could use print then after printing each element we could add a space character that would print each element
+5:09:40 5 hours, 9 minutes, 40 seconds
+and separate each with a space if you so choose there's something called an enhanced for Loop an enhanced for Loop
+5:09:49 5 hours, 9 minutes, 49 seconds
+will cycle once for each element within an array we'll start with a normal for Loop to create an enhanced for Loop within
+5:09:57 5 hours, 9 minutes, 57 seconds
+the set of parentheses we will list the data type of each element of the array in this case
+5:10:05 5 hours, 10 minutes, 5 seconds
+strings now we need a unique identifier for each element within the Sur array since we're working with an array of
+5:10:12 5 hours, 10 minutes, 12 seconds
+fruits let's say fruit singular then we need a colon then our array that we're iterating through in
+5:10:20 5 hours, 10 minutes, 20 seconds
+this case fruits basically we're saying for every fruit in my array of fruits do
+5:10:29 5 hours, 10 minutes, 29 seconds
+this let's print each fruit fruit will be the current element we're cycling
+5:10:36 5 hours, 10 minutes, 36 seconds
+through here's what happens we print each fruit we have all the elements of our array of fruits Apple orange banana
+5:10:46 5 hours, 10 minutes, 46 seconds
+coconut this is an enhanced for Loop also known as a 4 each Loop it simplifies iterating through a
+5:10:53 5 hours, 10 minutes, 53 seconds
+collection such as an array if you need to sort your array there's a built-in sort method we're
+5:11:00 5 hours, 11 minutes
+going to access the class of arrays you may need to import it import class
+5:11:07 5 hours, 11 minutes, 7 seconds
+arrays so make sure you have this import import java.util.arrays this class provides a lot of
+5:11:16 5 hours, 11 minutes, 16 seconds
+functionality when working with arrays there's a built-in sort method we're going to pass in our array
+5:11:24 5 hours, 11 minutes, 24 seconds
+of fruits to this method we'll end up sorting the elements in this array alphabetically originally the order of
+5:11:34 5 hours, 11 minutes, 34 seconds
+our elements was Apple orange banana coconut but after sorting there they're now apple banana coconut orange they're
+5:11:42 5 hours, 11 minutes, 42 seconds
+all arranged alphabetically or if these were numbers they would be arranged in ascending order there's also a fill method with
+5:11:51 5 hours, 11 minutes, 51 seconds
+arrays we can fill all the elements of an array with a given value again we're going to access the arrays class called
+5:11:59 5 hours, 11 minutes, 59 seconds
+The Fill method pass in our array comma the value we're going to fill the array with let's
+5:12:07 5 hours, 12 minutes, 7 seconds
+fill our array with pineapples then we'll use a for each Loop to print each
+5:12:14 5 hours, 12 minutes, 14 seconds
+element and here's our new array we have filled our array of fruits with the value of
+5:12:21 5 hours, 12 minutes, 21 seconds
+pineapple all right everybody that's an introduction to arrays think of an array as a variable but it can store more than one value and well everybody those are
+5:12:31 5 hours, 12 minutes, 31 seconds
+arrays in Java what is going on everybody in this video I'm going to show you how we can
+5:12:38 5 hours, 12 minutes, 38 seconds
+enter in user input into an array so let's get started before assigning values into an array our compiler needs to know the size of the array beforehand
+5:12:47 5 hours, 12 minutes, 47 seconds
+we have to first allocate space for the array let's begin by creating an array of strings we'll create an array of strings we'll enter in some food I will
+5:12:56 5 hours, 12 minutes, 56 seconds
+name this array Foods equals add a set of krly braces and then within this array you can enter in some values pick
+5:13:03 5 hours, 13 minutes, 3 seconds
+some food that you like I'll enter in a pizza taco and and
+5:13:12 5 hours, 13 minutes, 12 seconds
+hamburger the size of this array is three elements once you set a size for an array normally you can't change it this
+5:13:20 5 hours, 13 minutes, 20 seconds
+array will have three elements however all the elements are already filled with values to create an empty array you
+5:13:27 5 hours, 13 minutes, 27 seconds
+don't want a set of empty curly braces then we're creating an array of no elements just to demonstrate that I'm going to print the length of our array
+5:13:36 5 hours, 13 minutes, 36 seconds
+Foods foods. length this is going to give us
+5:13:43 5 hours, 13 minutes, 43 seconds
+zero and we can't assign any values even if I attempt to let's say Foods at index
+5:13:50 5 hours, 13 minutes, 50 seconds
+zero equals a string of pizza here's what happens well we have an exception and
+5:14:00 5 hours, 14 minutes
+array index out of bounds exception before assigning values we'll want to be sure that we're setting a size of the
+5:14:07 5 hours, 14 minutes, 7 seconds
+array even if it is empty instead of assigning a set of values we'll create an empty array we'll set our array equal
+5:14:15 5 hours, 14 minutes, 15 seconds
+to use the new keyword type the data type of our array straight brackets and within the straight brackets we'll set a
+5:14:24 5 hours, 14 minutes, 24 seconds
+size a number so let's say three we're creating an empty array that has space
+5:14:30 5 hours, 14 minutes, 30 seconds
+for three elements three values let's try this again the length of our array is three
+5:14:39 5 hours, 14 minutes, 39 seconds
+and we can assign the values so let's say Foods at index one equals a
+5:14:46 5 hours, 14 minutes, 46 seconds
+taco Foods at index 2 will be a
+5:14:55 5 hours, 14 minutes, 55 seconds
+hamburger I'll print all the foods in this array we can use an enhanced for Loop list the data type we're working
+5:15:02 5 hours, 15 minutes, 2 seconds
+with an array of strings for every food in our array of foods we will print each
+5:15:11 5 hours, 15 minutes, 11 seconds
+food that would give us pizza Taco hamburger we have declared and
+5:15:18 5 hours, 15 minutes, 18 seconds
+instantiated an empty array and filled in the values later let's modify this program so a user can type in some values let's
+5:15:27 5 hours, 15 minutes, 27 seconds
+delete these lines if we're accepting user input we will need a scanner we'll declare that and instantiate it scanner
+5:15:34 5 hours, 15 minutes, 34 seconds
+scanner equals new scanner within the set of parentheses typ system.in import the class for
+5:15:42 5 hours, 15 minutes, 42 seconds
+scanner import java.util.scanner and close the scanner when you're done because I sometimes forget to do that still scanner.
+5:15:52 5 hours, 15 minutes, 52 seconds
+close so we have an empty array of three elements we'll create a for Loop to
+5:15:59 5 hours, 15 minutes, 59 seconds
+iterate over the length of our array of foods so four we'll create a counter of
+5:16:06 5 hours, 16 minutes, 6 seconds
+in I equals z will continue as long as I is less than our array of foods length property
+5:16:15 5 hours, 16 minutes, 15 seconds
+which returns three because there's three elements then increment I by One during each iteration of this Loop let's
+5:16:23 5 hours, 16 minutes, 23 seconds
+do the following we'll output the following prompt enter a food I'll use print instead of print
+5:16:32 5 hours, 16 minutes, 32 seconds
+line because I prefer that we'll assign our array of foods at index of I I changes during each cycle
+5:16:42 5 hours, 16 minutes, 42 seconds
+at first it's zero then 1 then two then three we'll set that equal to use our
+5:16:49 5 hours, 16 minutes, 49 seconds
+scanner to accept some user input call the next line method okay let's perform a test run
+5:16:57 5 hours, 16 minutes, 57 seconds
+currently we have an array with three empty elements we'll cycle this loop three times because the length property
+5:17:04 5 hours, 17 minutes, 4 seconds
+of the array is three then print all the elements when we're done here's what happens exactly enter a food
+5:17:13 5 hours, 17 minutes, 13 seconds
+pizza Taco hamburger here are the elements within our array of food pizza Taco
+5:17:22 5 hours, 17 minutes, 22 seconds
+hamburger let's say that we change the size of the array let's say for this
+5:17:29 5 hours, 17 minutes, 29 seconds
+time Pizza Taco hamburger hot
+5:17:36 5 hours, 17 minutes, 36 seconds
+dog Pizza Taco hamburger hot dog we're going to make a few changes instead of setting a static size for the
+5:17:43 5 hours, 17 minutes, 43 seconds
+array we'll have a user enter in the number of food they would like to enter we'll replace this number with a variable to determine the size what
+5:17:52 5 hours, 17 minutes, 52 seconds
+we'll do now is we will declare our string array of foods but instantiate it later once we know the
+5:18:00 5 hours, 18 minutes
+size we'll output what number of food do you want
+5:18:10 5 hours, 18 minutes, 10 seconds
+I'll use print instead of print line I'll also create an integer variable of size I'll declare it but not
+5:18:17 5 hours, 18 minutes, 17 seconds
+yet fill it in until after our prompt let's set the size the size of the array that is equal to use our
+5:18:26 5 hours, 18 minutes, 26 seconds
+scanner and call the next int method we are accepting an integer once we know the size of the
+5:18:34 5 hours, 18 minutes, 34 seconds
+array we can finish instantiating it let's take our array of foods that we've declared but have not yet assigned and
+5:18:43 5 hours, 18 minutes, 43 seconds
+we'll assign it our array is made up of strings we'll use the new keyword new list the data type
+5:18:51 5 hours, 18 minutes, 51 seconds
+string it's an array so we need a set of straight brackets and instead of a number we're going to use our variable the user is
+5:18:59 5 hours, 18 minutes, 59 seconds
+going to determine what this number is going to be there's one final step this is specific for scanners since we're
+5:19:06 5 hours, 19 minutes, 6 seconds
+accepting an integer and then we're accepting a string for our user input we have to clear the input buffer next integer isn't going to pick up the new
+5:19:15 5 hours, 19 minutes, 15 seconds
+line character at the end so just to demonstrate that let's say we want one food
+5:19:23 5 hours, 19 minutes, 23 seconds
+item there's still that new line character within the input buffer we didn't get the opportunity to enter in a food we are just going to clear our
+5:19:30 5 hours, 19 minutes, 30 seconds
+scanner by using scanner. next line and that will clear it up all right let's try this again
+5:19:40 5 hours, 19 minutes, 40 seconds
+what number of food do you want I want five five food items enter in some food pizza
+5:19:49 5 hours, 19 minutes, 49 seconds
+Taco hamburger hot dog and Sushi and here's our food pizza Taco
+5:19:58 5 hours, 19 minutes, 58 seconds
+hamburger hot dog sushi in summary to enter values into an array you'll likely want to create an
+5:20:05 5 hours, 20 minutes, 5 seconds
+empty array but you need to know the size of the array first if the size of the array is predetermined you can always set that to be a number otherwise if one way or
+5:20:14 5 hours, 20 minutes, 14 seconds
+another if a user is going to determine the size of the array you'll have to get that from the user and you can set the size of the array to whatever the user
+5:20:21 5 hours, 20 minutes, 21 seconds
+types in just be sure to do that before filling in the values if you would like a copy of this code you can look in the comment section down below be sure that
+5:20:29 5 hours, 20 minutes, 29 seconds
+you're looking in the playlist and well everybody that is how to enter and user data into an array using
+5:20:37 5 hours, 20 minutes, 37 seconds
+Java what is is going on everybody in this video I'm going to show you how we can search through the elements of an array let's begin we'll need an array to
+5:20:45 5 hours, 20 minutes, 45 seconds
+work with to keep the simple let's create an array of integers we'll create an array of integers named numbers
+5:20:52 5 hours, 20 minutes, 52 seconds
+equals make up some numbers to put within this array I'll just type whatever comes to
+5:21:01 5 hours, 21 minutes, 1 second
+mind good enough we'll also need a Target what number are we searching for let's say I'm searching for the number
+5:21:08 5 hours, 21 minutes, 8 seconds
+number two I will create an integer variable of Target set it equal to
+5:21:15 5 hours, 21 minutes, 15 seconds
+two in data structures and algorithms we'll be performing what is known as a linear search we're going to use a for Loop to iterate through these elements
+5:21:24 5 hours, 21 minutes, 24 seconds
+and then see if there's a match we'll create a for Loop create an index of I I will equal zero we'll continue as long
+5:21:33 5 hours, 21 minutes, 33 seconds
+as I is less than R array of numbers access the length property that will
+5:21:40 5 hours, 21 minutes, 40 seconds
+return the length as a number then increment I by One I will check using an if
+5:21:47 5 hours, 21 minutes, 47 seconds
+statement if our Target is equal to our array at the current index
+5:21:56 5 hours, 21 minutes, 56 seconds
+of I at first I will be zero and then we increment it during each cycle of this Loop if our Target equals the current
+5:22:06 5 hours, 22 minutes, 6 seconds
+element let's print the following let's say element found at
+5:22:15 5 hours, 22 minutes, 15 seconds
+index plus I that's our index in case we find the target for example two we don't need to search
+5:22:24 5 hours, 22 minutes, 24 seconds
+through the rest of the array we could add what is known as a break statement to break out of the loop if we find the target break out of
+5:22:32 5 hours, 22 minutes, 32 seconds
+the loop let's perform a test run we're searching for the number two and we'll be given the index element
+5:22:41 5 hours, 22 minutes, 41 seconds
+found at index 2 let's look for one one is found at index
+5:22:50 5 hours, 22 minutes, 50 seconds
+zero four which is near the end is found at index 6 0 1 2 3 4 5 6 what if we
+5:23:01 5 hours, 23 minutes, 1 second
+don't find our Target I don't have the number seven in here well there's no output
+5:23:10 5 hours, 23 minutes, 10 seconds
+since this if statement is never true once we reach the end of the array we don't do anything so let's add a Boolean
+5:23:19 5 hours, 23 minutes, 19 seconds
+variable of is found and set it to be
+5:23:25 5 hours, 23 minutes, 25 seconds
+false we'll check if is found is false if that is the case we'll output a message that element wasn't found in the
+5:23:33 5 hours, 23 minutes, 33 seconds
+array so if we do find our Target we'll take our Boolean variable of is found and set it to be true we have found our
+5:23:43 5 hours, 23 minutes, 43 seconds
+Target that we're looking for if we exit the for Loop and never find our Target we can check
+5:23:52 5 hours, 23 minutes, 52 seconds
+that we'll say is found but we'll use the not logical
+5:23:58 5 hours, 23 minutes, 58 seconds
+operator the not logical operator gives you the inverse of a Boolean value or variable if is found is false if
+5:24:08 5 hours, 24 minutes, 8 seconds
+something isn't true if we don't find the target then we execute this if statement where we will print the
+5:24:15 5 hours, 24 minutes, 15 seconds
+following let's say something such as element not found in the
+5:24:24 5 hours, 24 minutes, 24 seconds
+array all right we are looking for the number seven which does not exist within this array that would give us this message
+5:24:33 5 hours, 24 minutes, 33 seconds
+element not found in the array because is found was false we could never find it within this for
+5:24:41 5 hours, 24 minutes, 41 seconds
+Loop so we're checking if is found is not true what if we have an array of strings
+5:24:49 5 hours, 24 minutes, 49 seconds
+and we're searching for an element well instead of using the comparison operator we have to use the equals method of strings because strings are a reference
+5:24:57 5 hours, 24 minutes, 57 seconds
+data type so this time let's say we have an array of strings named fruits think of some
+5:25:05 5 hours, 25 minutes, 5 seconds
+fruit I will pick an apple an orange and a
+5:25:13 5 hours, 25 minutes, 13 seconds
+banana the target this time will be a string let's say I'm searching for an
+5:25:24 5 hours, 25 minutes, 24 seconds
+orange will iterate through our array of fruits the condition for the for Loop will be I is less than the length of our
+5:25:32 5 hours, 25 minutes, 32 seconds
+array of fruits now we can't necessarily say is our Target equal to fruits at index of
+5:25:41 5 hours, 25 minutes, 41 seconds
+I we're comparing two strings and since strings are reference data types we would end up comparing the memory
+5:25:48 5 hours, 25 minutes, 48 seconds
+addresses of two different strings we would be saying are these two memory addresses the same are they at the same
+5:25:55 5 hours, 25 minutes, 55 seconds
+location which isn't the case if we're comparing the value of strings we'll use the equals
+5:26:01 5 hours, 26 minutes, 1 second
+method let's take fruits at index of I call the built-in equals method of strings and pass in our Target as an
+5:26:11 5 hours, 26 minutes, 11 seconds
+argument now this should work we are searching for an orange element found at index one what
+5:26:21 5 hours, 26 minutes, 21 seconds
+about a pineapple element not found in the array
+5:26:30 5 hours, 26 minutes, 30 seconds
+there was no pineapple let's modify this program slightly we'll accept some user input but we'll need a scanner
+5:26:44 5 hours, 26 minutes, 44 seconds
+import the class java.util.scanner and close your scanner when you're done with it scanner.
+5:26:53 5 hours, 26 minutes, 53 seconds
+close instead of assigning our Target we'll accept user input we'll use our scanner use the next line
+5:27:02 5 hours, 27 minutes, 2 seconds
+method and we will also need a prompt let's print the following
+5:27:09 5 hours, 27 minutes, 9 seconds
+enter a fruit to search for just to make this a little more
+5:27:18 5 hours, 27 minutes, 18 seconds
+clean I'm going to move this variable of is found to the top here I'll declare our string of Target
+5:27:26 5 hours, 27 minutes, 26 seconds
+but not assign it and then after the prompt I'll assign our name of Target this is just how I like to arrange
+5:27:33 5 hours, 27 minutes, 33 seconds
+things but it all works the same now we can search for an element after acting user input and I will convert this to be
+5:27:40 5 hours, 27 minutes, 40 seconds
+a print statement instead of print line all right let's search for some fruit is
+5:27:46 5 hours, 27 minutes, 46 seconds
+there a coconut element not found in the array perhaps a banana element found at
+5:27:56 5 hours, 27 minutes, 56 seconds
+index 2 0 1 2 all right everybody so that's how to search through an array
+5:28:03 5 hours, 28 minutes, 3 seconds
+using Java hello everybody in this video I'm going to explain variable arguments also
+5:28:11 5 hours, 28 minutes, 11 seconds
+known as VAR args in Java variable arguments allow a method to accept a varying number of arguments they make
+5:28:20 5 hours, 28 minutes, 20 seconds
+methods more flexible and there's no need for overloaded methods overloaded methods are methods that share the same
+5:28:27 5 hours, 28 minutes, 27 seconds
+name but have different parameters in this example I have several add methods they each have different amounts of parameters if I was
+5:28:36 5 hours, 28 minutes, 36 seconds
+to add a few numbers together for example I'll add 1 + 2 + 3 well then I
+5:28:43 5 hours, 28 minutes, 43 seconds
+would use this method what if I told you instead of creating several different methods that basically do the same thing we could instead create one method that
+5:28:51 5 hours, 28 minutes, 51 seconds
+accepts any number of arguments we'll only need to declare one method we will create one add method
+5:29:00 5 hours, 29 minutes
+that accepts a varying amount of arguments so let's create a method the return type let's say is an integer
+5:29:08 5 hours, 29 minutes, 8 seconds
+we'll create a method of add our method will have one parameter what is the data type of the values we're sending this
+5:29:15 5 hours, 29 minutes, 15 seconds
+method in this case integers we're going to follow the data type with three dots and
+5:29:23 5 hours, 29 minutes, 23 seconds
+ellipses how this works is that the Java compiler is going to pack the arguments we send it into an array we'll need a
+5:29:31 5 hours, 29 minutes, 31 seconds
+name for this array let's say numbers just to demonstrate this temporarily I'm going to print my array
+5:29:40 5 hours, 29 minutes, 40 seconds
+of numbers when we call the add method we can send any number of arguments for
+5:29:48 5 hours, 29 minutes, 48 seconds
+example 1 2 3 4 and they're going to be packed into an array within this method we're now
+5:29:56 5 hours, 29 minutes, 56 seconds
+working with an array let's perform a test run let's return void
+5:30:03 5 hours, 30 minutes, 3 seconds
+actually so we're given a memory address of this array now let's actually add these numbers
+5:30:10 5 hours, 30 minutes, 10 seconds
+together we need to cycle through the elements of this array we can use a for Loop or an enhanced for Loop for that so
+5:30:17 5 hours, 30 minutes, 17 seconds
+let's return an integer in this case let's declare a local variable of
+5:30:24 5 hours, 30 minutes, 24 seconds
+sum I will set that to be zero let's create an enhanced for
+5:30:32 5 hours, 30 minutes, 32 seconds
+Loop the data type will be int for every number in my array of numbers
+5:30:39 5 hours, 30 minutes, 39 seconds
+let's take our sum and add the current number sum plus equals number then at the end we will return
+5:30:48 5 hours, 30 minutes, 48 seconds
+our sum and there we go and then we need to print the output I'm going to cut this
+5:30:56 5 hours, 30 minutes, 56 seconds
+and paste it within a print statement let's perform a test run the sum when we add these four numbers
+5:31:04 5 hours, 31 minutes, 4 seconds
+together the sum is 10 and we can pass in any number of arguments the result is now
+5:31:14 5 hours, 31 minutes, 14 seconds
+21 basically the Java compiler is packing all of these arguments into an array when we send them to a method then
+5:31:22 5 hours, 31 minutes, 22 seconds
+within the context of this method we would just need to work with this array one way or another but it's a lot easier than having several different overloaded
+5:31:30 5 hours, 31 minutes, 30 seconds
+methods okay this time let's create a new method we'll create a method of average average will find the average
+5:31:37 5 hours, 31 minutes, 37 seconds
+value of whatever we send it so we will create a static method that's going to return a double this time the method
+5:31:45 5 hours, 31 minutes, 45 seconds
+name will be average what is the data type of what we're sending let's say double then we
+5:31:52 5 hours, 31 minutes, 52 seconds
+need the ellipses the three dots then a unique name for this array let's say numbers so to find the average we can
+5:32:01 5 hours, 32 minutes, 1 second
+perform the following code let's say we have double sum
+5:32:09 5 hours, 32 minutes, 9 seconds
+I will set that equal to zero we will create an enhanced for Loop the data type is double for every number
+5:32:19 5 hours, 32 minutes, 19 seconds
+in my array of numbers do the following we will take our sum and add the current number sum plus
+5:32:27 5 hours, 32 minutes, 27 seconds
+equals number then at the end we will return sum divided by now since we're working
+5:32:36 5 hours, 32 minutes, 36 seconds
+with an array there is a built-in length property numbers. length to find the average you take all the numbers add
+5:32:45 5 hours, 32 minutes, 45 seconds
+them together then divide it by the amount of numbers that you have let's perform a test
+5:32:52 5 hours, 32 minutes, 52 seconds
+run I'm going to print call the average method let's find the average of a few
+5:33:00 5 hours, 33 minutes
+numbers I don't know what that's going to be so the average of these four numbers is 2.5
+5:33:09 5 hours, 33 minutes, 9 seconds
+I can pass in any number of arguments so the average of these numbers is four
+5:33:18 5 hours, 33 minutes, 18 seconds
+4.0 you can even pass in no arguments if you so choose but with this method that we have
+5:33:25 5 hours, 33 minutes, 25 seconds
+created here's what happens we're actually dividing by zero because the length of our array is zero
+5:33:33 5 hours, 33 minutes, 33 seconds
+there's no elements that we're passing in in this specific example let's create an if statement if our array of
+5:33:42 5 hours, 33 minutes, 42 seconds
+numbers if the length of it we can access the length property is equal to zero let's return zero instead of
+5:33:52 5 hours, 33 minutes, 52 seconds
+receiving noted number we're calling the average method but passing in no arguments this time that would give us zero because the
+5:34:02 5 hours, 34 minutes, 2 seconds
+length of our array is zero because we're passing in no arguments I already everybody so those are variable
+5:34:09 5 hours, 34 minutes, 9 seconds
+arguments they allow a method to accept a varying number of arguments it makes methods more flexible and there's no
+5:34:16 5 hours, 34 minutes, 16 seconds
+need for overloaded methods the Java compiler will pack the arguments into an array when setting up the parameters of
+5:34:23 5 hours, 34 minutes, 23 seconds
+a method declare the data type and add a suffix of an ellipsis Three Dots and well everybody those are variable
+5:34:32 5 hours, 34 minutes, 32 seconds
+arguments in Java hey there everybody so today I'm going to explain 2D arrays in Java also
+5:34:41 5 hours, 34 minutes, 41 seconds
+known as multi-dimensional arrays a two-dimensional array is an array where each element is an array it's useful for
+5:34:49 5 hours, 34 minutes, 49 seconds
+storing a matrix of data let me give you an example let's say we have some basic one-dimensional arrays I will create a
+5:34:57 5 hours, 34 minutes, 57 seconds
+string array of fruits think of some fruit I'll add an
+5:35:04 5 hours, 35 minutes, 4 seconds
+apple an orange and a banana then I'll create another separate
+5:35:11 5 hours, 35 minutes, 11 seconds
+array let's create a string array of vegetables think of some vegetables I will add a
+5:35:20 5 hours, 35 minutes, 20 seconds
+potato an onion and a carrot let's create one more I will
+5:35:27 5 hours, 35 minutes, 27 seconds
+create a string array of meats I will add
+5:35:35 5 hours, 35 minutes, 35 seconds
+chicken pork beef let's add one more and
+5:35:44 5 hours, 35 minutes, 44 seconds
+fish these three arrays are all separate one-dimensional arrays well what if I told you we can make an array made of
+5:35:52 5 hours, 35 minutes, 52 seconds
+arrays where each element is an array here's how we're going to combine all these arrays together into a grid or
+5:36:01 5 hours, 36 minutes, 1 second
+Matrix I will create a two-dimensional array of strings we will need two sets of straight brackets I will name this
+5:36:09 5 hours, 36 minutes, 9 seconds
+two-dimensional array groceries and then we need our curly
+5:36:17 5 hours, 36 minutes, 17 seconds
+braces this two-dimensional array each element within this two-dimensional array is going to be an array we have
+5:36:26 5 hours, 36 minutes, 26 seconds
+fruits vegetables and meats let's attempt to display these
+5:36:33 5 hours, 36 minutes, 33 seconds
+elements you can use a for Loop or an enhanced for Loop within this for Loop what is the data
+5:36:40 5 hours, 36 minutes, 40 seconds
+type of each element well each element is a string array so we need to list the data type
+5:36:47 5 hours, 36 minutes, 47 seconds
+as a string array let's give a nickname of each element as Foods in our two-dimensional array of
+5:36:57 5 hours, 36 minutes, 57 seconds
+groceries let me show you what happens if I print each element within our two-dimensional array of groceries I will print each array of
+5:37:05 5 hours, 37 minutes, 5 seconds
+foods here's what we got well we get a bunch of memory addresses because arrays are a reference data type
+5:37:13 5 hours, 37 minutes, 13 seconds
+we're referring to some place in memory we'll need to use a nested
+5:37:21 5 hours, 37 minutes, 21 seconds
+Loop an enhanced for Loop would be good for this with each of these arrays what is the data type of each element within
+5:37:28 5 hours, 37 minutes, 28 seconds
+each well we're working with strings so the data type is going to be string let's give a nickname of each element as
+5:37:36 5 hours, 37 minutes, 36 seconds
+food in our array of foods during each cycle of this Loop
+5:37:43 5 hours, 37 minutes, 43 seconds
+let's print not print line each food and then I'll add a
+5:37:50 5 hours, 37 minutes, 50 seconds
+space here's what we got currently we have our first array and
+5:37:58 5 hours, 37 minutes, 58 seconds
+our second then third after finishing each array I'm going to add a new line character we can use a print line
+5:38:06 5 hours, 38 minutes, 6 seconds
+statement for that here's what we got now what we have is a
+5:38:13 5 hours, 38 minutes, 13 seconds
+grid or Matrix of data you can say that there's columns and
+5:38:22 5 hours, 38 minutes, 22 seconds
+rows each row is a separate array now when initializing an array you
+5:38:30 5 hours, 38 minutes, 30 seconds
+don't necessarily needed names let's remove fruits copy the elements of this array
+5:38:37 5 hours, 38 minutes, 37 seconds
+including the curly braces and paste them within this two-dimensional array just for readability I'm going to place each row on a new
+5:38:46 5 hours, 38 minutes, 46 seconds
+line let's replace vegetables with the elements including the curly
+5:38:53 5 hours, 38 minutes, 53 seconds
+braces same thing applies with meats and we can delete all
+5:39:00 5 hours, 39 minutes
+this this would work the same groceries is a matrix of data a gri
+5:39:08 5 hours, 39 minutes, 8 seconds
+let's print this and that works the same if you ever need to access or
+5:39:15 5 hours, 39 minutes, 15 seconds
+change an element you'll need to use two indices for example let's replace apple with the pineapple we will take our
+5:39:24 5 hours, 39 minutes, 24 seconds
+two-dimensional array of groceries and list two indices the first index applies to the row the second index applies to the
+5:39:33 5 hours, 39 minutes, 33 seconds
+column so we're saying at row 0 column 0 we can change it or access it let's
+5:39:42 5 hours, 39 minutes, 42 seconds
+say that row 0 column 0 is now a pineapple rather than an apple then we
+5:39:48 5 hours, 39 minutes, 48 seconds
+have pineapple orange banana let's replace our potato with something
+5:39:54 5 hours, 39 minutes, 54 seconds
+else that would be Row one column 0 Row one column 0 is now
+5:40:05 5 hours, 40 minutes, 5 seconds
+celery celery onion carrot let's replace the carrot with
+5:40:12 5 hours, 40 minutes, 12 seconds
+celery then that would be Row one column 2 0 1 2 Row one column
+5:40:22 5 hours, 40 minutes, 22 seconds
+2 potato onion celery let's replace pork with eggs that
+5:40:29 5 hours, 40 minutes, 29 seconds
+would be row two 0 1 2 column 1 0 1
+5:40:37 5 hours, 40 minutes, 37 seconds
+row two column one is now eggs we have chicken eggs beef
+5:40:47 5 hours, 40 minutes, 47 seconds
+fish to access or modify an element within a 2d array you need to list two indices the first for the row the second
+5:40:54 5 hours, 40 minutes, 54 seconds
+for the column okay now we're going to create a mini project we'll create a two-dimensional array that resembles a telephone number
+5:41:03 5 hours, 41 minutes, 3 seconds
+pad this two-dimensional array will be made up of characters the data type is Char and then we have two sets of straight brackets let's name
+5:41:12 5 hours, 41 minutes, 12 seconds
+this two-dimensional array telephone equals we have an array of arrays we'll have four
+5:41:24 5 hours, 41 minutes, 24 seconds
+rows and just for readability I'm going to place each of these on a new line just so it resembles a grid or
+5:41:33 5 hours, 41 minutes, 33 seconds
+Matrix for the first row we'll have one two three and these are all characters
+5:41:42 5 hours, 41 minutes, 42 seconds
+not strings we're using single quotes not double quotes for the second row we'll have four
+5:41:50 5 hours, 41 minutes, 50 seconds
+5 6 the third row will be 7
+5:41:58 5 hours, 41 minutes, 58 seconds
+8 9 now for the last row we'll have an asterisk
+5:42:05 5 hours, 42 minutes, 5 seconds
+character Zero and pound or hashtag as I like to call
+5:42:13 5 hours, 42 minutes, 13 seconds
+it so here's our Matrix our grid of characters we have an array of arrays it
+5:42:20 5 hours, 42 minutes, 20 seconds
+has rows and columns now let's display our data we'll
+5:42:27 5 hours, 42 minutes, 27 seconds
+need nested Loops for this our outer for Loop is going to be in charge of the rows what is the data
+5:42:36 5 hours, 42 minutes, 36 seconds
+type of each element within this two-dimensional array well each row is an array of characters that's going to
+5:42:43 5 hours, 42 minutes, 43 seconds
+be the data type of the outer for Loop we have an array of characters let's give a nickname of each inner array as a
+5:42:51 5 hours, 42 minutes, 51 seconds
+row in our two-dimensional array of telephone for every Row in our telephone
+5:42:59 5 hours, 42 minutes, 59 seconds
+do this then we'll need a nested Loop what is the data type of each element within each array their
+5:43:07 5 hours, 43 minutes, 7 seconds
+characters the data type will be Char let's say for every number
+5:43:15 5 hours, 43 minutes, 15 seconds
+in each array of row we'll print the following we'll use print rather than print
+5:43:23 5 hours, 43 minutes, 23 seconds
+line we'll print each number and I'll add a space character let's do a test
+5:43:32 5 hours, 43 minutes, 32 seconds
+run after each row I'm going to print a new line character so when we escape the inner four Loop
+5:43:40 5 hours, 43 minutes, 40 seconds
+I'll add an empty print line statement and here's our telephone we have
+5:43:47 5 hours, 43 minutes, 47 seconds
+rows and columns it's a two-dimensional array of characters so those are two-dimensional
+5:43:56 5 hours, 43 minutes, 56 seconds
+arrays they're an array where each element is an array it's useful for storing a matrix of data we probably
+5:44:03 5 hours, 44 minutes, 3 seconds
+won't be using 2D arrays too often but you should still be familiar with them and well everybody those are two dimensional arrays in
+5:44:13 5 hours, 44 minutes, 13 seconds
+Java hello everybody in this video we're going to create an interactive quiz game using Java for this project you'll create an array of your own custom
+5:44:21 5 hours, 44 minutes, 21 seconds
+questions and a two-dimensional array of all the different options for answers that we have you'll type in a number 1 through four depending on your guess
+5:44:28 5 hours, 44 minutes, 28 seconds
+after all of the questions are answered we will display a final score depending on the amount of correct guesses that
+5:44:35 5 hours, 44 minutes, 35 seconds
+you have so let's begin as a beginner it might be helpful to you to break down your project into different steps as comments we'll list all of the different
+5:44:43 5 hours, 44 minutes, 43 seconds
+steps we need to take to get this program up and running the first thing that we need is an array of questions questions will be an
+5:44:52 5 hours, 44 minutes, 52 seconds
+array we will also need options options will be a two-dimensional
+5:45:00 5 hours, 45 minutes
+array we will declare our variables we'll need a welcome message
+5:45:09 5 hours, 45 minutes, 9 seconds
+we will list each question using a loop I'll just write in parenthesis that we will use a loop now within this loop
+5:45:17 5 hours, 45 minutes, 17 seconds
+we're going to do a few things we will list our options then get guess from
+5:45:27 5 hours, 45 minutes, 27 seconds
+user then check our guess to see if it's correct at the end of this program we
+5:45:34 5 hours, 45 minutes, 34 seconds
+will display find fin score so here's a rough outline of our
+5:45:43 5 hours, 45 minutes, 43 seconds
+project we'll fill this project in one step at a time let's begin with creating an array of questions we'll ask the
+5:45:51 5 hours, 45 minutes, 51 seconds
+user the data type will be a string array of questions here's where you're going to
+5:45:59 5 hours, 45 minutes, 59 seconds
+ask all of your questions in this project we'll have five questions they're all going to be very
+5:46:06 5 hours, 46 minutes, 6 seconds
+long strings for our first question you don't need to type in the same questions that I do
+5:46:14 5 hours, 46 minutes, 14 seconds
+feel free to come up with your own here's a few that I've looked up online my first question will be what is the
+5:46:22 5 hours, 46 minutes, 22 seconds
+main function of a router that'll be the first question
+5:46:30 5 hours, 46 minutes, 30 seconds
+I'll put each of these questions on a new line just for readability the second question will be
+5:46:37 5 hours, 46 minutes, 37 seconds
+which part of the computer is considered the
+5:46:46 5 hours, 46 minutes, 46 seconds
+brain then I'll go to a new line what year was Facebook
+5:47:02 5 hours, 47 minutes, 2 seconds
+launched who is known as the father of
+5:47:08 5 hours, 47 minutes, 8 seconds
+computers then for my last question what was the
+5:47:16 5 hours, 47 minutes, 16 seconds
+first programming language all right here are the questions questions is an array of
+5:47:24 5 hours, 47 minutes, 24 seconds
+strings a one-dimensional array now we'll create a two-dimensional array of
+5:47:31 5 hours, 47 minutes, 31 seconds
+options we will create a two-dimensional array of strings named options
+5:47:39 5 hours, 47 minutes, 39 seconds
+we have five questions that means we need five arrays one array for each
+5:47:53 5 hours, 47 minutes, 53 seconds
+question I'll Place each of these on a new line for
+5:48:04 5 hours, 48 minutes, 4 seconds
+readability our first array within our 2D array of options will hold all of the options for our first question each
+5:48:12 5 hours, 48 minutes, 12 seconds
+value within this first array is going to be strings and I'm going to zoom in a little so we can both read it what is the main function of a router here's
+5:48:20 5 hours, 48 minutes, 20 seconds
+where you're going to list all of the different possible answers but only one of them is going to be correct I'll say
+5:48:26 5 hours, 48 minutes, 26 seconds
+one. space storing files for option two that will be
+5:48:36 5 hours, 48 minutes, 36 seconds
+encrypting data option
+5:48:44 5 hours, 48 minutes, 44 seconds
+three will be for directing internet traffic this will be
+5:48:51 5 hours, 48 minutes, 51 seconds
+the correct answer number three number four will be managing
+5:49:01 5 hours, 49 minutes, 1 second
+passwords this will be my first array all the options for question one now for question
+5:49:13 5 hours, 49 minutes, 13 seconds
+two for question two we'll have four options honestly I'm just going to copy
+5:49:24 5 hours, 49 minutes, 24 seconds
+these and then paste them within each array just to speed things up what part of the computer is considered the
+5:49:32 5 hours, 49 minutes, 32 seconds
+brain here's the different options option one will be CPU that's going to be the correct answer the central
+5:49:39 5 hours, 49 minutes, 39 seconds
+processing unit two hard drive three
+5:49:46 5 hours, 49 minutes, 46 seconds
+Ram four GPU question three what year was Facebook
+5:49:53 5 hours, 49 minutes, 53 seconds
+launched option one will be 2000 option two 2004 and that's the correct
+5:50:01 5 hours, 50 minutes, 1 second
+answer 2006 or 2008 who is known as the father of
+5:50:09 5 hours, 50 minutes, 9 seconds
+computers let's say Steve Jobs Bill
+5:50:17 5 hours, 50 minutes, 17 seconds
+Gates Allan Turing or Charles Babbage and that's the correct
+5:50:29 5 hours, 50 minutes, 29 seconds
+answer what was the first programming language either cobal C
+5:50:38 5 hours, 50 minutes, 38 seconds
+for Tran or assembly the correct answer is actually Fortran it's the first commercially
+5:50:47 5 hours, 50 minutes, 47 seconds
+available programming language one more thing we're going to create a one-dimensional array what are the correct answers we'll need some sort of
+5:50:55 5 hours, 50 minutes, 55 seconds
+key we could include this with our declare variable step we will create an integer array of
+5:51:03 5 hours, 51 minutes, 3 seconds
+answers we will list the correct answers as integers the correct answer to question one is directing internet
+5:51:11 5 hours, 51 minutes, 11 seconds
+traffic so we will list three for the next question what part of the computer is considered the brain that is the CPU
+5:51:19 5 hours, 51 minutes, 19 seconds
+option one Facebook was launched in the year 2004 that's two who is the father of computers that
+5:51:28 5 hours, 51 minutes, 28 seconds
+is Charles Babbage that's four and the first commercially
+5:51:35 5 hours, 51 minutes, 35 seconds
+available program ining language is for Tran that is three here are the correct answers are key there's a few more
+5:51:43 5 hours, 51 minutes, 43 seconds
+variables we'll need we will create an integer variable of score we can set that to be zero if we would like and an
+5:51:52 5 hours, 51 minutes, 52 seconds
+integer of guess guess is going to store whatever the user types in 1 through four so it's going to be an integer we
+5:52:01 5 hours, 52 minutes, 1 second
+will also need a scanner to accept user input scanner scanner equals new scanner it doesn't really matter where we
+5:52:10 5 hours, 52 minutes, 10 seconds
+declare it just as long as we declare it before we use it system.in and then we will import this
+5:52:17 5 hours, 52 minutes, 17 seconds
+class import java.util.scanner and then close our scanner at the end of our program when we're done with it scanner.
+5:52:28 5 hours, 52 minutes, 28 seconds
+close all right here are the variables we'll need including our options and our questions our next step is to create a
+5:52:35 5 hours, 52 minutes, 35 seconds
+welcome message let's output the following let's say welcome to the Java
+5:52:45 5 hours, 52 minutes, 45 seconds
+quiz game and then I'll add some separators a bunch of asterisks because
+5:52:53 5 hours, 52 minutes, 53 seconds
+I think it'll look cool mostly we have our welcome message and
+5:53:01 5 hours, 53 minutes, 1 second
+I'll just perform a test run it's a good idea to test your code as you're coding it just sure that everything is working fine and that is our welcome
+5:53:11 5 hours, 53 minutes, 11 seconds
+message now we'll Loop through all of the questions that we have we'll probably want to use a for
+5:53:21 5 hours, 53 minutes, 21 seconds
+Loop we will create an index of I in I equals z we'll continue this loop as long as I is less
+5:53:30 5 hours, 53 minutes, 30 seconds
+than the length of our array of questions questions access the length property which will return a number in this case
+5:53:39 5 hours, 53 minutes, 39 seconds
+five because there's five questions we will increment I by one as a test let's print our
+5:53:48 5 hours, 53 minutes, 48 seconds
+questions at index of I I will start at zero so we're returning the first question at index
+5:53:56 5 hours, 53 minutes, 56 seconds
+zero then during each iteration of this Loop we will display each question let's do a test
+5:54:03 5 hours, 54 minutes, 3 seconds
+run so here are the five questions we're displaying each element of our array of
+5:54:10 5 hours, 54 minutes, 10 seconds
+questions after each question we have to list all of the different options that's the next
+5:54:18 5 hours, 54 minutes, 18 seconds
+step we'll display a question then create a nested Loop to display all of the
+5:54:26 5 hours, 54 minutes, 26 seconds
+options I'm going to use an enhanced for Loop for this what is the data type of each value within each array within
+5:54:35 5 hours, 54 minutes, 35 seconds
+options well we're working with strings the inner for Loop is going to be an enhanced for Loop the data type of
+5:54:43 5 hours, 54 minutes, 43 seconds
+each value is a string string option colon meaning
+5:54:50 5 hours, 54 minutes, 50 seconds
+in rray of options at index of i options is a two-dimensional array if
+5:54:59 5 hours, 54 minutes, 59 seconds
+we retrieve a value at a given index will be given an array display every option in each inner array
+5:55:07 5 hours, 55 minutes, 7 seconds
+so to demonstrate that let's print each
+5:55:14 5 hours, 55 minutes, 14 seconds
+option so here's what we have after printing each question we will Loop through and print all of the
+5:55:26 5 hours, 55 minutes, 26 seconds
+options now before moving on to the next question we have to get some user input we don't want to display all the
+5:55:32 5 hours, 55 minutes, 32 seconds
+questions right away just one at a time so we will do this within the outer for loop after printing all of the options
+5:55:42 5 hours, 55 minutes, 42 seconds
+this is where we will get the guess from the user we will create a prompt to enter
+5:55:50 5 hours, 55 minutes, 50 seconds
+your guests and I will use print instead of print line because I like the user input on the same line we will assign our variable of
+5:56:00 5 hours, 56 minutes
+guess guess equal scanner. next int the user going to type in a number 1 through
+5:56:09 5 hours, 56 minutes, 9 seconds
+4 then we have to check our guess is it correct or not we can do the
+5:56:16 5 hours, 56 minutes, 16 seconds
+following we'll use an if statement if our guess is equal to our array of
+5:56:24 5 hours, 56 minutes, 24 seconds
+answers it's a one-dimensional array at index of I we're using the index of I because we're still within
+5:56:32 5 hours, 56 minutes, 32 seconds
+our for Loop during the first iteration of this Loop I will be zero so is our guess equal to answers at index zero if
+5:56:41 5 hours, 56 minutes, 41 seconds
+that is correct let's print the following let's say correct and for fun I'll add some text decoration some of
+5:56:49 5 hours, 56 minutes, 49 seconds
+those separators again it's not necessary I just think it'll look
+5:56:58 5 hours, 56 minutes, 58 seconds
+cool else if our guest doesn't equal our answer well we can check that with an lse statement if we don't have the correct answer that means we have the
+5:57:07 5 hours, 57 minutes, 7 seconds
+wrong answer and I will output wrong and I will just space this out a little
+5:57:14 5 hours, 57 minutes, 14 seconds
+bit all right let's do a test run for the first question the correct answer is three I'll type in three then
+5:57:22 5 hours, 57 minutes, 22 seconds
+we print correct which part of the computer is considered the brain I will intentionally get this wrong let's say
+5:57:30 5 hours, 57 minutes, 30 seconds
+the GPU wrong and I'll guess the others wrong
+5:57:38 5 hours, 57 minutes, 38 seconds
+wrong wrong then we have to calculate a final score okay then we have to display the
+5:57:45 5 hours, 57 minutes, 45 seconds
+final score so after we get the correct answer we will increment our score by one score
+5:57:52 5 hours, 57 minutes, 52 seconds
+Plus+ then we will display the final score your final score is I'll use
+5:58:03 5 hours, 58 minutes, 3 seconds
+string catnation to keep this simple we'll add our score variable plus the
+5:58:10 5 hours, 58 minutes, 10 seconds
+words out of plus we're going to get the length of
+5:58:17 5 hours, 58 minutes, 17 seconds
+our questions questions is an array questions. length property I'm just going to add a space
+5:58:26 5 hours, 58 minutes, 26 seconds
+right before out because I'm forgetting that let's run this one last
+5:58:33 5 hours, 58 minutes, 33 seconds
+time what is the main function of a router that that is three directing internet traffic which part of the computer is considered the brain that is
+5:58:40 5 hours, 58 minutes, 40 seconds
+the CPU what year was Facebook launched I'm going to get this one wrong intentionally I'm going to say 2000 and
+5:58:48 5 hours, 58 minutes, 48 seconds
+that is wrong who is known as the father of computers that is Charles babage 4 what was the first programming
+5:58:56 5 hours, 58 minutes, 56 seconds
+language well the first commercially available programming language that would be three for Tran correct your final score is four
+5:59:05 5 hours, 59 minutes, 5 seconds
+out of five all right everybody so that is an interactive quiz game that you can create using
+5:59:13 5 hours, 59 minutes, 13 seconds
+Java what is going on everybody in this video we're going to create a game of rock paper scissors for beginners so
+5:59:20 5 hours, 59 minutes, 20 seconds
+let's get started as a beginner when creating a project it could be helpful to you to break down a project into smaller steps just as comments I'm going
+5:59:29 5 hours, 59 minutes, 29 seconds
+to list the different steps that we'll need to take so let's say first we will declare our variables then then get a choice from
+5:59:38 5 hours, 59 minutes, 38 seconds
+the user get random choice for the
+5:59:46 5 hours, 59 minutes, 46 seconds
+computer check win conditions who won ask to play
+5:59:55 5 hours, 59 minutes, 55 seconds
+again then at the end we will display a goodbye message it may be helpful to you as a
+6:00:02 6 hours, 2 seconds
+beginner to list the different steps that your program is going to take just for more organization all right let's work on step one we will declare our
+6:00:12 6 hours, 12 seconds
+variables we'll need a scanner because we're accepting user input scanner scanner equals new scanner within the set of parentheses we will type system.
+6:00:22 6 hours, 22 seconds
+in import the class for scanners import java.util.scanner and then we will close our scanner when we're done with it
+6:00:31 6 hours, 31 seconds
+scanner. close because we don't want to leave any resources open we will be generating random numbers we will need
+6:00:38 6 hours, 38 seconds
+to create a random object random random equals new random and then import this class as
+6:00:46 6 hours, 46 seconds
+well import java.util random we're going to create an array of
+6:00:53 6 hours, 53 seconds
+choices they will be strings rock paper or scissors we will create a string array named
+6:01:01 6 hours, 1 minute, 1 second
+choices equals an array this will be an array of strings at the first index we'll have
+6:01:10 6 hours, 1 minute, 10 seconds
+Rock then paper then scissors we'll store our choice within a
+6:01:18 6 hours, 1 minute, 18 seconds
+variable this will be a string we'll name this variable player choice I will declare this variable but
+6:01:27 6 hours, 1 minute, 27 seconds
+not yet assign it and the computer's Choice string computer choice
+6:01:36 6 hours, 1 minute, 36 seconds
+we're going to create a while loop that will ask the user to play again when they reach the end we'll create a string
+6:01:43 6 hours, 1 minute, 43 seconds
+variable of play again and I will set this to be
+6:01:50 6 hours, 1 minute, 50 seconds
+yes basically while play again is yes continue the game let's work on our next step get the
+6:01:58 6 hours, 1 minute, 58 seconds
+choice from the user we need to prompt the user we'll use a print line statement and say
+6:02:06 6 hours, 2 minutes, 6 seconds
+enter your move I'll add a set of parentheses that says rock paper
+6:02:14 6 hours, 2 minutes, 14 seconds
+scissors just so the user knows what to type in I'll use print instead of print line because I prefer user input on the same
+6:02:22 6 hours, 2 minutes, 22 seconds

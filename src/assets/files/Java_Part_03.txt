@@ -1,0 +1,1067 @@
+2:26:12 2 hours, 26 minutes, 12 seconds
+sign emails must contain the at character let's try that again fake
+2:26:21 2 hours, 26 minutes, 21 seconds
+guy one at maybe they're using Yahoo yahoo.com so my username would be fake
+2:26:29 2 hours, 26 minutes, 29 seconds
+guy one the domain is yahoo.com all right everybody so that is the substring method and how to create
+2:26:36 2 hours, 26 minutes, 36 seconds
+an email slicer program the substring method is used to extract a portion of a string you can list one of two possible
+2:26:43 2 hours, 26 minutes, 43 seconds
+indices within the substring method a starting index and an ending index we use the substring method on an email
+2:26:50 2 hours, 26 minutes, 50 seconds
+then created two new substrings one of username and the other of domain and well everybody that is the substring method in
+2:26:59 2 hours, 26 minutes, 59 seconds
+Java hey everybody in this video we're going to create a weight conversion program to convert a weight from pounds to kilogram or vice versa it will help
+2:27:07 2 hours, 27 minutes, 7 seconds
+us become more familiar with if statements so let's get started okay let's get started everybody what might be helpful to you as a beginner when
+2:27:14 2 hours, 27 minutes, 14 seconds
+creating a project is to use comments to describe what you want to do at each part of your program this is also known as pseudo code for example the first
+2:27:22 2 hours, 27 minutes, 22 seconds
+thing we'll do is declare our variables declare variables then we'll create a welcome
+2:27:33 2 hours, 27 minutes, 33 seconds
+message then a prompt for user input prompt for user input or
+2:27:43 2 hours, 27 minutes, 43 seconds
+Choice we'll say option one convert lbs meaning pounds to to kgs
+2:27:52 2 hours, 27 minutes, 52 seconds
+kilog option two convert kgs to LBS if somebody doesn't select option
+2:28:01 2 hours, 28 minutes, 1 second
+one or two we'll use an else statement else print not a valid
+2:28:08 2 hours, 28 minutes, 8 seconds
+choice so here's a rough outline of our program and what it's going to do we'll begin at the top we'll declare any variables that we'll need so we will
+2:28:16 2 hours, 28 minutes, 16 seconds
+need a scanner we'll create a scanner object scanner scanner equals new scanner then type system.in within set
+2:28:24 2 hours, 28 minutes, 24 seconds
+of parentheses if you hover over the word scanner you can import it automatically import java.util.scanner or otherwise you can
+2:28:34 2 hours, 28 minutes, 34 seconds
+type it in what are some other variables we'll need double weight for the original
+2:28:41 2 hours, 28 minutes, 41 seconds
+weight double new weight that's after we convert the weight we'll need to store it and int
+2:28:49 2 hours, 28 minutes, 49 seconds
+choice a user is going to type in one to convert pounds to kilograms or two to convert kilograms to
+2:28:57 2 hours, 28 minutes, 57 seconds
+pounds we have our variables now we need a welcome message I'll use a few print
+2:29:04 2 hours, 29 minutes, 4 seconds
+statements let's say weight conversion
+2:29:15 2 hours, 29 minutes, 15 seconds
+program one C and space this means opt one convert lbs
+2:29:22 2 hours, 29 minutes, 22 seconds
+meaning pounds to kgs kilog or Choice
+2:29:28 2 hours, 29 minutes, 28 seconds
+2 to colon space convert kilogram to pounds
+2:29:36 2 hours, 29 minutes, 36 seconds
+lbs then we'll prompt for a user's Choice I'll use print instead of print
+2:29:45 2 hours, 29 minutes, 45 seconds
+line choose an option then we'll need to store that choice
+2:29:53 2 hours, 29 minutes, 53 seconds
+variable Choice equals use our scanner to accept user input we're accepting an
+2:29:59 2 hours, 29 minutes, 59 seconds
+integer we'll use next int let's do a test run and I will print
+2:30:06 2 hours, 30 minutes, 6 seconds
+our choice temporarily weight conversion program one to convert pounds to kilograms or
+2:30:15 2 hours, 30 minutes, 15 seconds
+two to convert kilograms to pounds I'll type in one we get one or
+2:30:22 2 hours, 30 minutes, 22 seconds
+two then we output two we can delete this print line statement we were just checking to see if it
+2:30:29 2 hours, 30 minutes, 29 seconds
+works okay option one if somebody selects option one we have to convert pounds to kilograms well we'll need to check to
+2:30:37 2 hours, 30 minutes, 37 seconds
+see if choice is one we can use an if statement for that if choice is equal to one be sure
+2:30:46 2 hours, 30 minutes, 46 seconds
+you use double equals that is the comparison operator we're checking if these two values are equal if you use a
+2:30:53 2 hours, 30 minutes, 53 seconds
+single equals that is the assignment operator and Java thinks you're trying to assign one to choice so double equals
+2:31:01 2 hours, 31 minutes, 1 second
+for comparisons we're converting pounds to kilograms we'll ask a user to enter the
+2:31:11 2 hours, 31 minutes, 11 seconds
+weight in lbs I'll use print instead of print
+2:31:18 2 hours, 31 minutes, 18 seconds
+line we we will assign our weight equals use our scanner then use
+2:31:26 2 hours, 31 minutes, 26 seconds
+the next Double method then we will accept a double value so once we have our weight we have to convert it to
+2:31:34 2 hours, 31 minutes, 34 seconds
+kilograms because it's currently in pounds we will assign our new weight equal to the weight our current weight
+2:31:43 2 hours, 31 minutes, 43 seconds
+that is times 0.45 3592
+2:31:51 2 hours, 31 minutes, 51 seconds
+then we'll output the new weight the new weight in
+2:32:00 2 hours, 32 minutes
+kgs is then we'll add our new
+2:32:07 2 hours, 32 minutes, 7 seconds
+weight okay let's perform a test run we'll type in one to convert pounds to kilogram enter the weight in pounds
+2:32:16 2 hours, 32 minutes, 16 seconds
+what's 150 lb converted to kilog 68.0 388 if you would like to limit the
+2:32:25 2 hours, 32 minutes, 25 seconds
+amount of digits that display after the decimal you can use a print F statement instead of print line so to do that
+2:32:32 2 hours, 32 minutes, 32 seconds
+we'll convert this to print F where we would like to insert a value or variable we'll use percent since
+2:32:40 2 hours, 32 minutes, 40 seconds
+we're displaying a double we'll use f meaning floating Point number to display two digits after the decimal we'll use 0
+2:32:49 2 hours, 32 minutes, 49 seconds
+2 or 0.1 to display one digit depending on your preference replace the plus with a
+2:32:56 2 hours, 32 minutes, 56 seconds
+comma we're inserting this variable at this location this placeholder let's perform that
+2:33:02 2 hours, 33 minutes, 2 seconds
+again choose an option convert pounds to kilograms enter the weight in pounds 150
+2:33:09 2 hours, 33 minutes, 9 seconds
+is good the new weight in kilogram is 68.4
+2:33:15 2 hours, 33 minutes, 15 seconds
+kilg now if Choice equals 2 we're going to convert kilog to pounds and really we can just copy the if statement paste it
+2:33:25 2 hours, 33 minutes, 25 seconds
+then convert it else if Choice equals 2 the user wants to convert kilogram to pounds
+2:33:34 2 hours, 33 minutes, 34 seconds
+enter the weight in kilog the new formula is going to be weight time
+2:33:42 2 hours, 33 minutes, 42 seconds
+2.24 62 the new weight in pounds lbs is our
+2:33:50 2 hours, 33 minutes, 50 seconds
+new weight let's try it choose an option we will convert
+2:33:57 2 hours, 33 minutes, 57 seconds
+kilograms to pounds I'm going to press two enter the weight in kilogram let's say 68
+2:34:05 2 hours, 34 minutes, 5 seconds
+kg the new weight in pounds is 14991 lb what if somebody types in a number
+2:34:14 2 hours, 34 minutes, 14 seconds
+that's not valid so we can get rid of this comment is use an else statement to print print that the user didn't select a valid
+2:34:23 2 hours, 34 minutes, 23 seconds
+choice we will follow this with an lse statement we will follow else if with an else statement else
+2:34:31 2 hours, 34 minutes, 31 seconds
+print that was not a valid
+2:34:38 2 hours, 34 minutes, 38 seconds
+choice we have options one or two if I type in three we execute the L statement that was not a valid
+2:34:46 2 hours, 34 minutes, 46 seconds
+choice and again like usual I'm forgetting to close my scanner because I sometimes forget to do that so at the
+2:34:53 2 hours, 34 minutes, 53 seconds
+end of your program close your scanner scanner. close because you don't want to leave resources open okay let's do one final test run
+2:35:02 2 hours, 35 minutes, 2 seconds
+let's convert pounds to kilograms what's 200 lb converted to kilograms 90.7
+2:35:10 2 hours, 35 minutes, 10 seconds
+2 all right everybody so that is a weight conversion program you can write using
+2:35:16 2 hours, 35 minutes, 16 seconds
+[Music]
+2:35:18 2 hours, 35 minutes, 18 seconds
+Java hey everybody in this video I'm going to show you how we can use the tary operator in Java in Java the tary operator is a question mark followed by
+2:35:27 2 hours, 35 minutes, 27 seconds
+one of two possible values here's the formula we check a condition then use a question mark like we're asking a
+2:35:33 2 hours, 35 minutes, 33 seconds
+question is this condition true if it is we'll return a value if not we return something else a different value it's a
+2:35:43 2 hours, 35 minutes, 43 seconds
+simpler version to an if else statement here's a demonstration let's say we have an integer of a score score will equal 70
+2:35:52 2 hours, 35 minutes, 52 seconds
+that's technically passing using an if statement I will check if my score is greater than or
+2:35:59 2 hours, 35 minutes, 59 seconds
+equal to 60 if it is then we will print pass else
+2:36:07 2 hours, 36 minutes, 7 seconds
+we will print fail so this does
+2:36:14 2 hours, 36 minutes, 14 seconds
+work with a score of 70 I have passed if it were 55 well then I fail there's another way in
+2:36:23 2 hours, 36 minutes, 23 seconds
+which we can write this and that is by using the tary operator what we're going to do let's
+2:36:29 2 hours, 36 minutes, 29 seconds
+create a variable a string variable of pass or fail and we're basically just following
+2:36:37 2 hours, 36 minutes, 37 seconds
+this formula we have our condition is our score greater than or equal to
+2:36:45 2 hours, 36 minutes, 45 seconds
+60 question mark we're asking a question is this condition true if it is let's
+2:36:52 2 hours, 36 minutes, 52 seconds
+return a string of pass colon think of it like otherwise will return
+2:37:02 2 hours, 37 minutes, 2 seconds
+fail and then I will print pass or fail to display it so 55 that means we fail
+2:37:10 2 hours, 37 minutes, 10 seconds
+but if it were 75 that means we pass by using the tary operator it's an alternative to writing
+2:37:19 2 hours, 37 minutes, 19 seconds
+an if else statement and it can be simpler in many cases here's a few other examples let's create a variable of
+2:37:27 2 hours, 37 minutes, 27 seconds
+number set it equal to some number using the Turner operator we will check if this number is even or
+2:37:36 2 hours, 37 minutes, 36 seconds
+odd I'll create a string of even or odd equals our
+2:37:44 2 hours, 37 minutes, 44 seconds
+condition we can check if a number is even or odd by using the modulus operator we will take our
+2:37:52 2 hours, 37 minutes, 52 seconds
+number modulus 2 the modulus operator gives you the remainder of any division does 3 divide by two evenly if it does
+2:38:01 2 hours, 38 minutes, 1 second
+that would equal zero 3 doesn't divide by two evenly there's a remainder of one and that does
+2:38:10 2 hours, 38 minutes, 10 seconds
+not equal zero is this number divisible by two we'll use the trary operator if it is
+2:38:18 2 hours, 38 minutes, 18 seconds
+we'll return a string of even otherwise we'll return a string of odd is my number even or
+2:38:26 2 hours, 38 minutes, 26 seconds
+odd so three is odd but if it were four well then it's
+2:38:35 2 hours, 38 minutes, 35 seconds
+even here's a more practical example let's say we're working with a time in hours this will be in military
+2:38:45 2 hours, 38 minutes, 45 seconds
+time hours equals 13 that would be the the same as 1
+2:38:51 2 hours, 38 minutes, 51 seconds
+p.m. I will create a string of time of day equals we'll check if our hours is
+2:39:00 2 hours, 39 minutes
+greater than or equal to 12 if it is we'll return PM if not will return am hours less than
+2:39:10 2 hours, 39 minutes, 10 seconds
+12 tary operator is our hours less than 12 if it is we'll return a.m.
+2:39:19 2 hours, 39 minutes, 19 seconds
+otherwise will return p.m and then we will display the time of
+2:39:25 2 hours, 39 minutes, 25 seconds
+day 13 hours that's the same as 1: p.m. yep the time is 1: p.m. or if the
+2:39:33 2 hours, 39 minutes, 33 seconds
+hours were 9 that would be am all right last example let's say we
+2:39:42 2 hours, 39 minutes, 42 seconds
+have an income or salary income equals $60,000
+2:39:50 2 hours, 39 minutes, 50 seconds
+let's pretend that you're a software engineer in the united states in the United States we have different tax brackets depending on your income this
+2:39:58 2 hours, 39 minutes, 58 seconds
+time we will assign a variable of tax rate equals we'll check if our
+2:40:05 2 hours, 40 minutes, 5 seconds
+income is greater than or equal to $40,000 for
+2:40:13 2 hours, 40 minutes, 13 seconds
+$40,000 question mark turnar operator if that's true then our tax rate is going to be
+2:40:22 2 hours, 40 minutes, 22 seconds
+0.25 otherwise it will be
+2:40:27 2 hours, 40 minutes, 27 seconds
+0.15 so with our income what is the tax rate
+2:40:34 2 hours, 40 minutes, 34 seconds
+0.25 but if I changed it to 30,000 well then our tax rate would be 0.15 for
+2:40:43 2 hours, 40 minutes, 43 seconds
+15% so that is the tary operator you follow this formula you check a condition within a set of parentheses
+2:40:51 2 hours, 40 minutes, 51 seconds
+then use the tary operator like you're asking a question if this condition is true return this otherwise if it's false
+2:41:00 2 hours, 41 minutes
+return something else and then if you would like you can assign it to a variable and well everybody that is the tary operator in
+2:41:09 2 hours, 41 minutes, 9 seconds
+Java all right everybody in this video we're going to create a temperature conversion program to convert from Celsius to Fahrenheit or Fahrenheit to
+2:41:17 2 hours, 41 minutes, 17 seconds
+Celsius this is a practice project to get us more familiar using the tary operator so let's get started we will be accepting some user input so let's get
+2:41:25 2 hours, 41 minutes, 25 seconds
+the scanner out of the way first scanner scanner equals new scanner we need a scanner to accept user input within the
+2:41:34 2 hours, 41 minutes, 34 seconds
+set of parentheses type system.in and then I will just automatically import this class so at the top of your Java file you need this
+2:41:42 2 hours, 41 minutes, 42 seconds
+import import java.util.scanner then when you open a scanner it is a good idea to close it at the end of your file when you're done
+2:41:50 2 hours, 41 minutes, 50 seconds
+with it because you don't want to leave resources open we have our scanner to accept user input let's declare some
+2:41:57 2 hours, 41 minutes, 57 seconds
+variables what will we need we will need the original temperature this will be of the double data type double temp we'll
+2:42:06 2 hours, 42 minutes, 6 seconds
+need a new temperature let's say double new temp that's after we convert it and a unit we could use Char for the unit
+2:42:15 2 hours, 42 minutes, 15 seconds
+you know the letter F or c for Fahrenheit or Celsius but just to keep it simple I'm going to use a string because there's a built-in method of two
+2:42:24 2 hours, 42 minutes, 24 seconds
+uppercase we can take the input and make it uppercase automatically just to make it simple we'll use a string rather than a Char for the
+2:42:32 2 hours, 42 minutes, 32 seconds
+unit okay now we just need to get the temperature we'll need a prompt I'll use print instead of print line we will ask
+2:42:40 2 hours, 42 minutes, 40 seconds
+the user to enter the temperature we will assign the
+2:42:48 2 hours, 42 minutes, 48 seconds
+temperature temp equals scanner. next Double because we're accepting a value
+2:42:55 2 hours, 42 minutes, 55 seconds
+we're signing a variable of the double data type now we need the unit is it going to be Celsius or Fahrenheit we'll need another prompt
+2:43:04 2 hours, 43 minutes, 4 seconds
+I'll use print instead of print line we will ask the user convert to
+2:43:12 2 hours, 43 minutes, 12 seconds
+Celsius or Fahrenheit
+2:43:20 2 hours, 43 minutes, 20 seconds
+C or F let's ass our unit
+2:43:27 2 hours, 43 minutes, 27 seconds
+variable use our scanner then use the next method to get the next character we'll use the next
+2:43:35 2 hours, 43 minutes, 35 seconds
+method to get the next character we don't necessarily need next line we just want a single
+2:43:43 2 hours, 43 minutes, 43 seconds
+character so check this out I'm going to Output our temp and our
+2:43:57 2 hours, 43 minutes, 57 seconds
+unit what if somebody types in a lowercase C or F so let's say the temperature is
+2:44:04 2 hours, 44 minutes, 4 seconds
+75 75Â° F and we would like to convert it to Celsius I'll type lowercase C rather
+2:44:11 2 hours, 44 minutes, 11 seconds
+than uppercase C our unit is currently a lowercase C we can convert it to be
+2:44:20 2 hours, 44 minutes, 20 seconds
+uppercase following the next method of our scanner where we assign our unit we're going to do something called method
+2:44:26 2 hours, 44 minutes, 26 seconds
+chaining we'll add another dot then use the two uppercase method of strings let's try that again and see if
+2:44:35 2 hours, 44 minutes, 35 seconds
+it works 75 I'll type in lower case
+2:44:44 2 hours, 44 minutes, 44 seconds
+C the two uppercase method will take that lowercase C and make it uppercase which is what we'll need in this next
+2:44:51 2 hours, 44 minutes, 51 seconds
+section we can delete these two statements now we're going to use the tary
+2:44:58 2 hours, 44 minutes, 58 seconds
+operator how the trary operator works is that we check a condition followed by a question mark
+2:45:06 2 hours, 45 minutes, 6 seconds
+like we're asking a question we will return some code if that condition is true colon meaning else if it's false
+2:45:14 2 hours, 45 minutes, 14 seconds
+we'll do some other code or return some other value we're going to follow this formula so what is our condition let's
+2:45:23 2 hours, 45 minutes, 23 seconds
+check to see if our unit is equal to a c take our variable of unit use the equals method because
+2:45:32 2 hours, 45 minutes, 32 seconds
+strings have a built-in method of equals does our unit equal in uppercase
+2:45:38 2 hours, 45 minutes, 38 seconds
+C question mark That's the tary operator we're asking a question if this is true that means
+2:45:46 2 hours, 45 minutes, 46 seconds
+we're trying to convert from Fahrenheit to Celsius the formula to do that would be the following we would be executing this
+2:45:55 2 hours, 45 minutes, 55 seconds
+code since it's true take our temp subtract
+2:46:00 2 hours, 46 minutes
+32 then multiply 5 / 9 now what if our unit does not equal C
+2:46:09 2 hours, 46 minutes, 9 seconds
+that means we're trying to convert to Fahrenheit we'll need that colon for the next part of the section now here's the formula to
+2:46:16 2 hours, 46 minutes, 16 seconds
+convert from Celsius to Fahrenheit this will be the false section of the trinary
+2:46:24 2 hours, 46 minutes, 24 seconds
+operator take our temp * 5 / 9 +
+2:46:32 2 hours, 46 minutes, 32 seconds
+32 with the trinary operator how we've written this code is that we're going to be returning a double after converting
+2:46:40 2 hours, 46 minutes, 40 seconds
+it we need to do something with it so we're going to assign it to a variable our variable of new temp then we can do
+2:46:47 2 hours, 46 minutes, 47 seconds
+something with it once we have our new temperature let's display it I'll perform a test run let's
+2:46:56 2 hours, 46 minutes, 56 seconds
+print our new temp let's say it's 100Â° F and we're going to convert to Celsius I'll type in
+2:47:05 2 hours, 47 minutes, 5 seconds
+see well the temperature in Celsius is 37.7 repeating we're going to format this in a
+2:47:14 2 hours, 47 minutes, 14 seconds
+moment let's add a degree symbol plus a string on Windows to add a
+2:47:21 2 hours, 47 minutes, 21 seconds
+degree symbol make sure num lock is on hold alt then type
+2:47:28 2 hours, 47 minutes, 28 seconds
+0176 plus our unit we're converting to let's try that
+2:47:34 2 hours, 47 minutes, 34 seconds
+again what is 100Â° fah converted to Celsius
+2:47:41 2 hours, 47 minutes, 41 seconds
+37.7 repeating de C to limit the amount of digits that display after the decimal we we can use
+2:47:49 2 hours, 47 minutes, 49 seconds
+a print F statement let's convert our print line for the new temp to be print F rather than print
+2:47:55 2 hours, 47 minutes, 55 seconds
+line we'll add a placeholder we're displaying a double so
+2:48:02 2 hours, 48 minutes, 2 seconds
+we need F to display one digit type 0.1 between the percent sign and the
+2:48:08 2 hours, 48 minutes, 8 seconds
+F comma new temp after our placeholder We'll add our
+2:48:17 2 hours, 48 minutes, 17 seconds
+degree symbol again I'm holding alt numb lock is on I'm typing 0176 then we will display the unit it's
+2:48:26 2 hours, 48 minutes, 26 seconds
+a string percent s for Strings we're inserting a new variable we're going to comma separate them then
+2:48:34 2 hours, 48 minutes, 34 seconds
+add our unit and let me just close this Gap let's see what the final product
+2:48:41 2 hours, 48 minutes, 41 seconds
+is let's convert 30.1 this will be in Celsius to Fahrenheit
+2:48:49 2 hours, 48 minutes, 49 seconds
+and the temperature in Fahrenheit is 48.7 De fahit okay everybody that is a
+2:48:57 2 hours, 48 minutes, 57 seconds
+temperature conversion program that you can write using the tary operator in
+2:49:04 2 hours, 49 minutes, 4 seconds
+Java why hello there today I got to explain something called enhanced switches in Java in Java there switches
+2:49:12 2 hours, 49 minutes, 12 seconds
+and then there's enhanced switches enhanced switches are a Java 14 feature I would recommend using using enhanced switches over standard switches so what
+2:49:21 2 hours, 49 minutes, 21 seconds
+is a switch exactly a switch is a replacement to using many l statements here's an example of us using a lot of
+2:49:29 2 hours, 49 minutes, 29 seconds
+lse if statements in this sample program we have a day of the week I set mine to be Friday with each of these if
+2:49:36 2 hours, 49 minutes, 36 seconds
+statements I am checking to see if the day equals Monday Tuesday so on and so forth currently my day is set to
+2:49:45 2 hours, 49 minutes, 45 seconds
+Friday this would give me it is a weekday if I set the day to be
+2:49:52 2 hours, 49 minutes, 52 seconds
+Saturday well then it is the weekend or Sunday let me show you the
+2:49:59 2 hours, 49 minutes, 59 seconds
+code it is the weekend then I have an else statement if none of the above conditions are true for example let's
+2:50:07 2 hours, 50 minutes, 7 seconds
+say day is pizza day which doesn't exist but it really should Pizza day is not a day this code
+2:50:15 2 hours, 50 minutes, 15 seconds
+does work but it could be more efficient we have a lot of redundancies we're using a lot of else if statements that
+2:50:22 2 hours, 50 minutes, 22 seconds
+all basically do the same thing an improvement would be to use an enhanced switch let me demonstrate how
+2:50:31 2 hours, 50 minutes, 31 seconds
+to make that so let's set our day to be Monday for example to create a switch we will
+2:50:40 2 hours, 50 minutes, 40 seconds
+type switch at a set of parentheses then a set of curly braces it's similar to an if statement already with within the set of
+2:50:49 2 hours, 50 minutes, 49 seconds
+parentheses for the switch we're going to examine a value or variable we're going to examine our string of day we
+2:50:56 2 hours, 50 minutes, 56 seconds
+will examine this value against any matching cases the first case will be a string of
+2:51:04 2 hours, 51 minutes, 4 seconds
+Monday if day is equal to this value a string of Monday we'll do something we'll use an arrow an arrow is
+2:51:13 2 hours, 51 minutes, 13 seconds
+the arrow operator in Java think of it as meaning do something do this if day equals Monday do this code so let's
+2:51:22 2 hours, 51 minutes, 22 seconds
+print something let's print it is a weekday and then for fun you don't have
+2:51:30 2 hours, 51 minutes, 30 seconds
+to but I'm going to add an emoji nobody likes Mondays let's be honest if day is Monday do this code
+2:51:40 2 hours, 51 minutes, 40 seconds
+let's add another case let me zoom in a little if Case is
+2:51:47 2 hours, 51 minutes, 47 seconds
+Tuesday Arrow op operator meaning do this code we will print we'll print the same thing it is a
+2:51:55 2 hours, 51 minutes, 55 seconds
+weekday we'll do this with the other days too I'll just copy this code then repurpose it to save some time case
+2:52:04 2 hours, 52 minutes, 4 seconds
+Wednesday it is a weekday case Thursday it is a
+2:52:12 2 hours, 52 minutes, 12 seconds
+weekday case Friday it is a weekday now if it's sat Saturday that means it's the
+2:52:20 2 hours, 52 minutes, 20 seconds
+weekend case Saturday it is the weekend let's change
+2:52:28 2 hours, 52 minutes, 28 seconds
+the Emoji case Sunday it is the
+2:52:39 2 hours, 52 minutes, 39 seconds
+weekend let's perform a test run if you're using intellig you may have These Warnings it's basically saying that
+2:52:46 2 hours, 52 minutes, 46 seconds
+these sections of code are unreachable we're manually setting a variable these sections of code are not going to execute so I would just ignore that for
+2:52:55 2 hours, 52 minutes, 55 seconds
+now so let's perform a test run my day is Monday day is equal to the
+2:53:02 2 hours, 53 minutes, 2 seconds
+case of Monday so we do this code if it were
+2:53:10 2 hours, 53 minutes, 10 seconds
+Friday case Friday we do this code if Case were Saturday
+2:53:19 2 hours, 53 minutes, 19 seconds
+well we do this code and Sunday case Sunday so we do this code it
+2:53:29 2 hours, 53 minutes, 29 seconds
+is the weekend what if we have a day that doesn't exist like pizza
+2:53:37 2 hours, 53 minutes, 37 seconds
+day well we can add a default case here's how we'll type the keyword
+2:53:43 2 hours, 53 minutes, 43 seconds
+default Arrow meaning do this we'll print our variable
+2:53:51 2 hours, 53 minutes, 51 seconds
+day plus a string of is not a
+2:53:57 2 hours, 53 minutes, 57 seconds
+day Pizza day is not a day the default case it behaves similarly to your else
+2:54:04 2 hours, 54 minutes, 4 seconds
+statement if no above conditions are true then we will do this so what we'll do now is accept some
+2:54:12 2 hours, 54 minutes, 12 seconds
+user input using a scanner we'll need to create a scanner object scanner scanner equals new scanner within the set of
+2:54:21 2 hours, 54 minutes, 21 seconds
+parentheses type system.in and then I'm just going to automatically import this class at the top of my Java file import
+2:54:29 2 hours, 54 minutes, 29 seconds
+java.util.scanner we'll create a prompt for a user to type in the
+2:54:35 2 hours, 54 minutes, 35 seconds
+day enter the day of the week and I will use print instead of print line instead
+2:54:43 2 hours, 54 minutes, 43 seconds
+of manually assigning a variable we'll use our scanner scanner. nextt line to accept a
+2:54:51 2 hours, 54 minutes, 51 seconds
+string okay let's try this again enter the day of the week it is Tuesday it is a weekday let's try that
+2:55:00 2 hours, 55 minutes
+again enter the day of the week it is Saturday it is the weekend and let's make up a
+2:55:08 2 hours, 55 minutes, 8 seconds
+day uh let's go with taco day taco day is not a
+2:55:15 2 hours, 55 minutes, 15 seconds
+day we could actually improve this widg even further intellig is saying we have a duplicate branch in our switch we have
+2:55:23 2 hours, 55 minutes, 23 seconds
+two or more cases that are doing the same thing we are outputting it is a weekday we could consolidate some of
+2:55:32 2 hours, 55 minutes, 32 seconds
+these cases here's how the cases of Monday Tuesday Wednesday Thursday and Friday they all output the same thing so
+2:55:40 2 hours, 55 minutes, 40 seconds
+we're going to consolidate them I'll copy one of these print statements and delete all of them
+2:55:54 2 hours, 55 minutes, 54 seconds
+we can comma separate these cases so case Monday comma
+2:56:01 2 hours, 56 minutes, 1 second
+Tuesday comma Wednesday
+2:56:08 2 hours, 56 minutes, 8 seconds
+comma Thursday comma
+2:56:16 2 hours, 56 minutes, 16 seconds
+Friday then Arrow if our case is Monday Tuesday Wednesday Thursday or Friday then do the following
+2:56:25 2 hours, 56 minutes, 25 seconds
+we'll print it is a weekday now Saturday and Sunday do the same thing too let's cut one of these
+2:56:34 2 hours, 56 minutes, 34 seconds
+lines and delete them case Saturday comma
+2:56:42 2 hours, 56 minutes, 42 seconds
+Sunday Arrow meaning do this it is the weekend then we'll keep keep our default
+2:56:49 2 hours, 56 minutes, 49 seconds
+case in case there are no matches let's try this again enter the day of the week it is
+2:56:58 2 hours, 56 minutes, 58 seconds
+Wednesday it is a weekday it is Saturday it is the
+2:57:06 2 hours, 57 minutes, 6 seconds
+weekend it is Sunday it is the weekend uh then let's go with uh
+2:57:13 2 hours, 57 minutes, 13 seconds
+Hamburger Day hamburger day is not a day so those are enhanced switches they're a
+2:57:21 2 hours, 57 minutes, 21 seconds
+replacement to using many LF statements if you find yourself using a lot of lsif statements I would recommend
+2:57:28 2 hours, 57 minutes, 28 seconds
+using a switch instead but not just any switch an enhanced switch which is a Java 14 feature that you should know
+2:57:36 2 hours, 57 minutes, 36 seconds
+about and well everybody those are enhanced switches in Java what is going on everybody in this
+2:57:44 2 hours, 57 minutes, 44 seconds
+video we're going to create a simple calculator program using what we've learned with enhanced switches this is meant to be more of a practice project
+2:57:52 2 hours, 57 minutes, 52 seconds
+let's get started the first thing we'll need is a scanner we will create a scanner object scanner scanner equals new scanner within the set of
+2:58:01 2 hours, 58 minutes, 1 second
+parentheses type system.in and then when you open a scanner it is a good idea to close it when you're done with
+2:58:09 2 hours, 58 minutes, 9 seconds
+it scanner. close then be sure to import the class at the top of your Java file
+2:58:16 2 hours, 58 minutes, 16 seconds
+make sure you have this import import java.util.scanner what are the different variables we'll
+2:58:24 2 hours, 58 minutes, 24 seconds
+need a user is going to type in two numbers and an operator such as a plus for addition minus for subtraction so on
+2:58:32 2 hours, 58 minutes, 32 seconds
+and so forth the first variable will be up the double data type double num
+2:58:38 2 hours, 58 minutes, 38 seconds
+one double num two then an operator this will be a Char Char operator
+2:58:49 2 hours, 58 minutes, 49 seconds
+and a result double result there's going to be one more
+2:58:55 2 hours, 58 minutes, 55 seconds
+variable but we'll fill that in later so we'll stick with these four for now we'll prompt a user to type in the first
+2:59:02 2 hours, 59 minutes, 2 seconds
+number followed by an operator than the second number here's how we can write
+2:59:08 2 hours, 59 minutes, 8 seconds
+that let's ask the user to enter the first number and I will use print
+2:59:16 2 hours, 59 minutes, 16 seconds
+instead of print line we will assign num one equal to use our
+2:59:24 2 hours, 59 minutes, 24 seconds
+scanner to get user input next Double then we need the operator we will
+2:59:34 2 hours, 59 minutes, 34 seconds
+use a print statement enter n operator we'll have Plus for addition
+2:59:43 2 hours, 59 minutes, 43 seconds
+minus for subtraction an asterisk for multiplication a for slash for division
+2:59:49 2 hours, 59 minutes, 49 seconds
+let's add one more let's add a carrot this will raise a base to a given power feel free to add more if you would
+2:59:57 2 hours, 59 minutes, 57 seconds
+like but we'll just stick with these five a user is going to enter in a character one of these operators
+3:00:05 3 hours, 5 seconds
+hopefully we will assign our variable of operator equal to scanner.
+3:00:16 3 hours, 16 seconds
+next the next method will give you a string we can method chain the Char at method to return a single character when
+3:00:25 3 hours, 25 seconds
+a user types in something just give me the first character this will also convert it to be a character rather than keep it a
+3:00:33 3 hours, 33 seconds
+string so ideally our operator is going to be a plus a minus an asterisk a
+3:00:39 3 hours, 39 seconds
+forward slash or a carrot then we need num two we can just
+3:00:46 3 hours, 46 seconds
+copy these two lines paste them change first to be second and num one to be num
+3:00:53 3 hours, 53 seconds
+two we have our two numbers and our operator we have to determine what the
+3:01:00 3 hours, 1 minute
+operator is we can use an enhanced switch for that we will create a switch within the set of
+3:01:08 3 hours, 1 minute, 8 seconds
+parentheses we are examining our operator we're examining our operator
+3:01:15 3 hours, 1 minute, 15 seconds
+against any matching cases the first case will be a plus sign and these cases are going to be within single quotes not
+3:01:23 3 hours, 1 minute, 23 seconds
+double quotes because we're working with a character not a string with our switch if our operator
+3:01:31 3 hours, 1 minute, 31 seconds
+is a plus character we're going to write an arrow meaning do this we will take our variable of
+3:01:39 3 hours, 1 minute, 39 seconds
+result set it equal to be num one that's the first number plus num two
+3:01:48 3 hours, 1 minute, 48 seconds
+that will be the case for addition then we have subtraction case minus Arrow do this
+3:01:56 3 hours, 1 minute, 56 seconds
+assign our result equal to num one minus num 2 multiplication would be
+3:02:04 3 hours, 2 minutes, 4 seconds
+case a character vaster risk arrow take our result equals num one * num
+3:02:15 3 hours, 2 minutes, 15 seconds
+two now for division we have a forward slash arrow take our result equals num
+3:02:24 3 hours, 2 minutes, 24 seconds
+one divided by num two now with division if somebody divides by zero we'll return to this
+3:02:33 3 hours, 2 minutes, 33 seconds
+case later and make it a little more sophisticated where we check to see if num 2 is zero I would like for us to get a solid foundation first for this
+3:02:43 3 hours, 2 minutes, 43 seconds
+program so if somebody would like to raise a base to a given power we will use the
+3:02:51 3 hours, 2 minutes, 51 seconds
+carrot we will assign our result equal to now we're going to use the math class the power method of the math class
+3:02:59 3 hours, 2 minutes, 59 seconds
+we can raise a base to a given power we will raise num one to the power of num
+3:03:06 3 hours, 3 minutes, 6 seconds
+two let's perform a test run just to be sure that it works I'm going to display our result after the
+3:03:15 3 hours, 3 minutes, 15 seconds
+switch so Java is giving us a warning that variable result might not have been initialized that's because it's possible
+3:03:23 3 hours, 3 minutes, 23 seconds
+there's no matching cases and we would be keeping our result uninitialized so to clear that up when
+3:03:30 3 hours, 3 minutes, 30 seconds
+we declare our variable we can also assign it I'll just set it to be zero let's perform a test
+3:03:40 3 hours, 3 minutes, 40 seconds
+run enter the first number let's do 3.14 enter an operator let's do addition and the second number
+3:03:49 3 hours, 3 minutes, 49 seconds
+1.1 the result is 4.24 let's do subtraction
+3:03:56 3 hours, 3 minutes, 56 seconds
+3.14 minus 1.1 which gives us 2.04
+3:04:03 3 hours, 4 minutes, 3 seconds
+multiplication 3.14 times let's do two
+3:04:12 3 hours, 4 minutes, 12 seconds
+6.28 then division 3.14 divided by
+3:04:20 3 hours, 4 minutes, 20 seconds
+two that gives us 1.57 then we have power what is
+3:04:27 3 hours, 4 minutes, 27 seconds
+3 to the power of three that is
+3:04:34 3 hours, 4 minutes, 34 seconds
+27 3 * 3 is 9 * 3 is 27 3 ^ of
+3:04:40 3 hours, 4 minutes, 40 seconds
+3 we have one potential issue though what if somebody divides by zero here's what happens
+3:04:48 3 hours, 4 minutes, 48 seconds
+what is 3.14 / 0 we get the output of
+3:04:56 3 hours, 4 minutes, 56 seconds
+infinity here's how we could prevent that underneath the case where we do division we'll write a few lines rather
+3:05:05 3 hours, 5 minutes, 5 seconds
+than just one but we're going to enclose them within a set of curly braces then I'm going to cut this line of
+3:05:13 3 hours, 5 minutes, 13 seconds
+code within this case we'll write an if statement we'll check
+3:05:20 3 hours, 5 minutes, 20 seconds
+if num 2 is equal to zero that's because we can't normally
+3:05:26 3 hours, 5 minutes, 26 seconds
+divide by zero if it is then let's print cannot divide by
+3:05:39 3 hours, 5 minutes, 39 seconds
+zero else we'll assign our result of num one / by num 2 we'll execute the L statement
+3:05:48 3 hours, 5 minutes, 48 seconds
+if num 2 doesn't equal zero because if it did this would be true and we execute this code instead let's try that
+3:05:57 3 hours, 5 minutes, 57 seconds
+again what is 3.14 / 0 cannot divide by
+3:06:05 3 hours, 6 minutes, 5 seconds
+zero however we still do display a result and that is by using this print statement what if somebody types in an
+3:06:13 3 hours, 6 minutes, 13 seconds
+operator that doesn't exist 3.14 I'm going to type in pizza for the
+3:06:21 3 hours, 6 minutes, 21 seconds
+operator type in I don't know one well we still display a result so let's modify this program let's display
+3:06:30 3 hours, 6 minutes, 30 seconds
+a result only if we have a valid operator because right now we don't Pizza is not a valid
+3:06:40 3 hours, 6 minutes, 40 seconds
+operator let's add a Boolean variable of valid operation I will set this to be true
+3:06:48 3 hours, 6 minutes, 48 seconds
+from the beginning if somebody attempts to divide by zero I'm going to take our valid
+3:06:57 3 hours, 6 minutes, 57 seconds
+operation variable and set it to be false because we do not want to continue and display the
+3:07:05 3 hours, 7 minutes, 5 seconds
+result we're going to add a default case the default case will be the following so I'm going to write two
+3:07:14 3 hours, 7 minutes, 14 seconds
+lines of code for the default case let's output invalid
+3:07:24 3 hours, 7 minutes, 24 seconds
+operator then we will take our Boolean variable of valid operation and set it to be
+3:07:30 3 hours, 7 minutes, 30 seconds
+false so this is what our switch looks like feel free to pause the video if you would like a moment to look it
+3:07:38 3 hours, 7 minutes, 38 seconds
+over within our case of division we do have a few lines of code same thing applies with the default
+3:07:46 3 hours, 7 minutes, 46 seconds
+case we're only going to print the result if our Boolean of valid operation is
+3:07:54 3 hours, 7 minutes, 54 seconds
+true if valid operation is equal to true but really we can just shorten this to
+3:08:01 3 hours, 8 minutes, 1 second
+if valid operation then we'll print the result then we don't necessarily need an
+3:08:09 3 hours, 8 minutes, 9 seconds
+else statement because we're already printing either invalid operator or cannot divide by zero
+3:08:18 3 hours, 8 minutes, 18 seconds
+okay let's run this one final time 3.14 plus
+3:08:25 3 hours, 8 minutes, 25 seconds
+2.1 is 5.24 3.14
+3:08:32 3 hours, 8 minutes, 32 seconds
+minus 1.1 is 2.04
+3:08:42 3 hours, 8 minutes, 42 seconds
+3.14 time 2.1 is 6594 4
+3:08:51 3 hours, 8 minutes, 51 seconds
+3.14 okay 3.14 / 0 Let's see what happens cannot divide by zero and we do
+3:08:59 3 hours, 8 minutes, 59 seconds
+not display the result because our equation is invalid which is good we don't want to display the result we're displaying a type of error message
+3:09:09 3 hours, 9 minutes, 9 seconds
+instead let's raise 4 to the power of two which gives us
+3:09:18 3 hours, 9 minutes, 18 seconds
+16 now let's type in an operator that doesn't exist 3.14
+3:09:26 3 hours, 9 minutes, 26 seconds
+Pizza 69 invalid operator that's because Pizza is not a valid
+3:09:34 3 hours, 9 minutes, 34 seconds
+operator all right everybody that is a calculator program that you can write the purpose of this program is to more or less help us with enhanced switch
+3:09:42 3 hours, 9 minutes, 42 seconds
+statements depending on the operator we can perform one of a few operations we've also learned that your cases can take up more than one line if you would
+3:09:50 3 hours, 9 minutes, 50 seconds
+like and well everybody that is a calculator program in Java yo yo yo in today's video I'm going
+3:10:00 3 hours, 10 minutes
+to explain logical operators in Java logical operators they allow us to check or modify more than one condition
+3:10:07 3 hours, 10 minutes, 7 seconds
+there's and or not we'll discuss and first which is represented by two Amper Sands let's declare a variable of
+3:10:16 3 hours, 10 minutes, 16 seconds
+temperature temp meaning temperature I will set this to be 20 I would like to check to see if my temperature Falls
+3:10:23 3 hours, 10 minutes, 23 seconds
+within a certain range well to do that I could use the and logical operator we can check more than one
+3:10:31 3 hours, 10 minutes, 31 seconds
+condition so first I would like to see if my temp is less than or equal to 30 30Â°
+3:10:40 3 hours, 10 minutes, 40 seconds
+C and if the temp is greater than or equal to zero
+3:10:48 3 hours, 10 minutes, 48 seconds
+we have two conditions this time if this is true and this is true then do this
+3:10:54 3 hours, 10 minutes, 54 seconds
+code so let's output the following if our temperature Falls within this range we'll
+3:11:03 3 hours, 11 minutes, 3 seconds
+output the weather is good and for fun I'll let a smiley face cuz why not okay
+3:11:11 3 hours, 11 minutes, 11 seconds
+let's see how this works the temperature is currently 20 20Â° C
+3:11:18 3 hours, 11 minutes, 18 seconds
+the weather is good if the temperature were 40 40Â° C well we don't do
+3:11:26 3 hours, 11 minutes, 26 seconds
+anything this condition evaluated to be false but this one is true our temperature is greater than or equal to
+3:11:35 3 hours, 11 minutes, 35 seconds
+zero that is true but this one is false and using the and logical operator both conditions must be true in order for
+3:11:43 3 hours, 11 minutes, 43 seconds
+this entire statement to be true since only one of them was true where temp is greater than or equal to zero we
+3:11:52 3 hours, 11 minutes, 52 seconds
+don't execute this code the and logical operator is used to check more than one condition we can add as many as we would
+3:11:59 3 hours, 11 minutes, 59 seconds
+like to this time let's create a variable of is sunny this will be a Boolean Boolean is sunny is it sunny
+3:12:09 3 hours, 12 minutes, 9 seconds
+outside I will set that to be true not only are we going to check to see if our temperature is within a
+3:12:16 3 hours, 12 minutes, 16 seconds
+certain range we're also going to check and is sunny is this true so now we are
+3:12:25 3 hours, 12 minutes, 25 seconds
+linking three different conditions all three must be true so if all three are
+3:12:31 3 hours, 12 minutes, 31 seconds
+true we'll outut the following it is sunny
+3:12:42 3 hours, 12 minutes, 42 seconds
+outside let's set is sunny to be false and then we are going to set our temperature to not
+3:12:49 3 hours, 12 minutes, 49 seconds
+240 20 these two conditions are true but
+3:12:57 3 hours, 12 minutes, 57 seconds
+this one is false so we don't do any of it we skip over it with the and logical operator all conditions must be
+3:13:05 3 hours, 13 minutes, 5 seconds
+true if is sunny we're true then well then we execute this code the
+3:13:13 3 hours, 13 minutes, 13 seconds
+temperature Falls within this range this is true and this this is true and this is true all three conditions are true so
+3:13:21 3 hours, 13 minutes, 21 seconds
+we execute this code the weather is good and it is sunny outside we check more than one condition
+3:13:29 3 hours, 13 minutes, 29 seconds
+and both must be true there's also the not logical operator it's a little different how it works is that it gives
+3:13:36 3 hours, 13 minutes, 36 seconds
+you the opposite you can check to see if something is not true let's add an elive
+3:13:43 3 hours, 13 minutes, 43 seconds
+statement we're going to copy these three conditions but make one change we're going to precede is Sunny with the
+3:13:51 3 hours, 13 minutes, 51 seconds
+not logical operator represented by an exclamation point it checks the opposite we are
+3:13:58 3 hours, 13 minutes, 58 seconds
+checking to see if something is not true is our temperature less than or equal to
+3:14:04 3 hours, 14 minutes, 4 seconds
+30 and greater than or equal to zero and is it not Sunny so if something is normally false
+3:14:13 3 hours, 14 minutes, 13 seconds
+using the not logical operator it becomes true if it's normally true it becomes false it gives you the opposite
+3:14:20 3 hours, 14 minutes, 20 seconds
+for a Boolean value basically if the weather is good but it's not Sunny that must mean it's
+3:14:28 3 hours, 14 minutes, 28 seconds
+cloudy it is cloudy outside then I'll add an emoji of a
+3:14:38 3 hours, 14 minutes, 38 seconds
+cloud the temperature is good but we'll set is sunny to be
+3:14:45 3 hours, 14 minutes, 45 seconds
+false the weather is good but it is cloudy outside the temperature Falls within this
+3:14:53 3 hours, 14 minutes, 53 seconds
+range and it is not Sunny the not logical operator checks to
+3:15:00 3 hours, 15 minutes
+see if something is not true then we have the or logical operator represented by two vertical bars or is similar to
+3:15:08 3 hours, 15 minutes, 8 seconds
+the and logical operator however only one condition needs to be true that are linked by the or logical operator with
+3:15:16 3 hours, 15 minutes, 16 seconds
+and both must be true let's say our temperature is really cold it is -10Â°
+3:15:22 3 hours, 15 minutes, 22 seconds
+C but it is sunny outside we actually don't end up doing anything we skip over the if statement
+3:15:31 3 hours, 15 minutes, 31 seconds
+and the else if statement let's add another LF statement we're going to check to see if
+3:15:38 3 hours, 15 minutes, 38 seconds
+our temperature is really hot or really cold we will check if our temp is
+3:15:45 3 hours, 15 minutes, 45 seconds
+greater than 30 or using two vertical bars temp is less than
+3:15:53 3 hours, 15 minutes, 53 seconds
+zero then we'll output the weather is
+3:16:03 3 hours, 16 minutes, 3 seconds
+bad if our temperature is -10 the weather is bad with the or
+3:16:10 3 hours, 16 minutes, 10 seconds
+logical operator at least one condition must be true this condition was false but this one was true so we execute this
+3:16:19 3 hours, 16 minutes, 19 seconds
+code because using the or logical operator at least one condition needs to be
+3:16:25 3 hours, 16 minutes, 25 seconds
+true or if the temperature was 35 35Â°
+3:16:31 3 hours, 16 minutes, 31 seconds
+C this time this condition was true but this one was false so we execute this
+3:16:38 3 hours, 16 minutes, 38 seconds
+code all right let's go over another example we're going to use these logical operators to validate a username when
+3:16:45 3 hours, 16 minutes, 45 seconds
+somebody tries to set a username so in this project we'll need a scanner scanner scanner equals new
+3:16:54 3 hours, 16 minutes, 54 seconds
+scanner we're going to type system.in then import this class then be sure to close your scanner at the end of the file scanner.
+3:17:08 3 hours, 17 minutes, 8 seconds
+close our username has a few rules I'll add these as comments
+3:17:14 3 hours, 17 minutes, 14 seconds
+username must be between 4 through 12
+3:17:21 3 hours, 17 minutes, 21 seconds
+characters username must not contain
+3:17:28 3 hours, 17 minutes, 28 seconds
+spaces or underscores we'll create a string variable of
+3:17:36 3 hours, 17 minutes, 36 seconds
+username we'll create a prompt to have a user enter in a username enter your new
+3:17:45 3 hours, 17 minutes, 45 seconds
+username I'll use print instead of print line we will assign our username using the scanner username equals scanner.
+3:17:55 3 hours, 17 minutes, 55 seconds
+next line we'll write a condition to check if our username is between 4 to 12
+3:18:04 3 hours, 18 minutes, 4 seconds
+characters we're going to check if our username is under four characters or greater than 12 characters we'll check
+3:18:12 3 hours, 18 minutes, 12 seconds
+that within an if statement if our username use the length method to return the
+3:18:19 3 hours, 18 minutes, 19 seconds
+length of this string if the length of our username is less than four use the or logical operator or our
+3:18:28 3 hours, 18 minutes, 28 seconds
+username the length of it using the length method is greater than 12 that means our username is too short or too
+3:18:36 3 hours, 18 minutes, 36 seconds
+long we'll output the following username must be between 4 through 12 characters
+3:18:47 3 hours, 18 minutes, 47 seconds
+let's perform a test run enter your new username I'll type in something that's less than four
+3:18:54 3 hours, 18 minutes, 54 seconds
+characters username must be between 4 to 12 characters let's type in a really long
+3:19:01 3 hours, 19 minutes, 1 second
+username I'll just make up something username must be between 4 to 12 characters let's type in something
+3:19:09 3 hours, 19 minutes, 9 seconds
+actually within that range oh and then we need to add an lse
+3:19:16 3 hours, 19 minutes, 16 seconds
+state statement because I forgot else we will print
+3:19:24 3 hours, 19 minutes, 24 seconds
+welcome plus username enter your new
+3:19:32 3 hours, 19 minutes, 32 seconds
+username welcome whatever your username is the second part of this assignment is
+3:19:39 3 hours, 19 minutes, 39 seconds
+that we need to check to make sure that there are no spaces or underscores within our username after the if statement We'll add an L if statement to
+3:19:47 3 hours, 19 minutes, 47 seconds
+check that using the contains method of strings we can check if a string contains a certain character with our
+3:19:56 3 hours, 19 minutes, 56 seconds
+username we will use the contains method does our username contain any
+3:20:04 3 hours, 20 minutes, 4 seconds
+spaces or does our username contains any
+3:20:11 3 hours, 20 minutes, 11 seconds
+underscores if so we'll output the following user usame must
+3:20:18 3 hours, 20 minutes, 18 seconds
+not contain spaces or underscores let's perform another test
+3:20:28 3 hours, 20 minutes, 28 seconds
+run type in your first and last name including a space username must not contain spaces or
+3:20:36 3 hours, 20 minutes, 36 seconds
+underscores this time I will use an underscore to separate the first and last name username must not contain spaces or
+3:20:44 3 hours, 20 minutes, 44 seconds
+underscores let's type in a usern name that follows the rules that seems to work so that is the or logical operator
+3:20:54 3 hours, 20 minutes, 54 seconds
+if at least one condition is true then the entire statement is true and we execute it all right everybody so those
+3:21:01 3 hours, 21 minutes, 1 second
+are logical operators and checks more than one condition both must be true or checks more than one condition at least
+3:21:09 3 hours, 21 minutes, 9 seconds
+one needs to be true not not is a little different it checks if something is not true basically does the inverse and well
+3:21:18 3 hours, 21 minutes, 18 seconds
+everybody those are logical operators in Java what is going on everybody in this
+3:21:26 3 hours, 21 minutes, 26 seconds
+video I need to explain while Loops in Java if I could summarize a while loop in one sentence a while loop will repeat
+3:21:32 3 hours, 21 minutes, 32 seconds
+some code Forever while some condition remains true first I'll give you a demonstration using an if statement then we'll convert it to be a while loop and
+3:21:41 3 hours, 21 minutes, 41 seconds
+we'll see how it's useful we'll need to accept user input in this demonstration I will create a scanner I'm pretty sure we know how to create one by
+3:21:50 3 hours, 21 minutes, 50 seconds
+now be assured to import the scanner class import java.util.scanner then be sure to close your scanner because I
+3:21:58 3 hours, 21 minutes, 58 seconds
+always forget to do that all right we are going to create a string of
+3:22:05 3 hours, 22 minutes, 5 seconds
+name I'll use an if statement to check to see if my name is empty if name use the is empty method
+3:22:14 3 hours, 22 minutes, 14 seconds
+now Java wants us to assign this name right away okay so I'm going to go ahead and initialize it we can initialize it with an empty space if our name is empty
+3:22:23 3 hours, 22 minutes, 23 seconds
+which it will be we will prompt the user to enter your name I'll use print instead of print line to keep it on the
+3:22:30 3 hours, 22 minutes, 30 seconds
+same line then we will assign our variable of name name equals scanner.
+3:22:37 3 hours, 22 minutes, 37 seconds
+next line after we escape the if statement we'll output our name let's say hello
+3:22:46 3 hours, 22 minutes, 46 seconds
+Plus name so this program will work but there's one issue what if I don't type in anything when I enter my name I'll
+3:22:54 3 hours, 22 minutes, 54 seconds
+just hit enter well we still continue with the rest of the program the output is hello we don't display a name because we
+3:23:03 3 hours, 23 minutes, 3 seconds
+didn't type in anything how can we prevent people from doing stuff like this skipping prompts well we could use a while loop
+3:23:12 3 hours, 23 minutes, 12 seconds
+rather than an if statement replace if with while what we're doing is while this condition
+3:23:20 3 hours, 23 minutes, 20 seconds
+remains true continue this code Forever Until this condition is no longer true
+3:23:28 3 hours, 23 minutes, 28 seconds
+let's try that again enter your name I'm just going to hit enter enter your name no enter your
+3:23:35 3 hours, 23 minutes, 35 seconds
+name no enter your name no okay I give up I'll type in my name then we escape the while loop hello your
+3:23:44 3 hours, 23 minutes, 44 seconds
+name so that's why a while loop Loop is useful we can repeat some code possibly Forever at times we may not want a user
+3:23:51 3 hours, 23 minutes, 51 seconds
+to continue without doing something a while loop would be really helpful for that they would be stuck until this condition is no longer true at the end
+3:24:00 3 hours, 24 minutes
+of your while loop we go back to the beginning to check the condition if the condition is no longer true then we escape the while loop and move on with
+3:24:07 3 hours, 24 minutes, 7 seconds
+the rest of the program there's one thing you should be cautious of though and that is an infinite Loop let me give you a
+3:24:15 3 hours, 24 minutes, 15 seconds
+demonstration with our while loop if we have a condition that we can't change from within the loop that's called an infinite Loop so let's say while the
+3:24:23 3 hours, 24 minutes, 23 seconds
+number one is equal to 1 even my IDE intellig is giving me a warning that 1
+3:24:30 3 hours, 24 minutes, 30 seconds
+is equal to 1 is not updated inside the loop I would not recommend following me along for this part your computer might
+3:24:37 3 hours, 24 minutes, 37 seconds
+freeze up but I'm going to print help I'm stuck in a loop
+3:24:46 3 hours, 24 minutes, 46 seconds
+within this while loop I have no way to change it from inside of it so we're going to be stuck in this while loop forever here's a
+3:24:55 3 hours, 24 minutes, 55 seconds
+demonstration we're just going to print this code forever let's check back later one
+3:25:03 3 hours, 25 minutes, 3 seconds
+eternity later it's still going we're stuck in a loop this may happen to you if you have some condition that you
+3:25:10 3 hours, 25 minutes, 10 seconds
+can't change within your while loop you'll need some way to update your condition let me give you another example again
+3:25:18 3 hours, 25 minutes, 18 seconds
+we'll need our scanner we're going to pretend that
+3:25:29 3 hours, 25 minutes, 29 seconds
+we're playing a game for a user to quit they have to press the q key we will declare a string of
+3:25:36 3 hours, 25 minutes, 36 seconds
+response we'll use a while loop now for my condition for us to be able to escape the while
+3:25:43 3 hours, 25 minutes, 43 seconds
+loop our response I'm going to use the not logical operator
+3:25:50 3 hours, 25 minutes, 50 seconds
+equals a capital Q and this will be a string so while our response does not
+3:25:58 3 hours, 25 minutes, 58 seconds
+equal Q we continue the loop forever in order for somebody to escape this game they have to press Q to quit Java wants
+3:26:07 3 hours, 26 minutes, 7 seconds
+me to assign this variable right away and initialize it so I'll do so we don't want our variable to be empty when we
+3:26:14 3 hours, 26 minutes, 14 seconds
+use it to check a condition then intellig is giving us another warning that our response is not updated inside the loop if we don't update it
+3:26:23 3 hours, 26 minutes, 23 seconds
+we'll be stuck in an infinite Loop let's pretend that we're playing a game you are playing a
+3:26:35 3 hours, 26 minutes, 35 seconds
+game then we'll output press Q to quit
+3:26:46 3 hours, 26 minutes, 46 seconds
+then we will need to update our response response equals use our scanner for Single Character we can use
+3:26:55 3 hours, 26 minutes, 55 seconds
+next in case somebody types in a lowercase que we'll follow this method with the two uppercase
+3:27:03 3 hours, 27 minutes, 3 seconds
+method if a user was to type in a lowercase Q we'll convert it to be an uppercase q so that it
+3:27:10 3 hours, 27 minutes, 10 seconds
+matches once we escape the while loop we'll print you have have quit the
+3:27:20 3 hours, 27 minutes, 20 seconds
+game okay let's perform a test run you are playing a game press Q to quit no
+3:27:28 3 hours, 27 minutes, 28 seconds
+yes okay as long as our response does not equal Q we are still playing our
+3:27:36 3 hours, 27 minutes, 36 seconds
+imaginary game in order for us to quit to escape
+3:27:46 3 hours, 27 minutes, 46 seconds
+the while loop we have to press Q to quit I will press q and we escape the loop you have quit the
+3:27:54 3 hours, 27 minutes, 54 seconds
+game while our response using the not logical operator while our response does
+3:28:00 3 hours, 28 minutes
+not equal Q continue the loop forever let's go over another example we'll ask a user for their
+3:28:09 3 hours, 28 minutes, 9 seconds
+age int age I will set this to be zero right away we'll prompt a user to enter in
+3:28:16 3 hours, 28 minutes, 16 seconds
+their age enter your age we will assign our age
+3:28:24 3 hours, 28 minutes, 24 seconds
+variable AG equal scanner. next int then at the end of this program I
+3:28:32 3 hours, 28 minutes, 32 seconds
+will print you are our variable age plus years
+3:28:43 3 hours, 28 minutes, 43 seconds
+old let's say I would like to prevent somebody from typing in a negative number like -1 you are ne1 years old
+3:28:51 3 hours, 28 minutes, 51 seconds
+well we could use a while loop to reprompt the user before displaying the result so after we assign our age once
+3:28:59 3 hours, 28 minutes, 59 seconds
+let's use a while loop while age is less than zero we'll
+3:29:07 3 hours, 29 minutes, 7 seconds
+output the following your age can't be negative
+3:29:16 3 hours, 29 minutes, 16 seconds
+then we'll reprompt the user again we can just copy these two lines and then paste them within the while loop we'll ask the user to enter in their age again
+3:29:25 3 hours, 29 minutes, 25 seconds
+and reassign it if we keep on typing negative numbers we can't escape the while
+3:29:33 3 hours, 29 minutes, 33 seconds
+loop we're stuck until we type in something that's valid you are 21 years old that's a
+3:29:42 3 hours, 29 minutes, 42 seconds
+valid number from the beginning if I type in something that's valid we don't enter the while loop at all it is possible to
+3:29:51 3 hours, 29 minutes, 51 seconds
+skip over it we check the condition of a while loop before entering it if we type in a
+3:29:58 3 hours, 29 minutes, 58 seconds
+number that's valid let's say ages 25 we check the condition it's false from the beginning so we don't enter the
+3:30:06 3 hours, 30 minutes, 6 seconds
+while loop at all we skip over it and go straight to the end in this program we only get caught in the while loop if we
+3:30:14 3 hours, 30 minutes, 14 seconds
+type in user input that's not valid there's a variation of the while loop known as a do while loop we do some
+3:30:21 3 hours, 30 minutes, 21 seconds
+code first and then check the condition if I was to convert this code to be a do while loop I would cut the
+3:30:29 3 hours, 30 minutes, 29 seconds
+while part do this code then check the condition at the end this is how the program would run
+3:30:37 3 hours, 30 minutes, 37 seconds
+now it's going to be a little bit different your age can't be negative
+3:30:43 3 hours, 30 minutes, 43 seconds
+enter your age I am years old your age can't be negative enter your age you are
+3:30:50 3 hours, 30 minutes, 50 seconds
+whatever your age is years old so with the do while loop we do this code first and then check the condition at the end
+3:30:59 3 hours, 30 minutes, 59 seconds
+where it's different compared to a standard while loop is that with the standard while loop you may not enter the while loop at
+3:31:07 3 hours, 31 minutes, 7 seconds
+all if this condition is false but with the do while loop you always do this code at least once and then check the
+3:31:15 3 hours, 31 minutes, 15 seconds
+condition at the end let's go over one last example with the do while loop we'll prompt a user to type in a number
+3:31:23 3 hours, 31 minutes, 23 seconds
+that's between a certain range we will have int number and I will assign this to be zero right
+3:31:30 3 hours, 31 minutes, 30 seconds
+away let's use a basic while loop first while our number is less than one we'll
+3:31:39 3 hours, 31 minutes, 39 seconds
+use the or logical operator to check or if our number is greater than 10
+3:31:46 3 hours, 31 minutes, 46 seconds
+then do this prompt the user to enter a
+3:31:53 3 hours, 31 minutes, 53 seconds
+number between 1 through 10 then we will assign our variable of
+3:32:03 3 hours, 32 minutes, 3 seconds
+number equals use our scanner use the next int method and then at the end we will print
+3:32:12 3 hours, 32 minutes, 12 seconds
+our number you picked plus
+3:32:21 3 hours, 32 minutes, 21 seconds
+number so let's run this our number is set to zero enter a number between 1 and 10
+3:32:29 3 hours, 32 minutes, 29 seconds
+let's do negative 1 11 -2 one
+3:32:36 3 hours, 32 minutes, 36 seconds
+kajillion I think I broke it okay I'll type in something that's valid like five you picked
+3:32:44 3 hours, 32 minutes, 44 seconds
+five rather than check the the condition from the beginning we could check it at the end so let's convert the while loop
+3:32:51 3 hours, 32 minutes, 51 seconds
+to a do while loop do this code once and then check the
+3:32:59 3 hours, 32 minutes, 59 seconds
+condition so this would work similarly so do this code once check the
+3:33:11 3 hours, 33 minutes, 11 seconds
+condition at the end all right everybody so those are while Loops they allow you to execute some code possibly forever while some
+3:33:19 3 hours, 33 minutes, 19 seconds
+condition remains true they're really useful when accepting user input because the user might not type in something that's valid and you have to keep on
+3:33:27 3 hours, 33 minutes, 27 seconds
+repr prompting them that's one good use there's two variations of while Loops a standard while loop and a do while
+3:33:37 3 hours, 33 minutes, 37 seconds
+loop it depends if you want to check the condition before entering the loop and well everybody those are while Loops in
+3:33:44 3 hours, 33 minutes, 44 seconds
+Java hello everybody in today's video we're going to create a number guessing game
+3:33:51 3 hours, 33 minutes, 51 seconds
+using Java let's get started in this program we'll be using random numbers we'll need to create a random object
+3:33:59 3 hours, 33 minutes, 59 seconds
+random random equals new random then import this class so at the
+3:34:07 3 hours, 34 minutes, 7 seconds
+top of our Java file import java.util random this random object can Generate random numbers for us we'll
+3:34:16 3 hours, 34 minutes, 16 seconds
+also accept user input we'll need a scanner scanner scanner equals new scanner then within the set of
+3:34:25 3 hours, 34 minutes, 25 seconds
+parentheses type system.in then import this class as well import java.util.scanner we have a random
+3:34:34 3 hours, 34 minutes, 34 seconds
+object to Generate random numbers and a scanner object to accept user input what are the different variables
+3:34:41 3 hours, 34 minutes, 41 seconds
+we'll need we'll need the following an integer to hold our guess so let's say we're going to guess
+3:34:49 3 hours, 34 minutes, 49 seconds
+a random number between 1 and 100 we'll use the scanner to accept an integer and place it within this variable of
+3:34:57 3 hours, 34 minutes, 57 seconds
+guess for example the guess might be 50 we need to keep track of the amount of attempts it took a user to get the
+3:35:04 3 hours, 35 minutes, 4 seconds
+correct number int attempts we'll assign these later and we'll need a random number int
+3:35:13 3 hours, 35 minutes, 13 seconds
+random number let's go ahead and assign this right away to generate a random number we're going to use our random
+3:35:22 3 hours, 35 minutes, 22 seconds
+object use the next int method of a random object within this method we can
+3:35:29 3 hours, 35 minutes, 29 seconds
+list two numbers a range if I would like a number between let's say 1 and 10 my
+3:35:36 3 hours, 35 minutes, 36 seconds
+two numbers would be 1 comma 11 the first number is inclusive the second number is
+3:35:43 3 hours, 35 minutes, 43 seconds
+exclusive let's perform a test run of a random number I just want to be sure that it's generating correctly when writing a program it is a good idea to
+3:35:51 3 hours, 35 minutes, 51 seconds
+test your code every once in a while just to be sure that everything is working so we should get random numbers
+3:35:58 3 hours, 35 minutes, 58 seconds
+between 1 and 10 1 10 5 8 good enough a
+3:36:07 3 hours, 36 minutes, 7 seconds
+random number stores a random number after generating it let's create a welcome message let's
+3:36:15 3 hours, 36 minutes, 15 seconds
+say number guessing game we will prompt the
+3:36:23 3 hours, 36 minutes, 23 seconds
+user guess a number between let's start with 1 through 10
+3:36:32 3 hours, 36 minutes, 32 seconds
+later on we'll increase it to 100 now we'll need a while loop but not
+3:36:41 3 hours, 36 minutes, 41 seconds
+just any while loop we'll create a do while loop so do this code once while
+3:36:48 3 hours, 36 minutes, 48 seconds
+this condition remains true and let me zoom in a little bit so what's our condition going to be
+3:36:55 3 hours, 36 minutes, 55 seconds
+we're going to continue playing this game while our guess does not equal our random number
+3:37:05 3 hours, 37 minutes, 5 seconds
+we'll keep on playing until we get the random number exclamation point equals means not equal so if our guess does not
+3:37:13 3 hours, 37 minutes, 13 seconds
+equal our random number this return turns true then we want to keep playing while our guess doesn't equal the random
+3:37:21 3 hours, 37 minutes, 21 seconds
+number within this do while loop will prompt the user to enter in their guess I'm going to use print line
+3:37:30 3 hours, 37 minutes, 30 seconds
+instead of print for guess a number between 1 and 10 now we'll prompt the user to enter a
+3:37:36 3 hours, 37 minutes, 36 seconds
+number enter a guess enter a guess for this I'll use print instead of
+3:37:43 3 hours, 37 minutes, 43 seconds
+print line we will assign Our Guest variable equal to use our scanner use
+3:37:52 3 hours, 37 minutes, 52 seconds

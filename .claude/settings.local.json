@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const j = require\\('./src/data/curriculum.json'\\); const lessons = j.chapters[0].lessons; console.log\\('Lessons:', lessons.length\\); lessons.forEach\\(l => console.log\\(' ', l.title, '—', l.slides.length, 'slides'\\)\\);\")"
+    ]
+  }
+}

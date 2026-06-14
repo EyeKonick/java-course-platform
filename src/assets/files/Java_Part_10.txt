@@ -1,0 +1,1067 @@
+have to pass in those types for our product let's say that it's an apple and an apple is 50 Cents that's a
+10:49:53 10 hours, 49 minutes, 53 seconds
+double let's create two methods within our product class we will create a method to get our item let's say public
+10:50:03 10 hours, 50 minutes, 3 seconds
+we're returning an item the data type is T so we're going to return T get
+10:50:11 10 hours, 50 minutes, 11 seconds
+item we will return this do item then to return the
+10:50:18 10 hours, 50 minutes, 18 seconds
+price let's say public U cuz we're returning the price it has a type of U Get
+10:50:28 10 hours, 50 minutes, 28 seconds
+price return this do price we have our product
+10:50:36 10 hours, 50 minutes, 36 seconds
+object I'm going to Output take our product object called the get item
+10:50:44 10 hours, 50 minutes, 44 seconds
+method and this is going to return are apple or I could get the price get
+10:50:54 10 hours, 50 minutes, 54 seconds
+price and that is 0.5 you can use string format but that might be overkill for this lesson all
+10:51:01 10 hours, 51 minutes, 1 second
+right let's create a second product so we'll have product one and product
+10:51:08 10 hours, 51 minutes, 8 seconds
+two Now product two will use an integer instead of a double and let's say that these are
+10:51:15 10 hours, 51 minutes, 15 seconds
+tickets like movie tickets ticket and the price will be $15 for
+10:51:22 10 hours, 51 minutes, 22 seconds
+$15 let's take product two call the get item
+10:51:30 10 hours, 51 minutes, 30 seconds
+method so we have our ticket and we should have a price get
+10:51:39 10 hours, 51 minutes, 39 seconds
+price the price of a movie ticket is$ 15 $15 all right everybody so that is an introduction to two generics it's a
+10:51:48 10 hours, 51 minutes, 48 seconds
+concept where you can write a class interface or method that is compatible with different data types basically we're writing the logic of how this
+10:51:56 10 hours, 51 minutes, 56 seconds
+class works and it's compatible with all different types you just have to set up a type parameter and then pass in type
+10:52:04 10 hours, 52 minutes, 4 seconds
+arguments and well everybody that is an introduction to generics in Java well it's up everybody so today I got to
+10:52:12 10 hours, 52 minutes, 12 seconds
+explain hashmaps in Java hashmaps are a popular data structure they store a pair of values a key value
+10:52:20 10 hours, 52 minutes, 20 seconds
+pair you have a key and a value associated with that key the keys have to be unique but the values can be
+10:52:27 10 hours, 52 minutes, 27 seconds
+duplicated hashmaps do not maintain any order but they are very memory efficient when creating a hashmap we have to set
+10:52:34 10 hours, 52 minutes, 34 seconds
+up type parameters we have to specify what the data type of the key is and its value here's how to create a hashmap we
+10:52:42 10 hours, 52 minutes, 42 seconds
+will type hashmap let's say map for short hashmap map equals new hash
+10:52:52 10 hours, 52 minutes, 52 seconds
+map we'll need to import this class it looks like we're missing something let's take a look raw use of parameterized
+10:53:00 10 hours, 53 minutes
+class hashmap if we take a look at the hashmap class we have type parameter set up there's two values we learned about type
+10:53:09 10 hours, 53 minutes, 9 seconds
+parameters in the last video on generics we can store any two types of values within a hashmap we have a key and a
+10:53:16 10 hours, 53 minutes, 16 seconds
+value represented by K and V we have to send type arguments to the type parameters when creating a hashmap we'll
+10:53:23 10 hours, 53 minutes, 23 seconds
+have to set up some type arguments so after our hashmap we have to list the data type of what we're storing these have to be reference data types so let's
+10:53:33 10 hours, 53 minutes, 33 seconds
+say with our map we're going to have products an item and a price so for the item that could be a string a string
+10:53:41 10 hours, 53 minutes, 41 seconds
+representation of our item so for the price we could do an integer but I think a double would be
+10:53:48 10 hours, 53 minutes, 48 seconds
+better because you can have dollars and cents then we also need to use the diamond operator after the second hashmap you don't need to State the data
+10:53:56 10 hours, 53 minutes, 56 seconds
+types again even though you technically could Java can actually infer what the data type is so after the second hashmap
+10:54:04 10 hours, 54 minutes, 4 seconds
+add the diamond operator and there we go we have our hashmap that we have named map the way that we've set this up is
+10:54:12 10 hours, 54 minutes, 12 seconds
+that we've told the hashmap class we're going to store a string as the key and a double as the value so to put things in
+10:54:19 10 hours, 54 minutes, 19 seconds
+a hash map we're going to take our map called the put method we're going to put something in the hashmap we've specified
+10:54:27 10 hours, 54 minutes, 27 seconds
+that we're storing a string then a double a string for the key and a double for the value so let's say we have a
+10:54:35 10 hours, 54 minutes, 35 seconds
+store and in our store we sell produce we will have an apple and its price will
+10:54:42 10 hours, 54 minutes, 42 seconds
+be 50 CS 0.50 to put some something in a hashmap you use the put method we have to pass
+10:54:49 10 hours, 54 minutes, 49 seconds
+in two values as arguments all right let's add a few more things we'll have an
+10:54:56 10 hours, 54 minutes, 56 seconds
+orange an orange will be 75 cents let's say then a banana bananas are pretty
+10:55:03 10 hours, 55 minutes, 3 seconds
+cheap they will be 25 cents all right let's take a look at our hash map I'm going to show you what happens if we
+10:55:12 10 hours, 55 minutes, 12 seconds
+output our map directly system.out.print line our map our hash map and here's what we have we have all
+10:55:21 10 hours, 55 minutes, 21 seconds
+the key value pairs printed within our hash map we have a string and a double string double string
+10:55:30 10 hours, 55 minutes, 30 seconds
+double now with hash Maps the keys have to be unique for example let's say I try and put another orange within here we'll
+10:55:39 10 hours, 55 minutes, 39 seconds
+attempt to add another orange and we'll see what happens exactly put another Orange
+10:55:47 10 hours, 55 minutes, 47 seconds
+within our map and let's say that the price is 1 million Venezuelan dollars yes oranges
+10:55:55 10 hours, 55 minutes, 55 seconds
+are very expensive in Venezuela because of inflation so here's what happens if we have duplicate Keys you actually overwrite the previous
+10:56:04 10 hours, 56 minutes, 4 seconds
+key value pair our orange is now worth 1 million Venezuelan dollars so do keep that in mind hashmaps cannot have
+10:56:13 10 hours, 56 minutes, 13 seconds
+duplicate keys if you put another key value pair with than a hashmap and it already exists you'll overwrite it but that's also good if you want to change
+10:56:21 10 hours, 56 minutes, 21 seconds
+one of the key value pairs let's add one more key value pair let's say a coconut map. put we will put a coconut within
+10:56:30 10 hours, 56 minutes, 30 seconds
+our hash map coconuts are a little more expensive they'll be $1 let's print our map to test
+10:56:38 10 hours, 56 minutes, 38 seconds
+it there's our coconut then we can remove an element to remove an element take your map call the
+10:56:46 10 hours, 56 minutes, 46 seconds
+remove method here you're going to pass in a key let's remove our
+10:56:53 10 hours, 56 minutes, 53 seconds
+Apple then print our map there the apple is gone we have
+10:57:00 10 hours, 57 minutes
+orange banana coconut but no apple so I'm going to keep that in but turn it into a
+10:57:06 10 hours, 57 minutes, 6 seconds
+comment to get the value associated with the key you can use the get method so let me delete this print line statement
+10:57:16 10 hours, 57 minutes, 16 seconds
+we will take our map called the get method let's get the value with this
+10:57:24 10 hours, 57 minutes, 24 seconds
+key give me the value where the key is Apple is what we're saying that would be
+10:57:31 10 hours, 57 minutes, 31 seconds
+0.5 meaning 50 or we can get our
+10:57:38 10 hours, 57 minutes, 38 seconds
+coconut the value associated with this key is one meaning $1 all right you can also check to see
+10:57:45 10 hours, 57 minutes, 45 seconds
+if a key or a value exists here's how we'll use the contains key method
+10:57:52 10 hours, 57 minutes, 52 seconds
+take our map call the contains key method and then pass in a key is there a
+10:57:59 10 hours, 57 minutes, 59 seconds
+key of banana that returns a Boolean in this case
+10:58:06 10 hours, 58 minutes, 6 seconds
+true is there a pineapple there is not so that returns
+10:58:14 10 hours, 58 minutes, 14 seconds
+false you could use this with than an if statement here's how we will check
+10:58:21 10 hours, 58 minutes, 21 seconds
+if let me zoom in if our map call the contains key
+10:58:28 10 hours, 58 minutes, 28 seconds
+method and then pass in a key does our map contain any apples contains key
+10:58:36 10 hours, 58 minutes, 36 seconds
+Apple if that returns true we'll output map. getet then we'll get our Apple
+10:58:46 10 hours, 58 minutes, 46 seconds
+this will give us the price else if contains key is false then we'll output something else we'll
+10:58:56 10 hours, 58 minutes, 56 seconds
+output key not found all right let's test this so we do
+10:59:03 10 hours, 59 minutes, 3 seconds
+have an apple we've set this up to return the price but let's say we are looking for a pineapple contains key
+10:59:12 10 hours, 59 minutes, 12 seconds
+pineapple if we do find a pineapple we will get the price price currently there's no pineapples within our map key
+10:59:20 10 hours, 59 minutes, 20 seconds
+not found so that's how the contains key method would be useful we also have the capability to check to see if a map contains a value
+10:59:29 10 hours, 59 minutes, 29 seconds
+so we will take our map within a print line statement called the contains Value method and then pass in a
+10:59:37 10 hours, 59 minutes, 37 seconds
+value is there anything that's $1 1.0 this returns a Boolean and that's
+10:59:44 10 hours, 59 minutes, 44 seconds
+true our key of coconut has a value of 1.0 $1 and you do have to pay attention
+10:59:52 10 hours, 59 minutes, 52 seconds
+to the data type too if I were to pass in an integer this does return false you do have to keep that in mind too that's how
+11:00:01 11 hours, 1 second
+to check to see if a map contains a key and a value you can return the size of a map
+11:00:08 11 hours, 8 seconds
+using map. size map dot called the size method currently there's four key value pairs within our map
+11:00:16 11 hours, 16 seconds
+this will return the number four to get the size of a map call the size method all right now the last thing that
+11:00:24 11 hours, 24 seconds
+we're going to do if we were to print our map we're given this ugly formatting where we have a set of curly
+11:00:33 11 hours, 33 seconds
+braces then all the key value pairs comma separated this time using a for loop we're going to cycle through all the key
+11:00:41 11 hours, 41 seconds
+value pairs we will create an enhanced for Loop what we're going to iterate through is every key and these have a string data
+11:00:50 11 hours, 50 seconds
+type because that's the way that we set them up the data type of each element is going to be a string which we will name
+11:00:58 11 hours, 58 seconds
+key colon think of it as in for every key in now what we have to do is get all
+11:01:06 11 hours, 1 minute, 6 seconds
+the keys from our map and there's actually a method for that a beginners friendly way to get all the keys from
+11:01:13 11 hours, 1 minute, 13 seconds
+our map what we can do is take our map call the key set method this will return all the keys
+11:01:21 11 hours, 1 minute, 21 seconds
+within our map and they're iterable so we can use them within a for Loop for every key in our set of keys what do we
+11:01:29 11 hours, 1 minute, 29 seconds
+want to do let's do the following within a print line statement let's print our key plus we'll list each product and its
+11:01:39 11 hours, 1 minute, 39 seconds
+price key plus maybe I'll add a colon space then pick a unit of currency I'll pick
+11:01:46 11 hours, 1 minute, 46 seconds
+American dollars for every key we need to get its value so we can use the get
+11:01:52 11 hours, 1 minute, 52 seconds
+method plus map. getet pass in our key by using an enhanced for Loop we can
+11:02:00 11 hours, 2 minutes
+customize the output of the key value Pairs and I think this looks a lot better we have each product each piece
+11:02:07 11 hours, 2 minutes, 7 seconds
+of fruit and its price laid out in this format you could technically use print F if you want to display two digits after the decimal
+11:02:16 11 hours, 2 minutes, 16 seconds
+but that might be a little too much for this lesson I want to keep it as simple as possible all right everybody so those are hashmaps it's a data structure that
+11:02:24 11 hours, 2 minutes, 24 seconds
+stores key value pairs the keys have to be unique but the values can be duplicated we have to specify the type
+11:02:32 11 hours, 2 minutes, 32 seconds
+for the key and its value and well everybody those are hashmaps in Java all right let's do this thing
+11:02:39 11 hours, 2 minutes, 39 seconds
+everybody today we're talking about enums en nums is short for enumerations they're a special kind of class they
+11:02:46 11 hours, 2 minutes, 46 seconds
+represent a fixed set of constants by using enums they improve code readability and are easy to maintain one
+11:02:54 11 hours, 2 minutes, 54 seconds
+of the major benefits of enums is that they're more efficient with switches when comparing strings so basically an
+11:03:01 11 hours, 3 minutes, 1 second
+enum is a special kind of class where we declare constants here's a demonstration we're going to create a new class file
+11:03:09 11 hours, 3 minutes, 9 seconds
+new Java class we're going to select enum enum is a special kind of class sort of like like how an interface is a
+11:03:16 11 hours, 3 minutes, 16 seconds
+special kind of class we will create an enum of day public enum Day within this Java
+11:03:25 11 hours, 3 minutes, 25 seconds
+class we can declare some constants what we're going to write is enum constants a common convention for these constants is
+11:03:33 11 hours, 3 minutes, 33 seconds
+that all the letters are uppercase so after the enum constant We'll add a set of parentheses then associate this
+11:03:40 11 hours, 3 minutes, 40 seconds
+constant with the value so let's say that we're working with days of the week Sunday will be the the first day of the
+11:03:46 11 hours, 3 minutes, 46 seconds
+week Sunday we'll have a value of one let's do this with the other days of the week Monday parentheses then a value
+11:03:55 11 hours, 3 minutes, 55 seconds
+Monday will be the second day of the week then we'll just follow this
+11:04:11 11 hours, 4 minutes, 11 seconds
+pattern and all these constants with a semicolon all right we have our enum constants they have values 1 through 7
+11:04:20 11 hours, 4 minutes, 20 seconds
+we're receiving some warnings here expected zero arguments but one found what we need to do is create a
+11:04:27 11 hours, 4 minutes, 27 seconds
+Constructor a Constructor for our day class when we Define these enum constants we're automatically going to
+11:04:34 11 hours, 4 minutes, 34 seconds
+call the Constructor for this enum class and then pass in this value let's create a field of day number for days of the
+11:04:41 11 hours, 4 minutes, 41 seconds
+week we'll make these values private we'll use the private access modifier we don't want the ability to change them
+11:04:48 11 hours, 4 minutes, 48 seconds
+we'll make them final these are integers that's the data type we'll name these values day
+11:04:56 11 hours, 4 minutes, 56 seconds
+number when we Define these enum constants we're automatically going to call the Constructor and then pass in this value to the
+11:05:04 11 hours, 5 minutes, 4 seconds
+Constructor for the parameters we'll have int then our field of day number this day
+11:05:13 11 hours, 5 minutes, 13 seconds
+number equals the day day number that we receive if you would like you can add a
+11:05:20 11 hours, 5 minutes, 20 seconds
+getter method to actually get the day number we'll use the public access modifier we're returning an integer
+11:05:29 11 hours, 5 minutes, 29 seconds
+we'll Define a method of get day number and we will return our field of
+11:05:38 11 hours, 5 minutes, 38 seconds
+this. day number all right and we have set up our enum class reading and understanding these enum constants is a
+11:05:45 11 hours, 5 minutes, 45 seconds
+lot easier than these numbers if I was looking at the number five I would have trouble understanding that that means Thursday now how do we work with these
+11:05:53 11 hours, 5 minutes, 53 seconds
+enum constants exactly here's how within our main Java file we will create a day object by
+11:06:01 11 hours, 6 minutes, 1 second
+using this enum class let me delete
+11:06:06 11 hours, 6 minutes, 6 seconds
+this day day rather than saying new day and then passing in a number like one
+11:06:14 11 hours, 6 minutes, 14 seconds
+there's a different approach we will access the day class Dot and then specify a constant a day of the
+11:06:23 11 hours, 6 minutes, 23 seconds
+week let's say Sunday remember that this is all caps our day is an object let's
+11:06:30 11 hours, 6 minutes, 30 seconds
+output our day and see what it outputs this will output Sunday all caps
+11:06:37 11 hours, 6 minutes, 37 seconds
+if you would rather get the day number the value that's associated with this enum constant then we can use that getter method
+11:06:46 11 hours, 6 minutes, 46 seconds
+day. get day number so we have Sunday and one where
+11:06:55 11 hours, 6 minutes, 55 seconds
+this is really going to be helpful is when working with switches here's a demonstration we will actually use an enhanced
+11:07:03 11 hours, 7 minutes, 3 seconds
+switch what are we examining we're examining our day object if our day matches a case of Monday now this isn't
+11:07:12 11 hours, 7 minutes, 12 seconds
+a string If This Were A String we would enclose this within a set of quotes but using enums within a switch is actually faster than using
+11:07:20 11 hours, 7 minutes, 20 seconds
+strings if it's Monday then we'll output the following we'll use an arrow because this is an enhanced switch then we'll
+11:07:28 11 hours, 7 minutes, 28 seconds
+output it is a weekday then if we have a case of Tuesday let me just copy
+11:07:36 11 hours, 7 minutes, 36 seconds
+this Tuesday we'll also output it is a weekday you can actually combine these cases together too you just have to
+11:07:44 11 hours, 7 minutes, 44 seconds
+comma separate them so case Monday comma Tuesday do this then let's do this with the other
+11:07:52 11 hours, 7 minutes, 52 seconds
+days of the week just for readability I'll put these on new lines each of these cases so we have
+11:08:01 11 hours, 8 minutes, 1 second
+Wednesday Thursday Friday these are all the weekdays Monday
+11:08:09 11 hours, 8 minutes, 9 seconds
+through Friday then if we have case Saturday then it's the weekend case Saturday
+11:08:15 11 hours, 8 minutes, 15 seconds
+today we'll do the following output it is the
+11:08:22 11 hours, 8 minutes, 22 seconds
+weekend and we will also add a case for Sunday so currently our day is
+11:08:29 11 hours, 8 minutes, 29 seconds
+Sunday that will output it is the weekend if it were let's say
+11:08:38 11 hours, 8 minutes, 38 seconds
+Wednesday then instead we output it is a weekday if we were comparing strings all these cases would be enclosed within a
+11:08:45 11 hours, 8 minutes, 45 seconds
+set of double quotes kind of like this but we don't need to do that it's
+11:08:53 11 hours, 8 minutes, 53 seconds
+actually more efficient to use enums for some practice what we'll do this time is accept some user input
+11:09:01 11 hours, 9 minutes, 1 second
+we'll need a scanner scanner scanner equals new scanner pass it
+11:09:10 11 hours, 9 minutes, 10 seconds
+system.in import this class be sure to close your scanner because I tend to forget scanner.
+11:09:20 11 hours, 9 minutes, 20 seconds
+close then we'll need a prompt we will output the following we'll use print rather than print
+11:09:27 11 hours, 9 minutes, 27 seconds
+Line enter a day of the week we will create a string variable
+11:09:35 11 hours, 9 minutes, 35 seconds
+let's say response equals use our scanner call the next line
+11:09:42 11 hours, 9 minutes, 42 seconds
+method all these constants are uppercase we'll method chain the two uppercase method to make our user input
+11:09:50 11 hours, 9 minutes, 50 seconds
+uppercase when creating a day object by using the enum class we will use our
+11:09:56 11 hours, 9 minutes, 56 seconds
+response we will use the value of method and then pass in our response now
+11:10:03 11 hours, 10 minutes, 3 seconds
+we should be able to type in a day enter a day of the week I will type Monday it is a weekday let's run this
+11:10:12 11 hours, 10 minutes, 12 seconds
+again I will type Sunday it is the weekend what if we type in a day that doesn't exist like pizza
+11:10:20 11 hours, 10 minutes, 20 seconds
+day well we get an exception an illegal argument exception we can catch that exception using a try and catch block any
+11:10:28 11 hours, 10 minutes, 28 seconds
+dangerous code we're going to enclose within a tri block we will try the dangerous
+11:10:38 11 hours, 10 minutes, 38 seconds
+code and catch any exceptions we will catch that illegal
+11:10:46 11 hours, 10 minutes, 46 seconds
+argument exception which we will name e if the user input doesn't match one of these e nums then we'll output the
+11:10:55 11 hours, 10 minutes, 55 seconds
+following please enter a valid day let's try it
+11:11:03 11 hours, 11 minutes, 3 seconds
+again enter day of the week let's try Tuesday it is a
+11:11:10 11 hours, 11 minutes, 10 seconds
+weekday Saturday it is the weekend
+11:11:16 11 hours, 11 minutes, 16 seconds
+Pizza day please enter a valid day Pizza day is not one of our enums but if we
+11:11:23 11 hours, 11 minutes, 23 seconds
+wanted to change it so it was we can add that pizza day will be the eighth day of
+11:11:31 11 hours, 11 minutes, 31 seconds
+the week at least it should be we'll need a case for pizza
+11:11:41 11 hours, 11 minutes, 41 seconds
+day Pizza day will also be part of the weekend that just makes sense to me all right let's try that
+11:11:50 11 hours, 11 minutes, 50 seconds
+again enter day of the week Pizza day it is the weekend all right all right
+11:11:57 11 hours, 11 minutes, 57 seconds
+everybody so those are enums meaning enumerations they're a special kind of class kind of like how interfaces are a
+11:12:04 11 hours, 12 minutes, 4 seconds
+special kind of class they represent a fixed set of constants they improve code readability and reliability and where
+11:12:12 11 hours, 12 minutes, 12 seconds
+they're really useful is when working with switches because when working with switches using enums is faster than strings if I wasn't
+11:12:20 11 hours, 12 minutes, 20 seconds
+using enum constants I could use integers which are also efficient but as a programmer this is
+11:12:30 11 hours, 12 minutes, 30 seconds
+way less readable for me at first clance I would have no idea what these numbers are but if they're enum constants this
+11:12:37 11 hours, 12 minutes, 37 seconds
+is perfectly readable to me these are days of the week that makes sense and well everybody those are enums in Java
+11:12:45 11 hours, 12 minutes, 45 seconds
+what's going on people in this video I'm going to teach you all about threading in Java threading allows a program to run multiple tasks simultaneously it
+11:12:54 11 hours, 12 minutes, 54 seconds
+helps to improve performance with timeconsuming operations such as file input output network communications or any other
+11:13:02 11 hours, 13 minutes, 2 seconds
+background tasks any code that is considered timec consuming we can have it run on a different thread so that it doesn't inconvenience our main program
+11:13:10 11 hours, 13 minutes, 10 seconds
+there's two options to creating a thread option one is to extend the thread class this is the simpler option but it's
+11:13:18 11 hours, 13 minutes, 18 seconds
+limited option two is to implement the runnable interface this option tends to be better because by extending the
+11:13:25 11 hours, 13 minutes, 25 seconds
+thread class we're limited to single inheritance but by implementing the redible interface that's one way around that in this demonstration I'm going to
+11:13:34 11 hours, 13 minutes, 34 seconds
+show you option two it's actually not that more difficult than option one and it gives you more possibilities I'll give you a demonstration of why
+11:13:42 11 hours, 13 minutes, 42 seconds
+threading is useful in this program where about to write let's say it's a game or a quiz or something a user has
+11:13:51 11 hours, 13 minutes, 51 seconds
+10 seconds to respond and if they don't times up currently we have one thread we're running our program on what is known as the main thread without using
+11:14:00 11 hours, 14 minutes
+any other threads besides the main thread I might write my program something like this we'll start with the scanner because we'll be accepting user
+11:14:07 11 hours, 14 minutes, 7 seconds
+input scanner scanner equals new scanner pass in system.in import this class
+11:14:16 11 hours, 14 minutes, 16 seconds
+and close your scanner when you're done with it scanner.
+11:14:23 11 hours, 14 minutes, 23 seconds
+close we're going to let a user know that they have let's say 5 Seconds to enter their
+11:14:29 11 hours, 14 minutes, 29 seconds
+name you have 5 Seconds to enter your
+11:14:36 11 hours, 14 minutes, 36 seconds
+name we will create a prompt enter your name I'll use print rather than and
+11:14:45 11 hours, 14 minutes, 45 seconds
+print line we will assign a string variable of name use our scanner called the next
+11:14:52 11 hours, 14 minutes, 52 seconds
+line method and then once we have the name we'll output hello plus the user's name hello
+11:15:01 11 hours, 15 minutes, 1 second
+plus name so let's do a test run currently we don't have a timer setup you have 5 Seconds down to your
+11:15:09 11 hours, 15 minutes, 9 seconds
+name I can type in a name hit enter we display hello the name and then the program exits processed finished with
+11:15:17 11 hours, 15 minutes, 17 seconds
+exit Code Zero if we were creating some sort of timer we could do the following to make this simple we could
+11:15:24 11 hours, 15 minutes, 24 seconds
+use a for Loop the for Loop is going to cycle five times we will have an index of I in I equals 1 that's where we'll
+11:15:33 11 hours, 15 minutes, 33 seconds
+start we'll continue as long as I is less than or equal to 5 and then increment I by One during each cycle of
+11:15:42 11 hours, 15 minutes, 42 seconds
+the for Loop to mimic waiting for one second you can access the thread class call the Sleep Method pass in 1,000
+11:15:52 11 hours, 15 minutes, 52 seconds
+milliseconds when you use thread that refers to the current thread that we're working with in this case the main thread which is what our main program
+11:16:00 11 hours, 16 minutes
+runs on but since our thread might be interrupted we do need a try and catch block because this is considered
+11:16:07 11 hours, 16 minutes, 7 seconds
+dangerous code we will try this code where we will have our main Java thread sleep for 1,000 milliseconds
+11:16:16 11 hours, 16 minutes, 16 seconds
+and we will catch the following exception an interrupted exception So within our catch block we
+11:16:23 11 hours, 16 minutes, 23 seconds
+will catch any interrupted exceptions which we will name e if our thread is interrupted we will
+11:16:30 11 hours, 16 minutes, 30 seconds
+say thread was interrupted in our imaginary timer we'll
+11:16:37 11 hours, 16 minutes, 37 seconds
+need an exit condition let's say if our index of I is equal to 5
+11:16:45 11 hours, 16 minutes, 45 seconds
+that means times up so we'll output times up I'm going to show you
+11:16:52 11 hours, 16 minutes, 52 seconds
+why this won't work the way that we think we have 5 Seconds to enter our name but there's no prompt or
+11:17:01 11 hours, 17 minutes, 1 second
+anything then we get the message times up and only after that Loop is complete are we allowed to enter our name and
+11:17:08 11 hours, 17 minutes, 8 seconds
+then we can type in our name we get the output of hello our name and then the program exits so the problem that we're
+11:17:15 11 hours, 17 minutes, 15 seconds
+running into is that all of this code is running on our main thread we have 5 Seconds to enter our name but we can't
+11:17:22 11 hours, 17 minutes, 22 seconds
+reach that code until the 5 seconds are up because our main thread is waiting for this Loop to finish so what we could
+11:17:29 11 hours, 17 minutes, 29 seconds
+do is create a separate thread where we're counting to five and our main thread is going to be in charge of accepting our user input so here's how
+11:17:39 11 hours, 17 minutes, 39 seconds
+to create another thread we're going to extend the runable interface to create a runnable object
+11:17:45 11 hours, 17 minutes, 45 seconds
+let's go to file new Java class this will be a class we'll name this class my
+11:17:53 11 hours, 17 minutes, 53 seconds
+runnable or something unique that's relevant to what you're creating my runnable is going to
+11:18:02 11 hours, 18 minutes, 2 seconds
+implements because we're working with interfaces the runnable interface if you implement an interface
+11:18:10 11 hours, 18 minutes, 10 seconds
+it's kind of like you're signing a contract we have to override any required method me we need to override
+11:18:17 11 hours, 18 minutes, 17 seconds
+the run method we need the at override annotation then we will override the run method public void
+11:18:26 11 hours, 18 minutes, 26 seconds
+run within this run method we're going to add any code we want to run in the background on a separate thread going
+11:18:33 11 hours, 18 minutes, 33 seconds
+back to our main Java file we're going to cut this Loop and then paste it within the run
+11:18:40 11 hours, 18 minutes, 40 seconds
+method when we call this run method we'll have this countdown timer run running in the background on a separate thread any code you want to run on a
+11:18:48 11 hours, 18 minutes, 48 seconds
+separate thread place within the run method all right going back to our main Java file we'll tell the user they have
+11:18:55 11 hours, 18 minutes, 55 seconds
+5 Seconds to enter their name we have our class of my runnable we will create a my runnable object or
+11:19:04 11 hours, 19 minutes, 4 seconds
+whatever it is that you named to this class let's say my runnable will be the name of the object equals new my
+11:19:13 11 hours, 19 minutes, 13 seconds
+runable we will take this runnable object pass it into the Constructor of the thread class here's where we're
+11:19:20 11 hours, 19 minutes, 20 seconds
+going to create a new thread thread thread equals new thread pass in your runnable object as
+11:19:29 11 hours, 19 minutes, 29 seconds
+an argument to the thread Constructor now we just need our thread to start you'll take your thread call the
+11:19:37 11 hours, 19 minutes, 37 seconds
+start method and this should work let's try it you have 5 Seconds to enter your name
+11:19:45 11 hours, 19 minutes, 45 seconds
+and we get that prompt of enter your name but I'm not going to type in anything we get the message times up because we ran out of
+11:19:54 11 hours, 19 minutes, 54 seconds
+time let's try it again I'll type in my name this time there we go we get our output hello
+11:20:01 11 hours, 20 minutes, 1 second
+bro then we get the message time is up both these threads are running at the same time the code within our run method
+11:20:10 11 hours, 20 minutes, 10 seconds
+is running on a separate thread it's running in the background while our main program is running running so that's why threads are useful so let me extend this
+11:20:19 11 hours, 20 minutes, 19 seconds
+time let's say 10 seconds if I is equal to 10 just to give us some more
+11:20:26 11 hours, 20 minutes, 26 seconds
+time you have 10 seconds to enter your name now check this out you have 10 seconds to to your name
+11:20:35 11 hours, 20 minutes, 35 seconds
+I'll type in my name immediately we get the output hello whatever your name is but the program is still running because that second thread is still running in
+11:20:43 11 hours, 20 minutes, 43 seconds
+the background our program doesn't exit until all threads are done if your main thread is done you can
+11:20:51 11 hours, 20 minutes, 51 seconds
+end all other threads but you'll want to set those threads to be what is known as Damon threads a Damon thread will end
+11:20:58 11 hours, 20 minutes, 58 seconds
+when the main thread is over we will take our thread call the set Damon method pass and
+11:21:07 11 hours, 21 minutes, 7 seconds
+true this thread is going to end as soon as our main thread is finished let's try it again you have 10 seconds then to
+11:21:15 11 hours, 21 minutes, 15 seconds
+your name I'll type in my name we get our output and then our program exits without saying time is up processed
+11:21:22 11 hours, 21 minutes, 22 seconds
+finished with exit code zero that's because we set our second thread to be a Damon thread it ends when
+11:21:30 11 hours, 21 minutes, 30 seconds
+the main thread is over now on the other hand let's say that we wait for time to be up we wait the full 10
+11:21:42 11 hours, 21 minutes, 42 seconds
+seconds time's up our program isn't over yet we're still waiting for user input and I can still type it
+11:21:50 11 hours, 21 minutes, 50 seconds
+in hello bro process finished with exit Code Zero optionally what you could do to get your program to exit go to your
+11:21:58 11 hours, 21 minutes, 58 seconds
+runnable class wherever you would like your program to exit when seconds equals 10 that's where I would like to exit to
+11:22:06 11 hours, 22 minutes, 6 seconds
+exit the program prematurely I can access system called the exit method pass in an exit code of zero that will
+11:22:14 11 hours, 22 minutes, 14 seconds
+ENT the program all right let's try this again you have 10 seconds to end to your
+11:22:21 11 hours, 22 minutes, 21 seconds
+name I'm not going to type in anything I'm just going to wait for the full 10 seconds time's up and then our program
+11:22:31 11 hours, 22 minutes, 31 seconds
+exits but that's what we want though the way that we've set up this program is that we want this program to exit either when we finish typing in our name or we
+11:22:39 11 hours, 22 minutes, 39 seconds
+run out of time all right everybody so that is an introduction to in it allows a program to run multiple tasks simultaneously it
+11:22:49 11 hours, 22 minutes, 49 seconds
+helps to improve performance with timeconsuming operations it's useful with file input and output operations network
+11:22:56 11 hours, 22 minutes, 56 seconds
+communications or any other background tasks and well everybody that is an introduction to threading in Java yo we
+11:23:05 11 hours, 23 minutes, 5 seconds
+finally made it to multi-threading in Java multi-threading enables a program to run multiple threads concurrently at
+11:23:12 11 hours, 23 minutes, 12 seconds
+the same time as we've talked about in the previous lesson a thread is a set of instructions and they run independently from other threads multi-threading is
+11:23:21 11 hours, 23 minutes, 21 seconds
+useful for background tasks or other timeconsuming operations in the prior lesson we've learned that there's two ways to create
+11:23:28 11 hours, 23 minutes, 28 seconds
+threads we can either extend the thread class or implement the runable interface the second option is better in most cases because we're not limited by
+11:23:36 11 hours, 23 minutes, 36 seconds
+single inheritance here's how we can get started multi-threading we're going to create a new class file new Java class
+11:23:44 11 hours, 23 minutes, 44 seconds
+we'll call this class my runnable my runnable will
+11:23:52 11 hours, 23 minutes, 52 seconds
+implements the runnable interface if we're implementing an interface it's kind of like we're signing a contract we
+11:23:59 11 hours, 23 minutes, 59 seconds
+have to override any required methods we have to override the run method public void
+11:24:08 11 hours, 24 minutes, 8 seconds
+run whatever is within the run method this is the code that's going to perform when this thread is up and running
+11:24:15 11 hours, 24 minutes, 15 seconds
+so what would we like to do just for a beginner's example let's count to five using a four Loop we'll write a for
+11:24:24 11 hours, 24 minutes, 24 seconds
+Loop we will create an index of I I'll set that equal to be one right away we'll continue as long as I is less than
+11:24:32 11 hours, 24 minutes, 32 seconds
+or equal to 5 cuz we're counting to five then increment I by 1 during each cycle
+11:24:39 11 hours, 24 minutes, 39 seconds
+this for loop I would like this thread to wait for 1 second before printing whatever I is what whatever the current count is if we're counting we will
+11:24:47 11 hours, 24 minutes, 47 seconds
+access the thread class called The Sleep Method pass in 1,000 milliseconds to sleep for a
+11:24:54 11 hours, 24 minutes, 54 seconds
+second we will need to surround this method with try and catch blocks we'll catch any interrupted
+11:25:02 11 hours, 25 minutes, 2 seconds
+exceptions but let's output the following we'll say thread was
+11:25:09 11 hours, 25 minutes, 9 seconds
+interrupted after our thread sleeps for 1 second let's display the current count I'll just say I just to keep it
+11:25:17 11 hours, 25 minutes, 17 seconds
+simple let's go back to our main Java file we'll need to create a runable object my
+11:25:24 11 hours, 25 minutes, 24 seconds
+runable let's say my runable equals new my
+11:25:33 11 hours, 25 minutes, 33 seconds
+runable we have to pass in this runable object to a thread object let's say thread thread equals new thread we will
+11:25:42 11 hours, 25 minutes, 42 seconds
+pass in our runable object to get this thread to start we have to call the start method of our thread thread. start
+11:25:50 11 hours, 25 minutes, 50 seconds
+method and this should work we'll test
+11:25:55 11 hours, 25 minutes, 55 seconds
+it 1 2 3 4 5 and then we exit the
+11:26:02 11 hours, 26 minutes, 2 seconds
+program another shortcut you can do too instead of creating a named runable object we can pass in an anonymous
+11:26:09 11 hours, 26 minutes, 9 seconds
+renable object to the thread Constructor so let's copy this section delete this line of code and then pass in a new
+11:26:17 11 hours, 26 minutes, 17 seconds
+runable object this will work too and it's a lot more
+11:26:28 11 hours, 26 minutes, 28 seconds
+concise now we won't have just one thread we'll have two so let's rename thread as thread one copy this line of
+11:26:36 11 hours, 26 minutes, 36 seconds
+code paste it rename the second thread as thread two thread 1. start and thread
+11:26:43 11 hours, 26 minutes, 43 seconds
+2. start so now we'll have two threads running at the same time they're running
+11:26:51 11 hours, 26 minutes, 51 seconds
+concurrently so they both say 1 2 3 4 5 we have successfully
+11:27:00 11 hours, 27 minutes
+multi-threaded you could differentiate these by getting their name here's an example to get each thread's name we're
+11:27:07 11 hours, 27 minutes, 7 seconds
+going to access the thread class called the current thread method
+11:27:14 11 hours, 27 minutes, 14 seconds
+and then method chain the get name method then I'll add a space plus our
+11:27:21 11 hours, 27 minutes, 21 seconds
+counter RI just so we can see each thread by its name and what it's counting exactly okay
+11:27:29 11 hours, 27 minutes, 29 seconds
+let's try this again we have thread one and thread zero now they won't always be in the same
+11:27:37 11 hours, 27 minutes, 37 seconds
+order they're running independently thread zero that's our thread one Java's thread one is our
+11:27:44 11 hours, 27 minutes, 44 seconds
+thread two okay here's an exercise we're going to have thread one say ping and thread 2
+11:27:53 11 hours, 27 minutes, 53 seconds
+say pong like we're playing a game of pingpong we'll modify the my runnable
+11:28:00 11 hours, 28 minutes
+class we'll need some text a text variable we'll say private final we don't want it to
+11:28:07 11 hours, 28 minutes, 7 seconds
+change string text then we'll need a Constructor to assign it my
+11:28:16 11 hours, 28 minutes, 16 seconds
+runnable we have one parameter a string of text we will assign this. text equals
+11:28:24 11 hours, 28 minutes, 24 seconds
+the text we receive instead of printing our counter we'll print our
+11:28:32 11 hours, 28 minutes, 32 seconds
+text all right and that's all we need going back to our main Java file we have to pass in some text when we construct a
+11:28:39 11 hours, 28 minutes, 39 seconds
+runable object for the first thread we'll we'll say ping for the second thread we'll say
+11:28:48 11 hours, 28 minutes, 48 seconds
+pong so here's what we have currently pong
+11:28:57 11 hours, 28 minutes, 57 seconds
+ping and then we exit the program before we start the threads let's say game start there's one more
+11:29:06 11 hours, 29 minutes, 6 seconds
+thing I want to show you game start after we start the threads let's
+11:29:14 11 hours, 29 minutes, 14 seconds
+try and say game over game over here's what
+11:29:20 11 hours, 29 minutes, 20 seconds
+happens game start game over and our two threads are still running then we
+11:29:28 11 hours, 29 minutes, 28 seconds
+finish so the problem here is that in our main thread it doesn't Wait For Thread one and thread two to
+11:29:35 11 hours, 29 minutes, 35 seconds
+finish our main thread ends immediately we can have our main thread wait for these threads to finish by
+11:29:42 11 hours, 29 minutes, 42 seconds
+calling the join method of each thread our main thread we'll wait for these two threads to finish after these two threads start we'll use each join method thread 1.
+11:29:54 11 hours, 29 minutes, 54 seconds
+join and thread 2 dojin and we do have to surround these
+11:30:03 11 hours, 30 minutes, 3 seconds
+with try and catch blocks try thread 1. jooin and thread 2
+11:30:14 11 hours, 30 minutes, 14 seconds
+do jooin if our main thread is interrupted we'll output main thread was
+11:30:21 11 hours, 30 minutes, 21 seconds
+interrupted okay this should work now before we display game over we're going to wait for our two threads to
+11:30:29 11 hours, 30 minutes, 29 seconds
+finish here's what we got game start and we display pingpong and we'll do that five times
+11:30:37 11 hours, 30 minutes, 37 seconds
+and then display game over all right everybody that is an introduction to multi-threading
+11:30:44 11 hours, 30 minutes, 44 seconds
+it enables a program to run multiple threads concurrently a thread is a set of instructions that run independently
+11:30:52 11 hours, 30 minutes, 52 seconds
+multi-threading is useful for background tasks or other timeconsuming operations and well everybody that is an
+11:30:59 11 hours, 30 minutes, 59 seconds
+introduction to multi-threading in Java hey everybody in this video we're going to create a working alarm clock that plays music using
+11:31:09 11 hours, 31 minutes, 9 seconds
+Java all right let's get started everybody this alarm clock is going to to serve as a final project for us will combine a lot of Concepts that we've
+11:31:17 11 hours, 31 minutes, 17 seconds
+learned throughout the series when starting a new project a good first step is to declare all your variables or other objects that you'll need
+11:31:24 11 hours, 31 minutes, 24 seconds
+throughout this program we'll begin with the scanner because we'll be accepting user input a user is going to enter in a Time scanner scanner equals new scanner
+11:31:34 11 hours, 31 minutes, 34 seconds
+pass in system.in and we'll be importing classes as we go along at the end of this
+11:31:41 11 hours, 31 minutes, 41 seconds
+program we're going to close our scan but we'll actually move it later on because our alarm clock class is actually going to be using it more on
+11:31:50 11 hours, 31 minutes, 50 seconds
+that later we have our scanner and currently we're closing it a user is going to use the scanner and enter in
+11:31:58 11 hours, 31 minutes, 58 seconds
+hours minutes and seconds to set the alarm when the user types in a string representation of a time we need to parse it into a local time object but
+11:32:07 11 hours, 32 minutes, 7 seconds
+we'll need a formatter object we will create a date time formatter object
+11:32:14 11 hours, 32 minutes, 14 seconds
+you'll need to import this class too we'll name this object formatter equals we will access the class of
+11:32:23 11 hours, 32 minutes, 23 seconds
+datetime formatter called the of pattern method within this method we have to
+11:32:31 11 hours, 32 minutes, 31 seconds
+pass in a pattern a pattern that represents the time for hours minutes and seconds within a string we will pass
+11:32:38 11 hours, 32 minutes, 38 seconds
+in two Capital H's for hours colon two lowercase M for minutes colon two lowercase s's for
+11:32:47 11 hours, 32 minutes, 47 seconds
+seconds when a user types in a string representation of a time using our scanner we'll use this formatter object when we parse it into a Time
+11:32:56 11 hours, 32 minutes, 56 seconds
+object then we will create a local time object which we will name alarm
+11:33:05 11 hours, 33 minutes, 5 seconds
+time we'll instantiate that later import this class now we'll need a user to enter in
+11:33:12 11 hours, 33 minutes, 12 seconds
+the time we'll create a prompt enter n alarm time we'll give
+11:33:20 11 hours, 33 minutes, 20 seconds
+them a prompt for this format hours minutes seconds let me switch this to print CU I
+11:33:29 11 hours, 33 minutes, 29 seconds
+like it on the same line let's create a string variable of let's name this input time
+11:33:39 11 hours, 33 minutes, 39 seconds
+equals use our scanner call the next next line method to get a line of text from the
+11:33:47 11 hours, 33 minutes, 47 seconds
+user all right now here's where we're going to parse our string our input time and assign it to our alarm time object
+11:33:55 11 hours, 33 minutes, 55 seconds
+so we have to convert it we have to parse it we will assign our alarm time object set it equal to access the class
+11:34:05 11 hours, 34 minutes, 5 seconds
+of local time and there is a parse method we have to pass in two arguments the first is a string representation of
+11:34:13 11 hours, 34 minutes, 13 seconds
+our time and our format object that we have previously declared and instantiated then we'll output the
+11:34:21 11 hours, 34 minutes, 21 seconds
+following message alarm set 4 plus our alarm time we can output it
+11:34:32 11 hours, 34 minutes, 32 seconds
+directly let's do a test run let's say I set my alarm for
+11:34:41 11 hours, 34 minutes, 41 seconds
+730 this is going to be in military time alarm set for
+11:34:48 11 hours, 34 minutes, 48 seconds
+7:30 what if we type in a time that doesn't make sense uh like the word Pizza well we encounter an exception a
+11:34:57 11 hours, 34 minutes, 57 seconds
+date time parse exception we can use exception handling to catch this exception I'm just going to copy it and then paste it
+11:35:05 11 hours, 35 minutes, 5 seconds
+later this portion is considered dangerous code we can put that within a try block try this dangerous code catch
+11:35:13 11 hours, 35 minutes, 13 seconds
+and any of the following exceptions we will catch that date time parse exception which we will name
+11:35:21 11 hours, 35 minutes, 21 seconds
+e import this class okay then take all of this previous code stick it within our Tri
+11:35:28 11 hours, 35 minutes, 28 seconds
+block we will try this code and catch this exception if it pops up we'll
+11:35:35 11 hours, 35 minutes, 35 seconds
+output the following let's say invalid
+11:35:41 11 hours, 35 minutes, 41 seconds
+format please use hours
+11:35:48 11 hours, 35 minutes, 48 seconds
+minutes seconds let me change that to use I've already used Pizza let's go
+11:35:57 11 hours, 35 minutes, 57 seconds
+with Taco for the alarm time invalid format please use hours minutes
+11:36:04 11 hours, 36 minutes, 4 seconds
+seconds let's try 8:00 alarm set for
+11:36:11 11 hours, 36 minutes, 11 seconds
+8:00 all right good we know that that works why don't we prompt the user to enter in the time again if it is an
+11:36:18 11 hours, 36 minutes, 18 seconds
+invalid format we can use a while loop while some condition is true
+11:36:25 11 hours, 36 minutes, 25 seconds
+continue to do the following let's cut our code our trying catch blocks stick it within the while loop what's our
+11:36:34 11 hours, 36 minutes, 34 seconds
+condition while our alarm time is empty there's actually a value that you can assign an object and that is null null
+11:36:42 11 hours, 36 minutes, 42 seconds
+has no value within our while loop we'll continue this while loop while our alarm time is
+11:36:48 11 hours, 36 minutes, 48 seconds
+equal to a value of null so if I were to just hit enter we
+11:36:55 11 hours, 36 minutes, 55 seconds
+get an invalid format please use hours minute seconds and it won't let me continue until I enter in a valid
+11:37:03 11 hours, 37 minutes, 3 seconds
+time so I will set this to be 9:00 and then our alarm is set for
+11:37:11 11 hours, 37 minutes, 11 seconds
+9:00 the first section of this project is complete we have successfully set an alarm time our alarm time is a local
+11:37:18 11 hours, 37 minutes, 18 seconds
+time object the next part is to create an alarm clock class to create alarm clock objects we're going to create an
+11:37:26 11 hours, 37 minutes, 26 seconds
+alarm clock class file new Java class we will name this class alarm
+11:37:36 11 hours, 37 minutes, 36 seconds
+clock we're going to have our alarm clock run on a separate thread to do that we can implement
+11:37:44 11 hours, 37 minutes, 44 seconds
+the runnable interface so we can do some threading but if we implement the runable interface it's kind of like we're
+11:37:51 11 hours, 37 minutes, 51 seconds
+signing a contract we have to override the run method public void
+11:37:59 11 hours, 37 minutes, 59 seconds
+run when this alarm clock is running on a separate thread it's going to execute any code within the run method but we're
+11:38:07 11 hours, 38 minutes, 7 seconds
+going to fill that in later currently our alarm clock needs one thing it needs an alarm time
+11:38:14 11 hours, 38 minutes, 14 seconds
+which we will send it from the main Java file let's set that up as a field with our alarm time I'm going to
+11:38:23 11 hours, 38 minutes, 23 seconds
+make it private I only want the alarm clock class to be able to change it I will also make it final it's
+11:38:30 11 hours, 38 minutes, 30 seconds
+unchangeable the data type it's an object it's a local time object which we will name alarm time and then we do need
+11:38:40 11 hours, 38 minutes, 40 seconds
+to import this class too all right then we need a Constructor we will take our alarm
+11:38:48 11 hours, 38 minutes, 48 seconds
+clock we need one parameter currently a local time of alarm time we
+11:38:56 11 hours, 38 minutes, 56 seconds
+will assign this do alarm time equals the alarm time that we receive all right that's
+11:39:06 11 hours, 39 minutes, 6 seconds
+good okay let's go back to our main Java file before we close our scanner we're going to create an alarm clock
+11:39:15 11 hours, 39 minutes, 15 seconds
+object alarm clock is the class we will name this object alarm clock equals new
+11:39:23 11 hours, 39 minutes, 23 seconds
+alarm clock but the way that we set up this class is that we have to pass in an alarm time a local time
+11:39:33 11 hours, 39 minutes, 33 seconds
+object we have our alarm time we've already verified it using this while loop it should be a valid format we will
+11:39:42 11 hours, 39 minutes, 42 seconds
+pass in our local time of alarm time to the alarm clock in order to construct it since our alarm clock is going to be running on a separate thread we'll have
+11:39:51 11 hours, 39 minutes, 51 seconds
+to create a new thread thread let's name this alarm thread equals a new thread and then
+11:40:00 11 hours, 40 minutes
+we'll pass in our alarm clock we can do this because our alarm clock it implements the runnable interface so our
+11:40:07 11 hours, 40 minutes, 7 seconds
+alarm clock is going to run on a different thread than the main thread to start a thread you will take your thread in this case alarm thread called the
+11:40:16 11 hours, 40 minutes, 16 seconds
+start method so once we start our alarm thread it's going to execute the run method all
+11:40:24 11 hours, 40 minutes, 24 seconds
+right so for testing purposes let's get the time right now to get the time right now we will create a local time object
+11:40:32 11 hours, 40 minutes, 32 seconds
+let's just call it now what's the time right now equals access the class of local time called the now method I will
+11:40:41 11 hours, 40 minutes, 41 seconds
+display the time right now just for testing purposes I want to be sure that our alarm clock class is
+11:40:50 11 hours, 40 minutes, 50 seconds
+working so we have to enter in a valid alarm time I'll just set it to be 8:00 a.m. alarm is set and here's the current
+11:40:57 11 hours, 40 minutes, 57 seconds
+time right now at least for me I'm filming this video at 7:26 in the morning it is going to be in military
+11:41:06 11 hours, 41 minutes, 6 seconds
+time and then we have a bunch of milliseconds after we know that we're successfully calling the run method
+11:41:15 11 hours, 41 minutes, 15 seconds
+so we have the time right now we're going to compare times is the time right now before our alarm time if it is we'll
+11:41:24 11 hours, 41 minutes, 24 seconds
+continue sleeping we'll have our thread sleep we can delete this print statement I was just testing it we need to check if the time right
+11:41:33 11 hours, 41 minutes, 33 seconds
+now is before the alarm time if it is we'll continue waiting we can do this with the while
+11:41:41 11 hours, 41 minutes, 41 seconds
+loop take our time right now call the is before method we can
+11:41:48 11 hours, 41 minutes, 48 seconds
+compare local times is the time right now before our alarm
+11:41:54 11 hours, 41 minutes, 54 seconds
+time if it is we're going to sleep for 1 second access the thread class sleep for
+11:42:01 11 hours, 42 minutes, 1 second
+1,000 milliseconds all right we do need to surround this with a TR and catch block let's do
+11:42:09 11 hours, 42 minutes, 9 seconds
+that try and sleep for 1,000 milliseconds if this thread is interrupted we'll output the
+11:42:18 11 hours, 42 minutes, 18 seconds
+following thread was interrupted this is if we encounter an interrupted
+11:42:26 11 hours, 42 minutes, 26 seconds
+exception we're checking the time right now is it before our alarm time if it is let's output the time currently I'm
+11:42:34 11 hours, 42 minutes, 34 seconds
+going to condense some of this code outside of our while loop we're already creating an object of now so why don't
+11:42:40 11 hours, 42 minutes, 40 seconds
+we do this let's cut this line and do the following access the class of
+11:42:49 11 hours, 42 minutes, 49 seconds
+local time call the now method and then method chain the is before method basically every second we're
+11:42:59 11 hours, 42 minutes, 59 seconds
+going to get the time right now and compare it to our alarm time is the time right now before our alarm time if this
+11:43:07 11 hours, 43 minutes, 7 seconds
+while loop is running we'll output the time so we'll output
+11:43:13 11 hours, 43 minutes, 13 seconds
+local time called the now method let's do a test
+11:43:21 11 hours, 43 minutes, 21 seconds
+run ENT turn an alarm time I'll just say 8:00 a.m. to keep it simple alarm set for 8 a.m. and here's
+11:43:30 11 hours, 43 minutes, 30 seconds
+the current time it updates every 1 second approximately every 1 second now let's do some formatting
+11:43:38 11 hours, 43 minutes, 38 seconds
+because I don't like all these milliseconds afterwards here's what we could do we could create
+11:43:46 11 hours, 43 minutes, 46 seconds
+an integer variable of ours set it equal to access the class of local
+11:43:54 11 hours, 43 minutes, 54 seconds
+time called the now method then method chain the get hour method to return the number of
+11:44:01 11 hours, 44 minutes, 1 second
+hours then we're going to do this with minutes int minutes get
+11:44:10 11 hours, 44 minutes, 10 seconds
+minute int second seconds get
+11:44:21 11 hours, 44 minutes, 21 seconds
+second okay I'm going to show you what happens if I print ours plus a
+11:44:29 11 hours, 44 minutes, 29 seconds
+colon plus minutes plus a colon again plus
+11:44:38 11 hours, 44 minutes, 38 seconds
+seconds here's what we have currently I will set this to be 8
+11:44:46 11 hours, 44 minutes, 46 seconds
+a.m. alarm set for 8 a.m. so this looks pretty good but I would like some leading
+11:44:58 11 hours, 44 minutes, 58 seconds
+zeros we could do that with print F so let's switch this around print
+11:45:06 11 hours, 45 minutes, 6 seconds
+f for print F We'll add some placeholders which we can use with a percent sign to display two leading zeros we can use
+11:45:15 11 hours, 45 minutes, 15 seconds
+02 if we're going to insert an integer we have to use D for decimal so let's do
+11:45:22 11 hours, 45 minutes, 22 seconds
+this three times 02 D percent 02
+11:45:29 11 hours, 45 minutes, 29 seconds
+D we are inserting hours minutes and seconds let's try it
+11:45:37 11 hours, 45 minutes, 37 seconds
+again I will set the time to be 8:00 a.m.
+11:45:44 11 hours, 45 minutes, 44 seconds
+oh and then I'm forgetting the colons and a new line character so let's insert some
+11:45:52 11 hours, 45 minutes, 52 seconds
+colons and then add a new line character to the end because I forgot to do
+11:46:04 11 hours, 46 minutes, 4 seconds
+that that's much better and we have that leading zero if one of these values is one digit that looks pretty good now
+11:46:13 11 hours, 46 minutes, 13 seconds
+what we'll do rather than updating the time and placing it on a new line every 1,000 milliseconds we're going to edit it in
+11:46:21 11 hours, 46 minutes, 21 seconds
+place here's how with our print F statement we're going to insert back SLR
+11:46:28 11 hours, 46 minutes, 28 seconds
+this is for carriage return it'll move the cursor back to the beginning and then we'll get rid of the new line character it should look something like
+11:46:36 11 hours, 46 minutes, 36 seconds
+this now our time is going to update in place
+11:46:46 11 hours, 46 minutes, 46 seconds
+rather than take up a new line for each time it updates I think this looks a lot
+11:46:55 11 hours, 46 minutes, 55 seconds
+better all right so we're going to condense some of these steps instead of accessing the local time class three separate times let's just do it once
+11:47:04 11 hours, 47 minutes, 4 seconds
+we'll create a local time object named now equals access the class of local time
+11:47:12 11 hours, 47 minutes, 12 seconds
+call the now method when we assign ours we will access our object of now now is our
+11:47:21 11 hours, 47 minutes, 21 seconds
+local time now. getet hour for minutes now doget minute and seconds now. getet
+11:47:30 11 hours, 47 minutes, 30 seconds
+second and then we'll insert them using our printf statement or even instead of assigning
+11:47:37 11 hours, 47 minutes, 37 seconds
+variables we could just call now doget hour now. get
+11:47:44 11 hours, 47 minutes, 44 seconds
+minute and now. getet second and we can delete these variables cuz we don't need them just for readability I'll place
+11:47:52 11 hours, 47 minutes, 52 seconds
+these on a new line and I'm just going to line them
+11:48:01 11 hours, 48 minutes, 1 second
+up all right this should work too let's make
+11:48:10 11 hours, 48 minutes, 10 seconds
+sure yes it does you can keep this code the way it was before but I like it a little more
+11:48:18 11 hours, 48 minutes, 18 seconds
+concise all right our while loop is done so once we escape the while loop that means the local time is our alarm
+11:48:27 11 hours, 48 minutes, 27 seconds
+time or past our alarm time so for testing purposes let's output the following let's just say alarm
+11:48:36 11 hours, 48 minutes, 36 seconds
+noises we haven't added any audio yet for my alarm time I'm just going to set
+11:48:46 11 hours, 48 minutes, 46 seconds
+it to be 1 minute past what it is currently in this case 7:44 but pick a different time depending on what time it is for you
+11:48:54 11 hours, 48 minutes, 54 seconds
+currently so I just need to wait for 20 seconds all right once we reach our
+11:49:02 11 hours, 49 minutes, 2 seconds
+alarm time or it's past our alarm time we display alarm noises and then exit the program I'm going to add a new line
+11:49:11 11 hours, 49 minutes, 11 seconds
+character just before we display alarm noises for our alarm we'll be playing some music later just for now we're
+11:49:19 11 hours, 49 minutes, 19 seconds
+going to play a single beep just to be sure that everything is working basically to have Java make a beep noise you can do the following access the
+11:49:27 11 hours, 49 minutes, 27 seconds
+class of tool kit call the get default toolkit
+11:49:36 11 hours, 49 minutes, 36 seconds
+method call the beep method and then we do need to import this class once we escape the wild Loop we
+11:49:44 11 hours, 49 minutes, 44 seconds
+will display alarm noises and make a beep sound a single
+11:49:51 11 hours, 49 minutes, 51 seconds
+beep I will set my alarm to be
+11:49:58 11 hours, 49 minutes, 58 seconds
+747 I'll have to come back in one minute there we
+11:50:06 11 hours, 50 minutes, 6 seconds
+go we display our text of alarm noises and hopefully you heard that beep so we know that our alarm arm clock is working
+11:50:13 11 hours, 50 minutes, 13 seconds
+to make a more sophisticated version we're going to play an audio file I have an audio file here it's a
+11:50:21 11 hours, 50 minutes, 21 seconds
+wave file the following code isn't going to be compatible with MP3s if you do have an MP3 file you can always use an online MP3 to wave converter that's what
+11:50:31 11 hours, 50 minutes, 31 seconds
+I did to make this convenient for me I'm going to place this wave file within my project
+11:50:37 11 hours, 50 minutes, 37 seconds
+folder here's my wave file going back to our main Java file I will create a
+11:50:43 11 hours, 50 minutes, 43 seconds
+string variable a file path string file path equals here I can list a relative file
+11:50:52 11 hours, 50 minutes, 52 seconds
+path or an absolute file path this wave file is within my project folder I just need to list the file name so I'm going
+11:50:59 11 hours, 50 minutes, 59 seconds
+to copy path file name and paste it within that
+11:51:06 11 hours, 51 minutes, 6 seconds
+string with our alarm clock we're going to send it our file path we'll send it as the second argument along with the
+11:51:13 11 hours, 51 minutes, 13 seconds
+alarm time but we have to set up the Constructor so that we can accept
+11:51:21 11 hours, 51 minutes, 21 seconds
+it with our alarm clock class we will create a private final string of file
+11:51:31 11 hours, 51 minutes, 31 seconds
+path then we'll have to set up the parameters we are also accepting a string of file path the location to that
+11:51:39 11 hours, 51 minutes, 39 seconds
+file to play the audio this. file file path equals the file path that we
+11:51:48 11 hours, 51 minutes, 48 seconds
+receive with playing audio there's a lot of code we have to write I'll dedicate an entire method just to playing
+11:51:54 11 hours, 51 minutes, 54 seconds
+audio let's make this a private method so only our alarm clock can access it it's not going to return anything the
+11:52:02 11 hours, 52 minutes, 2 seconds
+return type is void let's name this method play
+11:52:09 11 hours, 52 minutes, 9 seconds
+sound once we reach the end we will call the play sound
+11:52:16 11 hours, 52 minutes, 16 seconds
+method but we're going to pass in our file path so we need a parameter setup of string file
+11:52:25 11 hours, 52 minutes, 25 seconds
+path and now we are within the play sound method to play a w file we're going to
+11:52:32 11 hours, 52 minutes, 32 seconds
+create a file object named audio file equals a new file and then pass in our
+11:52:40 11 hours, 52 minutes, 40 seconds
+file path import this class we'll be doing a lot of importing
+11:52:48 11 hours, 52 minutes, 48 seconds
+as we go along then we need to create an audio input stream audio input
+11:52:56 11 hours, 52 minutes, 56 seconds
+stream we'll name this audio stream equals access the class of audio
+11:53:06 11 hours, 53 minutes, 6 seconds
+system called the get audio input stream method yes that's a lot to
+11:53:14 11 hours, 53 minutes, 14 seconds
+type then we will pass in our audio file import this
+11:53:23 11 hours, 53 minutes, 23 seconds
+class import the class for audio system to there's a lot of different exceptions that we'll need to catch such as if our
+11:53:31 11 hours, 53 minutes, 31 seconds
+audio file is unsupported like it's an MP3 file we'll need some try and catch blocks try this code catch any
+11:53:40 11 hours, 53 minutes, 40 seconds
+exceptions here's one we'll start with we will catch any un
+11:53:51 11 hours, 53 minutes, 51 seconds
+supported audio file exceptions which we will name e import
+11:53:58 11 hours, 53 minutes, 58 seconds
+this class if we encounter this exception we'll output the
+11:54:05 11 hours, 54 minutes, 5 seconds
+following audio file format is not supported
+11:54:12 11 hours, 54 minutes, 12 seconds
+if the audio is unavailable for some reason let's say another resource is accessing it we can catch that
+11:54:20 11 hours, 54 minutes, 20 seconds
+too that exception is a line unavailable exception line
+11:54:27 11 hours, 54 minutes, 27 seconds
+unavailable exception of e let's say something like audio is
+11:54:36 11 hours, 54 minutes, 36 seconds
+unavailable import the class then as a safety net we will catch any IO exceptions input
+11:54:45 11 hours, 54 minutes, 45 seconds
+output exceptions IO exception e here we'll just say error
+11:54:53 11 hours, 54 minutes, 53 seconds
+reading audio file it is good to catch specific kinds of exceptions first which
+11:54:59 11 hours, 54 minutes, 59 seconds
+we are doing this just acts as a safety net so with modern Java you can try with
+11:55:07 11 hours, 55 minutes, 7 seconds
+resources you'll automatically close those resources when you're done with them when we create our audio input
+11:55:14 11 hours, 55 minutes, 14 seconds
+stream let's cut all this code and paste it within the triy with resources block then delete that
+11:55:24 11 hours, 55 minutes, 24 seconds
+semicolon so we have our audio stream we need to create a clip object a clip acts as a player that plays an audio stream
+11:55:33 11 hours, 55 minutes, 33 seconds
+within the tri block we will create a clip object clip clip equals access the class of audio
+11:55:42 11 hours, 55 minutes, 42 seconds
+system system called the get clip method to create a clip object import this
+11:55:51 11 hours, 55 minutes, 51 seconds
+class then we will use our clip and open our audio stream
+11:56:00 11 hours, 56 minutes
+object to get the clip to play we will call the start method of our clip clip.art
+11:56:08 11 hours, 56 minutes, 8 seconds
+method one issue we're probably going to run into is that once we we start playing the clip the program is going to end immediately so we might not even
+11:56:16 11 hours, 56 minutes, 16 seconds
+hear it so temporarily I'm just going to sleep for a couple seconds let's just sleep for 5
+11:56:25 11 hours, 56 minutes, 25 seconds
+seconds and then I do need to add a catch clause for any interrupted exceptions we'll be deleting this don't worry I just want to be sure that it
+11:56:36 11 hours, 56 minutes, 36 seconds
+works I'm going to set it for 802 I got about 40 seconds
+11:56:48 11 hours, 56 minutes, 48 seconds
+[Music]
+11:56:53 11 hours, 56 minutes, 53 seconds
+we played our music for 5 seconds and then we exit the program what I would like to do instead is that we stop the
+11:57:00 11 hours, 57 minutes
+alarm if we hit enter here's how we can set that up we can delete this method where we sleep for 5 seconds instead
+11:57:08 11 hours, 57 minutes, 8 seconds
+we'll wait for a user to hit enter and delete that catch statement too we're going to be using a scanner within
+11:57:16 11 hours, 57 minutes, 16 seconds
+a big project different parts of your project may require different scanners but I like to just reuse the same one
+11:57:23 11 hours, 57 minutes, 23 seconds
+the problem with having multiple scanners is if they use system.in and one scanner closes it it's going to close system.in for all
+11:57:32 11 hours, 57 minutes, 32 seconds
+of them so rather than close the scanner at the end of our main Java file we're going to do that within the alarm clock
+11:57:40 11 hours, 57 minutes, 40 seconds
+class when everything is all done so we'll do that at the end of the tri block however our alarm clock class has
+11:57:47 11 hours, 57 minutes, 47 seconds
+no idea what the scanner is we're going to send it as an argument to the alarm clock class so we'll need to set that up
+11:57:55 11 hours, 57 minutes, 55 seconds
+we will pass in our scanner and reuse it within the alarm clock
+11:58:03 11 hours, 58 minutes, 3 seconds
+class within the alarm clock class we will create a private final scanner object which we will name
+11:58:13 11 hours, 58 minutes, 13 seconds
+scanner import this class set up the parameters we will receive a scanner
+11:58:21 11 hours, 58 minutes, 21 seconds
+object that we can use throughout the alarm clock class this do scanner equals the scanner
+11:58:28 11 hours, 58 minutes, 28 seconds
+that we receive all right and now we have access to that same scanner the same one that we have instantiated at the beginning of our
+11:58:36 11 hours, 58 minutes, 36 seconds
+program and remember we are not closing it at the end of the main Java file anymore once our alarm is playing we will wait
+11:58:44 11 hours, 58 minutes, 44 seconds
+for some user input let's create a prompt we'll say press
+11:58:50 11 hours, 58 minutes, 50 seconds
+enter to stop the alarm I'm going to use
+11:58:59 11 hours, 58 minutes, 59 seconds
+print we will use our scanner called the next line method our music is going to continue
+11:59:07 11 hours, 59 minutes, 7 seconds
+playing until we hit enter once the user hits enter we we are going to take our clip and call the stop
+11:59:15 11 hours, 59 minutes, 15 seconds
+method then close the scanner when we're done with it and that should be everything let's
+11:59:22 11 hours, 59 minutes, 22 seconds
+run this one last time I will set my alarm to be 807
+11:59:36 11 hours, 59 minutes, 36 seconds
+[Music]
+11:59:44 11 hours, 59 minutes, 44 seconds
+to get our alarm to stop we just have to press
+11:59:48 11 hours, 59 minutes, 48 seconds
+[Music]
+11:59:49 11 hours, 59 minutes, 49 seconds
+enter and the alarm stops and we exit the program all right everybody that is a working alarm clock that you can write
+11:59:57 11 hours, 59 minutes, 57 seconds
+using Java"
+### Ran Playwright code
+```js
+await page.evaluate('() => {
+  const segments = document.querySelectorAll("transcript-segment-view-model.ytwTranscriptSegmentViewModelHost");
+  if (!segments.length) return "NONE";
+  return Array.from(segments).map(seg => {
+    const time = seg.querySelector(".ytwTranscriptSegmentViewModelTimestamp")?.innerText.trim();
+    const textEl = seg.querySelector("[class*=\'Text\'], [class*=\'text\'], .ytwTranscriptSegmentViewModelCue, .ytwTranscriptSegmentViewModelCueC");
+    const text = textEl?.innerText.trim() || seg.innerText.replace(time || \'\', \'\').trim();
+    return `${time} ${text}`;
+  }).join("\
+");
+}');
+```
+### Page
+- Page URL: https://www.youtube.com/watch?v=xTtL8E4LzTQ&t=6972s
+- Page Title: Java Full Course for free â˜• - YouTube
+- Console: 10 errors, 75 warnings
+### Events
+- New console entries: .playwright-mcp\console-2026-06-14T16-21-34-678Z.log#L83-L88

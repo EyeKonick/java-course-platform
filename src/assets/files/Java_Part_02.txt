@@ -1,0 +1,1067 @@
+statement there's something I want to demonstrate let's check to
+1:13:10 1 hour, 13 minutes, 10 seconds
+see if age is greater than or equal to
+1:13:16 1 hour, 13 minutes, 16 seconds
+65 then we will print you are a
+1:13:22 1 hour, 13 minutes, 22 seconds
+senior I'll set age to be 70 here's the result you are an adult so why did we
+1:13:30 1 hour, 13 minutes, 30 seconds
+print this statement rather than this one well with these if statements we check them from the top down this
+1:13:39 1 hour, 13 minutes, 39 seconds
+condition is technically true as well as this one 70 is greater than or equal to 18 so we execute this code and skip over
+1:13:48 1 hour, 13 minutes, 48 seconds
+the rest even though this one is also true you do have to pay attention to the positioning of your if and else if statements in this situation it would be
+1:13:56 1 hour, 13 minutes, 56 seconds
+better if we were to check to see if somebody's age was greater than or equal to 65 first so let's turn this into the if
+1:14:08 1 hour, 14 minutes, 8 seconds
+statement and then where we check if age is greater than or equal to 18 we will use an else if Clause instead now this
+1:14:15 1 hour, 14 minutes, 15 seconds
+should work you are a
+1:14:20 1 hour, 14 minutes, 20 seconds
+senior but if the age was 50 well then you are an adult now we're
+1:14:28 1 hour, 14 minutes, 28 seconds
+going to modify this program slightly this time we will ask for user input we'll need the help of a scanner
+1:14:36 1 hour, 14 minutes, 36 seconds
+at the top of our Java file we're going to import java.util dothe class of
+1:14:44 1 hour, 14 minutes, 44 seconds
+scanner we'll need to create a scanner object scanner scanner equals new scanner within the set of parentheses
+1:14:53 1 hour, 14 minutes, 53 seconds
+type system.in then when we open a scanner it is a good idea to close it when we're done with
+1:15:00 1 hour, 15 minutes
+it just so we don't leave any resources open with our variable of age we're going to create a prompt to have a user
+1:15:08 1 hour, 15 minutes, 8 seconds
+enter in their age I'm going to declare a variable of age but we'll assign it later let's create a
+1:15:16 1 hour, 15 minutes, 16 seconds
+prompt enter your age I'll use print instead of print
+1:15:22 1 hour, 15 minutes, 22 seconds
+line and then we will assign age equal to scanner. next
+1:15:30 1 hour, 15 minutes, 30 seconds
+int okay let's try this again and to your age let's say that I'm
+1:15:37 1 hour, 15 minutes, 37 seconds
+21 you are an adult what if I was 99 you are a
+1:15:46 1 hour, 15 minutes, 46 seconds
+senior I am negative 1 years old you haven't been born
+1:15:52 1 hour, 15 minutes, 52 seconds
+yet I am zero exactly you are a baby or maybe I'm 10 you are a
+1:16:01 1 hour, 16 minutes, 1 second
+child so with if statements we check a condition if it's true we do it we do this code if not we don't otherwise we
+1:16:10 1 hour, 16 minutes, 10 seconds
+can check another condition with else if and if none of these conditions are true we can perform whatever is within an else statement else acts like the
+1:16:19 1 hour, 16 minutes, 19 seconds
+default code if none of the above conditions are true now this time we're going to work with strings we're going to create a variable of name
+1:16:28 1 hour, 16 minutes, 28 seconds
+and it's going to be a string we'll declare it but not yet assign it we will prompt the user to enter in
+1:16:36 1 hour, 16 minutes, 36 seconds
+their name I will use print instead of print Line enter your
+1:16:43 1 hour, 16 minutes, 43 seconds
+name we will assign our variable of name equal to scanner. next line to get a
+1:16:52 1 hour, 16 minutes, 52 seconds
+line of text this group of if else if and else
+1:16:58 1 hour, 16 minutes, 58 seconds
+statements let's set this to be group two we're going to create another
+1:17:05 1 hour, 17 minutes, 5 seconds
+set this will be group one for the name when somebody enters in their name
+1:17:12 1 hour, 17 minutes, 12 seconds
+they could skip the prompt like this enter your name I'm just going to hit enter to skip
+1:17:19 1 hour, 17 minutes, 19 seconds
+it we will check if our name variable is empty here's how if we'll check if our name is empty
+1:17:29 1 hour, 17 minutes, 29 seconds
+there's a string method for this we haven't discussed string Methods yet instead of saying name is equal to an empty space there is a built-in method
+1:17:38 1 hour, 17 minutes, 38 seconds
+of strings and that is to take our variable name dot is empty this is another way to check to
+1:17:46 1 hour, 17 minutes, 46 seconds
+see if a string is empty this will be our condition is empty will give you a Boolean of true or false
+1:17:55 1 hour, 17 minutes, 55 seconds
+so let's print the following if our name variable is empty let's say you didn't enter your
+1:18:05 1 hour, 18 minutes, 5 seconds
+name else if our name is not empty that means somebody typed in their name let's
+1:18:11 1 hour, 18 minutes, 11 seconds
+say hello plus name and I'll add an exclamation
+1:18:18 1 hour, 18 minutes, 18 seconds
+point okay let's try this again enter your name if I hit enter we'll perform then whatever is within
+1:18:26 1 hour, 18 minutes, 26 seconds
+the if statement then enter an age you didn't enter your name you are an adult this time let's type in our name our
+1:18:34 1 hour, 18 minutes, 34 seconds
+first name hello whatever your name is you are an
+1:18:41 1 hour, 18 minutes, 41 seconds
+adult this time we have two groups of if else statements group one is for the name group two is for the user's age
+1:18:50 1 hour, 18 minutes, 50 seconds
+this time let's create a Boolean Boolean is
+1:18:57 1 hour, 18 minutes, 57 seconds
+student then we'll create a prompt let's ask are you a student but
+1:19:04 1 hour, 19 minutes, 4 seconds
+we need a value of true or false cuz booleans can only be true or false
+1:19:13 1 hour, 19 minutes, 13 seconds
+normally is student equals use our scanner to get some user input next
+1:19:22 1 hour, 19 minutes, 22 seconds
+Boolean now we'll create another group of if and lse if statements group
+1:19:29 1 hour, 19 minutes, 29 seconds
+three we need an if statement so with booleans we could say
+1:19:37 1 hour, 19 minutes, 37 seconds
+is student is equal to true but there is a way to simplify this a shortcut you can just say is student it
+1:19:46 1 hour, 19 minutes, 46 seconds
+holds a direct value of true or false we don't necessarily need to write like a whole condition
+1:19:54 1 hour, 19 minutes, 54 seconds
+so if we're a student we'll output you are a student else if a student is
+1:20:04 1 hour, 20 minutes, 4 seconds
+false then we'll output you are not a student we have three groups of if else
+1:20:12 1 hour, 20 minutes, 12 seconds
+statements group three is for is student group two is for the
+1:20:20 1 hour, 20 minutes, 20 seconds
+age group one is for the name just to make this more fun I'm going to add some emojis I think it
+1:20:28 1 hour, 20 minutes, 28 seconds
+would make it more interesting but you don't have to so if somebody doesn't enter their name I'm going to add a pouting
+1:20:35 1 hour, 20 minutes, 35 seconds
+face if somebody enters their name I will add a smiley face if somebody is a senior maybe we
+1:20:44 1 hour, 20 minutes, 44 seconds
+can find an emoji for a grandpa let's find one for an
+1:20:52 1 hour, 20 minutes, 52 seconds
+adult you haven't been born yet uh we could do like a spirit or
+1:21:00 1 hour, 21 minutes
+something you are a baby you are a
+1:21:10 1 hour, 21 minutes, 10 seconds
+child you are a student we could do a school you are not a student we could do
+1:21:20 1 hour, 21 minutes, 20 seconds
+an office all right so this is our final program again we have three groups of if
+1:21:27 1 hour, 21 minutes, 27 seconds
+statements this time one for the name one for the age and one for is student and then for the prompt for are you a
+1:21:35 1 hour, 21 minutes, 35 seconds
+student I'm going to use print instead of print line here's the result enter your name
+1:21:43 1 hour, 21 minutes, 43 seconds
+enter your age are you a student hello your name you are an adult
+1:21:52 1 hour, 21 minutes, 52 seconds
+you are not a student let's try some of the other statements I'm not going to enter a name for the age let's say that I'm
+1:22:01 1 hour, 22 minutes, 1 second
+ne1 are you a student true you didn't enter your name you haven't been born yet you are a
+1:22:09 1 hour, 22 minutes, 9 seconds
+student so those are if statements everybody they perform a block of code if its condition is true check a
+1:22:18 1 hour, 22 minutes, 18 seconds
+condition if it's true do this if not you can do something else and well everybody that summar mizes if
+1:22:25 1 hour, 22 minutes, 25 seconds
+statements in Java hey everybody in this video I'm going to show you how we can work with the random class and generate some
+1:22:33 1 hour, 22 minutes, 33 seconds
+random numbers let's begin to work with random numbers we'll need to import the random class at the top of our Java file we will import java. u.
+1:22:45 1 hour, 22 minutes, 45 seconds
+random much like what we do with the scanner class we're going to follow a similar pattern for creating a random object much like a scanner object we
+1:22:54 1 hour, 22 minutes, 54 seconds
+will type the name of the class random the name of the random object random equals new
+1:23:02 1 hour, 23 minutes, 2 seconds
+random so random random equals new random let's say we have an integer an
+1:23:10 1 hour, 23 minutes, 10 seconds
+integer variable of number I'm going to assign our number variable equal to and here's where we'll generate a random
+1:23:18 1 hour, 23 minutes, 18 seconds
+number we will take our random object then we will use the next int method this will generate a random number
+1:23:27 1 hour, 23 minutes, 27 seconds
+however there's one issue with this I'm going to print our number the number is going to be very
+1:23:36 1 hour, 23 minutes, 36 seconds
+large so the random number that's generated it's going to be within a range between just about -2 billion and
+1:23:44 1 hour, 23 minutes, 44 seconds
+positive2 billion I'm guessing you don't want a number that big So within the next integer method we can set some
+1:23:52 1 hour, 23 minutes, 52 seconds
+bounds if I would like a random number between 1 and six like I'm rolling a dice or die I would say 1 comma 6 this
+1:24:01 1 hour, 24 minutes, 1 second
+is actually going to give us a random number between 1 and five the first number is inclusive the
+1:24:11 1 hour, 24 minutes, 11 seconds
+second number is exclusive no matter how many times I rerolled this die I'm never going to get
+1:24:20 1 hour, 24 minutes, 20 seconds
+six since this number is exclusive I'm going to inrease this to be seven that will give us 1 through
+1:24:32 1 hour, 24 minutes, 32 seconds
+six and there's six let's say this time you would like three random numbers you're rolling three dice let's say we
+1:24:39 1 hour, 24 minutes, 39 seconds
+have number one number two and number three all integers we'll assign number one with a
+1:24:48 1 hour, 24 minutes, 48 seconds
+random integer and we'll do this with numbers two and three as well number one number two number number
+1:24:55 1 hour, 24 minutes, 55 seconds
+three then we will print them number one number two number
+1:25:02 1 hour, 25 minutes, 2 seconds
+three 2 46 23 4 225 good enough for random numbers
+1:25:11 1 hour, 25 minutes, 11 seconds
+between 1 and 100 the second number is going to be 101 because it's exclusive so now we're generating three
+1:25:20 1 hour, 25 minutes, 20 seconds
+random numbers between 1 and 100
+1:25:30 1 hour, 25 minutes, 30 seconds
+not only can you generate random numbers you can Generate random
+1:25:37 1 hour, 25 minutes, 37 seconds
+doubles so let's set this back to be number let's change the data type and
+1:25:44 1 hour, 25 minutes, 44 seconds
+number to be double we're going to use the next
+1:25:52 1 hour, 25 minutes, 52 seconds
+Double method this is going to generate a random number between zero and
+1:25:59 1 hour, 25 minutes, 59 seconds
+one just the decimal portion really you can also generate a Boolean
+1:26:11 1 hour, 26 minutes, 11 seconds
+this might be good in a situation where you need to flip a coin let's say we have a Boolean of is
+1:26:19 1 hour, 26 minutes, 19 seconds
+heads when we flip a coin is it heads random. nextext
+1:26:28 1 hour, 26 minutes, 28 seconds
+Boolean then we will display if the coin we flip is heads or not is it heads or it's Tails that's true it is
+1:26:37 1 hour, 26 minutes, 37 seconds
+heads now it's false it's Tails we could even use an if
+1:26:44 1 hour, 26 minutes, 44 seconds
+statement if is heads if our coin flip is on heads let's
+1:26:51 1 hour, 26 minutes, 51 seconds
+print heads else we will print
+1:27:00 1 hour, 27 minutes
+Tails so this will simulate us flipping a
+1:27:09 1 hour, 27 minutes, 9 seconds
+coin we're getting a lot of Tails all right everybody that is how
+1:27:20 1 hour, 27 minutes, 20 seconds
+you can Generate random numbers and use the random module in Java hey everybody in this video we're going
+1:27:30 1 hour, 27 minutes, 30 seconds
+to cover some useful math related constants and methods that you may be interested in as a beginner then at the end of this topic we'll cover a few
+1:27:37 1 hour, 27 minutes, 37 seconds
+exercises let's begin if at any time you need the value of pi there's a built-in constant of the math class so I'm going
+1:27:45 1 hour, 27 minutes, 45 seconds
+to print the following math with a capital M Pi all capital so that would give you the value
+1:27:55 1 hour, 27 minutes, 55 seconds
+3.14 and some change so instead of creating a variable for pi it's always available to you within the math class
+1:28:02 1 hour, 28 minutes, 2 seconds
+you just have to access it there's also E math. capital
+1:28:12 1 hour, 28 minutes, 12 seconds
+E this is the exponential constant also known as ul's number you may never use this but it's available to you in case
+1:28:20 1 hour, 28 minutes, 20 seconds
+you do so again access the math class Dot to name the constant this time let's create a double
+1:28:28 1 hour, 28 minutes, 28 seconds
+variable named result here's a few methods I'm going to reassign result
+1:28:33 1 hour, 28 minutes, 33 seconds
+equal to access math dot to raise a base to a given power you can use the pal
+1:28:41 1 hour, 28 minutes, 41 seconds
+method let's raise 2 to the^ of 3 then print it let's print our variable result 2 ^
+1:28:51 1 hour, 28 minutes, 51 seconds
+of 3 would be 8 and again I'm using a double that's why we have the decimal portion 2^ of 4
+1:29:00 1 hour, 29 minutes
+would be 16 2 the^ of 5 is
+1:29:07 1 hour, 29 minutes, 7 seconds
+32 po meaning power you can raise a base to a given power these can be values or
+1:29:14 1 hour, 29 minutes, 14 seconds
+variables there's the absolute value method math.abs for absolute value
+1:29:22 1 hour, 29 minutes, 22 seconds
+what's the absolute value of5 that would be five positive 5
+1:29:30 1 hour, 29 minutes, 30 seconds
+basically speaking the absolute value method gives you that number but positive if it's negative think of it as the distance away from zero if that
+1:29:39 1 hour, 29 minutes, 39 seconds
+helps for square root there's a square root method result equals math.sqrt
+1:29:46 1 hour, 29 minutes, 46 seconds
+what is the square root of 9 I did make a spelling mistake here if you're accessing the math class make sure it's
+1:29:54 1 hour, 29 minutes, 54 seconds
+with a capital m so the square root of 9 would be
+1:30:02 1 hour, 30 minutes, 2 seconds
+3 we can also round a number again access the math class use the round
+1:30:12 1 hour, 30 minutes, 12 seconds
+method let's round 3.14 round will round a number to the nearest whole
+1:30:19 1 hour, 30 minutes, 19 seconds
+integer again we're working with the double though so that gives us
+1:30:26 1 hour, 30 minutes, 26 seconds
+3.0 to always round up there's the ceiling method math. c
+1:30:35 1 hour, 30 minutes, 35 seconds
+l again I accidentally used lowercase M it's capital M let's round 3.14 up to the
+1:30:43 1 hour, 30 minutes, 43 seconds
+ceiling so 3.14 rounded up is four to always round down you can use the floor
+1:30:51 1 hour, 30 minutes, 51 seconds
+method math.
+1:30:56 1 hour, 30 minutes, 56 seconds
+floor so this time let's round 3.99 down normally it should round up
+1:31:03 1 hour, 31 minutes, 3 seconds
+right so 3.99 rounded down is three you can find the max between two
+1:31:10 1 hour, 31 minutes, 10 seconds
+values or variables math. Max method we'll have two numbers
+1:31:18 1 hour, 31 minutes, 18 seconds
+which are comma separated 10 and 20 what is the max between these two values or variables
+1:31:25 1 hour, 31 minutes, 25 seconds
+the greater number is 20 there's also Min I'll just copy this cuz I'm lazy replace Max with Min what is the minimum
+1:31:35 1 hour, 31 minutes, 35 seconds
+value between these two values that would be 10 so those are a few useful math
+1:31:42 1 hour, 31 minutes, 42 seconds
+methods and constants that you may be interested in we're going to cover some math related exercises if you would like additional practice
+1:31:54 1 hour, 31 minutes, 54 seconds
+in this first exercise we're going to find the hypotenuse of a right triangle you can follow this formula C the
+1:32:02 1 hour, 32 minutes, 2 seconds
+hypotenuse equals the square root of a^ 2 one of the sides plus b^2 the other side we're going to accept some user
+1:32:11 1 hour, 32 minutes, 11 seconds
+input we'll need a scanner we need to import the scanner class import java.util do
+1:32:20 1 hour, 32 minutes, 20 seconds
+scanner then we'll create a scanner object scan scanner scanner equals new
+1:32:28 1 hour, 32 minutes, 28 seconds
+scanner then place system.in within the set of parentheses then when we open a scanner it is a good idea to close it so we don't leave any resources open scanner.
+1:32:39 1 hour, 32 minutes, 39 seconds
+close we'll prompt the user to enter in the length of side A and B let's declare
+1:32:45 1 hour, 32 minutes, 45 seconds
+those as variables double a double b we'll also declare Double C that will
+1:32:52 1 hour, 32 minutes, 52 seconds
+store the hypotenuse Double C we'll need two prompts I will use print instead of
+1:33:00 1 hour, 33 minutes
+print Line enter the length of side
+1:33:09 1 hour, 33 minutes, 9 seconds
+a with inside a within our variable of a we'll assign it to scanner. next
+1:33:19 1 hour, 33 minutes, 19 seconds
+Double let's do this with side B we can copy these two lines paste them replace a with
+1:33:28 1 hour, 33 minutes, 28 seconds
+B that is lowercase b let's do a test run just to be sure that these two work
+1:33:36 1 hour, 33 minutes, 36 seconds
+temporarily I'm going to print a then
+1:33:44 1 hour, 33 minutes, 44 seconds
+B enter the length as side a 3 B will be four these work I just wanted to test
+1:33:52 1 hour, 33 minutes, 52 seconds
+that it is a good idea to test your code as you're writing it then we have to follow this
+1:33:59 1 hour, 33 minutes, 59 seconds
+equation C equals math. square root of a^2 + b^2 there is a square root method within
+1:34:08 1 hour, 34 minutes, 8 seconds
+the math class but we have to raise side a to the power of two plus b to the^ of two here's how we can do that so within
+1:34:17 1 hour, 34 minutes, 17 seconds
+the square root method we're going to raise a to the power of two first math
+1:34:24 1 hour, 34 minutes, 24 seconds
+po to raise a base to a given power raise a comma to the power of
+1:34:31 1 hour, 34 minutes, 31 seconds
+two plus again math.pow to raise a base to a given power B to the power of
+1:34:40 1 hour, 34 minutes, 40 seconds
+two and that's it so let's display whatever C is the hypotenuse
+1:34:49 1 hour, 34 minutes, 49 seconds
+the hypotenuse I'll write that this is C side
+1:34:58 1 hour, 34 minutes, 58 seconds
+C is the following plus
+1:35:07 1 hour, 35 minutes, 7 seconds
+C if side a is three side B is four side C should be five which it is if you
+1:35:15 1 hour, 35 minutes, 15 seconds
+would prefer we can add a unit of measurement such as centimet or inches so after side C add cm for centimet or I
+1:35:25 1 hour, 35 minutes, 25 seconds
+for inches whatever you prefer so let's try that again side a will be four side B will be
+1:35:34 1 hour, 35 minutes, 34 seconds
+five and side C is this really long number we haven't talked about the print F statement yet using print F you can
+1:35:41 1 hour, 35 minutes, 41 seconds
+display a given amount of digits but we do have centimeters at the end which is what we were looking for so let's try
+1:35:47 1 hour, 35 minutes, 47 seconds
+three and four and that gives us 5 cm all right let's cover another
+1:35:55 1 hour, 35 minutes, 55 seconds
+exercise given the radius of a circle or a sphere we'll return the circumference the area then the volume that's if we're
+1:36:04 1 hour, 36 minutes, 4 seconds
+working with the sphere given the radius so be sure that we're importing our scanner at the top and we'll create a
+1:36:10 1 hour, 36 minutes, 10 seconds
+scanner object scanner scanner equals new
+1:36:17 1 hour, 36 minutes, 17 seconds
+scanner system.in then be sure to close your scanner scanner .
+1:36:25 1 hour, 36 minutes, 25 seconds
+close we'll prompt the user for a radius because we need a radius to work with we'll create a variable it will be
+1:36:33 1 hour, 36 minutes, 33 seconds
+a double named radius we'll declare it but not yet assign it we'll prompt the user using print instead of print
+1:36:42 1 hour, 36 minutes, 42 seconds
+Line enter the radius then we will assign our radius variable radius equals scanner.
+1:36:53 1 hour, 36 minutes, 53 seconds
+next Double once we have a radius we have to follow these formulas so we need a
+1:37:00 1 hour, 37 minutes
+circumference area and volume let's declare those at the top of our program but assign them later double
+1:37:09 1 hour, 37 minutes, 9 seconds
+circumference I think I spelled that right double area double
+1:37:18 1 hour, 37 minutes, 18 seconds
+volume we will calculate the circumference here's the
+1:37:25 1 hour, 37 minutes, 25 seconds
+Formula 2 times we need pi to work with instead of typing
+1:37:33 1 hour, 37 minutes, 33 seconds
+3.14159 so on and so forth we can access that from the math class math.pi Pi is always available to
+1:37:42 1 hour, 37 minutes, 42 seconds
+us then multiply this by the radius let's perform a test
+1:37:49 1 hour, 37 minutes, 49 seconds
+run I will display the circumference the circumference
+1:37:57 1 hour, 37 minutes, 57 seconds
+is plus our variable of circumference then I'll add a unit of measurement afterwards centimeters is
+1:38:04 1 hour, 38 minutes, 4 seconds
+good or whatever you prefer enter the radius I'll enter in
+1:38:10 1 hour, 38 minutes, 10 seconds
+five the circumference is 31.4 CM in the future using print F we can limit the
+1:38:17 1 hour, 38 minutes, 17 seconds
+amount of digits that are displayed I'll show you how to do that later on in this video then we need the
+1:38:25 1 hour, 38 minutes, 25 seconds
+area area equals here's the formula again we need Pi Pi is always available to us math. pi
+1:38:35 1 hour, 38 minutes, 35 seconds
+times our radius to the^ of two so we need the power method of math
+1:38:42 1 hour, 38 minutes, 42 seconds
+math.pow raise the radius to the power of two and I'll just copy this line because I'm
+1:38:51 1 hour, 38 minutes, 51 seconds
+lazy the area is our variable area now when working with an area the unit of
+1:38:59 1 hour, 38 minutes, 59 seconds
+measurement is going to be squared so we can raise it to the power of two or you can use superscript to if you're on
+1:39:06 1 hour, 39 minutes, 6 seconds
+Windows make sure numlock is on hold alt then on the numpad type 0178 for a superscript of two if you
+1:39:15 1 hour, 39 minutes, 15 seconds
+would like to use that instead so now what is the area enter the radius 5
+1:39:23 1 hour, 39 minutes, 23 seconds
+the area is 78.53982
+1:39:57 1 hour, 39 minutes, 57 seconds
+doubles times math. pi and again make sure the m is
+1:40:04 1 hour, 40 minutes, 4 seconds
+capital times our radius to the^ of
+1:40:10 1 hour, 40 minutes, 10 seconds
+3 math. power method raise our radius to the power of
+1:40:19 1 hour, 40 minutes, 19 seconds
+three then display the volume the volume is our variable volume cm
+1:40:28 1 hour, 40 minutes, 28 seconds
+cubed for a superscript of three make sure numb lock is on hold alt then type
+1:40:35 1 hour, 40 minutes, 35 seconds
+0179 that's if you're on Windows all right let's print the volume again my radius is
+1:40:44 1 hour, 40 minutes, 44 seconds
+five then we have the circumference the area and the volume and the unit of measurement is
+1:40:52 1 hour, 40 minutes, 52 seconds
+cenm cubed now we haven't talked about the print F statement we could display just a few digits here's
+1:41:00 1 hour, 41 minutes
+how again this is a future topic replace print line with print
+1:41:09 1 hour, 41 minutes, 9 seconds
+F instead of adding plus our variable name we're going to add a placeholder
+1:41:17 1 hour, 41 minutes, 17 seconds
+percent F to display a double but if you would like one digit between the percent and F type .1 so let's do this with area
+1:41:27 1 hour, 41 minutes, 27 seconds
+and volume replace the plus with a comma then instead of adding plus centim
+1:41:37 1 hour, 41 minutes, 37 seconds
+after our placeholder add CM then cm squar and cm
+1:41:46 1 hour, 41 minutes, 46 seconds
+cubed then we can get rid of the portion where we add the centimeters to the end
+1:41:57 1 hour, 41 minutes, 57 seconds
+so let's say the radius is five then we should add a new line character to the end of each of
+1:42:12 1 hour, 42 minutes, 12 seconds
+these that looks much better we're only displaying one digit after the decimal again don't worry about this this is a future topic the
+1:42:21 1 hour, 42 minutes, 21 seconds
+print F statement but if you would only like to display one digit that's how you can do that again we'll cover this later
+1:42:29 1 hour, 42 minutes, 29 seconds
+all right everybody so those are a few math related constants and methods that you may be interested in as a
+1:42:37 1 hour, 42 minutes, 37 seconds
+beginner what's up everybody in this video I'm going to discuss the print F statement in Java print f is a method
+1:42:44 1 hour, 42 minutes, 44 seconds
+used to format output we already do have a little bit of experience using print F in the last few topics involving math we'll get more in depth with the print F
+1:42:52 1 hour, 42 minutes, 52 seconds
+stat in this topic print f is an alternative to print and print line wherever we would like to insert a variable we can add a placeholder of a
+1:43:01 1 hour, 43 minutes, 1 second
+percent sign then add one of a few characters following it to format the output in this demonstration let's create a few variables let's create a
+1:43:09 1 hour, 43 minutes, 9 seconds
+string of name I'll assign some name I'll pick SpongeBob because many people know who SpongeBob is we'll need a
+1:43:18 1 hour, 43 minutes, 18 seconds
+character let's say character first letter equals
+1:43:24 1 hour, 43 minutes, 24 seconds
+s int age equals 30 and a double double
+1:43:32 1 hour, 43 minutes, 32 seconds
+height equals 60.5 and a Boolean Boolean is
+1:43:40 1 hour, 43 minutes, 40 seconds
+employed I will set that to be true SpongeBob is employed at the K crusty Krab so we have some variables they're
+1:43:48 1 hour, 43 minutes, 48 seconds
+all different data types we can insert them into print F statements when we output string literal here's a
+1:43:57 1 hour, 43 minutes, 57 seconds
+demonstration instead of using print line I'm going to use print F we will display the
+1:44:05 1 hour, 44 minutes, 5 seconds
+following hello then I would like to insert this variable of name we're going to use a percent sign as a
+1:44:13 1 hour, 44 minutes, 13 seconds
+placeholder percent then we need a specifier our character what is the data type of the variable we're trying to
+1:44:20 1 hour, 44 minutes, 20 seconds
+insert if you're trying to insert a string you're going to use a lowercase s so after this word of hello we're
+1:44:28 1 hour, 44 minutes, 28 seconds
+adding a placeholder then inserting a string at this location so instead of adding plus the variable
+1:44:36 1 hour, 44 minutes, 36 seconds
+name we're going to comma separate any variables we're inserting so comma name here's the
+1:44:44 1 hour, 44 minutes, 44 seconds
+output hello our variable name which contains SpongeBob if we need to insert a
+1:44:51 1 hour, 44 minutes, 51 seconds
+character that would be lower case C so let's use system.out.print
+1:44:59 1 hour, 44 minutes, 59 seconds
+F I don't know let's say your name starts with a we're going to insert a
+1:45:06 1 hour, 45 minutes, 6 seconds
+variable we need a placeholder that perent sign lower case C for a Char variable then comma separate any
+1:45:16 1 hour, 45 minutes, 16 seconds
+variables comma our variable of first letter so here's an important thing too
+1:45:24 1 hour, 45 minutes, 24 seconds
+with a print F statement we have to manually insert any new line characters we'll end each print F statement with a new line
+1:45:31 1 hour, 45 minutes, 31 seconds
+character so after our format specifier We'll add back sln to insert a new
+1:45:41 1 hour, 45 minutes, 41 seconds
+line that's better otherwise the output is going to be all on the same line so that's how to insert a character
+1:45:48 1 hour, 45 minutes, 48 seconds
+percent C for chars then for an integer we use
+1:45:55 1 hour, 45 minutes, 55 seconds
+D so print f u r we're going to insert a variable
+1:46:04 1 hour, 46 minutes, 4 seconds
+we use D for integers you are our variable age years
+1:46:12 1 hour, 46 minutes, 12 seconds
+old than a new line character then we will insert our variable
+1:46:20 1 hour, 46 minutes, 20 seconds
+age you are 30 years old and in the middle is our variable of
+1:46:27 1 hour, 46 minutes, 27 seconds
+age for a double that would be f
+1:46:34 1 hour, 46 minutes, 34 seconds
+system.out.print f you are add a placeholder f for
+1:46:43 1 hour, 46 minutes, 43 seconds
+floating Point number think of that as a double inches tall or you can pick
+1:46:50 1 hour, 46 minutes, 50 seconds
+centimeters up to you then we will insert our variable of
+1:46:59 1 hour, 46 minutes, 59 seconds
+height you are 60.5 then a bunch of zeros inches tall we can limit the amount of digits that
+1:47:07 1 hour, 47 minutes, 7 seconds
+are displayed after the decimal we'll have to set a Precision but I'll explain that later then a Boolean all we need is the
+1:47:16 1 hour, 47 minutes, 16 seconds
+letter b system.out.print f let's say
+1:47:24 1 hour, 47 minutes, 24 seconds
+employed add a placeholder B then a new line
+1:47:31 1 hour, 47 minutes, 31 seconds
+character we will display our variable of is employed employed then our variable of
+1:47:40 1 hour, 47 minutes, 40 seconds
+true now you can insert multiple variables within the same line here's how we'll use
+1:47:48 1 hour, 47 minutes, 48 seconds
+system.out.print f we're going to inst insert our variable of name
+1:47:55 1 hour, 47 minutes, 55 seconds
+SpongeBob for a string the specifier character is going to be lowercase s for a string so string SpongeBob
+1:48:04 1 hour, 48 minutes, 4 seconds
+is we're inserting an integer we need percent D years old we'll comma separate all
+1:48:13 1 hour, 48 minutes, 13 seconds
+variables we're inserting we have a string followed by an integer so that would be name comma age we're inserting
+1:48:21 1 hour, 48 minutes, 21 seconds
+two variables of this time SpongeBob is 30 years old so those are specifier characters
+1:48:31 1 hour, 48 minutes, 31 seconds
+add a percent sign a placeholder then follow this placeholder with a specifier character depending on what the data
+1:48:37 1 hour, 48 minutes, 37 seconds
+type is s for Strings C for chars D for integers f for doubles or
+1:48:45 1 hour, 48 minutes, 45 seconds
+other floating Point numbers and B for booleans it might take a little bit of time to remember these now we'll cover Precision with
+1:48:54 1 hour, 48 minutes, 54 seconds
+setting the Precision we can limit the amount of digits that display after a decimal let's create three different prices and these will be of the double
+1:49:03 1 hour, 49 minutes, 3 seconds
+data type price 1 equals $9.99 price
+1:49:10 1 hour, 49 minutes, 10 seconds
+two I'm just making up numbers here
+1:49:15 1 hour, 49 minutes, 15 seconds
+10.15 and double price 3 equals 5
+1:49:24 1 hour, 49 minutes, 24 seconds
+$41 we're going to use print F to display these prices
+1:49:31 1 hour, 49 minutes, 31 seconds
+system.out.print F we're going to insert we'll use that percent placeholder then use f to display a double f for floating
+1:49:39 1 hour, 49 minutes, 39 seconds
+Point number comma our variable of price one then we'll do this with price two and price
+1:49:47 1 hour, 49 minutes, 47 seconds
+three price one price two price three and here are the prices oh and we have
+1:49:55 1 hour, 49 minutes, 55 seconds
+to add a new line character too because they're all in the same line I forgot to do that so back sln back
+1:50:03 1 hour, 50 minutes, 3 seconds
+sln back sln that's better naturally when we're using print F to display a floating
+1:50:12 1 hour, 50 minutes, 12 seconds
+Point number such as a double normally it displays six digits after the decimal point but we would like to limit that
+1:50:20 1 hour, 50 minutes, 20 seconds
+here's how we're going to set the Precision to display one digit after the decimal
+1:50:26 1 hour, 50 minutes, 26 seconds
+between the percent sign and the F Type .1 to display one
+1:50:36 1 hour, 50 minutes, 36 seconds
+digit so we have 10.0 this will automatically round the output so we have 10.0 100.2 and
+1:50:46 1 hour, 50 minutes, 46 seconds
+54.0 for two digits that would be 02
+1:50:54 1 hour, 50 minutes, 54 seconds
+999 10.15 and 54.1 or we could do
+1:51:02 1 hour, 51 minutes, 2 seconds
+three 3F then we have three digits after the
+1:51:10 1 hour, 51 minutes, 10 seconds
+decimal so that is precision it's useful for displaying prices then we have Flags
+1:51:16 1 hour, 51 minutes, 16 seconds
+next let's set the Precision to be 0.2 here's different flags that we can add
+1:51:24 1 hour, 51 minutes, 24 seconds
+by adding a plus after the percent sign we can output a plus for any positive
+1:51:37 1 hour, 51 minutes, 37 seconds
+numbers positive 999 positive 10.15 54.1 is still
+1:51:46 1 hour, 51 minutes, 46 seconds
+negative to display a plus before any positive numbers just add a plus sign
+1:51:53 1 hour, 51 minutes, 53 seconds
+let's increase these prices let's add three zeros to the end of
+1:52:04 1 hour, 52 minutes, 4 seconds
+each if you add the flag of a comma it's a comma grouping separator for any thousand's place after the percent sign
+1:52:12 1 hour, 52 minutes, 12 seconds
+add a comma at any thousand's place we have a comma grouping separator again this is
+1:52:20 1 hour, 52 minutes, 20 seconds
+useful for displaying prices by adding a single left parentheses any
+1:52:27 1 hour, 52 minutes, 27 seconds
+negative numbers are enclosed in a set of parentheses so let's revert these prices
+1:52:33 1 hour, 52 minutes, 33 seconds
+back after the percent sign add a left parentheses so we only have one negative
+1:52:42 1 hour, 52 minutes, 42 seconds
+price- 54.1 and then we have a space character
+1:52:50 1 hour, 52 minutes, 50 seconds
+this will display a minus if negative space space if positive we have two positive numbers in one negative one so
+1:52:58 1 hour, 52 minutes, 58 seconds
+by using a space character any positive numbers are
+1:53:06 1 hour, 53 minutes, 6 seconds
+preceded with a space 54.1 is negative so we do not have that space it's good for aligning
+1:53:13 1 hour, 53 minutes, 13 seconds
+numbers the last specifier we have to talk about is width we're going to create some ID
+1:53:19 1 hour, 53 minutes, 19 seconds
+numbers these will be integers int id1 =
+1:53:26 1 hour, 53 minutes, 26 seconds
+1 int id2 = 23 in
+1:53:33 1 hour, 53 minutes, 33 seconds
+ID3 equal 456 and int id4 equals
+1:53:45 1 hour, 53 minutes, 45 seconds
+7890 these integers have a varying number of digits 1 2 3 4 by setting the
+1:53:53 1 hour, 53 minutes, 53 seconds
+width we can align them here's how again we're going to use print F we're displaying an integer so we need percent
+1:54:01 1 hour, 54 minutes, 1 second
+D we will Begin by displaying id1 then let's do this with 2 three and four as
+1:54:09 1 hour, 54 minutes, 9 seconds
+well 2 3 4 and again I am missing that new line
+1:54:17 1 hour, 54 minutes, 17 seconds
+character new line new line new line new
+1:54:26 1 hour, 54 minutes, 26 seconds
+line that's better so we have our four IDs by adding a zero after the percent
+1:54:34 1 hour, 54 minutes, 34 seconds
+sign we can zero pad some of these values but Java is giving us a warning
+1:54:45 1 hour, 54 minutes, 45 seconds
+by how many characters do we want to pad these numbers with zero let's say four we have one variable
+1:54:53 1 hour, 54 minutes, 53 seconds
+that has four digits we'll set it to be four to be the maximum so 04 and here we are these ID numbers are
+1:55:02 1 hour, 55 minutes, 2 seconds
+all now zero padded and they align vertically which is kind of nice so to add some zero padding follow
+1:55:12 1 hour, 55 minutes, 12 seconds
+our placeholder with zero then the amount of digits to Zer pad in this case four by setting a positive number we can
+1:55:21 1 hour, 55 minutes, 21 seconds
+WR justify these variables so let's replace zero with just four rather than having that zero
+1:55:29 1 hour, 55 minutes, 29 seconds
+padding we just have some spaces if you would prefer it that way or with a negative number we can
+1:55:36 1 hour, 55 minutes, 36 seconds
+left justify these values so let's set four to be instead -4 now these values are left Justified
+1:55:45 1 hour, 55 minutes, 45 seconds
+and we still have those spaces afterwards except for the last variable because it's already four digits all right everybody so that is the print
+1:55:54 1 hour, 55 minutes, 54 seconds
+F statement it's a method used to format output you add a placeholder then one of a few characters afterwards there is
+1:56:01 1 hour, 56 minutes, 1 second
+Flags width precision and specifier characters depending on the data type of what you want to display we'll have more practice with this in the future and
+1:56:09 1 hour, 56 minutes, 9 seconds
+well everybody that is print F in Java hey everybody this video serves as a project we're going to create a
+1:56:17 1 hour, 56 minutes, 17 seconds
+compound interest calculator using Java if you put money in a bank account or the stock market using the given formula we can determine what our final amount
+1:56:25 1 hour, 56 minutes, 25 seconds
+is going to be plus interest after a given amount of time this project serves as an exercise using Java let's begin all right let's get started everybody
+1:56:34 1 hour, 56 minutes, 34 seconds
+the first thing we'll need is a scanner we'll need to import it at the top of our Java file import input
+1:56:41 1 hour, 56 minutes, 41 seconds
+import java.util.scanner we need to create a scanner object again
+1:56:51 1 hour, 56 minutes, 51 seconds
+scanner scanner equals new scanner then within the set of parentheses type
+1:56:58 1 hour, 56 minutes, 58 seconds
+system.in when you open a scanner it is good practice to close the scanner when you're done with it so you don't leave any resources
+1:57:06 1 hour, 57 minutes, 6 seconds
+open after creating our scanner here the different variables we'll need double
+1:57:13 1 hour, 57 minutes, 13 seconds
+principal this will store the principal amount what's our original investment an interest rate double rate
+1:57:23 1 hour, 57 minutes, 23 seconds
+an integer for times compounded how often does our interest compound like yearly quarterly
+1:57:32 1 hour, 57 minutes, 32 seconds
+monthly then we need an amount of time such as years into
+1:57:38 1 hour, 57 minutes, 38 seconds
+years and the final amount double amount now we have to get some user
+1:57:46 1 hour, 57 minutes, 46 seconds
+input we'll need some prompts first we need the principal amount all use
+1:57:55 1 hour, 57 minutes, 55 seconds
+system.out.print enter the principal I never spell principal right enter the principal
+1:58:05 1 hour, 58 minutes, 5 seconds
+amount we are working with the double so we need the next Double method of our scanner principal equals our
+1:58:15 1 hour, 58 minutes, 15 seconds
+scanner do next Double then we need the interest rate
+1:58:23 1 hour, 58 minutes, 23 seconds
+this is going to be a double system.out.print enter the interest
+1:58:34 1 hour, 58 minutes, 34 seconds
+rate I'll add within our prompt that this is in a percentage form like 5% or
+1:58:40 1 hour, 58 minutes, 40 seconds
+so the number five instead of 05 so then we have our interest
+1:58:47 1 hour, 58 minutes, 47 seconds
+rate so we need our scanner do next double so let's say somebody types in
+1:58:56 1 hour, 58 minutes, 56 seconds
+five for 5% we would like the rate to be 05 rather than 5 after accepting the user
+1:59:03 1 hour, 59 minutes, 3 seconds
+input let's divide that number by 100 or let's say somebody types in seven we don't want the rate to be seven we want it to be
+1:59:12 1 hour, 59 minutes, 12 seconds
+07 that's why we're dividing by 100 we'll fill in the times compounded
+1:59:19 1 hour, 59 minutes, 19 seconds
+variable we're going to use print enter the number of
+1:59:28 1 hour, 59 minutes, 28 seconds
+times compounded per year so this could be yearly that would
+1:59:35 1 hour, 59 minutes, 35 seconds
+be one quarterly four or monthly would be 12 in most cases it's probably going to be one for yearly times
+1:59:43 1 hour, 59 minutes, 43 seconds
+compounded equals use our scanner
+1:59:50 1 hour, 59 minutes, 50 seconds
+next int cuz we're accepting an integer then we need the amount of times our money is going to be
+2:00:00 2 hours
+invested enter the number of years then we need to assign our
+2:00:08 2 hours, 8 seconds
+variable years years equals scanner. next int because we're working
+2:00:15 2 hours, 15 seconds
+with an integer then we need to calculate the total amount here's the formula
+2:00:23 2 hours, 23 seconds
+amount equals we need our principal
+2:00:29 2 hours, 29 seconds
+amount times access the math class use the power
+2:00:35 2 hours, 35 seconds
+method raay is 1 plus the interest
+2:00:41 2 hours, 41 seconds
+rate divided by the variable times compounded so this is going to be the
+2:00:50 2 hours, 50 seconds
+base we Comm separate the base and the power we are raising this part of our equation to the
+2:00:58 2 hours, 58 seconds
+power of times compounded times the number of
+2:01:06 2 hours, 1 minute, 6 seconds
+years and that's our formula it's a little confusing but it should
+2:01:12 2 hours, 1 minute, 12 seconds
+work then we will display the amount system.out.print
+2:01:19 2 hours, 1 minute, 19 seconds
+line the amount after plus years
+2:01:30 2 hours, 1 minute, 30 seconds
+plus is pick a unit of currency I'll pick American dollars plus
+2:01:39 2 hours, 1 minute, 39 seconds
+amount let's test this so let's say we have $10,000 or so
+2:01:46 2 hours, 1 minute, 46 seconds
+and we're putting it in the bank what is the interest rate maybe
+2:01:53 2 hours, 1 minute, 53 seconds
+3% so I'm going to type three enter the amount of times compounded per year I'll go with
+2:02:01 2 hours, 2 minutes, 1 second
+one enter the number of years one so we should have 10,300 in our
+2:02:09 2 hours, 2 minutes, 9 seconds
+bank which we do 10,300 if you would like you can use a print F statement to format the
+2:02:18 2 hours, 2 minutes, 18 seconds
+output so if you're familiar with that let's replace print line with print F instead of concatenating these
+2:02:26 2 hours, 2 minutes, 26 seconds
+variables we'll add some placeholders instead so to display an integer we need
+2:02:37 2 hours, 2 minutes, 37 seconds
+percent D within print F years is then to display a double we
+2:02:45 2 hours, 2 minutes, 45 seconds
+need percent F then we'll list our arguments years comma
+2:02:55 2 hours, 2 minutes, 55 seconds
+amount so to display two decimals within a double between the percent and the F we're going to type 2 to display two
+2:03:04 2 hours, 3 minutes, 4 seconds
+digits after the decimal we'll proceed this placeholder with the unit of currency let's do American dollars okay let's see the total
+2:03:12 2 hours, 3 minutes, 12 seconds
+amount enter the principal amount $110,000 enter the interest rate 2%
+2:03:20 2 hours, 3 minutes, 20 seconds
+enter the number of times compounded per year this time let's do quarterly so four because there's four quarters in a year enter the number of years let's do
+2:03:29 2 hours, 3 minutes, 29 seconds
+two actually and here's the amount in our bank account after 2 years
+2:03:39 2 hours, 3 minutes, 39 seconds
+$1,477 all right everybody so that is a compound interest calculator you can write using
+2:03:46 2 hours, 3 minutes, 46 seconds
+Java what is going on everybody in this video I'm going to explain nested if statements in Java in Java it is possible to have if
+2:03:54 2 hours, 3 minutes, 54 seconds
+statements within other if statements kind of like this after checking some condition you
+2:04:01 2 hours, 4 minutes, 1 second
+could follow with another condition if the first condition is true you can add if statements L if
+2:04:09 2 hours, 4 minutes, 9 seconds
+statements and or else statements really depends on the program that you're trying to write so what we're going to do in this demonstration
+2:04:17 2 hours, 4 minutes, 17 seconds
+is have two Boolean variables a Boolean of is student let's say that we're selling
+2:04:25 2 hours, 4 minutes, 25 seconds
+movie tickets if somebody's a student they get a 10% discount on their movie ticket we also have a senior discount
+2:04:33 2 hours, 4 minutes, 33 seconds
+Boolean is senior if somebody is 65 or older they get a 20% senior
+2:04:41 2 hours, 4 minutes, 41 seconds
+discount or if they're a student and a senior they get a combined total of 30% off their ticket
+2:04:49 2 hours, 4 minutes, 49 seconds
+price let's say we have a double of price the price of a movie ticket will be $9.99 let's say that's actually kind
+2:04:59 2 hours, 4 minutes, 59 seconds
+of cheap nowadays we'll write an if statement to check to see if somebody is a student if
+2:05:06 2 hours, 5 minutes, 6 seconds
+is student is equal to true but since this is a Boolean variable we don't need the equals true portion we can just say
+2:05:14 2 hours, 5 minutes, 14 seconds
+if is student I will go ahead and set this to be true right away so if somebody is a student they get a student
+2:05:22 2 hours, 5 minutes, 22 seconds
+discount else they won't so if a student is true let's
+2:05:30 2 hours, 5 minutes, 30 seconds
+output the following you get a
+2:05:36 2 hours, 5 minutes, 36 seconds
+student discount of 10% then we will take our
+2:05:44 2 hours, 5 minutes, 44 seconds
+price price equals price time 0.9 that will give you a 10% discount
+2:05:51 2 hours, 5 minutes, 51 seconds
+account you could shorten this using the augmented assignment operator price times equals 0.9 that will set the price to be
+2:06:00 2 hours, 6 minutes
+90% or a 10% discount so to say if somebody's not a student they're going to pay full price price times equals 1
+2:06:10 2 hours, 6 minutes, 10 seconds
+that really doesn't do anything but it might help with this visualization then we'll output the
+2:06:18 2 hours, 6 minutes, 18 seconds
+following the price of a ticket is pick unit of currency then I'll add
+2:06:27 2 hours, 6 minutes, 27 seconds
+our price let's perform a test run currently we're a student you get a
+2:06:35 2 hours, 6 minutes, 35 seconds
+discount of 10% the price of a ticket is $8.99 to limit the amount of digits that
+2:06:43 2 hours, 6 minutes, 43 seconds
+display let's use a printf statement we'll use print F instead of print line after the dollar sign I will add a
+2:06:51 2 hours, 6 minutes, 51 seconds
+format specifier we're going to display a double we'll use f for a floating Point number comma price to display two digits
+2:07:01 2 hours, 7 minutes, 1 second
+after the decimal use 0 2 now we can display a price you get a student discount of 10%
+2:07:09 2 hours, 7 minutes, 9 seconds
+the price of a ticket is $8.99 now if we weren't a student I'll set this to be
+2:07:18 2 hours, 7 minutes, 18 seconds
+false we don't get that discount the price of a ticket is $9.99 what it was originally now what if somebody is a
+2:07:27 2 hours, 7 minutes, 27 seconds
+senior and a student within our if statement we'll write a nested if
+2:07:34 2 hours, 7 minutes, 34 seconds
+statement as well as an else statement if is senior they get a
+2:07:40 2 hours, 7 minutes, 40 seconds
+student discount and a senior discount let's cut these two lines within the if statement and stick them
+2:07:49 2 hours, 7 minutes, 49 seconds
+within the nested else statement if somebody is a senior and a
+2:07:55 2 hours, 7 minutes, 55 seconds
+student you get a senior discount of
+2:08:04 2 hours, 8 minutes, 4 seconds
+20% and a student discount of 10% so let's take our original
+2:08:11 2 hours, 8 minutes, 11 seconds
+price times equals 0.7 and an additional 10% off the orig
+2:08:24 2 hours, 8 minutes, 24 seconds
+so let's say is senior is true for now okay else if they're not a student
+2:08:32 2 hours, 8 minutes, 32 seconds
+but they are a senior we'll check that with a nested if statement within the else
+2:08:40 2 hours, 8 minutes, 40 seconds
+statement if is senior they get that senior
+2:08:46 2 hours, 8 minutes, 46 seconds
+discount but it's only 20% instead of 30 because they're not also as
+2:08:53 2 hours, 8 minutes, 53 seconds
+student price times equals 0.8 you could add
+2:09:00 2 hours, 9 minutes
+else price times equals 1 that's if somebody is not a student
+2:09:08 2 hours, 9 minutes, 8 seconds
+and not a senior but you don't necessarily need the sell statement all right let's perform a test
+2:09:17 2 hours, 9 minutes, 17 seconds
+run let's say that we're not a student and not a senior the price of a ticket is
+2:09:25 2 hours, 9 minutes, 25 seconds
+$9.99 what if we were a student but not a senior you get a student discount of 10%
+2:09:33 2 hours, 9 minutes, 33 seconds
+the price of a ticket is $8.99 what if we're not a student but we are a
+2:09:42 2 hours, 9 minutes, 42 seconds
+senior you get a senior discount of 20% the price of a ticket is
+2:09:48 2 hours, 9 minutes, 48 seconds
+$7.99 what if we're both a student and a senior you get a senior discount of 20%
+2:09:57 2 hours, 9 minutes, 57 seconds
+you get a student discount of 10% the price of a ticket is $6.99 that's how nesa if statements can
+2:10:05 2 hours, 10 minutes, 5 seconds
+be useful you could check another condition after checking a condition already so that's just one example of
+2:10:12 2 hours, 10 minutes, 12 seconds
+nesa if statements and well everybody those are Nesta if statements in
+2:10:19 2 hours, 10 minutes, 19 seconds
+Java hey yeah so today I'm going to show you a few useful string Methods you may be interested in as a beginner using Java in this demonstration let's create
+2:10:28 2 hours, 10 minutes, 28 seconds
+a variable of name the data type is going to be a string type in your full name including a space I'll just use my YouTube channel
+2:10:36 2 hours, 10 minutes, 36 seconds
+name if at any time you need the length of a string you can use the length method I'll store that as an integer int
+2:10:44 2 hours, 10 minutes, 44 seconds
+length equals to access these string Methods you need a string or a variable that is a string
+2:10:53 2 hours, 10 minutes, 53 seconds
+dot then we have one of a few methods if you need the length you can use the length
+2:10:59 2 hours, 10 minutes, 59 seconds
+method and then let's print it print the length how many characters
+2:11:07 2 hours, 11 minutes, 7 seconds
+are in the string eight 1 2 3 4 5 6 7 8 this could be
+2:11:14 2 hours, 11 minutes, 14 seconds
+useful let's say somebody is setting a password and you have a maximum size of 12 characters well you can check the length to see if it's under 12
+2:11:21 2 hours, 11 minutes, 21 seconds
+characters so that is the length method there's Char at that will give you the character at a specified index
+2:11:29 2 hours, 11 minutes, 29 seconds
+we'll be given a single character we'll store that as a variable Char letter equals take our string of name use the
+2:11:39 2 hours, 11 minutes, 39 seconds
+Char at method within the Char at method we'll list an index zero is the index of the
+2:11:47 2 hours, 11 minutes, 47 seconds
+first character because computers like to start at zero what what is the character at index
+2:11:53 2 hours, 11 minutes, 53 seconds
+zero well that letter is B at index one that would be R and
+2:12:02 2 hours, 12 minutes, 2 seconds
+two would be o that is the charat method it returns a character at a given index within a
+2:12:10 2 hours, 12 minutes, 10 seconds
+string we also have the capability of finding a letter at a given index let's say we have a variable of
+2:12:17 2 hours, 12 minutes, 17 seconds
+index take our name use the index of method find the first occurrence of an
+2:12:27 2 hours, 12 minutes, 27 seconds
+O so in my example that should be 2 0 1 2 that is the first index of this
+2:12:35 2 hours, 12 minutes, 35 seconds
+character o what about a space well that would be three 0 1 2
+2:12:46 2 hours, 12 minutes, 46 seconds
+3 there's also last index last index equals take our string of
+2:12:54 2 hours, 12 minutes, 54 seconds
+name then use the last index of method what is the last index of an O
+2:13:03 2 hours, 13 minutes, 3 seconds
+because index of gives you the first index last gives you well the last one what is the last index of O where is
+2:13:12 2 hours, 13 minutes, 12 seconds
+it exactly five 0 1 2 3 4 5
+2:13:21 2 hours, 13 minutes, 21 seconds
+we can take a string and make all the characters uppercase all reassign that to our name variable so we're going to
+2:13:28 2 hours, 13 minutes, 28 seconds
+take our name use the two uppercase method then print our name after reassigning
+2:13:36 2 hours, 13 minutes, 36 seconds
+it now all the letters are uppercase there's also two lowercase we'll replace upper with
+2:13:46 2 hours, 13 minutes, 46 seconds
+lower and I should probably turn this into a comment now all the characters are
+2:13:55 2 hours, 13 minutes, 55 seconds
+lowercase we can trim any white space before and after a string let's add a few spaces before and after then print the
+2:14:03 2 hours, 14 minutes, 3 seconds
+name we can eliminate all this white space we'll use the trim method for that we'll reassign name equals name and use
+2:14:13 2 hours, 14 minutes, 13 seconds
+the trim method now while that white space is gone we can replace a character with
+2:14:22 2 hours, 14 minutes, 22 seconds
+another one name equals name we will replace one character with another let's replace any
+2:14:31 2 hours, 14 minutes, 31 seconds
+o's with A's for your own name feel free to change
+2:14:38 2 hours, 14 minutes, 38 seconds
+these so what is my name now broade there are methods that return
+2:14:46 2 hours, 14 minutes, 46 seconds
+Boolean values to check to see if a string is empty you can use the is empty method this would return a Boolean to
+2:14:55 2 hours, 14 minutes, 55 seconds
+demonstrate I'm going to put this within a print statement so my string is not empty
+2:15:04 2 hours, 15 minutes, 4 seconds
+that's false but if it was it would return true but I have to turn these lines into
+2:15:12 2 hours, 15 minutes, 12 seconds
+comments that would return true my name is empty this could be useful within an if statement
+2:15:22 2 hours, 15 minutes, 22 seconds
+if name do is empty method if our name is empty we will print your name is
+2:15:32 2 hours, 15 minutes, 32 seconds
+empty else we will print hello plus
+2:15:39 2 hours, 15 minutes, 39 seconds
+name currently my name is empty your name is empty this method returns true but if it
+2:15:48 2 hours, 15 minutes, 48 seconds
+wasn't it would return false hello whatever your name
+2:15:58 2 hours, 15 minutes, 58 seconds
+is I'll use a multi-line comment just to comment all this
+2:16:06 2 hours, 16 minutes, 6 seconds
+out we can check to see if our string contains a character that would return a
+2:16:13 2 hours, 16 minutes, 13 seconds
+Boolean let's check to see if our name contains any spaces
+2:16:23 2 hours, 16 minutes, 23 seconds
+if that's true your name
+2:16:31 2 hours, 16 minutes, 31 seconds
+contains a space else will print your
+2:16:39 2 hours, 16 minutes, 39 seconds
+name doesn't contain any spaces so my name does contain a
+2:16:48 2 hours, 16 minutes, 48 seconds
+space that would return true your name contains a space if we're working with let's say a
+2:16:55 2 hours, 16 minutes, 55 seconds
+username usernames typically don't contain spaces your name doesn't contain any spaces there is a method to check to see
+2:17:04 2 hours, 17 minutes, 4 seconds
+if two strings are equal again I'm going to use a multi-line comment just to comment this
+2:17:15 2 hours, 17 minutes, 15 seconds
+out if our name equals
+2:17:22 2 hours, 17 minutes, 22 seconds
+using the equals method we can check to see if two strings are equal the given characters within them let's see if our
+2:17:29 2 hours, 17 minutes, 29 seconds
+name equals password this actually would be more appropriate if we were working with the
+2:17:36 2 hours, 17 minutes, 36 seconds
+string named password if our name if the string of name is equal to this string if they have the same characters exactly
+2:17:45 2 hours, 17 minutes, 45 seconds
+then we'll print your name can't be password
+2:17:53 2 hours, 17 minutes, 53 seconds
+else we will print hello plus
+2:18:00 2 hours, 18 minutes
+name I will set my name to be password your name can't be password but
+2:18:08 2 hours, 18 minutes, 8 seconds
+if it wasn't well then this returns false these two strings are not equal and we
+2:18:18 2 hours, 18 minutes, 18 seconds
+execute the L statement hello your name now the equals method doesn't account for case sensitivity so let's say our
+2:18:26 2 hours, 18 minutes, 26 seconds
+password has a capital P well then this method returns false
+2:18:34 2 hours, 18 minutes, 34 seconds
+hello password to ignore case sensitivity you can use equals ignore
+2:18:42 2 hours, 18 minutes, 42 seconds
+case then that would return true your name can't be password all right everybody those are a few useful string
+2:18:50 2 hours, 18 minutes, 50 seconds
+Methods you may be interested in as a beginner using Java all right everybody in this video
+2:18:57 2 hours, 18 minutes, 57 seconds
+I'm going to explain how the substring method Works in Java substring is a method that's used to extract a portion
+2:19:04 2 hours, 19 minutes, 4 seconds
+of a string strings have a built-in method of substring within the substring method you can list one of two indices
+2:19:11 2 hours, 19 minutes, 11 seconds
+this method will create a new string based on the positioning of the indices the start and the end I can best demonstrate this with us creating an
+2:19:20 2 hours, 19 minutes, 20 seconds
+email SCE ER program so what we'll do in this demonstration is create a string of
+2:19:27 2 hours, 19 minutes, 27 seconds
+email type in your own email I don't want to give you guys my actual email because some of you guys are weird no
+2:19:33 2 hours, 19 minutes, 33 seconds
+offense my email will be bro1 23@gmail.com
+2:19:41 2 hours, 19 minutes, 41 seconds
+our variable of email is a string strings have a built-in method of substring we can create a new string
+2:19:48 2 hours, 19 minutes, 48 seconds
+from portions of the original string here's how let's say I would like the first six
+2:19:56 2 hours, 19 minutes, 56 seconds
+letters but depending on your own email it may be different the substring method will return a new string so let's create
+2:20:03 2 hours, 20 minutes, 3 seconds
+a new variable the data type of string of usern name equals to create a substring we
+2:20:11 2 hours, 20 minutes, 11 seconds
+will take the original string use the substring method then list one of two possible
+2:20:17 2 hours, 20 minutes, 17 seconds
+indexes or indices the first index will be zero at what position would we like this substring to end I would like to
+2:20:26 2 hours, 20 minutes, 26 seconds
+end right before this at sign so that would be 0 1 2 3 4 5
+2:20:32 2 hours, 20 minutes, 32 seconds
+6 the second index is exclusive so we're creating a new string of username by using the substring method of our
+2:20:41 2 hours, 20 minutes, 41 seconds
+original string of email then let's print it to test it we will display our username and now we have a new string
+2:20:50 2 hours, 20 minutes, 50 seconds
+mine is bro 1 123 but depending on what you wrote for your email it may be different now I would like a new substring of every character after the
+2:20:59 2 hours, 20 minutes, 59 seconds
+at sign this will be a variable named domain what is the domain of our email
+2:21:05 2 hours, 21 minutes, 5 seconds
+again we're taking our original string using the substring method then list one of two possible indices so again let's
+2:21:14 2 hours, 21 minutes, 14 seconds
+count this is index zero because in programming we tend to start with zero 1 2 3 4 5 6
+2:21:24 2 hours, 21 minutes, 24 seconds
+7 so 7 8 9 10 11 12 13 14 15
+2:21:33 2 hours, 21 minutes, 33 seconds
+16 then we will display our domain so my domain is
+2:21:41 2 hours, 21 minutes, 41 seconds
+gmail.com within your substring method if you have a starting index but you would like all the characters that come after all the way till the end you don't
+2:21:49 2 hours, 21 minutes, 49 seconds
+necessarily need an ending index X we could just say seven that would work too
+2:21:56 2 hours, 21 minutes, 56 seconds
+gmail.com there's one issue with how we wrote this program what if somebody has a different length of an email there's a greater or lesser number of characters
+2:22:05 2 hours, 22 minutes, 5 seconds
+so let's say I have a different email this program doesn't work as
+2:22:14 2 hours, 22 minutes, 14 seconds
+intended it's not flexible so my domain is 1@gmail.com I could could modify the indices of the
+2:22:22 2 hours, 22 minutes, 22 seconds
+substring method so 0 1 2 3 4 5 6
+2:22:31 2 hours, 22 minutes, 31 seconds
+78 then the domain would be nine because I want everything after the at sign and then my username let's check
+2:22:40 2 hours, 22 minutes, 40 seconds
+that so this would be my username bro code one to make this program more flexible instead of manually entering
+2:22:48 2 hours, 22 minutes, 48 seconds
+the indices we can determine this number should be with another string method we're going to use the index of method
+2:22:55 2 hours, 22 minutes, 55 seconds
+in place of a number we're going to find the at character let's replace our second
+2:23:01 2 hours, 23 minutes, 1 second
+index with email our string dot using the index of method then we will find
+2:23:09 2 hours, 23 minutes, 9 seconds
+the index of our at character we're going to replace this number with email.
+2:23:15 2 hours, 23 minutes, 15 seconds
+index of and find the at sign so now let's try printing our
+2:23:22 2 hours, 23 minutes, 22 seconds
+username so here's my username then let's print the domain currently we have that at sign
+2:23:32 2 hours, 23 minutes, 32 seconds
+the index of method returns a number which we're using as the index it's returning the index of this at sign I'm
+2:23:40 2 hours, 23 minutes, 40 seconds
+going to increase it by one so we get everything after the at sign so plus
+2:23:46 2 hours, 23 minutes, 46 seconds
+one and now the at sign is removed even better yet let's accept some user
+2:23:54 2 hours, 23 minutes, 54 seconds
+input we'll need a scanner import java.util do scanner we'll create a scanner
+2:24:02 2 hours, 24 minutes, 2 seconds
+object scanner scanner equals new scanner then we will need
+2:24:11 2 hours, 24 minutes, 11 seconds
+system.in then when we open a scanner it is a good idea to close it when we're done with it I sometimes forget
+2:24:20 2 hours, 24 minutes, 20 seconds
+we'll create a prompt for a user to type in their email enter your email I'll use print
+2:24:28 2 hours, 24 minutes, 28 seconds
+instead of print line I'm going to declare my variables after our scanner that's just how I like to arrange things
+2:24:36 2 hours, 24 minutes, 36 seconds
+we'll declare our email but not yet assign it same thing applies with our username and our
+2:24:45 2 hours, 24 minutes, 45 seconds
+domain we've already declared these variables we don't need to do that again
+2:24:53 2 hours, 24 minutes, 53 seconds
+instead of manually assigning our email we're going to use our scanner to accept user input scanner. nextt
+2:25:02 2 hours, 25 minutes, 2 seconds
+line let's display our username and our domain okay enter your email I'll make
+2:25:12 2 hours, 25 minutes, 12 seconds
+up something bro1 123@gmail.com here's my username
+2:25:20 2 hours, 25 minutes, 20 seconds
+and the domain we can take this a step further too we can check to see if our email is valid we'll use some of the string
+2:25:28 2 hours, 25 minutes, 28 seconds
+Methods we learned about in the last video so after accepting our email we're going to write an if
+2:25:35 2 hours, 25 minutes, 35 seconds
+statement if our email contains the at
+2:25:43 2 hours, 25 minutes, 43 seconds
+character our email is only valid if we have this at character if it is
+2:25:50 2 hours, 25 minutes, 50 seconds
+then we'll perform all this code so let's cut it then stick it within the if statement else we will do something
+2:25:58 2 hours, 25 minutes, 58 seconds
+else let's print emails must contain
+2:26:05 2 hours, 26 minutes, 5 seconds
+at let's type in an email that's not valid I won't include the at

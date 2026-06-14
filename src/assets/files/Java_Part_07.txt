@@ -1,0 +1,1067 @@
+7:14:57 7 hours, 14 minutes, 57 seconds
+will assign this object's name attribute equal to the name parameter that we receive let's construct two friends
+7:15:06 7 hours, 15 minutes, 6 seconds
+we'll say friend friend one equals new friend but we have to pass in a name
+7:15:14 7 hours, 15 minutes, 14 seconds
+pick a name my default is SpongeBob because most people know who SpongeBob is if I was to Output friend one's name
+7:15:23 7 hours, 15 minutes, 23 seconds
+then it should be SpongeBob we just want to be sure that it works yes it does SpongeBob
+7:15:31 7 hours, 15 minutes, 31 seconds
+now going back to our friend class let's say we would like to keep track of how many friend objects we create well that
+7:15:38 7 hours, 15 minutes, 38 seconds
+could be an attribute let's say we have an integer of num of friends meaning number of friends whenever we create a
+7:15:47 7 hours, 15 minutes, 47 seconds
+friend object we will increment number of friends by one num of friends
+7:15:54 7 hours, 15 minutes, 54 seconds
+Plus+ so going back let's output friend On's number of friends attribute num of
+7:16:03 7 hours, 16 minutes, 3 seconds
+friends so this should be one yep num friends is one we have one friend but
+7:16:10 7 hours, 16 minutes, 10 seconds
+what if we create a second friend object I'll just copy this line of code paste it change friend one to friend two we'll
+7:16:17 7 hours, 16 minutes, 17 seconds
+pass in a new name let's say Patrick we'll print friend One's number of friends and friend two's number of
+7:16:24 7 hours, 16 minutes, 24 seconds
+friends how many friend objects have we created we have created two but what's the out
+7:16:31 7 hours, 16 minutes, 31 seconds
+put well it's one for both here's why each friend object has
+7:16:38 7 hours, 16 minutes, 38 seconds
+their own copy of the number of friends variable we're incrementing each copy of number of friends by one when we create
+7:16:46 7 hours, 16 minutes, 46 seconds
+the object of friend one we're incrementing its attribute of number of friends by one same thing applies with friend two when we create friend two
+7:16:54 7 hours, 16 minutes, 54 seconds
+friend 2's number of friends is zero and we're incrementing it by one what if we would like to keep track of the total amount of friends that we created and
+7:17:02 7 hours, 17 minutes, 2 seconds
+store it within one variable well there is a way we can do that and that is with the static modifier so going back to our friend
+7:17:10 7 hours, 17 minutes, 10 seconds
+class we're going to precede the data type of this attribute with the static modifier static int number of friends
+7:17:19 7 hours, 17 minutes, 19 seconds
+rather than all objects all friend objects having their own copy of number of friends they're all going to share one so going back let's print a number
+7:17:28 7 hours, 17 minutes, 28 seconds
+of friends now it's two we have two total friends if I
+7:17:34 7 hours, 17 minutes, 34 seconds
+was to create a third friend friend three friend three will be
+7:17:44 7 hours, 17 minutes, 44 seconds
+Squidward and then I'll output friend 3's number of friends we have three total friends we
+7:17:52 7 hours, 17 minutes, 52 seconds
+are receiving a suggestion when accessing a static variable or calling a static method it's actually best to do so through the class itself
+7:18:01 7 hours, 18 minutes, 1 second
+rather than any object created from that class instead of saying you know friend one then accessing the static member we will instead use the name of the class
+7:18:10 7 hours, 18 minutes, 10 seconds
+in this case friend it's better for clarity to access a static member by the name of the class itself rather than any
+7:18:17 7 hours, 18 minutes, 17 seconds
+object because you and other developers will know that this is a static attribute or method to display the static variable we would want to access
+7:18:26 7 hours, 18 minutes, 26 seconds
+it by the class name then access that static attribute how many friends do we have now three let's create a fourth
+7:18:34 7 hours, 18 minutes, 34 seconds
+friend friend four will be Sandy then display the number of friends we
+7:18:42 7 hours, 18 minutes, 42 seconds
+have now we have four friends going back to the friend class it's as if all these objects are sharing the same variable
+7:18:51 7 hours, 18 minutes, 51 seconds
+but rather than any one object having ownership of this variable rather the friend class owns it and all objects
+7:18:58 7 hours, 18 minutes, 58 seconds
+have access to it methods can also be modified by the static keyword we will create a static method
+7:19:06 7 hours, 19 minutes, 6 seconds
+that doesn't return anything the return type is void this method will be the show Friends method we'll just output
+7:19:14 7 hours, 19 minutes, 14 seconds
+the following we'll output you have plus normally when you access an
+7:19:22 7 hours, 19 minutes, 22 seconds
+attribute you type this dot the name of the attribute such as you know name if you're working with the static attribute you don't need this
+7:19:31 7 hours, 19 minutes, 31 seconds
+for example this. number of friends you don't need this we even have a warning here that friends. this cannot be referenced from a static context if
+7:19:40 7 hours, 19 minutes, 40 seconds
+you're working with a static attribute you don't need this this refers to the object you're currently working with but since this attribute belongs to the
+7:19:48 7 hours, 19 minutes, 48 seconds
+class we don't need this you have your static attribute of number of friends
+7:19:54 7 hours, 19 minutes, 54 seconds
+then the words total friends to call a static method type the name of
+7:20:04 7 hours, 20 minutes, 4 seconds
+the class in this case friend dot the name of the method show
+7:20:12 7 hours, 20 minutes, 12 seconds
+friends you have four total friends let's create another friend friend
+7:20:19 7 hours, 20 minutes, 19 seconds
+five friend five will be Gary friend. show friends you have five
+7:20:27 7 hours, 20 minutes, 27 seconds
+total friends another place in which you see static members is through the math class for example let's say you would like to
+7:20:34 7 hours, 20 minutes, 34 seconds
+round a number you would type the name of the math class math. round and you can round a number round is a utility method we
+7:20:44 7 hours, 20 minutes, 44 seconds
+access it through the class name of math you don't need to go ahead and create a math object such as math math 1 equals
+7:20:52 7 hours, 20 minutes, 52 seconds
+new math and then access it through this object that would be silly round is a static method it
+7:21:01 7 hours, 21 minutes, 1 second
+behaves as a utility method we can access it through the class name and we don't need to create any math objects because that's stupid and to prove this
+7:21:09 7 hours, 21 minutes, 9 seconds
+let's go to the math class I'm going to hover over math jump to
+7:21:16 7 hours, 21 minutes, 16 seconds
+Source here's the math class and let's find the round method I'm going to do a search for
+7:21:23 7 hours, 21 minutes, 23 seconds
+it here's the round method so round is a method and we have that static keyword round is a utility
+7:21:32 7 hours, 21 minutes, 32 seconds
+method for the math class we can access it through the name of the class all right everybody so that is the static
+7:21:39 7 hours, 21 minutes, 39 seconds
+keyword it modifies a variable or method so that it belongs to the class rather than any specific object it's commonly
+7:21:47 7 hours, 21 minutes, 47 seconds
+used for utility methods or shared resources among objects created from that class such as the number of friends
+7:21:55 7 hours, 21 minutes, 55 seconds
+all those friend objects share the same attribute rather than each of them having their own copy and and well everybody that is the static keyword in
+7:22:03 7 hours, 22 minutes, 3 seconds
+Java what is going on people today we got a very important topic to discuss today and that is inheritance inheritance is where one class inherits
+7:22:13 7 hours, 22 minutes, 13 seconds
+the attributes and methods from another class much like how a child can inherit traits from A parent well in programming
+7:22:20 7 hours, 22 minutes, 20 seconds
+we could do something similar one class a child's class can inherit traits from A parent here's an example we're going
+7:22:28 7 hours, 22 minutes, 28 seconds
+to create a few classes but we'll start with a new class of animal let's go to new class I will create an animal
+7:22:38 7 hours, 22 minutes, 38 seconds
+class what do animals have let's say that all animals are alive they will start by being alive is
+7:22:47 7 hours, 22 minutes, 47 seconds
+alive let's create a Constructor of animal I will set is alive to be true
+7:22:54 7 hours, 22 minutes, 54 seconds
+when we construct a new animal object but not only are all animals alive all animals can eat they will have an eat
+7:23:02 7 hours, 23 minutes, 2 seconds
+method void eat we'll print something like the following the animal is eating easting
+7:23:12 7 hours, 23 minutes, 12 seconds
+eating that is good enough for this class so what we're going to do is create two more classes file new class
+7:23:21 7 hours, 23 minutes, 21 seconds
+we will create a dog class and a cat
+7:23:29 7 hours, 23 minutes, 29 seconds
+class dog and cats are types of animals our animal class will be the parent the dog and cat class will be its children
+7:23:38 7 hours, 23 minutes, 38 seconds
+in order for a class to inherit all the attributes and methods from another class after the class name you will use the extend
+7:23:46 7 hours, 23 minutes, 46 seconds
+keyword then specify the parent class dog extends animal our dog class will
+7:23:53 7 hours, 23 minutes, 53 seconds
+inherit all these traits these attributes and methods from the animal class the cat and dog class don't have any anything within them let's see if
+7:24:02 7 hours, 24 minutes, 2 seconds
+they actually do have these attributes and methods even though there's nothing within them let's create a dog object
+7:24:08 7 hours, 24 minutes, 8 seconds
+dog dog equals new dog and a cat cat cat equals new
+7:24:16 7 hours, 24 minutes, 16 seconds
+cat let's print our dogs is alive variable is my dog alive I sure hope
+7:24:24 7 hours, 24 minutes, 24 seconds
+so cat do is alive look at that they're both
+7:24:31 7 hours, 24 minutes, 31 seconds
+true they should also be able to eat dog. eat method cat. eat
+7:24:41 7 hours, 24 minutes, 41 seconds
+method the animal is eating the animal is eating even though these classes of dog and cat don't have anything within them
+7:24:49 7 hours, 24 minutes, 49 seconds
+since they extend to the animal class we're specifying that the animal class is the parent the cat and dog classes
+7:24:57 7 hours, 24 minutes, 57 seconds
+are the children of the animal class they inherit all these attributes and methods from its parent of animal even though they don't have anything within
+7:25:05 7 hours, 25 minutes, 5 seconds
+them this isn't as useful if you only have a few classes such as two because you know you could just copy and paste
+7:25:12 7 hours, 25 minutes, 12 seconds
+all this code within each and then just change the Constructor but imagine if you had
+7:25:20 7 hours, 25 minutes, 20 seconds
+hundreds of classes hundreds of children you'd have to do that for hundreds of classes but not only that if you have to
+7:25:26 7 hours, 25 minutes, 26 seconds
+make any changes to say you know this animal is eating you'd have to make that change for hundreds of classes and we are repeating
+7:25:34 7 hours, 25 minutes, 34 seconds
+ourselves a lot it'd be a lot easier if we can just make that change in one place if we have to change the to this
+7:25:43 7 hours, 25 minutes, 43 seconds
+all of the children classes will inherit this updated method we're following the dry principle don't repeat yourself
+7:25:50 7 hours, 25 minutes, 50 seconds
+we're writing the code once and just reusing it all the children classes will inherit this updated method but not only
+7:25:59 7 hours, 25 minutes, 59 seconds
+that each child class can have their own unique attributes and methods too let's say that all dogs will have one life int
+7:26:08 7 hours, 26 minutes, 8 seconds
+lives equals 1 they will also have their own unique speak method void
+7:26:16 7 hours, 26 minutes, 16 seconds
+speak when our dog uses the speak method let's output the following let's say the dog goes
+7:26:25 7 hours, 26 minutes, 25 seconds
+woof then within the cat class cats will have have nine
+7:26:32 7 hours, 26 minutes, 32 seconds
+lives and they can speak but they will say something different when they speak let's output the cat goes
+7:26:43 7 hours, 26 minutes, 43 seconds
+meow going back let's output our dog objects lives
+7:26:50 7 hours, 26 minutes, 50 seconds
+how many lives does our dog have same thing applies with our cat cat.
+7:26:57 7 hours, 26 minutes, 57 seconds
+lives our dog has one life our cat has nine lives they also have their own unique speak methods dog
+7:27:06 7 hours, 27 minutes, 6 seconds
+dope cat dope the dog goes woof the cat goes
+7:27:15 7 hours, 27 minutes, 15 seconds
+meow there's also the concept of multi-level inheritance we'll create a new class to serve as a sort of
+7:27:23 7 hours, 27 minutes, 23 seconds
+grandparent a child class will inherit from a parent a parent will inherit from a grandparent so let's change this
+7:27:30 7 hours, 27 minutes, 30 seconds
+program around a little bit we're going to create a new class file new Java class we will create a class of
+7:27:41 7 hours, 27 minutes, 41 seconds
+organism animals will extend the organism class let's cut our is aive variable and
+7:27:50 7 hours, 27 minutes, 50 seconds
+the Constructor if you inherit from the animal class you will get an eat
+7:27:57 7 hours, 27 minutes, 57 seconds
+method if you inherit from the organism class you are alive and that's it but we need to change the
+7:28:05 7 hours, 28 minutes, 5 seconds
+Constructor animal inherits from organism dog and cat inherit from the animal class so from the perspective of
+7:28:13 7 hours, 28 minutes, 13 seconds
+our dog and cat class the organism class is you could say a grandparent going back to our main Java file let's take a
+7:28:22 7 hours, 28 minutes, 22 seconds
+look at our is alive variables dog. is alive same thing with our cat
+7:28:30 7 hours, 28 minutes, 30 seconds
+cat dot is alive yes our dog is alive and our cat is alive let's take this a step
+7:28:39 7 hours, 28 minutes, 39 seconds
+further let's create a class of plant plant is going to inherit from the organism class because plants are a type
+7:28:46 7 hours, 28 minutes, 46 seconds
+of organism but they're not related to animals let's create a new class of
+7:28:58 7 hours, 28 minutes, 58 seconds
+plant let's say that if you're a plant you get a method to well plants don't eat but they can
+7:29:05 7 hours, 29 minutes, 5 seconds
+photosynthesize photosynthesize I think I spelled that right probably not but who
+7:29:12 7 hours, 29 minutes, 12 seconds
+cares if you're a plant and you photosynthesize then the
+7:29:18 7 hours, 29 minutes, 18 seconds
+plant absorbs sunlight hey this is bro from the future
+7:29:24 7 hours, 29 minutes, 24 seconds
+I forgot to extend the organism class so let's take care of that heading back to our main Java file let's create a plant
+7:29:34 7 hours, 29 minutes, 34 seconds
+object plant plant equals new plant our plant object should have an is
+7:29:43 7 hours, 29 minutes, 43 seconds
+alive attribute is alive which it inherits from the organism class that's true and plants can
+7:29:52 7 hours, 29 minutes, 52 seconds
+photosynthesize plant do photosynthesize
+7:30:02 7 hours, 30 minutes, 2 seconds
+the plant absorbs sunlight it's kind of like we have a whole family tree dog and cat inherit from animal animal inherits from
+7:30:11 7 hours, 30 minutes, 11 seconds
+organism and plant inherits from organism but animals and plants aren't related they're siblings but they're not
+7:30:20 7 hours, 30 minutes, 20 seconds
+the same going back to our main Java file let's see if our dog has a photosynthesize method dog.
+7:30:28 7 hours, 30 minutes, 28 seconds
+photosynthesize looks like they can't we do not have a
+7:30:37 7 hours, 30 minutes, 37 seconds
+photosynthesize method for dogs they do not inherit this method because they're not related to plants all right everybody so that's
+7:30:46 7 hours, 30 minutes, 46 seconds
+inheritance it's where one class inherits the attributes and methods from another class A Child class will inherit
+7:30:53 7 hours, 30 minutes, 53 seconds
+all the attributes and methods from a parent class parents can also be considered children too and inherit it
+7:31:00 7 hours, 31 minutes
+from a let's say grandparent class you just have to use the extends keyword and well everybody that's inheritance in
+7:31:08 7 hours, 31 minutes, 8 seconds
+Java yo so let's get started today I got to discuss the super keyword super just refers to the parent class when using
+7:31:17 7 hours, 31 minutes, 17 seconds
+inheritance a child class is also known as the sub class the parent class is also known as the super class super just
+7:31:25 7 hours, 31 minutes, 25 seconds
+means parent for all intents and purposes the super keyword is used within Constructors and Method overwriting method overwriting is a
+7:31:33 7 hours, 31 minutes, 33 seconds
+whole another topic that we'll discuss we're more focused on Constructors in this topic we use the super keyword to call the parent Constructor to
+7:31:41 7 hours, 31 minutes, 41 seconds
+initialize attributes let me give you an example we'll be creating a few different classes let's go to file new
+7:31:49 7 hours, 31 minutes, 49 seconds
+class we will Begin by creating a class of person person will be the parent the
+7:31:56 7 hours, 31 minutes, 56 seconds
+super class let's say that any person object has the following attributes they will
+7:32:03 7 hours, 32 minutes, 3 seconds
+have a string of first meaning first name then string last meaning last name we'll need a Constructor it's going to
+7:32:12 7 hours, 32 minutes, 12 seconds
+be the same as the class name Person parentheses curly braces when we construct a person object we will need
+7:32:19 7 hours, 32 minutes, 19 seconds
+to pass in the following arguments a string for first name first and a string
+7:32:25 7 hours, 32 minutes, 25 seconds
+for last name last this objects first name attribute this. first
+7:32:33 7 hours, 32 minutes, 33 seconds
+equals the argument that we receive for first same thing applies with last this.
+7:32:40 7 hours, 32 minutes, 40 seconds
+last equals the argument we receive for last and then we'll create one method in this demonstration this method won't
+7:32:48 7 hours, 32 minutes, 48 seconds
+return anything we will name the method show name all we'll do is output the
+7:32:57 7 hours, 32 minutes, 57 seconds
+following this do first plus a space plus this. last okay let's test this
+7:33:06 7 hours, 33 minutes, 6 seconds
+class out person person equals new person but we do have to pass in a first
+7:33:14 7 hours, 33 minutes, 14 seconds
+and last name I've already used SpongeBob for too many examples so let's mix it up this time I'll pick Harry Potter or feel free to pick a different
+7:33:22 7 hours, 33 minutes, 22 seconds
+franchise that you like so one person from Harry Potter is Tom Riddle
+7:33:31 7 hours, 33 minutes, 31 seconds
+we have a person object with this first name and this last name first
+7:33:38 7 hours, 33 minutes, 38 seconds
+last our person is going to have a show name method show name then call
+7:33:45 7 hours, 33 minutes, 45 seconds
+it there we go there's our person objects first and last name Tom Riddle our person class will be the
+7:33:54 7 hours, 33 minutes, 54 seconds
+parent class we'll create a few other classes to inherit from this person class we're going to create a class of student that's going to inherit from the
+7:34:03 7 hours, 34 minutes, 3 seconds
+person class the student class will inherit these attributes and methods let's create a new class of
+7:34:13 7 hours, 34 minutes, 13 seconds
+student student will extends the parent or super class of
+7:34:22 7 hours, 34 minutes, 22 seconds
+person since student is inheriting from person student is going to have a first and last name already and a show name
+7:34:31 7 hours, 34 minutes, 31 seconds
+method what other attributes does a student have that a person might not well students have a GPA a grade point
+7:34:38 7 hours, 34 minutes, 38 seconds
+average we'll declare that as an attribute double GPA we're going to create a student
+7:34:46 7 hours, 34 minutes, 46 seconds
+Constructor let's say that when we create a student we need to pass in a string for first name String
+7:34:54 7 hours, 34 minutes, 54 seconds
+first string last and double GPA what's their grade point average now rather than assigning
+7:35:02 7 hours, 35 minutes, 2 seconds
+our first and last name within this Constructor such as this. first equals first this. last equals
+7:35:12 7 hours, 35 minutes, 12 seconds
+last and this. GPA equals GPA we are receiving a
+7:35:20 7 hours, 35 minutes, 20 seconds
+warning there is no parameterless Constructor available in person we're not able to assign these attributes of
+7:35:27 7 hours, 35 minutes, 27 seconds
+first and last within the Constructor for student this is because student inherits from the person class since the
+7:35:34 7 hours, 35 minutes, 34 seconds
+Constructor of our parent requires a first and last name we have to pass these arguments to its parent of person
+7:35:42 7 hours, 35 minutes, 42 seconds
+how we can do that going back to the child class we're going to be using the super keyword any arguments that the
+7:35:49 7 hours, 35 minutes, 49 seconds
+parent requires we have to send the parent these arguments from the child Constructor and how we can do that is
+7:35:57 7 hours, 35 minutes, 57 seconds
+use the super keyword and then pass in those arguments of first and last and now Java is
+7:36:07 7 hours, 36 minutes, 7 seconds
+Happy super just refers to the parent imagine that we replace the super keyword with
+7:36:15 7 hours, 36 minutes, 15 seconds
+person think of it like that and now this should work going back to our main file we
+7:36:23 7 hours, 36 minutes, 23 seconds
+should be able to create a student object student student equals new student
+7:36:31 7 hours, 36 minutes, 31 seconds
+we have to pass in a first name first name will be Harry last name will be Potter then we have to pass in a GPA
+7:36:39 7 hours, 36 minutes, 39 seconds
+because our student Constructor requires it Harry Potter has a
+7:36:45 7 hours, 36 minutes, 45 seconds
+3.25 GPA let's say our student object should have these attributes this
+7:36:53 7 hours, 36 minutes, 53 seconds
+method and this attribute from the student class of GPA Let's test it student. show
+7:37:03 7 hours, 37 minutes, 3 seconds
+name this student's name is Harry Potter and they should have a
+7:37:10 7 hours, 37 minutes, 10 seconds
+GPA let's print students GPA attribute
+7:37:17 7 hours, 37 minutes, 17 seconds
+3.25 but not only that let's create a method to display their GPA within the student class we will create a method
+7:37:24 7 hours, 37 minutes, 24 seconds
+that doesn't return anything it will be show GPA we will output the following let's say this.
+7:37:35 7 hours, 37 minutes, 35 seconds
+first plus a string apostrophe s so Harry's
+7:37:42 7 hours, 37 minutes, 42 seconds
+GPA is plus this.
+7:37:51 7 hours, 37 minutes, 51 seconds
+GPA let's take our student object call the show GPA method that we have declared
+7:38:00 7 hours, 38 minutes
+Harry's GPA is 3.25 let's create one more class we will create an employee
+7:38:09 7 hours, 38 minutes, 9 seconds
+class class employee employee will inherit from the
+7:38:17 7 hours, 38 minutes, 17 seconds
+person class employee extends
+7:38:25 7 hours, 38 minutes, 25 seconds
+person since employees aren't studying they're not students they instead get a salary we will create an integer
+7:38:32 7 hours, 38 minutes, 32 seconds
+attribute of salary and then we need that Constructor for our employee
+7:38:40 7 hours, 38 minutes, 40 seconds
+object all employees will require the following arguments a string for first name String
+7:38:48 7 hours, 38 minutes, 48 seconds
+first a string for last name String last and an integer for our employee salary I
+7:38:56 7 hours, 38 minutes, 56 seconds
+will attempt to assign these attributes for our employee again it's not going to work but let's try it this. first equals
+7:39:04 7 hours, 39 minutes, 4 seconds
+first this. last equals last this do salary equals
+7:39:13 7 hours, 39 minutes, 13 seconds
+salary again we're receiving that warning there is no parameter list Constructor available in
+7:39:20 7 hours, 39 minutes, 20 seconds
+person since employee extends person and our person Constructor requires a first name and a last name we have to send our
+7:39:27 7 hours, 39 minutes, 27 seconds
+person Constructor these arguments first and last so again going back to our employee class we will call the Constructor of
+7:39:36 7 hours, 39 minutes, 36 seconds
+our parent using the super keyword and then passing in those arguments first and last let's create a method within our
+7:39:44 7 hours, 39 minutes, 44 seconds
+employee class void Show salary let's output the following we'll
+7:39:53 7 hours, 39 minutes, 53 seconds
+say this. first this person's first name apostrophe yes we'll create the
+7:40:01 7 hours, 40 minutes, 1 second
+employee of Hagrid their salary is pick unit of currency I'll
+7:40:07 7 hours, 40 minutes, 7 seconds
+pick American dollars plus this do salary now we'll need to construct an employee
+7:40:17 7 hours, 40 minutes, 17 seconds
+object employee employee equals new employee we have to pass in a first name
+7:40:25 7 hours, 40 minutes, 25 seconds
+a last name and a salary in order to construct an employee object we're going to pick Hagrid Hagrid's first name is
+7:40:33 7 hours, 40 minutes, 33 seconds
+actually rubius last name
+7:40:40 7 hours, 40 minutes, 40 seconds
+Hagrid Hagrid's salary will be $50,000 let's say all right let's take our
+7:40:49 7 hours, 40 minutes, 49 seconds
+employee call its Show salary method and there we go rubius ALS also
+7:40:59 7 hours, 40 minutes, 59 seconds
+known as Hagrid rubi's salary is $50,000 in conclusion super refers to
+7:41:06 7 hours, 41 minutes, 6 seconds
+the parent class student and employee inherit from person since the Constructor of the parent of person
+7:41:13 7 hours, 41 minutes, 13 seconds
+requires a first name and a last name any children objects that we create we have to call the Constructor of the
+7:41:20 7 hours, 41 minutes, 20 seconds
+parent and pass in those arguments to satisfy Java if the parent didn't require these
+7:41:27 7 hours, 41 minutes, 27 seconds
+arguments then you wouldn't need to and well everybody that is the super
+7:41:35 7 hours, 41 minutes, 35 seconds
+keyword in Java what's going on people today I'm going to discuss method overwriting using Java method overwriting is when a subass provides
+7:41:44 7 hours, 41 minutes, 44 seconds
+its own implementation of a method rather than use one that's inherited from a parent it allows for code reusability and you can give specific
+7:41:52 7 hours, 41 minutes, 52 seconds
+implementations of a method let me give you a demonstration we'll be creating a few classes file new class we will Begin
+7:41:59 7 hours, 41 minutes, 59 seconds
+by creating a class of animal then a new class of
+7:42:07 7 hours, 42 minutes, 7 seconds
+dog a class of
+7:42:13 7 hours, 42 minutes, 13 seconds
+cat then finally a class of fish dog cat and fish are going to
+7:42:21 7 hours, 42 minutes, 21 seconds
+extend the animal class after the class name type extends
+7:42:27 7 hours, 42 minutes, 27 seconds
+animal so let's do the this with cat and fish the dog cat and fish classes are
+7:42:35 7 hours, 42 minutes, 35 seconds
+all children of the animal class animal class is the parent class there's not a lot we have to write with this example
+7:42:42 7 hours, 42 minutes, 42 seconds
+if a child class inherits from the animal parent class they will inherit a method to move let's define a method of
+7:42:50 7 hours, 42 minutes, 50 seconds
+move all we'll say is this animal is running we can keep the dog cat and fish
+7:43:00 7 hours, 43 minutes
+class is empty for now so going back to our main Java file let's construct a dog object dog dog equals new dog a cat
+7:43:09 7 hours, 43 minutes, 9 seconds
+object cat cat equals new cat and a fish fish fish equals new
+7:43:18 7 hours, 43 minutes, 18 seconds
+fish all three of these animal objects dog cat and fish should have a move method let's take our dog call its move
+7:43:27 7 hours, 43 minutes, 27 seconds
+method say same thing with the cat and the fish cat. move method fish. move method
+7:43:35 7 hours, 43 minutes, 35 seconds
+currently when we run this program we get the following output our dog is running our cat is
+7:43:42 7 hours, 43 minutes, 42 seconds
+running and our fish is running but fish don't have legs though they can only
+7:43:49 7 hours, 43 minutes, 49 seconds
+swim the move method that the fish class inherits isn't appropriate for that class this animal is swimming would be
+7:43:56 7 hours, 43 minutes, 56 seconds
+more appropriate so why don't we do this within the fish class why don't we do some method overwriting specifically for the fish class we will create a unique
+7:44:05 7 hours, 44 minutes, 5 seconds
+move method only for this class we will Define a new move method where we will
+7:44:14 7 hours, 44 minutes, 14 seconds
+say this animal is swimming however it is good practice to
+7:44:23 7 hours, 44 minutes, 23 seconds
+add this annotation of at override so that you and other Developers know that this method is being overridden our fish
+7:44:32 7 hours, 44 minutes, 32 seconds
+class does inherit a move method from its parent of animal if you have the same named method defined in a child
+7:44:39 7 hours, 44 minutes, 39 seconds
+class you'll use that one first it has precedence going back to our main Java file let's call the move method for our
+7:44:48 7 hours, 44 minutes, 48 seconds
+fish our dog is running our cat is running but our fish is swimming within
+7:44:55 7 hours, 44 minutes, 55 seconds
+the fish class we have overridden the move method we have given a specific implementation for this method just for
+7:45:02 7 hours, 45 minutes, 2 seconds
+this one class the cat and dog classes will use what's inherited from their parent not only is a good practice to
+7:45:10 7 hours, 45 minutes, 10 seconds
+add this annotation of at override but let's say that you misspell this overwritten method rather than move let's say moves even though it should be
+7:45:19 7 hours, 45 minutes, 19 seconds
+move we're receiving a warning that this method does not override the method from its super class it's parent if you
+7:45:27 7 hours, 45 minutes, 27 seconds
+didn't have this annotation you may not notice that you misspelled this method and you're not actually overwriting
+7:45:34 7 hours, 45 minutes, 34 seconds
+it adding the at override annotation provides a system of checks and balances when overwriting method this error will
+7:45:42 7 hours, 45 minutes, 42 seconds
+go away once we actually are overwriting a method all right everybody so that is Method overwriting it's when a subass
+7:45:49 7 hours, 45 minutes, 49 seconds
+provides its own implementation of a method rather than use one that's already defined it allows for code reusability and you can give specific
+7:45:58 7 hours, 45 minutes, 58 seconds
+implementations of a method we'll be seeing method overwriting again with the two string method coming up in a future topic and well everybody that is method
+7:46:06 7 hours, 46 minutes, 6 seconds
+overwriting in Java hello everybody today I got to explain the two- string method using Java the two- string method
+7:46:13 7 hours, 46 minutes, 13 seconds
+is inherited from the object class whenever you create an object behind the scenes the object class is a super class
+7:46:21 7 hours, 46 minutes, 21 seconds
+the two-ring method is used to return a string representation of an object if you were to Output it directly using system.out print line the default
+7:46:30 7 hours, 46 minutes, 30 seconds
+behavior of the two- string method is that it returns a hash code as a unique identifier for that object but it can be overridden to provide meaningful details
+7:46:39 7 hours, 46 minutes, 39 seconds
+which is why we've learned about method overriding in the last video in this demonstration let's create a new class file new class we will create a car
+7:46:49 7 hours, 46 minutes, 49 seconds
+class let's say that all cars should have the following attributes a string of make who manufactures the car a
+7:46:57 7 hours, 46 minutes, 57 seconds
+string of model what's the model of the car int year for the year and string color for the color we'll need a
+7:47:06 7 hours, 47 minutes, 6 seconds
+Constructor and then we'll assign these attributes we have a string of make a
+7:47:13 7 hours, 47 minutes, 13 seconds
+string of model an INT of year and a string of color then we'll assign these
+7:47:22 7 hours, 47 minutes, 22 seconds
+attributes this St make equals make this St model equals model
+7:47:30 7 hours, 47 minutes, 30 seconds
+this.e equals year this. color equals
+7:47:37 7 hours, 47 minutes, 37 seconds
+color that looks good enough for now going back to our main Java file we'll construct a car object car car equals
+7:47:45 7 hours, 47 minutes, 45 seconds
+new car but we have to pass in the details for our car Constructor our car Constructor requires a make a model a
+7:47:53 7 hours, 47 minutes, 53 seconds
+year and a color so pick a car that you like I like Ford Mustang I'll pick a Ford Mustang the make will be Ford Model
+7:48:03 7 hours, 48 minutes, 3 seconds
+will be Mustang I need a year 2025 and a color I'll pick the color
+7:48:10 7 hours, 48 minutes, 10 seconds
+red car is an object if I were to Output my car object directly using system.out.print line here's what you'll
+7:48:20 7 hours, 48 minutes, 20 seconds
+see if you output your card directly technically you'll be given a hash code a unique identifier for that car object
+7:48:28 7 hours, 48 minutes, 28 seconds
+hashing is kind of an advanced topic that I don't want to introduce right now but typically with hashing it's a unique identifier that uses the object's memory
+7:48:36 7 hours, 48 minutes, 36 seconds
+address to calculate a hash you don't need to know any more than that right now but wouldn't it be useful if we were to print our car object directly we were
+7:48:44 7 hours, 48 minutes, 44 seconds
+given the details of the car normally what we would have to do is output something like this this is if we wanted
+7:48:51 7 hours, 48 minutes, 51 seconds
+to Output the details of the car we could say something such as car. color that would would be first plus a space
+7:49:00 7 hours, 49 minutes
+character plus car do which should be next let's say the year color year then make and
+7:49:09 7 hours, 49 minutes, 9 seconds
+model car. make plus a space plus car.
+7:49:16 7 hours, 49 minutes, 16 seconds
+model this print line statement is giving us meaningful details of this car object this is the
+7:49:24 7 hours, 49 minutes, 24 seconds
+output red 2025 Ford Mustang it would be nice if we were to print our car object directly using print or print line we
+7:49:33 7 hours, 49 minutes, 33 seconds
+could be given these details instead well we can do that with method overwriting going to our car
+7:49:39 7 hours, 49 minutes, 39 seconds
+class we will be overriding a method we need the at override annotation we do need this keyword of
+7:49:48 7 hours, 49 minutes, 48 seconds
+public this is a publicly accessible method the return type is string the
+7:49:54 7 hours, 49 minutes, 54 seconds
+name of the method is to string everything within this print line
+7:50:02 7 hours, 50 minutes, 2 seconds
+statement we're going to cut and delete this print line statement going to our car class within
+7:50:09 7 hours, 50 minutes, 9 seconds
+the two string method we have to return a string because we set the return type to be a string we promised that we would return a string let's paste all the
+7:50:19 7 hours, 50 minutes, 19 seconds
+details of that car we'll need to replace car with this this refers to the object we're
+7:50:26 7 hours, 50 minutes, 26 seconds
+currently working with that and add a semicolon to the end if we were to print our car object directly using this print
+7:50:34 7 hours, 50 minutes, 34 seconds
+line statement or a print statement or even printf instead of that hash code we're instead given meaningful
+7:50:42 7 hours, 50 minutes, 42 seconds
+details of that car that we've customized the cars color year make and model we have overridden the two- string
+7:50:51 7 hours, 50 minutes, 51 seconds
+method that's normally available to all objects let's construct another car object let's rename car is car one we'll
+7:51:00 7 hours, 51 minutes
+have car car 2 equals new car pick some different details for a
+7:51:06 7 hours, 51 minutes, 6 seconds
+car I will pick a Chevrolet Corvette the year will be
+7:51:14 7 hours, 51 minutes, 14 seconds
+2026 and the color will be blue I'll print car one then print Car
+7:51:24 7 hours, 51 minutes, 24 seconds
+2 here's car one and car two Car 2 is a blue 2026 Chevrolet
+7:51:32 7 hours, 51 minutes, 32 seconds
+Corvette all right everybody so that is the two-ring method objects inherit from the object class the object class does
+7:51:40 7 hours, 51 minutes, 40 seconds
+have a two string method but it can be overridden so that when you print an object directly you can display meaningful details such as the details
+7:51:48 7 hours, 51 minutes, 48 seconds
+of that object instead of displaying a hash code if you were to print the object it's pretty useful at times and well everybody that is the two string
+7:51:57 7 hours, 51 minutes, 57 seconds
+method in Java all right everybody it's about time we get into abstraction overall abstraction is the process of hiding implementation
+7:52:06 7 hours, 52 minutes, 6 seconds
+details and showing only the essential features think of it like this if I'm teaching somebody how to drive I'm not going to open up the hood of the car and
+7:52:14 7 hours, 52 minutes, 14 seconds
+explain how the engine works I'm instead going to tell the user that the gas pedal is to drive and the brake is to stop the car abstraction is the process
+7:52:22 7 hours, 52 minutes, 22 seconds
+of hiding implementation details a user just needs to know what the gas pedal is and what the brake is we can make classes and methods abstract by using
+7:52:31 7 hours, 52 minutes, 31 seconds
+this abstract keyword this provides a few benefits abstract classes can't be instantiated directly abstract classes
+7:52:39 7 hours, 52 minutes, 39 seconds
+can also contain abstract methods which must be implemented they can also contain concrete methods which are the opposite these are real and physical
+7:52:47 7 hours, 52 minutes, 47 seconds
+methods you could say concrete methods are inherited so I know that's a lot let me give you an example we're going to be creating an abstract class that can't be
+7:52:56 7 hours, 52 minutes, 56 seconds
+instantiated directly meaning we can't create any objects from this class in this demonstration we're going to create some shape objects shape is going to be
+7:53:04 7 hours, 53 minutes, 4 seconds
+the parent then we'll have circle triangle and rectangle classes as its children so we're going to go to new
+7:53:12 7 hours, 53 minutes, 12 seconds
+Java class we will create a shape class then a class for
+7:53:23 7 hours, 53 minutes, 23 seconds
+Circle a class for triangle then a class for
+7:53:37 7 hours, 53 minutes, 37 seconds
+rectangle our shape class is going to be abstract we can't create any shape objects before the word of class we will
+7:53:44 7 hours, 53 minutes, 44 seconds
+add this keyword of abstract we can't create any shape objects it's an abstract class now circle triangle and
+7:53:52 7 hours, 53 minutes, 52 seconds
+rectangle are going to extend the shape class Circle extends shape circles are type of shape same thing applies with
+7:54:01 7 hours, 54 minutes, 1 second
+triangle and rectangle let's attempt to create a shape object shape shape equals new
+7:54:11 7 hours, 54 minutes, 11 seconds
+shape and we get an error message shape is abstract it cannot be instantiated since shape is an abstract
+7:54:19 7 hours, 54 minutes, 19 seconds
+class we can't create any objects from this class it adds a little bit of security to our program we don't want anybody creating any generic shape
+7:54:27 7 hours, 54 minutes, 27 seconds
+objects we want them to create a certain kind of shape a circle a triangle or a rectangle but we can create some circles triangles
+7:54:36 7 hours, 54 minutes, 36 seconds
+and rectangles so let's do so circle circle equals new
+7:54:43 7 hours, 54 minutes, 43 seconds
+circle triangle triangle equals new
+7:54:51 7 hours, 54 minutes, 51 seconds
+triangle rectangle rectangle equals new rectangle
+7:55:01 7 hours, 55 minutes, 1 second
+we can create circle triangle and rectangle objects just not shape because it's an abstract class that's good though because we
+7:55:09 7 hours, 55 minutes, 9 seconds
+don't want people creating any shape objects it's too generic we want a user to pick a certain kind of shape abstract
+7:55:16 7 hours, 55 minutes, 16 seconds
+classes can contain abstract methods and concrete methods an abstract method is a method which must be implemented by its
+7:55:25 7 hours, 55 minutes, 25 seconds
+children within our shape class we will define an abstract method use the abstract keyword let's list a return
+7:55:34 7 hours, 55 minutes, 34 seconds
+type of double every child class of the shape class needs an area method I'll
+7:55:41 7 hours, 55 minutes, 41 seconds
+add a comment that this is an abstract method abstract So within our Circle class we get an error
+7:55:50 7 hours, 55 minutes, 50 seconds
+message Circle must either be declared abstract or implement the abstract method of area circle is going to
+7:55:58 7 hours, 55 minutes, 58 seconds
+inherit this abstract method of area from its parent of shape we need to implement this method so let's do
+7:56:05 7 hours, 56 minutes, 5 seconds
+so this is going to be an overridden method we need The annotation of
+7:56:11 7 hours, 56 minutes, 11 seconds
+override we need to define a method of area but we'll fill it in momentarily
+7:56:19 7 hours, 56 minutes, 19 seconds
+just for now I'm going to return zero and now that error message goes away since we inherit from the shape class and there's an abstract method of area
+7:56:28 7 hours, 56 minutes, 28 seconds
+we need to implement this method this helps to ensure consistency among the children classes you can see that we're missing that same method with triangle
+7:56:36 7 hours, 56 minutes, 36 seconds
+and rectangle so why don't we copy this code where we override the area method and paste it we'll be filling these in
+7:56:46 7 hours, 56 minutes, 46 seconds
+later going back to our shape class abstract classes can contain abstract methods and concrete methods which are
+7:56:54 7 hours, 56 minutes, 54 seconds
+kind of the opposite concrete methods are defined and inherited within an abstract class let's define a method of
+7:57:04 7 hours, 57 minutes, 4 seconds
+display this method doesn't return anything the return type is void we'll just output the following this is a shape I'll add a
+7:57:13 7 hours, 57 minutes, 13 seconds
+comment that this is a concrete method in an abstract class a concrete method is inherited within our circle triangle and
+7:57:23 7 hours, 57 minutes, 23 seconds
+rectangle classes we don't need to implement it we don't need to override this method it's inherited going back to our main Java
+7:57:32 7 hours, 57 minutes, 32 seconds
+file if I was to take my circle object call the display method we get the following
+7:57:40 7 hours, 57 minutes, 40 seconds
+output this is a shape and that applies with triangle and rectangle to triangle.
+7:57:48 7 hours, 57 minutes, 48 seconds
+display rectangle.
+7:57:55 7 hours, 57 minutes, 55 seconds
+display this is a shape this is a shape this is a a shape this concrete method of display
+7:58:02 7 hours, 58 minutes, 2 seconds
+was inherited from the shape class their parent now we'll Define the area methods area is an abstract method that means
+7:58:10 7 hours, 58 minutes, 10 seconds
+that the children classes have to Define it to calculate the area of a circle we'll need a radius we'll Define that as an attribute all circles will have a
+7:58:19 7 hours, 58 minutes, 19 seconds
+radius attribute Double Radius and we'll need a Constructor a circle Constructor
+7:58:26 7 hours, 58 minutes, 26 seconds
+when we construct a circle object we have to pass in a double for the
+7:58:32 7 hours, 58 minutes, 32 seconds
+radius this. rius equals the radius we receive now the formula to calculate the
+7:58:40 7 hours, 58 minutes, 40 seconds
+area of a circle will be we're going to return access the math class access the
+7:58:46 7 hours, 58 minutes, 46 seconds
+constant of Pi from the math class times radius time
+7:58:55 7 hours, 58 minutes, 55 seconds
+radius that's how to calculate the area of a circle now for our triangle we need the
+7:59:02 7 hours, 59 minutes, 2 seconds
+following a double for base a double for height we need a
+7:59:13 7 hours, 59 minutes, 13 seconds
+Constructor parameter 1 will be double base parameter 2 will be double height this.
+7:59:22 7 hours, 59 minutes, 22 seconds
+base equals base this do height equals height
+7:59:29 7 hours, 59 minutes, 29 seconds
+for the area we will return 0.5 time base time
+7:59:39 7 hours, 59 minutes, 39 seconds
+height then we have a rectangle double
+7:59:47 7 hours, 59 minutes, 47 seconds
+length double width we need our Constructor of rectangle parameter 1 will be double
+7:59:56 7 hours, 59 minutes, 56 seconds
+length parameter 2 will be double width this do length equals
+8:00:04 8 hours, 4 seconds
+length this. width equals width
+8:00:11 8 hours, 11 seconds
+return length time width within the area method and we're good let's go back to our main class we're missing those
+8:00:20 8 hours, 20 seconds
+arguments we have to pass them in for our Circle object let's say the radius is three for the triangle the base and
+8:00:26 8 hours, 26 seconds
+height will be 4 and 5 the rectangle the length and width will be 6 and 7 we are going to Output using
+8:00:35 8 hours, 35 seconds
+system.out.print line take our circle called the area method then do this with triangle and
+8:00:47 8 hours, 47 seconds
+rectangle here's the area of each of our shapes our Circle our triangle and a rectangle so that's the abstract keyword
+8:00:55 8 hours, 55 seconds
+abstraction is the process of hiding implementation details from a user and showing only the essential features that's why we've created a shape class
+8:01:03 8 hours, 1 minute, 3 seconds
+that's abstract we can't directly create any shape objects we want a user to create a certain kind of shape whether it's a circle a triangle or a rectangle
+8:01:12 8 hours, 1 minute, 12 seconds
+a shape is too generic an abstract class can contain abstract methods which need to be implemented by the children classes or concrete methods which are
+8:01:21 8 hours, 1 minute, 21 seconds
+inherited and the children classes will have access to it all right everybody so that is abstraction and the of the abstract keyword in Java all right
+8:01:31 8 hours, 1 minute, 31 seconds
+what's going on everybody in this video I got to explain interfaces using Java an interface is very similar to an abstract class in fact there's a lot of
+8:01:39 8 hours, 1 minute, 39 seconds
+overlap where you could use either one but there's a few key differences an interface is a blueprint for a class it specifies a set of abstract methods that
+8:01:47 8 hours, 1 minute, 47 seconds
+any implementing classes must Define one key difference is that by using interfaces we can achieve multiple inheritance like Behavior normally with
+8:01:56 8 hours, 1 minute, 56 seconds
+inheritance a class can only have a single parent but by using interfaces a class can have multiple parents like two
+8:02:04 8 hours, 2 minutes, 4 seconds
+three or more so in this demonstration we're going to create two interfaces let's go to file new Java class rather
+8:02:13 8 hours, 2 minutes, 13 seconds
+than creating a class we're going to create an interface we will create an interface of prey and the other for
+8:02:20 8 hours, 2 minutes, 20 seconds
+predator file new Java class interface Predator we're going to be declaring
+8:02:28 8 hours, 2 minutes, 28 seconds
+some methods but not defining them if a class inherits from the prey interface they will have to finish defining a
+8:02:36 8 hours, 2 minutes, 36 seconds
+method of flea the return type will be void if you're considered prey you need a flea method to run away if you're a
+8:02:45 8 hours, 2 minutes, 45 seconds
+predator you need to define a method to hunt cuz you're a predator now we'll be creating three classes file new Java
+8:02:54 8 hours, 2 minutes, 54 seconds
+class the first class will be rabbit then fish we'll create a fish
+8:03:02 8 hours, 3 minutes, 2 seconds
+class and Hawk going to our rabbit class rabbits
+8:03:11 8 hours, 3 minutes, 11 seconds
+are typically considered prey not Predators unless you count that one rabbit from Monty Python and the Holy Grail that's the exception our rabbit
+8:03:19 8 hours, 3 minutes, 19 seconds
+class is going to implements the prey interface we get a warning message class rabbit must either
+8:03:27 8 hours, 3 minutes, 27 seconds
+declare abstract or Implement abstract method flee since the rabbit class is implementing the prey interface we have
+8:03:35 8 hours, 3 minutes, 35 seconds
+to finish defining this method that's declared within the prey interface it's kind of like a contract the prey interface is telling the rabbit class
+8:03:44 8 hours, 3 minutes, 44 seconds
+hey if you're going to implement me you need to Define this method a flea we'll need to do that in order to create rabid objects we're going to be overwriting
+8:03:52 8 hours, 3 minutes, 52 seconds
+this method using the override annotation this method will be flee void flee and we'll want to add this axis
+8:04:01 8 hours, 4 minutes, 1 second
+modifier of public it's a publicly accessible method in this method we're going to Output the following let's say
+8:04:10 8 hours, 4 minutes, 10 seconds
+the rabbit is running away and that error should go away let's
+8:04:17 8 hours, 4 minutes, 17 seconds
+go back to our main class we'll create a rabbit object and test it rabbit rabbit equals new rabbit let's take our rabbit
+8:04:26 8 hours, 4 minutes, 26 seconds
+object have it call the flea method and this should work yes the rabbit is running away now
+8:04:36 8 hours, 4 minutes, 36 seconds
+let's go to our Hawk class Hawk will implement the Predator
+8:04:43 8 hours, 4 minutes, 43 seconds
+interface but we have to override this method of hunt because with The Predator interface it's kind of like we're signing a contract if Hawk is going to
+8:04:52 8 hours, 4 minutes, 52 seconds
+implement the Predator interface then we have to finish defining this method we will add the at override
+8:05:00 8 hours, 5 minutes
+annotation and Define this method and then again we do need an axis modifier we'll pick
+8:05:07 8 hours, 5 minutes, 7 seconds
+public let's output the following the hawk is hunting let's create a hawk
+8:05:15 8 hours, 5 minutes, 15 seconds
+object Hawk Hawk equals New Hawk our rabbit is fleeing let's take
+8:05:23 8 hours, 5 minutes, 23 seconds
+our Hawk object use the hunt method okay we have the rabbit is running away
+8:05:31 8 hours, 5 minutes, 31 seconds
+the hawk is hunting now rabbits don't have a hunt method and Hawks don't have a flea
+8:05:41 8 hours, 5 minutes, 41 seconds
+method now one key difference with interfaces compared to abstract classes is that you can Implement more than one
+8:05:48 8 hours, 5 minutes, 48 seconds
+interface so fish they eat smaller fish and they flee larger fish they could be considered both prey and
+8:05:55 8 hours, 5 minutes, 55 seconds
+predators we will implement two interfaces Implement prey comma Predator
+8:06:03 8 hours, 6 minutes, 3 seconds
+then we need both of these methods we have to finish defining both again we're going to use the at override
+8:06:10 8 hours, 6 minutes, 10 seconds
+annotation we will create a publicly accessible method a flea where we will
+8:06:16 8 hours, 6 minutes, 16 seconds
+print the fish is swimming away and we need a hunt method
+8:06:26 8 hours, 6 minutes, 26 seconds
+too add the at override annotation this is a public method of hunt where we will
+8:06:35 8 hours, 6 minutes, 35 seconds
+print the fish is hunting let's say all right let's test it we will create a
+8:06:43 8 hours, 6 minutes, 43 seconds
+fish object fish fish equals new fish our fish can
+8:06:51 8 hours, 6 minutes, 51 seconds
+flee and our fish can hunt the fish is swimming away the fish
+8:06:59 8 hours, 6 minutes, 59 seconds
+is hunting our fish object implements both the prey and Predator interfaces it has to Define these two methods so
+8:07:07 8 hours, 7 minutes, 7 seconds
+that's one key difference with interfaces compared to abstract classes a class can inherit more than one interface normally with inheritance you
+8:07:15 8 hours, 7 minutes, 15 seconds
+can only have one parent but this is a way around that using interfaces fish are considered both prey and predators all right everybody so that is a quick
+8:07:23 8 hours, 7 minutes, 23 seconds
+introduction to interfaces an interface is a blueprint for a class that's specifies a set of abstract methods that implementing classes must Define and it
+8:07:32 8 hours, 7 minutes, 32 seconds
+supports multiple inheritance like Behavior there's a lot of overlap where you can use abstract classes or interfaces you should be familiar with
+8:07:39 8 hours, 7 minutes, 39 seconds
+both and well everybody that's a quick introduction to interfaces using Java so yeah it's about time I explain
+8:07:46 8 hours, 7 minutes, 46 seconds
+polymorphism using Java polymorphism is a Greek word poly means many morph means shape together you get the concept of
+8:07:55 8 hours, 7 minutes, 55 seconds
+many shapes or forms it's a general programming concept objects can identify as other objects objects of different
+8:08:03 8 hours, 8 minutes, 3 seconds
+types objects can be treated as objects of a common super Class A dog identifies as a dog but it can also identify as an
+8:08:11 8 hours, 8 minutes, 11 seconds
+animal it can also identify as an organism it can also identify as an object it can identify as more than one thing in this topic we're going to
+8:08:19 8 hours, 8 minutes, 19 seconds
+create a few vehicle objects let's create a few classes file new Java class we will create a super class of vehicle
+8:08:28 8 hours, 8 minutes, 28 seconds
+iicle this class doesn't have to be abstract but let's make it abstract we can't create any vehicle
+8:08:34 8 hours, 8 minutes, 34 seconds
+objects we will declare an abstract method that doesn't return anything the return type is void if you're a vehicle
+8:08:42 8 hours, 8 minutes, 42 seconds
+you need a go method so what we're going to be doing is creating a few different types of vehicles a car bike and boat
+8:08:50 8 hours, 8 minutes, 50 seconds
+class which will inherit from the class of vehicle so let's create these classes file new Java class we will create a car
+8:08:57 8 hours, 8 minutes, 57 seconds
+class that extends the vehicle class but there is an abstract method of go that we need to
+8:09:06 8 hours, 9 minutes, 6 seconds
+Define we will use the at override annotation the method will be return
+8:09:13 8 hours, 9 minutes, 13 seconds
+type of void go all we'll do is output you drive the car all right let's do
+8:09:21 8 hours, 9 minutes, 21 seconds
+this with a few other classes I'll just copy this method because we'll reuse it we'll create a bike class
+8:09:31 8 hours, 9 minutes, 31 seconds
+bike bike extends vehicle and we need that method of go
+8:09:39 8 hours, 9 minutes, 39 seconds
+you ride the bike and a boat class file new Java class
+8:09:48 8 hours, 9 minutes, 48 seconds
+Boat Boat extends
+8:09:54 8 hours, 9 minutes, 54 seconds
+vehicle you sail the boat that is good enough for now going back
+8:10:01 8 hours, 10 minutes, 1 second
+to our main Java file let's create these objects starting with our car car car equals new
+8:10:09 8 hours, 10 minutes, 9 seconds
+car bike bike equals new bike Boat Boat equals new
+8:10:18 8 hours, 10 minutes, 18 seconds
+boat each of these objects has a go method for example let's have our car object use its go method followed by
+8:10:26 8 hours, 10 minutes, 26 seconds
+bike bike Dogo method and Boat Boat Dogo
+8:10:33 8 hours, 10 minutes, 33 seconds
+method you drive the car you ride the bike you sail the boat so let's say we would like to have a
+8:10:40 8 hours, 10 minutes, 40 seconds
+race we're going to place all of these objects within an array our car bike and boat objects so what should the data
+8:10:48 8 hours, 10 minutes, 48 seconds
+type of the array be let's attempt to create an array of car objects and place our bike and boat objects within that array and we'll just see what happens
+8:10:57 8 hours, 10 minutes, 57 seconds
+exactly for learning purposes I will create an array of cars the data type is car it's an array
+8:11:05 8 hours, 11 minutes, 5 seconds
+named cars equals curly braces let's stick our car bike and boat objects
+8:11:12 8 hours, 11 minutes, 12 seconds
+within here we're already getting a few error messages incompatible types bike cannot
+8:11:20 8 hours, 11 minutes, 20 seconds
+be converted to car bikes and boats don't identify as cars cars identify as
+8:11:27 8 hours, 11 minutes, 27 seconds
+cars s that's one of the shapes that bikes and boats don't have they don't identify as cars if this were an array of
+8:11:34 8 hours, 11 minutes, 34 seconds
+bikes bike bikes equals R array of objects well then we have another a
+8:11:43 8 hours, 11 minutes, 43 seconds
+message car cannot be converted to a bike and you can assume the same thing applies with
+8:11:50 8 hours, 11 minutes, 50 seconds
+boats cars and bikes don't identify as boats what we could do is declare our array of what they have in common well
+8:11:58 8 hours, 11 minutes, 58 seconds
+our car bike and boat they all extend the vehicle class you could say they also identify as Vehicles we're going to
+8:12:06 8 hours, 12 minutes, 6 seconds
+change the data type of our array to hold Vehicles we have an array of vehicle objects and then let's change our array
+8:12:14 8 hours, 12 minutes, 14 seconds
+name to be Vehicles cars identifies cars but also Vehicles bikes identifies bikes
+8:12:21 8 hours, 12 minutes, 21 seconds
+but also Vehicles boats identify as boats but also Vehicles that's the one thing they have in common they're all
+8:12:29 8 hours, 12 minutes, 29 seconds
+extending the vehicle super class they're also considered Vehicles that's another one of their forms they shapes
+8:12:36 8 hours, 12 minutes, 36 seconds
+for every object within this array I would like to have each object use its go method like we're racing well what we could do is use a
+8:12:45 8 hours, 12 minutes, 45 seconds
+for each Loop what's the data type of the array well it's vehicle we have an array of
+8:12:54 8 hours, 12 minutes, 54 seconds
+vehicles we will give a nickname of each vehicle as vehicle in my array of
+8:13:01 8 hours, 13 minutes, 1 second
+vehicles for every vehicle in this array of vehicles let's take each vehicle call the go method take every
+8:13:10 8 hours, 13 minutes, 10 seconds
+vehicle object call its go method here's the result you drive the car you ride the bike you sail the
+8:13:19 8 hours, 13 minutes, 19 seconds
+boat oh and another thing I'm forgetting polymorphism can also be achieved through using interfaces let's delete
+8:13:26 8 hours, 13 minutes, 26 seconds
+our vehicle class we'll create a new Java class this
+8:13:34 8 hours, 13 minutes, 34 seconds
+will be an interface a vehicle rather than extending the
+8:13:41 8 hours, 13 minutes, 41 seconds
+vehicle class we will implements the vehicle
+8:13:48 8 hours, 13 minutes, 48 seconds
+interface we will declare a method of go that doesn't return anything these methods do need an access
+8:13:56 8 hours, 13 minutes, 56 seconds
+modifier let's just say public so polymorphism can be achieved
+8:14:07 8 hours, 14 minutes, 7 seconds
+this way too through using interfaces if you prefer interfaces in summary polymorphism means many shapes it's
+8:14:15 8 hours, 14 minutes, 15 seconds
+where objects can identify as themselves but also other objects objects can be treated as objects of a common super
+8:14:22 8 hours, 14 minutes, 22 seconds
+class and well everybody that is an introduction to polymorphism using jav Ava what's going on people today I got
+8:14:29 8 hours, 14 minutes, 29 seconds
+to explain a runtime polymorphism also known as Dynamic polymorphism how I would explain it in a single sentence is
+8:14:37 8 hours, 14 minutes, 37 seconds
+when the method that gets executed is decided at runtime based on the actual type of the object in this demonstration
+8:14:45 8 hours, 14 minutes, 45 seconds
+a user is going to pick a type of animal they want as a pet a dog or a cat but that's going to be determined at runtime
+8:14:52 8 hours, 14 minutes, 52 seconds
+after the program is already running we'll create a total of three classes first we'll create an animal class which will be a parent class we will create a
+8:15:01 8 hours, 15 minutes, 1 second
+class of animal we might as well make this an abstract class for good practice we don't want anybody creating any
+8:15:08 8 hours, 15 minutes, 8 seconds
+animal objects we will have an abstract method the return type is void this method will be speak when an animal
+8:15:17 8 hours, 15 minutes, 17 seconds
+speaks they'll say something unique we'll create a dog class file new Java class we will create a class of dog
+8:15:27 8 hours, 15 minutes, 27 seconds
+that extends the animal class but we do need a speak method we will use method
+8:15:34 8 hours, 15 minutes, 34 seconds
+overwriting the return type is void with our speak method we will output the
+8:15:41 8 hours, 15 minutes, 41 seconds
+following the dog goes woof all right then we need a cat class file new Java
+8:15:50 8 hours, 15 minutes, 50 seconds
+class we will create a class of cat cat extends
+8:15:58 8 hours, 15 minutes, 58 seconds
+animal and we'll just copy the speak method just to save a little bit of time when the cat speaks we'll output
+8:16:07 8 hours, 16 minutes, 7 seconds
+the cat goes meow that's good enough for this example since animal is an abstract
+8:16:15 8 hours, 16 minutes, 15 seconds
+class we can't create any animal objects I'll attempt to do so animal animal equals new
+8:16:23 8 hours, 16 minutes, 23 seconds
+animal and we get an error message animal is abstract can be instantiated that's good though animals are too
+8:16:30 8 hours, 16 minutes, 30 seconds
+generic we would rather have a user create a certain kind of animal either a dog or a cat in this demonstration we're
+8:16:37 8 hours, 16 minutes, 37 seconds
+going to have a user pick if they want a dog or a cat but we don't know which one they're going to pick so why don't we do this let's declare an animal object but
+8:16:47 8 hours, 16 minutes, 47 seconds
+not instantiate it we will assign our animal equal to a new dog or a new cat based on the user input so animal animal
+8:16:56 8 hours, 16 minutes, 56 seconds
+this will either be animal equals a new dog or animal equals a new cat based on
+8:17:04 8 hours, 17 minutes, 4 seconds
+the user input we will declare an object that's at least an animal we'll accept some
+8:17:10 8 hours, 17 minutes, 10 seconds
+user input we'll need a scanner scanner scanner equals new scanner we will pass in
+8:17:19 8 hours, 17 minutes, 19 seconds
+system.in and import this class java.util.scanner we'll need a prompt
+8:17:31 8 hours, 17 minutes, 31 seconds
+would you like a dog or a
+8:17:36 8 hours, 17 minutes, 36 seconds
+cat we'll say 1 equals dog 2 equals
+8:17:43 8 hours, 17 minutes, 43 seconds
+cat I'll use print rather than print line because I like the input on the same line let's declare a variable of
+8:17:50 8 hours, 17 minutes, 50 seconds
+choice this will be an integer we'll use our scanner called the next int method
+8:17:58 8 hours, 17 minutes, 58 seconds
+and then we'll do the following we'll examine if our choice variable is equal to one if it is we'll
+8:18:06 8 hours, 18 minutes, 6 seconds
+finish instantiating our animal object but we'll assign it to be a new dog object then we will have our animal use
+8:18:15 8 hours, 18 minutes, 15 seconds
+its speak method so if it's a dog it should go
+8:18:23 8 hours, 18 minutes, 23 seconds
+woof else if choice is equal to two then we will
+8:18:32 8 hours, 18 minutes, 32 seconds
+instantiate our animal object as a new C and have our animal use its speak
+8:18:42 8 hours, 18 minutes, 42 seconds
+method you could add an else Clause but it's not really necessary this is good enough for
+8:18:49 8 hours, 18 minutes, 49 seconds
+now before running the program we don't know what kind of animal we're going to create it's either going to be a dog or a cat
+8:19:00 8 hours, 19 minutes
+if I select one we get a dog the dog goes woof if I select two we get a cat the
+8:19:06 8 hours, 19 minutes, 6 seconds
+cat goes meow the actual method that we call is determined at runtime after the program is already running before we run the program we
+8:19:16 8 hours, 19 minutes, 16 seconds
+know that we're going to use a speak method we're just not sure which one so that's runtime polymorphism it's when
+8:19:22 8 hours, 19 minutes, 22 seconds
+the method that gets executed is decided at runtime based on the actual type of object that we create and well everybody
+8:19:30 8 hours, 19 minutes, 30 seconds
+that is an introduction to runtime polymorphism using Java all right everybody today I'm going to be explaining getter and Setter
+8:19:38 8 hours, 19 minutes, 38 seconds
+methods using Java getter and Setter methods help protect object data and they add rules for accessing or modifying that data here's a
+8:19:46 8 hours, 19 minutes, 46 seconds
+demonstration we're going to create a class of car file new class we will create a car
+8:19:53 8 hours, 19 minutes, 53 seconds
+Class A few attributes that cars could have include a string of model A String
+8:20:00 8 hours, 20 minutes
+of color and an INT let's say price then we'll need a
+8:20:08 8 hours, 20 minutes, 8 seconds
+Constructor we'll have three parameters a string of model A String of
+8:20:14 8 hours, 20 minutes, 14 seconds
+color and an inch of price we will assign this do model equals
+8:20:22 8 hours, 20 minutes, 22 seconds
+model this do color equals color this St price equals price let's
+8:20:31 8 hours, 20 minutes, 31 seconds
+construct a car object car car equals new
+8:20:38 8 hours, 20 minutes, 38 seconds
+car pick a model a year and a price I've already used red Mustangs for too many examples I'll pick something else let's
+8:20:46 8 hours, 20 minutes, 46 seconds
+say a charger that is yellow and the price will be $10,000 but I don't know if that's good
+8:20:54 8 hours, 20 minutes, 54 seconds
+or not we don't even know the year of the car anyways so we have our car object and then let's output these attributes just to test them car. color I'll add a space character to plus car.
+8:21:07 8 hours, 21 minutes, 7 seconds
+model plus a space character plus car. price I'm intentionally not adding a unit of
+8:21:16 8 hours, 21 minutes, 16 seconds
+currency so here's our car I have a yellow charger and the price is 10,000 10,000 of a unit of
+8:21:24 8 hours, 21 minutes, 24 seconds
+currency that you choose but that's not important with our car object its attributes are publicly accessible meaning we can view
+8:21:32 8 hours, 21 minutes, 32 seconds
+and change them easily to demonstrate let's say that the model of our car is now a
+8:21:43 8 hours, 21 minutes, 43 seconds
+Corvette we have a yellow Corvette that is $10,000 we don't want the model of our car to magically become a Corvette once
+8:21:51 8 hours, 21 minutes, 51 seconds
+we assign its model to be charger we don't want it to change what we could do when to declaring these attributes is
+8:21:58 8 hours, 21 minutes, 58 seconds
+add this access modifier of private preceding the data type private string model private string color private and
+8:22:07 8 hours, 22 minutes, 7 seconds
+price we can't access them and let's test that you can see that the font color already changed to
+8:22:15 8 hours, 22 minutes, 15 seconds
+Red I will attempt to print the car's color model and
+8:22:21 8 hours, 22 minutes, 21 seconds
+price color has private access and car model has private ACC access in car and price has private access in
+8:22:30 8 hours, 22 minutes, 30 seconds
+car since these attributes are private we can't normally access them outside of the car class but there is a way around
+8:22:37 8 hours, 22 minutes, 37 seconds
+that and that is by using getter and Setter methods getter methods make a field readable Setter methods make a
+8:22:45 8 hours, 22 minutes, 45 seconds
+field writable use get to read set to write we'll set up some getter methods
+8:22:52 8 hours, 22 minutes, 52 seconds
+first I would like the car's color model and price here's how we can do that within the car
+8:22:59 8 hours, 22 minutes, 59 seconds
+class we will create a method we'll start with the model the return type will be string because our model is a string data type we'll create a getter
+8:23:08 8 hours, 23 minutes, 8 seconds
+method following this naming convention get then the name of the attribute model all we're going to do is return this.
+8:23:20 8 hours, 23 minutes, 20 seconds
+model and then we'll do this with the color and the price and I'll just copy this method because I'm I'm feeling a little lazy we have get model get color return this.
+8:23:33 8 hours, 23 minutes, 33 seconds
+color and get price return this.
+8:23:39 8 hours, 23 minutes, 39 seconds
+price oh and this returns an integer not a string because our price is an integer let's go back to our main Java file
+8:23:48 8 hours, 23 minutes, 48 seconds
+rather than accessing these attributes directly because we can't we're going to call these getter methods get model if
+8:23:56 8 hours, 23 minutes, 56 seconds
+you need the model get color if you need the color get price if you need the price replace car. color with car do get
+8:24:05 8 hours, 24 minutes, 5 seconds
+color and this is a method car. getet
+8:24:11 8 hours, 24 minutes, 11 seconds
+model and car. getet price and that should work yep we can now read those
+8:24:21 8 hours, 24 minutes, 21 seconds
+attributes we have a yellow charger and the price is 10,000 another thing you can do too with getter methods you can add additional
+8:24:29 8 hours, 24 minutes, 29 seconds
+logic so with our get price method let's instead return a string we will return a unit of currency I'll pick American
+8:24:38 8 hours, 24 minutes, 38 seconds
+dollars plus the price let's see how that changes again we are calling the get price
+8:24:47 8 hours, 24 minutes, 47 seconds
+method there we go yellow charger $110,000 getter methods make a field
+8:24:55 8 hours, 24 minutes, 55 seconds
+readable and you can add additional logic when retrieving one of these attributes and in this demonstration I just added a dollar sign just to keep it
+8:25:03 8 hours, 25 minutes, 3 seconds
+simple then we have Setter methods Setter methods make a field writable going to our car class we have model
+8:25:11 8 hours, 25 minutes, 11 seconds
+color and price I don't want the model attribute to be writable once we've declared the model of our car we don't want to change it our charger can't
+8:25:20 8 hours, 25 minutes, 20 seconds
+magically become a Corvette even though that'd be pretty cool but the color you could change you can paint your car and the price you can sell your car for a
+8:25:28 8 hours, 25 minutes, 28 seconds
+different price we'll declare Setter methods for our color and price but not the model because we don't want this attribute to be
+8:25:35 8 hours, 25 minutes, 35 seconds
+writable so let's scroll down to the bottom following a similar pattern we're going to create a method the return type
+8:25:43 8 hours, 25 minutes, 43 seconds
+is void this will be set color we have one parameter a string of
+8:25:52 8 hours, 25 minutes, 52 seconds
+color we will assign this do color equal to the new color that we
+8:25:59 8 hours, 25 minutes, 59 seconds
+receive we'll do this with our price too void set
+8:26:06 8 hours, 26 minutes, 6 seconds
+price we'll have one parameter and int of price this. price equals price the new
+8:26:15 8 hours, 26 minutes, 15 seconds
+price that we receive okay let's test these things I'll attempt to access our color
+8:26:25 8 hours, 26 minutes, 25 seconds
+directly car. color equals I don't know blue that's the first thing that came to
+8:26:31 8 hours, 26 minutes, 31 seconds
+mind and car. price equals you know what the car's on sale it's
+8:26:38 8 hours, 26 minutes, 38 seconds
+$5,000 well I can't change these we still have that red text for color and price because the color and price
+8:26:46 8 hours, 26 minutes, 46 seconds
+attributes are still private instead we're going to call these Setter methods we will set the color and then
+8:26:55 8 hours, 26 minutes, 55 seconds
+pass in the new color rather than assign it directly set color pass in a new
+8:27:03 8 hours, 27 minutes, 3 seconds
+color set price passing a new price 5,000 then using our Getters we should be able to print these
+8:27:12 8 hours, 27 minutes, 12 seconds
+attributes yes we now have a blue charger and the price is $5,000 we don't have a Setter method set
+8:27:19 8 hours, 27 minutes, 19 seconds

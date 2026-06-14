@@ -1,0 +1,1067 @@
+up for the model that's good though we don't want the model to change we only have set
+8:27:26 8 hours, 27 minutes, 26 seconds
+and set price if I attempt to access a set model method we shouldn't be able to change
+8:27:36 8 hours, 27 minutes, 36 seconds
+it because we never declared a set model method it doesn't exist but if you did want to change the model if you want
+8:27:43 8 hours, 27 minutes, 43 seconds
+this attribute to be writable well then you could add a Setter method void set
+8:27:50 8 hours, 27 minutes, 50 seconds
+model we'll pass in a string for the new model this model equals
+8:27:59 8 hours, 27 minutes, 59 seconds
+model and then you could change it we have a blue corvet for $5,000 which is really
+8:28:07 8 hours, 28 minutes, 7 seconds
+cheap but you know what I don't want the model to be writable just readable if you don't want an attribute
+8:28:14 8 hours, 28 minutes, 14 seconds
+to be writable when you declare it you can also add this keyword a final that adds an extra security
+8:28:22 8 hours, 28 minutes, 22 seconds
+measure one last thing we should do with the price let's add some additional logic so with our price let's do the
+8:28:29 8 hours, 28 minutes, 29 seconds
+following let's add a check if our price is less than zero then let's output the
+8:28:38 8 hours, 28 minutes, 38 seconds
+following price can't be less than zero else if everything checks out if
+8:28:47 8 hours, 28 minutes, 47 seconds
+our price is zero or above then we'll assign this do price equals the price that we receive as an argument Let's
+8:28:55 8 hours, 28 minutes, 55 seconds
+test it I'll change the color of my car to be blue but the price is going to
+8:29:04 8 hours, 29 minutes, 4 seconds
+be100 we get that message price can't be less than zero the color changed but not the price it stayed the same at
+8:29:13 8 hours, 29 minutes, 13 seconds
+$10,000 so those are getter and Setter methods they help protect object data and add rules for accessing or modifying
+8:29:20 8 hours, 29 minutes, 20 seconds
+that data getter methods make a field readable Setter methods make a a field writable depending on your object's
+8:29:28 8 hours, 29 minutes, 28 seconds
+attributes you may want some to be readable or writable or both it's up to you and well everybody those are getter
+8:29:36 8 hours, 29 minutes, 36 seconds
+and Setter methods using Java all right let's do this today I got to talk about aggregation in programming aggregation
+8:29:44 8 hours, 29 minutes, 44 seconds
+represents a has a relationship between objects one object contains another object as part of its structure but the
+8:29:52 8 hours, 29 minutes, 52 seconds
+contained object or objects can exist independently B basically speaking an object can contain another object but
+8:30:00 8 hours, 30 minutes
+those objects can exist independently what we'll do for this demonstration is create some book objects then we'll create a library object to contain the
+8:30:08 8 hours, 30 minutes, 8 seconds
+book objects the books and the library can exist independently that's aggregation the library object will have
+8:30:15 8 hours, 30 minutes, 15 seconds
+book objects we'll create a new class of book file new class
+8:30:22 8 hours, 30 minutes, 22 seconds
+book and a class for Library file new class Library let's design our book
+8:30:31 8 hours, 30 minutes, 31 seconds
+objects let's say that books have a string of title and an integer for Pages you could include an author too if you
+8:30:39 8 hours, 30 minutes, 39 seconds
+would like but I don't want this example to be too big we'll need a Constructor for our book objects we'll set up the parameters we
+8:30:47 8 hours, 30 minutes, 47 seconds
+need a string of title and an integer for Pages this. tile equals title
+8:30:57 8 hours, 30 minutes, 57 seconds
+this. Pages equals Pages if you would like you can set these attributes to be private but that might be overkill for
+8:31:04 8 hours, 31 minutes, 4 seconds
+this lesson why don't we create a method to display the book's info this method will return a string we'll Define a
+8:31:10 8 hours, 31 minutes, 10 seconds
+method to display info we will display the info of this book Let's return the following let's return this.
+8:31:21 8 hours, 31 minutes, 21 seconds
+tile plus a space character plus this.
+8:31:29 8 hours, 31 minutes, 29 seconds
+pages and a string of the word pages and I think I'm going to enclose
+8:31:38 8 hours, 31 minutes, 38 seconds
+the number of pages within a set of parenthesis you can also use a print F statement if that's easier for you but I want to try and keep this beginner
+8:31:46 8 hours, 31 minutes, 46 seconds
+friendly okay that's good enough for the book class let's create a few book objects we'll start with book one book
+8:31:54 8 hours, 31 minutes, 54 seconds
+book one equals a new book but to construct a book we have to pass in at least the following a title and a number
+8:32:03 8 hours, 32 minutes, 3 seconds
+of pages so I've picked out a few books already feel free to choose your own if you would rather choose different books for the first book that I'll pick I will
+8:32:11 8 hours, 32 minutes, 11 seconds
+pick the Fellowship of the Ring this will be all one string and the number of pages at least
+8:32:19 8 hours, 32 minutes, 19 seconds
+according to wekipedia is 423 then we'll create another book another book object this will be book
+8:32:27 8 hours, 32 minutes, 27 seconds
+two book two will be the two towers the number of pages will be
+8:32:35 8 hours, 32 minutes, 35 seconds
+352 and then book three book three will be the Return of
+8:32:43 8 hours, 32 minutes, 43 seconds
+the King the number of pages will be 416 all right we have our independent
+8:32:50 8 hours, 32 minutes, 50 seconds
+book objects then what we'll do is stick them all within an array we'll create an array of book objects named books equals
+8:33:00 8 hours, 33 minutes
+then within a set of curly braces we can place our book objects within here book one book two book three we have an array
+8:33:08 8 hours, 33 minutes, 8 seconds
+of book objects before moving on let's test the display info method of each of these books so we'll need a print
+8:33:16 8 hours, 33 minutes, 16 seconds
+statement book one. display info so we should get book one The
+8:33:24 8 hours, 33 minutes, 24 seconds
+Fellowship of the Ring 423 Pages I'm just going to make one change I'll put the right parentheses at
+8:33:32 8 hours, 33 minutes, 32 seconds
+the end that's better let's display book
+8:33:41 8 hours, 33 minutes, 41 seconds
+two the two towers 352 Pages book
+8:33:47 8 hours, 33 minutes, 47 seconds
+three the Return of the King 46 Pages you could also Loop through this
+8:33:54 8 hours, 33 minutes, 54 seconds
+array using an enhanced for for Loop the data type of each element in my array is book for every book in my array
+8:34:03 8 hours, 34 minutes, 3 seconds
+of books will print take each book call the display info
+8:34:13 8 hours, 34 minutes, 13 seconds
+method and here's all the books that I have in my array The Fellowship of the Ring The Two Towers The Return of the
+8:34:20 8 hours, 34 minutes, 20 seconds
+King and we can delete this for Loop we no longer need it now we're going to create a library
+8:34:27 8 hours, 34 minutes, 27 seconds
+object our library object will contain our array of book objects because libraries contain books going to our library
+8:34:36 8 hours, 34 minutes, 36 seconds
+class what should libraries have let's say that our library should have a name what's the name of the library maybe a
+8:34:43 8 hours, 34 minutes, 43 seconds
+year in which the library was established in year and libraries should contain book objects we will create an
+8:34:51 8 hours, 34 minutes, 51 seconds
+array of book objects named books we'll need to instructor for the library
+8:34:57 8 hours, 34 minutes, 57 seconds
+class we'll need the following a string for the name of the library an integer for the year of the
+8:35:04 8 hours, 35 minutes, 4 seconds
+library when was the library built and an array of book objects this St name equals
+8:35:13 8 hours, 35 minutes, 13 seconds
+name this doe equals year this. books equals the books that
+8:35:23 8 hours, 35 minutes, 23 seconds
+we receive this array all right going back to our main Java file this is where aggregation is going to come
+8:35:31 8 hours, 35 minutes, 31 seconds
+in we will create a library object library
+8:35:37 8 hours, 35 minutes, 37 seconds
+library equals new library but we have to pass in the following as arguments to the
+8:35:45 8 hours, 35 minutes, 45 seconds
+Constructor a name for the library a year for the library and an array of book
+8:35:52 8 hours, 35 minutes, 52 seconds
+objects so for the library I'm going to say the NYC the New York City public
+8:36:01 8 hours, 36 minutes, 1 second
+library after a quick Google search this library was built in the year 1897 then we also need an array of book
+8:36:10 8 hours, 36 minutes, 10 seconds
+objects I will pass in my array of book objects named books this is
+8:36:18 8 hours, 36 minutes, 18 seconds
+aggregation our library object has book objects within the library class let's also create a display info method for
+8:36:27 8 hours, 36 minutes, 27 seconds
+the library we'll make it a little bit different this method won't return anything let's say the return type is
+8:36:34 8 hours, 36 minutes, 34 seconds
+void we'll name this method display info we'll display the following information about this Library let's output the
+8:36:44 8 hours, 36 minutes, 44 seconds
+following the this.e of the library plus a space
+8:36:51 8 hours, 36 minutes, 51 seconds
+character plus this.name you can also also use a printf statement if you would prefer to use that I'm trying to keep this as beginner
+8:37:00 8 hours, 37 minutes
+friendly as possible so let's test this we will take our library object
+8:37:07 8 hours, 37 minutes, 7 seconds
+call it display info method the
+8:37:14 8 hours, 37 minutes, 14 seconds
+1897 New York City public library then within this method of display info for the library let's also
+8:37:23 8 hours, 37 minutes, 23 seconds
+list all the books that it has this Library has aggregated a whole bunch of book objects so then we can display them or
+8:37:30 8 hours, 37 minutes, 30 seconds
+use them for something let's output the following let's output books
+8:37:39 8 hours, 37 minutes, 39 seconds
+available then we'll use an enhanced for Loop the data type of what we're iterating through is book objects for
+8:37:48 8 hours, 37 minutes, 48 seconds
+every book in my array of books take each book call the books display in
+8:37:57 8 hours, 37 minutes, 57 seconds
+method and then we do have to print it using a print line statement because this method returns a
+8:38:05 8 hours, 38 minutes, 5 seconds
+string there we go let's test it so after calling the display info method of the library we should display the
+8:38:14 8 hours, 38 minutes, 14 seconds
+information of the library including its books the 1897 New York City public library and we display the books
+8:38:21 8 hours, 38 minutes, 21 seconds
+available which are the array of books that we have created so that's aggregation it represents a
+8:38:28 8 hours, 38 minutes, 28 seconds
+has a relationship between objects our library object has book objects within it there's another similar concept
+8:38:36 8 hours, 38 minutes, 36 seconds
+called composition with aggregation if you were to delete this Library class for example I'll delete
+8:38:45 8 hours, 38 minutes, 45 seconds
+it well these book objects can exist independently outside of the library the books aren't built into the library so
+8:38:53 8 hours, 38 minutes, 53 seconds
+they can exist independently which is a key compared to composition which is the next topic we'll cover and well
+8:38:59 8 hours, 38 minutes, 59 seconds
+everybody that is aggregation using Java hey everybody in this video I'm going to explain composition to you in programming composition represents a
+8:39:08 8 hours, 39 minutes, 8 seconds
+part of relationship between objects for example an engine is part of a car an
+8:39:15 8 hours, 39 minutes, 15 seconds
+object can be part of another object this allows for complex objects to be constructed from smaller objects in this
+8:39:23 8 hours, 39 minutes, 23 seconds
+demonstration we're going to create a car object the car object is composed of an engine object we will create a class of car and
+8:39:32 8 hours, 39 minutes, 32 seconds
+a class of engine we'll begin with our class of car
+8:39:41 8 hours, 39 minutes, 41 seconds
+what sorts of attributes should cars have let's say a string of model an INT of year and an engine
+8:39:51 8 hours, 39 minutes, 51 seconds
+object engine engine we'll need a Constructor we'll pass in a string for
+8:40:00 8 hours, 40 minutes
+the model an INT for the year now for the engine we're not going to be passing in an engine object let's
+8:40:08 8 hours, 40 minutes, 8 seconds
+say that when we construct a car object we have to pass in a string for the engine
+8:40:15 8 hours, 40 minutes, 15 seconds
+type is it an inline engine is it a V6 that sort of thing we will assign this St model equals the model that we
+8:40:24 8 hours, 40 minutes, 24 seconds
+receive this. year equals the year that we receive now with our engine this. engine
+8:40:33 8 hours, 40 minutes, 33 seconds
+we're going to call the Constructor for a new engine object and then we can pass in our engine
+8:40:40 8 hours, 40 minutes, 40 seconds
+type but we still however have to set up the Constructor for our engine class when constructing a car object we will
+8:40:48 8 hours, 40 minutes, 48 seconds
+also be constructing a new engine object so let's go to our engine class let's say that engine have a
+8:40:56 8 hours, 40 minutes, 56 seconds
+string of type you could say engine type but that would be redundant I would say
+8:41:04 8 hours, 41 minutes, 4 seconds
+let's just say type then we need a Constructor for our engine class we will
+8:41:11 8 hours, 41 minutes, 11 seconds
+need a string of type to pass in this.type equals
+8:41:19 8 hours, 41 minutes, 19 seconds
+type so going back to our car class when we pass in a string for the engine type you could say that this is
+8:41:27 8 hours, 41 minutes, 27 seconds
+type this term is kind of ambiguous though because a user is going to think that the type is for the car type rather than the engine type so when you pass
+8:41:36 8 hours, 41 minutes, 36 seconds
+arguments your parameter names can be different from the argument names that you pass in we simply rename them when
+8:41:43 8 hours, 41 minutes, 43 seconds
+this Constructor receives that argument but type refers to the engine type all right so this is a basic demonstration
+8:41:51 8 hours, 41 minutes, 51 seconds
+of composition now we'll construct a car object car car equals new car and then we have to pass in the
+8:41:59 8 hours, 41 minutes, 59 seconds
+following a string for the model an inch for the year and a string for the engine type pick a card that you like this time
+8:42:06 8 hours, 42 minutes, 6 seconds
+I will pick a Corvette the year will be 20125 and for the engine I will pick a
+8:42:14 8 hours, 42 minutes, 14 seconds
+V8 engine then let's see if we have these details I'm going to Output my car
+8:42:22 8 hours, 42 minutes, 22 seconds
+objects model and these attributes I did not set to private but you can set them to private and use Getters and Setters
+8:42:30 8 hours, 42 minutes, 30 seconds
+if you would like so we have model
+8:42:38 8 hours, 42 minutes, 38 seconds
+year and we have an engine object here's what we have we have our
+8:42:46 8 hours, 42 minutes, 46 seconds
+model Corvette year 2025 now for the engine our engine is an object it's a reference data type so if you you output
+8:42:55 8 hours, 42 minutes, 55 seconds
+it directly you're given a hash ID to represent that engine object so if we need the type of engine we're going to
+8:43:03 8 hours, 43 minutes, 3 seconds
+access our engine object then get the type so following our engine object we will use that access modifier that
+8:43:11 8 hours, 43 minutes, 11 seconds
+dot then access the type the attribute so the engine type is a
+8:43:19 8 hours, 43 minutes, 19 seconds
+V8 so it's like we have an object that's composed with another object our n is part of our car you know what let's
+8:43:28 8 hours, 43 minutes, 28 seconds
+create a method for the engine we'll create a start method void start we'll output the following let's
+8:43:37 8 hours, 43 minutes, 37 seconds
+say using a print line statement you start the plus this. type meaning type of the
+8:43:47 8 hours, 43 minutes, 47 seconds
+engine plus the word engine then going to our car class let's create a start method for the car class
+8:43:55 8 hours, 43 minutes, 55 seconds
+void start when we start the car we also start the engine let's take this.
+8:44:03 8 hours, 44 minutes, 3 seconds
+engine call it start method and then we can output something else too if we would like let's
+8:44:12 8 hours, 44 minutes, 12 seconds
+output the plus this do model plus the words is
+8:44:22 8 hours, 44 minutes, 22 seconds
+running now if we start the car let's take our car call it start method and we should get the following
+8:44:31 8 hours, 44 minutes, 31 seconds
+you start the V8 engine the Corvette is running now a key difference with composition is that if we delete our car
+8:44:40 8 hours, 44 minutes, 40 seconds
+object that should also delete our engine cuz our engine is part of our car so to demonstrate that I'm going to
+8:44:50 8 hours, 44 minutes, 50 seconds
+delete our car object and we no longer have access to the
+8:44:59 8 hours, 44 minutes, 59 seconds
+engine all right everybody that is composition it represents a part of relationship between objects for example
+8:45:06 8 hours, 45 minutes, 6 seconds
+an engine is part of a car this allows for complex objects to be constructed from smaller objects and well everybody
+8:45:14 8 hours, 45 minutes, 14 seconds
+that is composition using Java well look who showed up today I got to talk about rapper classes rapper classes allow
+8:45:22 8 hours, 45 minutes, 22 seconds
+primitive values you know such as as integers characters doubles booleans those sorts of things rapper classes allow these primitive values to be
+8:45:31 8 hours, 45 minutes, 31 seconds
+treated as objects or basically wrapping primitive values within an object kind of like a Christmas present generally you don't need to wrap Primitives unless
+8:45:40 8 hours, 45 minutes, 40 seconds
+you need an object for some reason like if you're using a collections framework in Java and rapper classes also give you access to a lot of useful static utility
+8:45:48 8 hours, 45 minutes, 48 seconds
+methods so let me give you a demonstration of rapper classes the method of creating rapper classes I'm about about to show you is
+8:45:55 8 hours, 45 minutes, 55 seconds
+actually depreciated but it's going to help you visualize how this works wrapping A Primitive within an object the modern approach is using a technique
+8:46:04 8 hours, 46 minutes, 4 seconds
+called autoboxing but the method I'm about to show you is a good way to visualize this whole thing so let's say
+8:46:09 8 hours, 46 minutes, 9 seconds
+we have an INT of a variable a a equal 123 we can treat this primitive as an
+8:46:19 8 hours, 46 minutes, 19 seconds
+object by using a wrapper class here's how rather than declaring this variable as an INT
+8:46:25 8 hours, 46 minutes, 25 seconds
+we will use the rapper class of integer integer variable a equals a new integer
+8:46:35 8 hours, 46 minutes, 35 seconds
+and then we're going to pass in that number that integer as an argument a is an object we're passing in that
+8:46:42 8 hours, 46 minutes, 42 seconds
+primitive data type that int as an argument to the integer class so a is an object but it does contain A Primitive
+8:46:50 8 hours, 46 minutes, 50 seconds
+value again this is depreciated as a version 9 so you shouldn't do it this way but this is a good way to visualize
+8:46:57 8 hours, 46 minutes, 57 seconds
+it then if you need a double we'll use the wrapper class of double let's say variable b equals a new double then
+8:47:06 8 hours, 47 minutes, 6 seconds
+we'll pass in a double 3.14 is good then we have char which is
+8:47:13 8 hours, 47 minutes, 13 seconds
+character that's the rapper class character C equals a new character then pass in a character I'll pass in a
+8:47:22 8 hours, 47 minutes, 22 seconds
+dollar sign We'll add one more let's say a Boolean we will use the wrapper class of
+8:47:28 8 hours, 47 minutes, 28 seconds
+Boolean Boolean D equals a new boan then pass in a Boolean
+8:47:35 8 hours, 47 minutes, 35 seconds
+value here's just a few examples these are all objects a b c and d by wrapping these Primitives within an object that
+8:47:44 8 hours, 47 minutes, 44 seconds
+allows us to use these primitive values within collections Frameworks such as array lists which we'll talk about in the next topic the modern way to use
+8:47:53 8 hours, 47 minutes, 53 seconds
+rapper classes is actually just to assign them directly to their primitive values the class of integer a equals
+8:48:01 8 hours, 48 minutes, 1 second
+123 doubleb equal 3.14 character C equals a dollar sign
+8:48:08 8 hours, 48 minutes, 8 seconds
+character and then D equals true this technique is called
+8:48:16 8 hours, 48 minutes, 16 seconds
+autoboxing We're directly assigning these Primitives into an object using a rapper class now this is very similar to
+8:48:24 8 hours, 48 minutes, 24 seconds
+how we declare and assign strings to create a string you would say string let's say E equals a string of
+8:48:32 8 hours, 48 minutes, 32 seconds
+characters such as the word Pizza you can see that there's a similar pattern we have always created strings this way
+8:48:40 8 hours, 48 minutes, 40 seconds
+but with autoboxing it's a similar process these are all reference data types they're a type of object there's also a technique called
+8:48:49 8 hours, 48 minutes, 49 seconds
+unboxing to convert a rapper class back to its primitive this is unboxing so let's say we would like to
+8:48:58 8 hours, 48 minutes, 58 seconds
+convert our object of a it's an integer object back to its primitive let's say
+8:49:04 8 hours, 49 minutes, 4 seconds
+int x equals all you got to do is set it equal to your object in this case our
+8:49:11 8 hours, 49 minutes, 11 seconds
+integer object of a this is unboxing we're taking a primitive that's wrapped in an object and unboxing it we
+8:49:20 8 hours, 49 minutes, 20 seconds
+unwrapping it and setting it back to its primitive if we were unboxing a double we would say double some variable equals
+8:49:29 8 hours, 49 minutes, 29 seconds
+b or chars Char x equals our character object of c and
+8:49:36 8 hours, 49 minutes, 36 seconds
+then Boolean Boolean x equals D again this is autoboxing we're wrapping up a Christmas present we're wrapping up a
+8:49:45 8 hours, 49 minutes, 45 seconds
+primitive within an object and then unboxing is removing it we're opening the Christmas present now these rapper classes themselves do have some pretty
+8:49:53 8 hours, 49 minutes, 53 seconds
+useful utility methods that are static let me demonstrate a few you might be interested in but there would be too many to cover in just this one video if
+8:50:01 8 hours, 50 minutes, 1 second
+you ever need to convert a primitive data type into a string there's a two- string method of these utility classes so let's say we have string
+8:50:09 8 hours, 50 minutes, 9 seconds
+a string B string C and string
+8:50:18 8 hours, 50 minutes, 18 seconds
+D I can convert an integer into a string using the integer wrapper class it's ACC statically so we type the name of the
+8:50:26 8 hours, 50 minutes, 26 seconds
+class integer called the two string method which is static and then pass it an integer like
+8:50:33 8 hours, 50 minutes, 33 seconds
+123 so let's do this with the double we will access the double wrapper class called the two string method and
+8:50:41 8 hours, 50 minutes, 41 seconds
+then pass in a double 3.14 then to convert a character to a string we would use the character
+8:50:49 8 hours, 50 minutes, 49 seconds
+wrapper class character to string and then pass in a character and then
+8:50:57 8 hours, 50 minutes, 57 seconds
+Boolean we will access the Boolean wrapper class called the two string method and then pass in a
+8:51:05 8 hours, 51 minutes, 5 seconds
+Boolean so strings can be concatenated together we should be able to do the
+8:51:11 8 hours, 51 minutes, 11 seconds
+following let's say string X = A + B + C +
+8:51:18 8 hours, 51 minutes, 18 seconds
+D and then we'll output whatever our variable X is
+8:51:25 8 hours, 51 minutes, 25 seconds
+we get 1 123 3.14 at false it's all one long string it's because we use these rapper classes to convert these
+8:51:34 8 hours, 51 minutes, 34 seconds
+primitive data types into Strings if you ever need to convert a primitive to a string then use that primitive data types rapper class and call the two
+8:51:42 8 hours, 51 minutes, 42 seconds
+string method then you just need to pass that value in as an argument then it's going to spit out a string for you now on the other hand to convert a string to
+8:51:50 8 hours, 51 minutes, 50 seconds
+a primitive data type there's another useful utility method of wrapper classes so what we'll do is
+8:51:56 8 hours, 51 minutes, 56 seconds
+parsing we will have an INT of a a double of B A Char of
+8:52:06 8 hours, 52 minutes, 6 seconds
+c and a Boolean of D int a will equal we're going to call
+8:52:14 8 hours, 52 minutes, 14 seconds
+the integer wrapper class call a static method of parse int we can convert a
+8:52:21 8 hours, 52 minutes, 21 seconds
+string to an integer I will convert a string of 123 to an integer now with doubles you will call
+8:52:29 8 hours, 52 minutes, 29 seconds
+the double wrapper class and we will parse a
+8:52:35 8 hours, 52 minutes, 35 seconds
+double we'll pass in a string of 3.14 now characters don't have a parse
+8:52:42 8 hours, 52 minutes, 42 seconds
+method what you could do instead is with any string let's say we have a string of pizza strings do have built-in methods
+8:52:49 8 hours, 52 minutes, 49 seconds
+one of which is the Char at method return the character the first position where index is zero again
+8:52:57 8 hours, 52 minutes, 57 seconds
+character doesn't have a parse character method so you would have to use charart at which is unrelated to wrapper
+8:53:05 8 hours, 53 minutes, 5 seconds
+classes so then with the Boolean we would access the Boolean wrapper class called the parse Boolean
+8:53:13 8 hours, 53 minutes, 13 seconds
+method and we can convert a string representation of a Boolean such as true into an actual Boolean and then let's
+8:53:21 8 hours, 53 minutes, 21 seconds
+output them now we shouldn't be able to add these together much like what we did when we used the two string method for
+8:53:27 8 hours, 53 minutes, 27 seconds
+example string X = A + B + C + D this isn't going to work because we're mixing
+8:53:36 8 hours, 53 minutes, 36 seconds
+and matching different data types and then if I was to Output X that would give us a compilation error
+8:53:45 8 hours, 53 minutes, 45 seconds
+to convert a string to its primitive data type there is various parse methods to handle that within our rapper classes it depends on the data type you're
+8:53:53 8 hours, 53 minutes, 53 seconds
+working with there's a couple other miscellaneous utility methods within rapper classes I'll just cover two more so let's say we
+8:54:02 8 hours, 54 minutes, 2 seconds
+have a Char of letter pick a letter I will pick the letter lowercase
+8:54:10 8 hours, 54 minutes, 10 seconds
+B I'm going to use a print line statement we can check to see if our letter actually is a letter we can
+8:54:17 8 hours, 54 minutes, 17 seconds
+access the character wrapper class call the is letter method and then pass in our letter
+8:54:24 8 hours, 54 minutes, 24 seconds
+this returns a Boolean true or false is this character a letter that is
+8:54:32 8 hours, 54 minutes, 32 seconds
+true this would be useful for verifying user input what if this was a dollar sign is this a letter well this returns
+8:54:41 8 hours, 54 minutes, 41 seconds
+false that is not a letter I'll switch this back to lowercase b there's also a built-in
+8:54:48 8 hours, 54 minutes, 48 seconds
+method to check to see if this letter is uppercase or not there's a built-in utility method of the character rapper class class to check to see if this is
+8:54:56 8 hours, 54 minutes, 56 seconds
+uppercase or not character is uppercase and then pass in
+8:55:03 8 hours, 55 minutes, 3 seconds
+our letter is it uppercase currently it isn't that is false but if it were
+8:55:13 8 hours, 55 minutes, 13 seconds
+uppercase that returns true some of these utility methods of the character rapper class would be great for verifying user input like a
+8:55:22 8 hours, 55 minutes, 22 seconds
+username or a password all right everybody so those are wrapper classes we're basically taking a primitive and wrapping it in an object kind of like a
+8:55:30 8 hours, 55 minutes, 30 seconds
+Christmas present in the next topic we're going to be working with array lists and array lists only work with objects so we need to utilize these
+8:55:38 8 hours, 55 minutes, 38 seconds
+rapper classes in order to work with array lists and wrapper classes do provide some useful static utility methods that you can always access all
+8:55:46 8 hours, 55 minutes, 46 seconds
+right everybody and those are wrapper classes and in the next video we're going to cover array lists all right people it's about time we get to array
+8:55:53 8 hours, 55 minutes, 53 seconds
+lists and Java an array list is a resizable array that stores objects you can store Primitives if so you'll be
+8:56:01 8 hours, 56 minutes, 1 second
+using autoboxing which we learned about in the last topic on rapper classes arrays are fixed in size but array lists
+8:56:08 8 hours, 56 minutes, 8 seconds
+can change they're Dynamic here's how to create an array list first we'll follow our similar pattern with creating many
+8:56:15 8 hours, 56 minutes, 15 seconds
+objects in Java array list let's say list equals new array list we will need to make One Import import java. u.
+8:56:27 8 hours, 56 minutes, 27 seconds
+arraylist following the type of array list we're going to use the diamond operator this has to deal with generics
+8:56:34 8 hours, 56 minutes, 34 seconds
+which is a future topic but for now we're going to specify what type of object we're going to be storing within our array list and you can always use
+8:56:43 8 hours, 56 minutes, 43 seconds
+the appropriate wrapper class to store Primitives for example if you need to store integers you can say integer and
+8:56:50 8 hours, 56 minutes, 50 seconds
+then we do need that diamond operator after the second array list you don't also need to specify the data type within the second Diamond operator
+8:56:59 8 hours, 56 minutes, 59 seconds
+Java can infer that you're going to follow this pattern to create an array list this array list can store integers
+8:57:06 8 hours, 57 minutes, 6 seconds
+you just have to specify that type so for example let's take our list and add a few numbers
+8:57:15 8 hours, 57 minutes, 15 seconds
+three 1 and two and then we can print our list our
+8:57:25 8 hours, 57 minutes, 25 seconds
+list I will print our list and we have three numbers
+8:57:32 8 hours, 57 minutes, 32 seconds
+312 now if you were storing doubles you would set the type to be double and use the double wrapper class 3.14 1.99
+8:57:42 8 hours, 57 minutes, 42 seconds
+2.01 I'm just making up numbers here there we go so let's store
+8:57:51 8 hours, 57 minutes, 51 seconds
+strings let's create an array list named fruits we will store the names of some fruit so the array name is going to be
+8:57:58 8 hours, 57 minutes, 58 seconds
+fruits and then we will print our array list of fruits think of some fruit I will add an
+8:58:06 8 hours, 58 minutes, 6 seconds
+apple an orange a banana and a coconut that should be good
+8:58:14 8 hours, 58 minutes, 14 seconds
+enough for this example and now we have an array list of
+8:58:21 8 hours, 58 minutes, 21 seconds
+strings named fruits Apple Orange banana coconut to add an element to an array list you can use the add method add is a
+8:58:30 8 hours, 58 minutes, 30 seconds
+built-in method of array lists to remove an element you can use the remove method then specify an index so let's take
+8:58:36 8 hours, 58 minutes, 36 seconds
+fruits and remove the element at index zero that should get rid of our
+8:58:44 8 hours, 58 minutes, 44 seconds
+Apple then we have orange banana coconut if we were to remove the element at index one that should get rid of our
+8:58:52 8 hours, 58 minutes, 52 seconds
+orange apple banana Coco nut there's also the set method take our Ray list of fruits called the set method
+8:59:01 8 hours, 59 minutes, 1 second
+add a certain index let's say zero we can set that element to be something else let's replace apple with
+8:59:08 8 hours, 59 minutes, 8 seconds
+pineapple replace the element at index zero with pineapple then we have pineapple orange
+8:59:15 8 hours, 59 minutes, 15 seconds
+banana coconut or index one would be apple pineapple banana coconut
+8:59:24 8 hours, 59 minutes, 24 seconds
+that's the set method with an array list to get an element at a certain index you can use the get method then specify the element
+8:59:32 8 hours, 59 minutes, 32 seconds
+number get the element at index zero that's going to return Apple get the element at index one would
+8:59:41 8 hours, 59 minutes, 41 seconds
+be orange two banana
+8:59:49 8 hours, 59 minutes, 49 seconds
+3 coconut you can also get the size of an array list take your array list call the
+8:59:57 8 hours, 59 minutes, 57 seconds
+size method that will return the total amount of elements within your array list so my array list has four
+9:00:06 9 hours, 6 seconds
+elements to sort your array list you will use the collections framework call the sort method and then pass in your
+9:00:15 9 hours, 15 seconds
+array list our array list is named fruits and then you do need to import this class java.util doc collections
+9:00:24 9 hours, 24 seconds
+after sorting our array list let's print it print my array list of fruits so these all should be in
+9:00:32 9 hours, 32 seconds
+alphabetical order starting with a for apple b for banana C for coconut o for orange so that's how to sort an array
+9:00:39 9 hours, 39 seconds
+list you can use the collections framework you could use an enhanced for Loop to iterate through all the elements of an array list so the data type of my
+9:00:48 9 hours, 48 seconds
+aray list is strings we specified that type for every fruit in my array list of
+9:00:56 9 hours, 56 seconds
+fruits let's print each fruit and here they are apple banana
+9:01:05 9 hours, 1 minute, 5 seconds
+coconut orange all right so now we're going to cover an exercise we'll create an array and
+9:01:13 9 hours, 1 minute, 13 seconds
+accept user input a user will enter in all the food that they want within this array list so to help us with this exercise we will need a scanner scanner
+9:01:22 9 hours, 1 minute, 22 seconds
+scanner equals new scanner pass in system.in import this class and then be
+9:01:31 9 hours, 1 minute, 31 seconds
+sure to close your scanner at the end because I tend to forget scanner.
+9:01:36 9 hours, 1 minute, 36 seconds
+close we'll need an array list again we'll follow a similar pattern with creating objects array list
+9:01:45 9 hours, 1 minute, 45 seconds
+let's say list equals new array list using the diamond operator we're going to specify the type of what we're
+9:01:54 9 hours, 1 minute, 54 seconds
+storing within this array list we'll stick with strings let's rename our list as Foods
+9:02:02 9 hours, 2 minutes, 2 seconds
+we'll be storing some food well at least the name of food we'll create a prompt we'll ask a user enter the number of food they would
+9:02:11 9 hours, 2 minutes, 11 seconds
+like to store enter the number of food you would
+9:02:19 9 hours, 2 minutes, 19 seconds
+like and I'll use print rather than print line for the user input we'll create a variable of num of food
+9:02:28 9 hours, 2 minutes, 28 seconds
+to store the number of food that we're going to store equals take our scanner call the next int method to get the next
+9:02:36 9 hours, 2 minutes, 36 seconds
+integer from the user once we accept an integer we should clear the input buffer because there's going to be a new line character within
+9:02:44 9 hours, 2 minutes, 44 seconds
+there take our scanner call the next line method to clear it let's do a test
+9:02:52 9 hours, 2 minutes, 52 seconds
+run and enter the number of food you would like I'll just say three and that seems to work for now we have the number
+9:02:59 9 hours, 2 minutes, 59 seconds
+of food we're going to store within this array list in my example let's say I would like to enter three food items well we could use a for Loop to iterate
+9:03:08 9 hours, 3 minutes, 8 seconds
+three times we will ask your user to enter in a food three times then so we can use a for Loop for that within our
+9:03:15 9 hours, 3 minutes, 15 seconds
+for loop we're going to create a counter of I meaning index we can set that to be zero or one let's stick with one we'll
+9:03:23 9 hours, 3 minutes, 23 seconds
+continue this for loop as long as I is less than or equal to our number of food variable if I would like to enter in
+9:03:32 9 hours, 3 minutes, 32 seconds
+four food items this would be four so we should iterate this Loop four times we will increment I by One during each
+9:03:40 9 hours, 3 minutes, 40 seconds
+cycle of this Loop during each iteration of this Loop we will ask for a food item I'll use
+9:03:47 9 hours, 3 minutes, 47 seconds
+print rather than print line we will ask a user to enter food number
+9:03:54 9 hours, 3 minutes, 54 seconds
+then I'll add plus our index of I so during the first cycle I is going to be one then 2 3 four so on and so
+9:04:03 9 hours, 4 minutes, 3 seconds
+forth then I'll add a colon then a space we'll create a local variable of food this will be of the string data
+9:04:11 9 hours, 4 minutes, 11 seconds
+type we will set this equal to use our scanner called the next line method to get a line of text from the
+9:04:19 9 hours, 4 minutes, 19 seconds
+user once we have our string of food we're going to add it to our array list of Foods so take your array list of
+9:04:26 9 hours, 4 minutes, 26 seconds
+foods call the ad method to add an element we will add our string of food to our array list of
+9:04:34 9 hours, 4 minutes, 34 seconds
+foods and then once we're done let's print our array list using a print line statement we will print our Ray list of
+9:04:42 9 hours, 4 minutes, 42 seconds
+foods all right let's test it enter the number of food you would like I'll say four so we should ask for
+9:04:50 9 hours, 4 minutes, 50 seconds
+four food items enter food number one I'll say pizza hot dog hamburger and then
+9:05:00 9 hours, 5 minutes
+Taco and here's my array list of food pizza hot dog hamburger taco all right everybody those are array
+9:05:09 9 hours, 5 minutes, 9 seconds
+lists an array list is a resizable array that stores objects you can store Primitives you're just going to use
+9:05:16 9 hours, 5 minutes, 16 seconds
+Java's autoboxing feature if that's the case once you have your array list there's various methods to add remove
+9:05:23 9 hours, 5 minutes, 23 seconds
+move or set elements and well everybody those are array lists in Java today I'm going to talk about exceptions using
+9:05:31 9 hours, 5 minutes, 31 seconds
+Java an exception is an event that interrupts the normal flow of a program these exceptions pop up if you do things
+9:05:38 9 hours, 5 minutes, 38 seconds
+like divide by zero you can't find a resource for some reason or if there's a mismatch with the input type let's say the program asks for a number and you
+9:05:47 9 hours, 5 minutes, 47 seconds
+type in a string of characters these sorts of events interrupt your program they're called exceptions there's a way that we can handle them and that is by
+9:05:55 9 hours, 5 minutes, 55 seconds
+using a few blocks of code try catch and optionally finally so any code that's considered dangerous where it might
+9:06:04 9 hours, 6 minutes, 4 seconds
+interrupt your program you can surround with a tri block here's an example so let's say I'm going to take the number
+9:06:12 9 hours, 6 minutes, 12 seconds
+one and divide it by zero mathematically speaking you can't divide by
+9:06:19 9 hours, 6 minutes, 19 seconds
+zero that causes an exception more specifically and arithmetic exception I'm actually just going to copy this and
+9:06:26 9 hours, 6 minutes, 26 seconds
+save it this code is dangerous it's interrupting our program by causing an exception we can gracefully handle this
+9:06:36 9 hours, 6 minutes, 36 seconds
+exception so that it doesn't interrupt the normal flow of our program any dangerous code we're going to surround
+9:06:43 9 hours, 6 minutes, 43 seconds
+with a tri block try and a set of curly braces there we go however if we have a
+9:06:53 9 hours, 6 minutes, 53 seconds
+Tri block we also need a catch block we will catch any exceptions but we're going to list the
+9:07:01 9 hours, 7 minutes, 1 second
+specific kind of exception we're going to catch well let's catch that one exception that arithmetic exception this is the type we're setting
+9:07:10 9 hours, 7 minutes, 10 seconds
+up a parameter here arithmetic exception is the type we will give this exception a name of e for a
+9:07:17 9 hours, 7 minutes, 17 seconds
+nickname if we encounter this exception we can take a different course of action instead of interrup the program so let's do the
+9:07:25 9 hours, 7 minutes, 25 seconds
+following let's output you can't divide by zero idiot so
+9:07:33 9 hours, 7 minutes, 33 seconds
+if we run this again it shouldn't interrupt our program we catch this exception and
+9:07:41 9 hours, 7 minutes, 41 seconds
+output this text instead so any code that's dangerous where it might cause an exception you can surround with the tri block you can
+9:07:50 9 hours, 7 minutes, 50 seconds
+add more than one catch block to catch and handle spefic specific exceptions so this time we're going to accept some user input we'll need a scanner for now
+9:07:59 9 hours, 7 minutes, 59 seconds
+I'm going to write the scanner outside of the tri Block near the end of this video there's a feature called used with resources I'll show you how to do that
+9:08:07 9 hours, 8 minutes, 7 seconds
+later scanner scanner equals new scanner type system.in and then import this
+9:08:15 9 hours, 8 minutes, 15 seconds
+class import java.util.scanner anytime you accept user input it's almost always d dangerous code because a
+9:08:24 9 hours, 8 minutes, 24 seconds
+user can type in anything this time let's prompt a user to enter a
+9:08:32 9 hours, 8 minutes, 32 seconds
+number and I will use print let's create a local variable of
+9:08:38 9 hours, 8 minutes, 38 seconds
+int number equals use our scanner called the next int method to accept an integer
+9:08:46 9 hours, 8 minutes, 46 seconds
+and then we'll just output our number and enter a number uh how about
+9:08:55 9 hours, 8 minutes, 55 seconds
+no I'm going to type in the word Pizza instead well we get an exception an input mismatch exception Java was
+9:09:03 9 hours, 9 minutes, 3 seconds
+expecting an integer but we typed in a string instead we can handle these exceptions too and I'm just going to copy the name of this exception because
+9:09:12 9 hours, 9 minutes, 12 seconds
+we'll reuse it let's catch the following let's catch any input mismatch
+9:09:20 9 hours, 9 minutes, 20 seconds
+exceptions this is the type we will give this exception a nickname of e so this exception we actually do have to
+9:09:28 9 hours, 9 minutes, 28 seconds
+import import java.util do input mismatch exception in case there's a mismatch with the data type we're asking
+9:09:36 9 hours, 9 minutes, 36 seconds
+the user for a number but they type in a string Let's help with the following let's say that wasn't a
+9:09:45 9 hours, 9 minutes, 45 seconds
+number let's try it again enter a number uh I'll type in the word I already did pizza let's do Taco
+9:09:53 9 hours, 9 minutes, 53 seconds
+that wasn't a number and our program finished with no problems you can catch and handle more
+9:10:00 9 hours, 10 minutes
+than one exception there is a catch all statement that you could add you could catch all exceptions
+9:10:10 9 hours, 10 minutes, 10 seconds
+exception e using this by itself isn't good practice you want to let a user know exactly what went wrong if all else
+9:10:19 9 hours, 10 minutes, 19 seconds
+fails and there's an exception that you don't anticipate you could just say okay something went
+9:10:26 9 hours, 10 minutes, 26 seconds
+wrong you could technically use this by itself enter a number for example I'll
+9:10:33 9 hours, 10 minutes, 33 seconds
+type in hot dog something went wrong this does prevent our program from being interrupted it is good practice to let
+9:10:41 9 hours, 10 minutes, 41 seconds
+the user know what went wrong exactly I'm looking at you Microsoft catching all exceptions acts as some sort of
+9:10:49 9 hours, 10 minutes, 49 seconds
+safety net you should only do it at the end in case there's something you don't anticipate it is better to catch and handle specific types of exceptions
+9:10:58 9 hours, 10 minutes, 58 seconds
+because you can let the user know what went wrong exactly now there's also the finally block this is
+9:11:05 9 hours, 11 minutes, 5 seconds
+optional finally will always execute whether there's an exception or not this is where you might clean up any
+9:11:12 9 hours, 11 minutes, 12 seconds
+resources for example with my scanner I forgot to close it we can actually close it within the final
+9:11:19 9 hours, 11 minutes, 19 seconds
+block when we're done with our scanner let's close it because if we encounter an exception we
+9:11:26 9 hours, 11 minutes, 26 seconds
+might not close the scanner other times finally might be useful is if you open a file within a tri
+9:11:33 9 hours, 11 minutes, 33 seconds
+block then you'll want to close the file when you're done with it you can do that within the finally block for testing
+9:11:39 9 hours, 11 minutes, 39 seconds
+purposes I'm just going to add this always executes all right let's do a test
+9:11:49 9 hours, 11 minutes, 49 seconds
+run enter a number I'll type in 12 three and then we output 123 see that finally
+9:11:56 9 hours, 11 minutes, 56 seconds
+block does execute this always executes if we encounter an exception enter a number I will type in
+9:12:05 9 hours, 12 minutes, 5 seconds
+Taco we get our exception message for input mismatch and then that finally block does
+9:12:12 9 hours, 12 minutes, 12 seconds
+execute finally is quite often used for cleanup cleaning up your program when you're done with it when you open a file or resource you want to close it we'll
+9:12:22 9 hours, 12 minutes, 22 seconds
+have more practice with this on the next topic of file handling now there's also try with resources and actually Java is
+9:12:29 9 hours, 12 minutes, 29 seconds
+recommending this rather than declaring our scanner outside of the tri block we can place within a set of parentheses
+9:12:37 9 hours, 12 minutes, 37 seconds
+and then Java is automatically going to close those resources when it's done opening them so this works
+9:12:43 9 hours, 12 minutes, 43 seconds
+too so enter a number 123 enter a number
+9:12:50 9 hours, 12 minutes, 50 seconds
+Pizza that wasn't a number all right everybody so those are exceptions they're events that interrupt the normal flow of a program exceptions
+9:12:59 9 hours, 12 minutes, 59 seconds
+occur when you divide by zero you can't locate a resource or there's a mismatch of the input type that a user types in
+9:13:07 9 hours, 13 minutes, 7 seconds
+you'll want to surround any dangerous code with a tri block anytime you accept user input or try and locate an external resource that's almost always dangerous
+9:13:16 9 hours, 13 minutes, 16 seconds
+code try any dangerous code catch any exceptions and optionally you can add finally to do any resource cleanup and
+9:13:25 9 hours, 13 minutes, 25 seconds
+well everybody those are exceptions in Java all right everybody in this video I'm going to show you how you can write a file using Java after doing some
+9:13:33 9 hours, 13 minutes, 33 seconds
+research I've encountered four popular options the first way I'm about to show you is the most simple and is what I'll be demonstrating in this topic we'll be
+9:13:41 9 hours, 13 minutes, 41 seconds
+using a file writer object it's good for writing small or medium-sized text files there's also buffered writer this has
+9:13:48 9 hours, 13 minutes, 48 seconds
+better performance for large amounts of text print writer is best for structure data like reports or logs then there's
+9:13:57 9 hours, 13 minutes, 57 seconds
+file output stream which is best for binary files such as images or audio files files of that nature in this topic
+9:14:05 9 hours, 14 minutes, 5 seconds
+I'm going to cover file writer just so we get the hang of the basics I might make videos on the other writers but I haven't decided yet here's how we can write a basic file using Java we'll need
+9:14:13 9 hours, 14 minutes, 13 seconds
+a file writer object file writer I'll name this file writer just writer for
+9:14:20 9 hours, 14 minutes, 20 seconds
+short equals new file writer then we need to pass in a file
+9:14:27 9 hours, 14 minutes, 27 seconds
+path or a file name let's create a file named test and include a file extension let's say it's a txt file a plain text
+9:14:34 9 hours, 14 minutes, 34 seconds
+file now you could include an absolute file path I'll show you how to do that later our plain text file a test is
+9:14:41 9 hours, 14 minutes, 41 seconds
+going to appear in our source folder reading or writing files is kind of unpredictable you could consider that dangerous code any dangerous code we
+9:14:49 9 hours, 14 minutes, 49 seconds
+want to enclose within a tri block try this dangerous code catch any exceptions that might interrupt our
+9:14:56 9 hours, 14 minutes, 56 seconds
+program with modern Java you can try and open up some resource add a set of parentheses after try we will try to
+9:15:05 9 hours, 15 minutes, 5 seconds
+open up a file writer object so file writer writer equals new
+9:15:12 9 hours, 15 minutes, 12 seconds
+file writer then we have our file name including the extension now we do have to import this class import
+9:15:21 9 hours, 15 minutes, 21 seconds
+java. file writer if for some reason we can't write this file we might encounter an exception we
+9:15:28 9 hours, 15 minutes, 28 seconds
+will catch any IO exceptions IO meaning input output catch any input output exceptions that's the type we will give
+9:15:37 9 hours, 15 minutes, 37 seconds
+this exception a nickname of e then we do have to import this class too in order to work with IO exceptions
+9:15:45 9 hours, 15 minutes, 45 seconds
+java.io doio exception in case there's a problem writing this file we'll catch this exception if it comes up this acts as
+9:15:54 9 hours, 15 minutes, 54 seconds
+more of a safety net if we encounter this exception we can say something generic such as could not write file but
+9:16:04 9 hours, 16 minutes, 4 seconds
+it is best practice to handle specific kind of exceptions first momentarily we're going to add a catch clause for a file not found exception in case we
+9:16:13 9 hours, 16 minutes, 13 seconds
+can't locate a file path but we'll take care of that in a moment within the tri Block in order to write a file using Java using file writer we will take our
+9:16:21 9 hours, 16 minutes, 21 seconds
+file writer which we named writer called the write method and then pass in a
+9:16:28 9 hours, 16 minutes, 28 seconds
+string let's say I like then pick your favorite food as you know my favorite food is
+9:16:35 9 hours, 16 minutes, 35 seconds
+pizza then after writing this file if we don't encounter any exceptions we'll print a confirmation message let's say the
+9:16:44 9 hours, 16 minutes, 44 seconds
+following file has been written all right let's test this
+9:16:53 9 hours, 16 minutes, 53 seconds
+file has been written since we didn't specify a file path your file is likely going to be
+9:17:01 9 hours, 17 minutes, 1 second
+within your Source folder and here's mine test.txt and it says the following I like
+9:17:08 9 hours, 17 minutes, 8 seconds
+pizza now you could pick a different location for example you could use an absolute file path so let's say I would
+9:17:15 9 hours, 17 minutes, 15 seconds
+like to write this file to my desktop so what I could do I'm going to go to my desktop I'm going to get the file
+9:17:23 9 hours, 17 minutes, 23 seconds
+location my desktop I'll just right click on one of these folders go to properties copy this
+9:17:31 9 hours, 17 minutes, 31 seconds
+location then I'm going to paste that file path you'll likely need to use double
+9:17:39 9 hours, 17 minutes, 39 seconds
+forward slashes Java interprets a single forward slash as an escape sequence so you may need to use double slashes when
+9:17:47 9 hours, 17 minutes, 47 seconds
+I write this file it should be at this location this absolute file path Let's test it file has been written let's go to my
+9:17:55 9 hours, 17 minutes, 55 seconds
+desktop and here's that file test it says I like
+9:18:05 9 hours, 18 minutes, 5 seconds
+pizza let's say that we get the file path wrong instead of desktop I'll misspell this as
+9:18:12 9 hours, 18 minutes, 12 seconds
+deskto run this again we counter that exception could not write file that's because Java couldn't locate this file
+9:18:20 9 hours, 18 minutes, 20 seconds
+path I misspelled it now when handling exceptions it is best practice to catch specific types of exceptions first here
+9:18:29 9 hours, 18 minutes, 29 seconds
+we're relying solely on our safety net that catches all input output exceptions another kind of exception that we can catch is the
+9:18:37 9 hours, 18 minutes, 37 seconds
+following file not found exception we will give this a nickname of e then we do need to import
+9:18:47 9 hours, 18 minutes, 47 seconds
+this class java.io file not found exception this this is if we can't locate a file or a file path is
+9:18:56 9 hours, 18 minutes, 56 seconds
+invalid so let's output the following could not locate file location
+9:19:05 9 hours, 19 minutes, 5 seconds
+let's try that again remember that my file path is misspelled could not locate file
+9:19:14 9 hours, 19 minutes, 14 seconds
+location let's spell this correctly this time I'm going to delete this file maybe I'll add another line of text
+9:19:23 9 hours, 19 minutes, 23 seconds
+I like pizza it's really good okay let's try that
+9:19:30 9 hours, 19 minutes, 30 seconds
+again file has been written going to my desktop here's that file and it says I
+9:19:37 9 hours, 19 minutes, 37 seconds
+like pizza it's really good for better organization what you
+9:19:43 9 hours, 19 minutes, 43 seconds
+could do is create a string a file path and set that equal to a
+9:19:50 9 hours, 19 minutes, 50 seconds
+string we're going to cut everything within our file writer and paste it within the string
+9:19:58 9 hours, 19 minutes, 58 seconds
+we're going to assign the string of text equal to a string variable a file path then we'll pass in the string variable
+9:20:05 9 hours, 20 minutes, 5 seconds
+to the file writer and instead of passing in a string literal to the right method of a file writer for better organization
+9:20:14 9 hours, 20 minutes, 14 seconds
+let's create a string of let's say text
+9:20:19 9 hours, 20 minutes, 19 seconds
+content equals and then we'll cut our
+9:20:28 9 hours, 20 minutes, 28 seconds
+text and then pass in the text content let's see I'll add another line I like pizza it's really
+9:20:36 9 hours, 20 minutes, 36 seconds
+good buy me pizza okay let's run this
+9:20:43 9 hours, 20 minutes, 43 seconds
+again file has been written go to our test file and here's our test file I
+9:20:49 9 hours, 20 minutes, 49 seconds
+like pizza it's really good buy me pizza if you have a string that takes up multiple lines another option is to
+9:20:57 9 hours, 20 minutes, 57 seconds
+write a multi-line string by using a triple set of double quotes So This is if you have a lot of
+9:21:05 9 hours, 21 minutes, 5 seconds
+text this time I'm going to write a poem roses are red violets are
+9:21:14 9 hours, 21 minutes, 14 seconds
+blue booty booty booty rocking everywhere
+9:21:23 9 hours, 21 minutes, 23 seconds
+all right so this is a multi-line string you use a triple set of double quotes that's if you have a lot of text
+9:21:30 9 hours, 21 minutes, 30 seconds
+to write okay let's test it again file has been written let's go to our desktop open this file and here's
+9:21:39 9 hours, 21 minutes, 39 seconds
+our poem roses are red violets are blue booty booty booty rocking everywhere all right everybody so that
+9:21:47 9 hours, 21 minutes, 47 seconds
+is how to write a file using Java to write small or mediumsized textt files you can use a file right writer but you will need a try and catch block and well
+9:21:55 9 hours, 21 minutes, 55 seconds
+everybody that's how to write a file using Java hey everybody in this video I'm going to show you how we can read a file using Java after doing some
+9:22:03 9 hours, 22 minutes, 3 seconds
+research there's three popular options the first and which I'll demonstrate in this video is to combine a buffered reader and a file reader both together
+9:22:13 9 hours, 22 minutes, 13 seconds
+this technique is best for reading text files line by line buffered reader can't read a file by itself you can say that it acts as a middleman between the
+9:22:21 9 hours, 22 minutes, 21 seconds
+program and the file system it helps us read files more efficiently and a file reader is what actually reads the file so we'll be using these two together
+9:22:29 9 hours, 22 minutes, 29 seconds
+which I will demonstrate momentarily another technique is to use a file input stream which is best for binary files
+9:22:36 9 hours, 22 minutes, 36 seconds
+such as images and audio files then there's also Random Access file that's best for reading or writing specific
+9:22:43 9 hours, 22 minutes, 43 seconds
+portions of a large file so use this if you need to read something specific from a big file in today's video we're going to combine a buffered reader and a file
+9:22:52 9 hours, 22 minutes, 52 seconds
+reader together but first we need a file to work with pick a location where you would like to read this file from for me
+9:22:59 9 hours, 22 minutes, 59 seconds
+I'm going to create a file on my desktop I will create a new text document I'll name this
+9:23:06 9 hours, 23 minutes, 6 seconds
+test and what should our file say think of something to write so there's a poem that I like to use roses are
+9:23:14 9 hours, 23 minutes, 14 seconds
+red violets are blue booty booty
+9:23:20 9 hours, 23 minutes, 20 seconds
+booty rocking everywhere we will need the name of this
+9:23:27 9 hours, 23 minutes, 27 seconds
+file including the file extension I'm going to right click go to properties this file is a plain text
+9:23:34 9 hours, 23 minutes, 34 seconds
+file a txt file I'm going to copy this location I will create a string variable
+9:23:43 9 hours, 23 minutes, 43 seconds
+named file path equals then within a set of quotes cuz we're working with strings I will paste that file path and include
+9:23:52 9 hours, 23 minutes, 52 seconds
+the file name including the extension test.txt now we're going to be combining a buffered reader and a file reader
+9:24:01 9 hours, 24 minutes, 1 second
+together first we will create a buffered reader object buffered reader we'll name this reader
+9:24:10 9 hours, 24 minutes, 10 seconds
+equals new buffer reader we will need to import this
+9:24:18 9 hours, 24 minutes, 18 seconds
+class import java.io buffered reader we can't create a buffered reader object
+9:24:26 9 hours, 24 minutes, 26 seconds
+without first passing in a reader object which is why we'll be combining this with a file reader object within the Constructor we'll be passing in an
+9:24:34 9 hours, 24 minutes, 34 seconds
+object a new file reader object and then we do need to import this class
+9:24:41 9 hours, 24 minutes, 41 seconds
+too import java.io file reader within the Constructor of our file reader we're
+9:24:49 9 hours, 24 minutes, 49 seconds
+going to pass in that file path that string when reading and writing files you'll need try and catch blocks you can see
+9:24:57 9 hours, 24 minutes, 57 seconds
+that Java is already giving us a warning when working with files it's considered dangerous code because you don't know if you'll actually locate that file or not
+9:25:05 9 hours, 25 minutes, 5 seconds
+or reading or writing that file might be unsuccessful for some reason we will use a try and catch block try this dangerous code catch any
+9:25:13 9 hours, 25 minutes, 13 seconds
+exceptions with modern Java you can use with resources we will add a set of parentheses after
+9:25:20 9 hours, 25 minutes, 20 seconds
+try copy the snippet of code where we create a buffered reader object and then paste it within that set
+9:25:28 9 hours, 25 minutes, 28 seconds
+of parentheses remove the semicolon when using try with resources you'll automatically close this reader when you're done with it we're going to catch
+9:25:36 9 hours, 25 minutes, 36 seconds
+any file not found exceptions within the catch block so catch file not found exception
+9:25:44 9 hours, 25 minutes, 44 seconds
+that's the type we will give this exception a nickname of e within the parameter and we do need to import this
+9:25:50 9 hours, 25 minutes, 50 seconds
+class as well import java.io file not found exception if for some reason we can't
+9:25:58 9 hours, 25 minutes, 58 seconds
+locate this file at this file location let's output the following could not locate
+9:26:07 9 hours, 26 minutes, 7 seconds
+file to catch all other input output exceptions We'll add another catch block this will act as a safety
+9:26:15 9 hours, 26 minutes, 15 seconds
+net we will catch any IO exceptions IO exception we will give it a nickname name of
+9:26:23 9 hours, 26 minutes, 23 seconds
+e this is where we'll say something went wrong and import this class as
+9:26:31 9 hours, 26 minutes, 31 seconds
+well just temporarily within our Tri block I'm going to Output that file
+9:26:38 9 hours, 26 minutes, 38 seconds
+exists so let's test it that file exists so that file is at this file
+9:26:46 9 hours, 26 minutes, 46 seconds
+location on my desktop for some reason if we can't locate that file let's say that I
+9:26:54 9 hours, 26 minutes, 54 seconds
+misspell desktop as deskto run this again well we get that exception that file not found exception could not
+9:27:02 9 hours, 27 minutes, 2 seconds
+locate file let's make sure the file path is correct now here's how to actually read the file within our Tri block let's
+9:27:12 9 hours, 27 minutes, 12 seconds
+create a local variable of line we'll be reading our file line by
+9:27:20 9 hours, 27 minutes, 20 seconds
+line since we're reading the file line by line we'll be using a while loop during each cycle of the while loop
+9:27:28 9 hours, 27 minutes, 28 seconds
+we're going to write the following within a set of parentheses we're going to set our string of line equal to use
+9:27:35 9 hours, 27 minutes, 35 seconds
+our buffered reader object call the read line method we're taking our reader reading the current line this will
+9:27:44 9 hours, 27 minutes, 44 seconds
+return a string which we're assigning to the string variable of line after reading one line our reader is going to
+9:27:51 9 hours, 27 minutes, 51 seconds
+point to the next line however if we run out of lines the readline method is going to return null so we're going to
+9:27:58 9 hours, 27 minutes, 58 seconds
+continue reading lines while line does not equal a value of null use the reader
+9:28:05 9 hours, 28 minutes, 5 seconds
+read each line assign it to this variable of line if we run out of lines if this is null we'll escape the while loop during each cycle of the while loop
+9:28:15 9 hours, 28 minutes, 15 seconds
+we'll output each line it's going to be a string and now this should work let's test it
+9:28:24 9 hours, 28 minutes, 24 seconds
+and here's our poem roses are red violets are blue booty booty booty rocking everywhere so that's one way in
+9:28:31 9 hours, 28 minutes, 31 seconds
+which you can read a file using Java you can combine a buffered reader and a file reader it's best for reading text files line by line but there's other methods
+9:28:40 9 hours, 28 minutes, 40 seconds
+you should be aware of too such as file input stream and random access file I'm not sure if I'll make videos on these yet and well everybody that's how to
+9:28:48 9 hours, 28 minutes, 48 seconds
+read a file using Java hey everybody in this video we're going to create an audio player using
+9:28:54 9 hours, 28 minutes, 54 seconds
+[Music]
+9:28:57 9 hours, 28 minutes, 57 seconds
+Java let's get started all right let's get started everybody now in this following project what I'm about to show you isn't compatible with MP3 files but
+9:29:06 9 hours, 29 minutes, 6 seconds
+you could easily convert an MP3 file to a wave file you can do that online otherwise to play an MP3 file you'll need an external library or framework
+9:29:14 9 hours, 29 minutes, 14 seconds
+such as Java FX and I do have another video on that if you need some sample of music you can always use YouTube's audio library these songs are free to use as
+9:29:23 9 hours, 29 minutes, 23 seconds
+long as they're within the context of YouTube you could search for songs find one that you like and download
+9:29:31 9 hours, 29 minutes, 31 seconds
+it this is the song I picked it's currently an MP3 file I'll need to convert it to a wave file you can easily
+9:29:38 9 hours, 29 minutes, 38 seconds
+look up an mp3 to wave converter select a
+9:29:47 9 hours, 29 minutes, 47 seconds
+file convert to wave convert download for convenience I'm going to
+9:29:57 9 hours, 29 minutes, 57 seconds
+put this on my desktop I'll delete the MP3 file and we now have a wave file to make
+9:30:05 9 hours, 30 minutes, 5 seconds
+this even more convenient I'll place this wave file within my source folder so that I don't need to use an
+9:30:14 9 hours, 30 minutes, 14 seconds
+absolute file path so we're ready to begin once we have a wave file we're going to create a string for our file path
+9:30:22 9 hours, 30 minutes, 22 seconds
+you can use an absolute file path or relative file path since this wave file is right next to my main Java file I can
+9:30:29 9 hours, 30 minutes, 29 seconds
+use a relative file path easily we're going to copy the name of this file we're going to copy path file name and
+9:30:39 9 hours, 30 minutes, 39 seconds
+then paste it within the string the song that I picked is a caring friend and this is a wave file be sure to include the extension too once we have our file
+9:30:47 9 hours, 30 minutes, 47 seconds
+path we'll create a file object but we have to pass in our file file path as an argument to create a file object file
+9:30:56 9 hours, 30 minutes, 56 seconds
+file equals new file then within the Constructor we will pass in our file path to the file
+9:31:03 9 hours, 31 minutes, 3 seconds
+Constructor then be sure to import this class for file when handling files it's considered dangerous code because accessing files
+9:31:12 9 hours, 31 minutes, 12 seconds
+can be unpredictable we'll use a try and catch block try this dangerous code catch any
+9:31:19 9 hours, 31 minutes, 19 seconds
+exceptions one exception that we may run into is an IO exception we'll give it a nickname of e then be sure to import
+9:31:28 9 hours, 31 minutes, 28 seconds
+this class this catch statement will act as a safety net to catch any unexpected IO exceptions here we'll output something
+9:31:37 9 hours, 31 minutes, 37 seconds
+went wrong it is better to handle specific kinds of exceptions first we will do that momentarily within the tri
+9:31:45 9 hours, 31 minutes, 45 seconds
+block we will create an audio input stream object that's the first step to playing audio the type of object is
+9:31:53 9 hours, 31 minutes, 53 seconds
+audio input stream let's name this object just audio stream
+9:32:01 9 hours, 32 minutes, 1 second
+equals we will access the audio system class we're accessing it statically so
+9:32:08 9 hours, 32 minutes, 8 seconds
+we type the name of the class call the get audio let me zoom out a little get
+9:32:15 9 hours, 32 minutes, 15 seconds
+audio input stream method and then we will we'll pass in our file
+9:32:24 9 hours, 32 minutes, 24 seconds
+object be sure to import this class too we'll be doing a lot of importing so get used to it now with the get audio input
+9:32:31 9 hours, 32 minutes, 31 seconds
+stream method we have to add a catch clause for any unsupported audio file exceptions well we can write a catch
+9:32:38 9 hours, 32 minutes, 38 seconds
+block for that catch the following exception type where the type is unsupported audio file
+9:32:48 9 hours, 32 minutes, 48 seconds
+exception this is if somebody tries to use an audio file that's not imported not one of the following we will give
+9:32:54 9 hours, 32 minutes, 54 seconds
+this a nickname of e import this class then we'll output the
+9:33:01 9 hours, 33 minutes, 1 second
+following audio file is not supported be sure to import the audio
+9:33:09 9 hours, 33 minutes, 9 seconds
+input stream class too now when you open this audio stream
+9:33:16 9 hours, 33 minutes, 16 seconds
+you do want to close it so in modern Java you can use try with resources add a of parentheses after try we will cut
+9:33:24 9 hours, 33 minutes, 24 seconds
+the snippet of code and paste it within the set of parentheses delete the
+9:33:31 9 hours, 33 minutes, 31 seconds
+semicolon if you use triy with resources you'll automatically close this object when you're done with it you don't need that finally Clause so now we're going
+9:33:40 9 hours, 33 minutes, 40 seconds
+to create a clip object clip clip equals access the audio
+9:33:48 9 hours, 33 minutes, 48 seconds
+system class we're doing it statically call the get clip method import this class for clip in simple
+9:33:57 9 hours, 33 minutes, 57 seconds
+terms a clip is like a music or Sound Player it allows you to load an audio file and then play pause stop or reset
+9:34:04 9 hours, 34 minutes, 4 seconds
+the audio so it gives you some controls and we do need a catch clause for this too for any line unavailable
+9:34:13 9 hours, 34 minutes, 13 seconds
+exceptions so let's add that catch clause in case we encounter a line unavailable exception
+9:34:22 9 hours, 34 minutes, 22 seconds
+which we will nickname e you might encounter this exception if another resource is trying to access that audio file or if it's unplayable for some
+9:34:30 9 hours, 34 minutes, 30 seconds
+reason it's unavailable we could output something such
+9:34:35 9 hours, 34 minutes, 35 seconds
+as unable to access audio resource then import this class as well
+9:34:45 9 hours, 34 minutes, 45 seconds
+there we go once we have our clip it gives us some controls but we do have to use it
+9:34:51 9 hours, 34 minutes, 51 seconds
+to open the audio stream object we will take our clip object call
+9:34:58 9 hours, 34 minutes, 58 seconds
+the open method and then pass in our audio stream object the clip object which is our
+9:35:06 9 hours, 35 minutes, 6 seconds
+player is going to open our audio stream now we're not going to play it quite yet before we actually do play it
+9:35:13 9 hours, 35 minutes, 13 seconds
+I'm going to add another catch Clause we're going to catch any file not found exceptions if we can't locate our
+9:35:20 9 hours, 35 minutes, 20 seconds
+audio file file not found exception of
+9:35:28 9 hours, 35 minutes, 28 seconds
+e will output could not locate file import this class
+9:35:38 9 hours, 35 minutes, 38 seconds
+two so we have four catch blocks the last one acts as a safety net now let's be sure that we can locate this file
+9:35:45 9 hours, 35 minutes, 45 seconds
+first so temporarily let's output no problems
+9:35:53 9 hours, 35 minutes, 53 seconds
+detected I'm going to run this program could not locate file if that's the case with our
+9:36:02 9 hours, 36 minutes, 2 seconds
+relative file path we're going to access the source folder then access that audio
+9:36:09 9 hours, 36 minutes, 9 seconds
+file there it is no problems detected if this file is unsupported
+9:36:15 9 hours, 36 minutes, 15 seconds
+let's say it's MP3 I'll bring back my MP3 file move it to my source folder
+9:36:27 9 hours, 36 minutes, 27 seconds
+then I'll switch this to MP3 then we should get an unsupported audio file exception if that's the
+9:36:33 9 hours, 36 minutes, 33 seconds
+case yes audio file is not supported because we're trying to use an MP3 file so let's switch that back to wave or
+9:36:42 9 hours, 36 minutes, 42 seconds
+whatever yours was originally and delete our MP3 file we were just testing it all right now we're
+9:36:48 9 hours, 36 minutes, 48 seconds
+actually going to play the clip now one last thing that I'm going to add it's optional I'm going to add a finally
+9:36:57 9 hours, 36 minutes, 57 seconds
+block once we're done with this program we can output the following let's just say by this will make sense in just a moment
+9:37:05 9 hours, 37 minutes, 5 seconds
+why I'm doing this there's one problem we're going to encounter when we play our audio now to actually play the audio
+9:37:12 9 hours, 37 minutes, 12 seconds
+we're going to take our clip object call the start method to start the audio here's what happens when I run
+9:37:20 9 hours, 37 minutes, 20 seconds
+this currently the music may play for just a brief second we print by then exit the program
+9:37:29 9 hours, 37 minutes, 29 seconds
+right away the issue that we're running into is that our program doesn't wait for the audio to finish once we start the clip we immediately end the
+9:37:38 9 hours, 37 minutes, 38 seconds
+program so we need some way to keep the clip open and there's a bunch of different options you could use threading within a while loop to check
+9:37:45 9 hours, 37 minutes, 45 seconds
+to see if the clip is still running but I haven't taught that yet so here's another option we create a prompt for
+9:37:52 9 hours, 37 minutes, 52 seconds
+the user to play stop reset or quit the audio program the audio will continue playing unless the user decides to stop
+9:38:00 9 hours, 38 minutes
+or quit the program so we'll need a scanner to work with to accept user input scanner scanner equals new scanner
+9:38:09 9 hours, 38 minutes, 9 seconds
+pass in system.in import this class now if you open a scanner you do
+9:38:17 9 hours, 38 minutes, 17 seconds
+want to close it when you're done with it you can do that within the final finally block like this scanner.
+9:38:24 9 hours, 38 minutes, 24 seconds
+close with modern Java you can use try with resources which will automatically close any resources and we can do that
+9:38:32 9 hours, 38 minutes, 32 seconds
+with our scanner too let's cut our scanner paste it within the tri block now be sure to include the

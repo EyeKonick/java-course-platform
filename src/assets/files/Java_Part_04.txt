@@ -1,0 +1,1067 @@
+the next int method we're also keeping track the amount of attempts it takes a user to
+3:38:00 3 hours, 38 minutes
+get the correct number so we can increment attempts by adding
+3:38:07 3 hours, 38 minutes, 7 seconds
+Plus+ and let's go ahead and initialize attempts we'll set that to be zero
+3:38:15 3 hours, 38 minutes, 15 seconds
+temporarily outside the while loop I'm going to print you have
+3:38:23 3 hours, 38 minutes, 23 seconds
+one my random number right now is only between 1 and 10 I'm just going to keep guessing until we get the right
+3:38:33 3 hours, 38 minutes, 33 seconds
+number so I'll just start with one and go all the way to
+3:38:42 3 hours, 38 minutes, 42 seconds
+10 the answer was nine we escaped the wild Loop so we know that this is working
+3:38:49 3 hours, 38 minutes, 49 seconds
+currently one thing this program is missing is that we'll want to give a user a clue if their guess is too low or
+3:38:57 3 hours, 38 minutes, 57 seconds
+too high because we have no way to tell I'm just typing in random numbers and I have no clue how close I am to the
+3:39:04 3 hours, 39 minutes, 4 seconds
+actual number that we need to guess let's get rid of this print statement we were using it for testing
+3:39:12 3 hours, 39 minutes, 12 seconds
+purposes within the do while loop we'll write an if statement we'll check if our
+3:39:19 3 hours, 39 minutes, 19 seconds
+guess is less than our random number that means we guess too
+3:39:26 3 hours, 39 minutes, 26 seconds
+low if that's the case we'll output the following two low try
+3:39:39 3 hours, 39 minutes, 39 seconds
+again else if our guess is greater than our random
+3:39:46 3 hours, 39 minutes, 46 seconds
+number that means we guess too high too high try
+3:39:54 3 hours, 39 minutes, 54 seconds
+again if our guess isn't lower than our random number and our guess isn't greater than our random number that
+3:40:01 3 hours, 40 minutes, 1 second
+means our guess must equal the random number so if that's the case we would be executing this lse statement because the
+3:40:09 3 hours, 40 minutes, 9 seconds
+preceding two conditions would be false that means we have the right answer the right guess so we'll output the
+3:40:18 3 hours, 40 minutes, 18 seconds
+following correct the let me zoom
+3:40:25 3 hours, 40 minutes, 25 seconds
+out the number was plus our random
+3:40:36 3 hours, 40 minutes, 36 seconds
+number and then we'll display the amount of attempts it took number of attempts
+3:40:46 3 hours, 40 minutes, 46 seconds
+plus our variable of attempts after each guess we increment it by
+3:40:52 3 hours, 40 minutes, 52 seconds
+one the last thing I'm forgetting is to close my scanner because I always forget to close it scanner.
+3:41:02 3 hours, 41 minutes, 2 seconds
+close okay let's perform a test run we're only guessing a number between 1 and 10
+3:41:09 3 hours, 41 minutes, 9 seconds
+currently I'll guess something right in the middle five too low try again the random number we have to guess should be
+3:41:17 3 hours, 41 minutes, 17 seconds
+between 5 and 10 then I'll go with seven too low 8 too low nine too low okay it
+3:41:26 3 hours, 41 minutes, 26 seconds
+must be 10 then correct the number was 10 number of attempts it took five we're going to improve this code
+3:41:35 3 hours, 41 minutes, 35 seconds
+now what if we would like the numbers 1 through 100 this time well we could make this program a little more flexible
+3:41:43 3 hours, 41 minutes, 43 seconds
+instead of hardcoding these numbers within the next integer method we'll Place some variables here instead we
+3:41:50 3 hours, 41 minutes, 50 seconds
+will create int Min equals whatever you want the minimum to be let's say one int Max I will set the max to be 100 let's
+3:42:00 3 hours, 42 minutes
+replace these two numbers the first one will be Min comma Max so these variables behave as if they
+3:42:09 3 hours, 42 minutes, 9 seconds
+were these numbers within this range the second number is exclusive so TW include 100 I'm going to add +
+3:42:18 3 hours, 42 minutes, 18 seconds
+one give me the numbers between 1 and 100 within this print statement let's
+3:42:25 3 hours, 42 minutes, 25 seconds
+use print F instead we'll replace these numbers with the format specifier a placeholder we
+3:42:35 3 hours, 42 minutes, 35 seconds
+will display an integer so we need D let's do the same thing with 10
+3:42:43 3 hours, 42 minutes, 43 seconds
+d uh let's do comma Min comma Max and then add a new line at the
+3:42:53 3 hours, 42 minutes, 53 seconds
+end let's do one final run so now we're guessing a number between one and 100 I'll guess something
+3:43:01 3 hours, 43 minutes, 1 second
+right in the middle too high try again our numberers going to be between 1 and
+3:43:06 3 hours, 43 minutes, 6 seconds
+50 then 25 too high 12 too high 6 too
+3:43:13 3 hours, 43 minutes, 13 seconds
+high three too low between three and six four correct the number was four the number
+3:43:22 3 hours, 43 minutes, 22 seconds
+of attempts it took six attempts all right everybody so that is a number guessing game that you can create using
+3:43:32 3 hours, 43 minutes, 32 seconds
+Java hi there everybody so in this video I'm going to explain four Loops in Java a four Loop is similar to a while loop
+3:43:39 3 hours, 43 minutes, 39 seconds
+however a for Loop executes some code a certain amount of times a for Loop is different from a while loop a while loop
+3:43:48 3 hours, 43 minutes, 48 seconds
+could execute an infinite amount of times until its condition is no longer true so with for Loops we want to do something a certain amount of times to
+3:43:56 3 hours, 43 minutes, 56 seconds
+create a for Loop type four parentheses curly braces now within the condition of the for Loop there's three statements
+3:44:05 3 hours, 44 minutes, 5 seconds
+each is separated with a semicolon we have statement one statement two and statement three the
+3:44:13 3 hours, 44 minutes, 13 seconds
+first statement is used for ini ization we can create a counter to keep track of how many times we have iterated this
+3:44:20 3 hours, 44 minutes, 20 seconds
+Loop basically we're declaring a variable a counter this will be int now a common practice for a for Loop is to
+3:44:28 3 hours, 44 minutes, 28 seconds
+create a counter named I meaning index in I equal Z or some other number I is
+3:44:35 3 hours, 44 minutes, 35 seconds
+going to be used as a counter within this Loop also known as a loop control variable the second statement is a
+3:44:44 3 hours, 44 minutes, 44 seconds
+condition when do we want to stop maybe we would like to execute some code 10 times we'll continue this loop
+3:44:52 3 hours, 44 minutes, 52 seconds
+as long as I is less than 10 now the third statement the third statement is the step we can increment
+3:45:01 3 hours, 45 minutes, 1 second
+our counter of I by One or another number or even decrement after each iteration let's increase I by One
+3:45:10 3 hours, 45 minutes, 10 seconds
+i++ let's perform a test run I'm just going to print the word
+3:45:18 3 hours, 45 minutes, 18 seconds
+pizza so we should execute this code 10 times using this for Loop 1 2 3 4 5 6 7
+3:45:27 3 hours, 45 minutes, 27 seconds
+8 9 10 so a for Loop is good if you want to repeat some code a certain amount of
+3:45:35 3 hours, 45 minutes, 35 seconds
+times but there's a little bit of setup you have to do we'll need some sort of index or counter a condition in which
+3:45:42 3 hours, 45 minutes, 42 seconds
+you want to stop and you'll need to update the counter one way or another
+3:45:48 3 hours, 45 minutes, 48 seconds
+initialization condition update we can also print this index of I rather than
+3:45:55 3 hours, 45 minutes, 55 seconds
+printing the word Pizza let's print I to see what we're working with during the first iteration I is zero after our Loop
+3:46:04 3 hours, 46 minutes, 4 seconds
+is complete we increment I by One our counter so we have 0 1 2 3 4 5 6 7 8 9
+3:46:13 3 hours, 46 minutes, 13 seconds
+We're looping 10 times but we set I to be zero to begin with if I were to set I to be 1 and I want to
+3:46:21 3 hours, 46 minutes, 21 seconds
+iterate 10 times I could say while I is less than or equal to 10 so now we're starting at 1 and
+3:46:30 3 hours, 46 minutes, 30 seconds
+counting up to 10 we can even decrement to let's set I to be 10 we'll continue
+3:46:38 3 hours, 46 minutes, 38 seconds
+the loop as long as I is greater than zero to decrement we'll set I to be
+3:46:45 3 hours, 46 minutes, 45 seconds
+minus minus now we're starting at 10 and
+3:46:53 3 hours, 46 minutes, 53 seconds
+decrementing but we're still looping 10 times let's go back to the
+3:47:01 3 hours, 47 minutes, 1 second
+beginning using the update statement we can even increment by a certain number instead of incrementing by one let's
+3:47:08 3 hours, 47 minutes, 8 seconds
+increment by two and see what happens so this time we start at one and
+3:47:15 3 hours, 47 minutes, 15 seconds
+update our counter of I two each time or even three i+ equal
+3:47:23 3 hours, 47 minutes, 23 seconds
+3 1 4 7 10 we can decrement by a given
+3:47:30 3 hours, 47 minutes, 30 seconds
+number let's set I to be 10 we'll continue this loop as long as I is greater than zero and we will decrement
+3:47:38 3 hours, 47 minutes, 38 seconds
+our step we will decrement by 2 i - = 2 now we're starting at 10 and
+3:47:47 3 hours, 47 minutes, 47 seconds
+decrementing by two or even three IUS = 3
+3:47:57 3 hours, 47 minutes, 57 seconds
+10741 for this next example we're going to accept user input again we'll need a
+3:48:10 3 hours, 48 minutes, 10 seconds
+scanner import the scanner class and close your scanner at the end
+3:48:20 3 hours, 48 minutes, 20 seconds
+we'll create a prompt enter how many times you want to
+3:48:31 3 hours, 48 minutes, 31 seconds
+Loop I'll create a variable of Max Max will equal use our scanner use the next
+3:48:40 3 hours, 48 minutes, 40 seconds
+int method and now we're going to create a loop a for Loop
+3:48:47 3 hours, 48 minutes, 47 seconds
+again there's three statements each separated with a
+3:48:54 3 hours, 48 minutes, 54 seconds
+semicolon we'll need an index or counter to keep track of how many times we have looped let's say in I equals
+3:49:03 3 hours, 49 minutes, 3 seconds
+0 for the next statement what's our condition we want to continue as long as
+3:49:08 3 hours, 49 minutes, 8 seconds
+I is less than the max I is less than our Max variable
+3:49:15 3 hours, 49 minutes, 15 seconds
+then increment I by one then we'll print I or something
+3:49:25 3 hours, 49 minutes, 25 seconds
+else let's try this how many times do you want to Loop let's Loop five
+3:49:32 3 hours, 49 minutes, 32 seconds
+times 1 2 3 4 5 again we set I to be zero so that's
+3:49:39 3 hours, 49 minutes, 39 seconds
+why we're beginning with zero if you would rather begin with one we can set I to be 1 then the condition
+3:49:47 3 hours, 49 minutes, 47 seconds
+would be I is less than or equal to Max let's try that again let's Loop six
+3:49:55 3 hours, 49 minutes, 55 seconds
+times 1 2 3 4 5 6 all right now we're going to create a mini
+3:50:02 3 hours, 50 minutes, 2 seconds
+project we'll create a program to simulate a countdown perhaps we have a variable of
+3:50:11 3 hours, 50 minutes, 11 seconds
+int start let's start at 10 we're counting down from 10 then we'll create a for
+3:50:19 3 hours, 50 minutes, 19 seconds
+Loop we will set our index of I equal to our start our start variable behaves as if
+3:50:27 3 hours, 50 minutes, 27 seconds
+it was the number 10 we'll continue as long as I is greater than zero then we will decrement
+3:50:35 3 hours, 50 minutes, 35 seconds
+by one with IUS minus during each iteration let's just print
+3:50:42 3 hours, 50 minutes, 42 seconds
+I then when we escape the the for Loop let's print happy New Year kind of like it's a countdown to a
+3:50:51 3 hours, 50 minutes, 51 seconds
+new year here's what we have currently we start at 10 count down to
+3:50:58 3 hours, 50 minutes, 58 seconds
+one then display happy New Year if you would like we can use the thread class and have our program sleep for about 1
+3:51:07 3 hours, 51 minutes, 7 seconds
+second between each Loop here's how you can do that after printing I this is a little Advan Java
+3:51:15 3 hours, 51 minutes, 15 seconds
+at this level you don't need to understand how this works but we're going to use the thread class called The Sleep Method then pass in an amount of
+3:51:24 3 hours, 51 minutes, 24 seconds
+milliseconds in which we would like to sleep 1,000 milliseconds now Java wants us to add
+3:51:31 3 hours, 51 minutes, 31 seconds
+the following Java wants this method of main to throw this exception if our thread is
+3:51:39 3 hours, 51 minutes, 39 seconds
+interrupted this is intermediate Java we will need the section of code in order for our program to sleep after you
+3:51:47 3 hours, 51 minutes, 47 seconds
+finish this lesson be sure to remove throws interrupted exception we'll no longer need it print I then our program
+3:51:54 3 hours, 51 minutes, 54 seconds
+is going to sleep for 1 second 1,000 milliseconds all right and here's our mini
+3:52:01 3 hours, 52 minutes, 1 second
+project 10 9 8 7 6 5 4 3 2 one Happy New
+3:52:12 3 hours, 52 minutes, 12 seconds
+Year let's modify this program a little bit now we'll use a scanner to accept user
+3:52:18 3 hours, 52 minutes, 18 seconds
+input scanner scanner equals new scanner we have already imported the class with start we're going to accept
+3:52:27 3 hours, 52 minutes, 27 seconds
+some user input but we'll need a prompt how many seconds to countown
+3:52:37 3 hours, 52 minutes, 37 seconds
+from we will assign start to be use our scanner then use the next int method
+3:52:47 3 hours, 52 minutes, 47 seconds
+all right let's try this again let's say I would like to count down from
+3:52:57 3 hours, 52 minutes, 57 seconds
+20 and it looks like it's working I'll fast forward the video till we get to the
+3:53:04 3 hours, 53 minutes, 4 seconds
+end 3 2 1 happy New Year so those are four Loops we can
+3:53:13 3 hours, 53 minutes, 13 seconds
+execute some code a certain amount of times it's very similar to a while loop in fact there's a lot of overlap where
+3:53:21 3 hours, 53 minutes, 21 seconds
+you could use either a for Loop or a while loop use a for Loop if you want to do something a limited amount of times
+3:53:28 3 hours, 53 minutes, 28 seconds
+and well everybody those are four Loops in Java I have a pretty short video for you
+3:53:35 3 hours, 53 minutes, 35 seconds
+today we're going to discuss two important keywords when it comes to Loops break and continue break is used
+3:53:42 3 hours, 53 minutes, 42 seconds
+to break out of a loop continue skips the current iteration of a loop think of the break keyword as the stop button on
+3:53:50 3 hours, 53 minutes, 50 seconds
+a remote continue would be similar to skip with break we're stopping with continuing we're skipping let me give
+3:53:58 3 hours, 53 minutes, 58 seconds
+you a demonstration let's create a for Loop that will iterate 10 times let's say in
+3:54:05 3 hours, 54 minutes, 5 seconds
+I equals 0 will continue as long as I is less than 10 then increment I by 1 during each
+3:54:14 3 hours, 54 minutes, 14 seconds
+iteration I'll just print I then add a space here's what we
+3:54:22 3 hours, 54 minutes, 22 seconds
+got we have the numbers 0 through 9 so let's say when we reach five I would
+3:54:29 3 hours, 54 minutes, 29 seconds
+like to break out of the loop we're going to stop it well I could add an if statement let's
+3:54:38 3 hours, 54 minutes, 38 seconds
+say if I is equal to 5 then we will use the break keyword
+3:54:45 3 hours, 54 minutes, 45 seconds
+and break out of the loop entirely here's what happens once we hit five we break out of
+3:54:53 3 hours, 54 minutes, 53 seconds
+the loop previously we continued all the way until 9 now with the continue keyword we don't
+3:55:00 3 hours, 55 minutes
+break out of the loop we just skip the current iteration like a skip button on a remote this time let's use continue
+3:55:10 3 hours, 55 minutes, 10 seconds
+rather than break and we'll see the differences between the two now since we're using continue the
+3:55:18 3 hours, 55 minutes, 18 seconds
+number five is missing we skipped that specific cycle of the loop and went back to the beginning that's why five is
+3:55:25 3 hours, 55 minutes, 25 seconds
+missing between four and six but we still continue to the end when working with loops if you ever need to break out
+3:55:33 3 hours, 55 minutes, 33 seconds
+you can use the break keyword to skip the occurrent iteration you can use continue and well everybody that is both
+3:55:40 3 hours, 55 minutes, 40 seconds
+the break and continue keywords in Java hello again friends today I'm going to
+3:55:46 3 hours, 55 minutes, 46 seconds
+explain nested Loops in Java a nested Loop is really just a loop inside of another loop you often see nested Loops
+3:55:55 3 hours, 55 minutes, 55 seconds
+within a matrix or matrices or when we reach the topic of data structures and algorithms they might not come up for a
+3:56:03 3 hours, 56 minutes, 3 seconds
+while yeah this can be any combination of for Loops or while Loops any kind of loop inside of another loop let me give
+3:56:10 3 hours, 56 minutes, 10 seconds
+you a demonstration let's say I would like to print the numbers 1 through N9 I can do that pretty easily with a for Loop so we
+3:56:19 3 hours, 56 minutes, 19 seconds
+will create a for loop I will set an index of I equal to 1 we'll continue
+3:56:25 3 hours, 56 minutes, 25 seconds
+this loop as long as I is less than or equal to 9 then I will increment I by
+3:56:31 3 hours, 56 minutes, 31 seconds
+One during each iteration I will display I so this will print the
+3:56:39 3 hours, 56 minutes, 39 seconds
+numbers 1- N9 or if you prefer you can have it all on the same l line by using print instead of print line then it
+3:56:47 3 hours, 56 minutes, 47 seconds
+would look something like this 1 2 3 4 5 6 7 8 9 you can even separate them with the space after
+3:56:55 3 hours, 56 minutes, 55 seconds
+printing our index of I let's print a space character and now the output looks something like
+3:57:02 3 hours, 57 minutes, 2 seconds
+this what if you would like to do this code three times let's say print the numbers 1 through 9 three
+3:57:09 3 hours, 57 minutes, 9 seconds
+times well you could copy and paste this for Loop then do that two additional
+3:57:16 3 hours, 57 minutes, 16 seconds
+times so we have the numbers 1 through 9 three times to put each row on a new line can
+3:57:25 3 hours, 57 minutes, 25 seconds
+use an empty print line statement then it would look something like this a
+3:57:34 3 hours, 57 minutes, 34 seconds
+matrix we seem to be repeating our code a lot in programming we like to follow the dry principle don't repeat yourself
+3:57:41 3 hours, 57 minutes, 41 seconds
+if you don't have to instead why don't we create a for Loop and stick this for Loop inside of that
+3:57:48 3 hours, 57 minutes, 48 seconds
+Loop let's create a for Loop to iterate three times I will create an index of I
+3:57:55 3 hours, 57 minutes, 55 seconds
+equal to 1 we'll continue as long as I is less than or equal to three then increment I by One all we're going to do
+3:58:04 3 hours, 58 minutes, 4 seconds
+is take our code including the for Loop and stick it within this other for Loop do pay attention to the
+3:58:12 3 hours, 58 minutes, 12 seconds
+indentation but we have we have one problem we're reusing this index of I you can see that Java is already giving
+3:58:19 3 hours, 58 minutes, 19 seconds
+us a warning here's what happens variable I is already defined in method
+3:58:28 3 hours, 58 minutes, 28 seconds
+main if we have a loop inside of another loop we can't use the same index a common naming convention for a
+3:58:36 3 hours, 58 minutes, 36 seconds
+nested Loop is to use an index of J rather than I because J comes next in the alphabet after I
+3:58:44 3 hours, 58 minutes, 44 seconds
+instead of printing I we're going to print J let's see how this works and here's our Matrix of data we're printing our
+3:58:53 3 hours, 58 minutes, 53 seconds
+index of J three times after escaping the nested for Loop
+3:59:01 3 hours, 59 minutes, 1 second
+we have a print line statement here if I were to get rid of that we'll print the numbers 1 through 9
+3:59:08 3 hours, 59 minutes, 8 seconds
+three times all on the same line let's put that back in nested Loops are really good when you're
+3:59:16 3 hours, 59 minutes, 16 seconds
+working with a matrix of data nested Loops come up pretty often in the topic of data structures and algorithms because we have to Loop over sets of
+3:59:25 3 hours, 59 minutes, 25 seconds
+data now we're going to cover a mini project we're going to create a matrix of a symbol that a user is going to type
+3:59:33 3 hours, 59 minutes, 33 seconds
+in a user will set the rows and columns for this Matrix we'll declare the following variables int
+3:59:40 3 hours, 59 minutes, 40 seconds
+rows int columns and and Char
+3:59:48 3 hours, 59 minutes, 48 seconds
+symbol we'll need a scanner so let's declare that we'll need a scanner scanner scanner equals new
+3:59:56 3 hours, 59 minutes, 56 seconds
+scanner within the set of parentheses type system.in let's be sure to import this class of scanner at the top of our Java
+4:00:04 4 hours, 4 seconds
+file and close the scanner when we're done with it scanner.
+4:00:11 4 hours, 11 seconds
+close we're going to accept some user input a user is going to specify the rows the columns and the symbol we're going to
+4:00:19 4 hours, 19 seconds
+use let's create some prompts enter the
+4:00:25 4 hours, 25 seconds
+number of rows I'll use print instead of print line we will assign our variable
+4:00:33 4 hours, 33 seconds
+of rows equal to use our scanner use the next int
+4:00:40 4 hours, 40 seconds
+method then let's do this with columns enter the number of columns columns equals scanner.
+4:00:51 4 hours, 51 seconds
+nextend and the symbol we're going to
+4:00:58 4 hours, 58 seconds
+use enter the symbol to
+4:01:04 4 hours, 1 minute, 4 seconds
+use we will assign our symbol equal to scanner.
+4:01:10 4 hours, 1 minute, 10 seconds
+nextt and we can use the chart at method give me the character at index of
+4:01:19 4 hours, 1 minute, 19 seconds
+zero let's create a for Loop for the columns first let me zoom
+4:01:28 4 hours, 1 minute, 28 seconds
+in we're going to set in I we can set it equal to
+4:01:34 4 hours, 1 minute, 34 seconds
+zero we'll continue as long as I is less than our columns whatever the user types
+4:01:41 4 hours, 1 minute, 41 seconds
+in then increment I by One during each iteration I'll use print instead of
+4:01:48 4 hours, 1 minute, 48 seconds
+print line we will print our symbol let's perform a test
+4:01:55 4 hours, 1 minute, 55 seconds
+run enter the rows it doesn't matter we didn't set up the rows yet uh for the columns let's do
+4:02:03 4 hours, 2 minutes, 3 seconds
+eight enter the symbol to use Let's do let's do a dollar sign that'd be
+4:02:12 4 hours, 2 minutes, 12 seconds
+cool we have the column set set up currently we should have eight dollar signs 1 2 3 4 5 6 7 8 we need to repeat
+4:02:22 4 hours, 2 minutes, 22 seconds
+this for Loop for as many rows as we have so we're going to stick this Loop within another
+4:02:36 4 hours, 2 minutes, 36 seconds
+loop with our nested Loop let's replace our index of I with j
+4:02:44 4 hours, 2 minutes, 44 seconds
+for the outer for Loop we will create a new index of I equal to zero we'll continue this as long as I is less than
+4:02:53 4 hours, 2 minutes, 53 seconds
+the rows the number of rows that a user types in then increment I by One let's perform another test
+4:03:02 4 hours, 3 minutes, 2 seconds
+run let's say I would like three rows of six and I will use an at
+4:03:09 4 hours, 3 minutes, 9 seconds
+sign so these are all on the same line we should have a total of
+4:03:14 4 hours, 3 minutes, 14 seconds
+18 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+4:03:21 4 hours, 3 minutes, 21 seconds
+16 17 18 our inner loop ends after each group of six I'm going to print a new
+4:03:30 4 hours, 3 minutes, 30 seconds
+line we can use an empty print line statement our outer for Loop is in charge of the rows our inner for Loop is
+4:03:38 4 hours, 3 minutes, 38 seconds
+in charge of the columns let's see the final product I would like five rows of three three
+4:03:47 4 hours, 3 minutes, 47 seconds
+columns I'll use an Amper sand here we are we have three columns and five
+4:03:59 4 hours, 3 minutes, 59 seconds
+rows all right everybody those are nested Loops it's really just any kind of loop inside of another kind of loop
+4:04:07 4 hours, 4 minutes, 7 seconds
+it doesn't matter if it's a for Loop or a while loop we often use nested loops with matrices or when we reach the topic
+4:04:15 4 hours, 4 minutes, 15 seconds
+of data structures and algorithms they might not come up very often but you should at least be aware of their existence and well everybody those are
+4:04:23 4 hours, 4 minutes, 23 seconds
+nested Loops in Java what is going on everybody in this video I'm going to discuss methods in
+4:04:31 4 hours, 4 minutes, 31 seconds
+Java think of a method as a block of reusable code that is executed when you call it to call a method you use a set
+4:04:38 4 hours, 4 minutes, 38 seconds
+of parentheses kind of like it's a pair of telephones talking to each other why are methods is useful well with the method you can write some code once and
+4:04:47 4 hours, 4 minutes, 47 seconds
+reuse it whenever you want you just have to call it let me show you why a method is useful so let's say we have a task we have to sing a happy birthday song three
+4:04:56 4 hours, 4 minutes, 56 seconds
+times so without using a method we can do something like this we'll create one verse of a happy birthday song I'll just
+4:05:03 4 hours, 5 minutes, 3 seconds
+make something up let's say happy birthday to you
+4:05:14 4 hours, 5 minutes, 14 seconds
+happy birthday dear you you are we'll insert somebody's age
+4:05:23 4 hours, 5 minutes, 23 seconds
+here but let's say you are X years old then happy birthday to you
+4:05:30 4 hours, 5 minutes, 30 seconds
+again then I'll add a new line character to the end so when we run this code we sing Happy Birthday once if I
+4:05:39 4 hours, 5 minutes, 39 seconds
+need to sing Happy Birthday let's say three times well without using a method we could although it's inefficient copy
+4:05:46 4 hours, 5 minutes, 46 seconds
+this code and paste it to additional times then we're singing Happy Birthday a total of three times well you know
+4:05:54 4 hours, 5 minutes, 54 seconds
+this does work but we tend to be repeating ourselves a lot in programming we like to follow the dry principle don't repeat yourself how can we not
+4:06:03 4 hours, 6 minutes, 3 seconds
+repeat ourselves if we don't have to well let's create a method a method is just a block of reusable code so to
+4:06:12 4 hours, 6 minutes, 12 seconds
+create a method in Java outside of the main method do pay attention to these curly braces we'll create a new method a
+4:06:19 4 hours, 6 minutes, 19 seconds
+method can return something for now we'll type void much like our main method and we need a name for this method the method should be descriptive
+4:06:28 4 hours, 6 minutes, 28 seconds
+of what it does let's call it the happy birthday method all it does is sing happy birthday we need a return type a
+4:06:36 4 hours, 6 minutes, 36 seconds
+name for the method that's descriptive parentheses then curly braces let's cut our song of Happy Birthday
+4:06:44 4 hours, 6 minutes, 44 seconds
+birthday and paste it within the happy birthday method at any point to use this method I have to call it call it by its
+4:06:52 4 hours, 6 minutes, 52 seconds
+name happy birthday then add a set of parentheses so we have one issue in Java Java wants this method to be static much
+4:07:01 4 hours, 7 minutes, 1 second
+like the main method that we work within so in order for this program to work we need to add this keyword of
+4:07:08 4 hours, 7 minutes, 8 seconds
+static normally you don't need this keyword but since we're calling this method of happy birthday from another method that's static this method also
+4:07:16 4 hours, 7 minutes, 16 seconds
+needs to be static later on in the series we'll discuss what static does you'll likely have to include that for now all right let's do a test run so we
+4:07:25 4 hours, 7 minutes, 25 seconds
+are going to sing Happy Birthday once so again to call a method type the name of the method then a set of parentheses the
+4:07:32 4 hours, 7 minutes, 32 seconds
+pair of parentheses kind of represent a pair of telephones that's how I think of it at least so now we should sing Happy
+4:07:40 4 hours, 7 minutes, 40 seconds
+Birthday now this code is reusable we write it once and reuse it whenever we want we just have to call it again we
+4:07:48 4 hours, 7 minutes, 48 seconds
+will call the happy birthday method again now we are executing that block of
+4:07:55 4 hours, 7 minutes, 55 seconds
+code two times or even three happy
+4:08:05 4 hours, 8 minutes, 5 seconds
+birthday one thing you should be aware of is that methods are unfamiliar with any variables declared within other
+4:08:12 4 hours, 8 minutes, 12 seconds
+methods so let's say we have two variables a string of name type in your first name whatever it
+4:08:21 4 hours, 8 minutes, 21 seconds
+is and an integer of age set it to be some age if I was to use these variables
+4:08:29 4 hours, 8 minutes, 29 seconds
+within my happy birthday method well the happy birthday method actually doesn't know what these are so let's attempt to use them and see
+4:08:37 4 hours, 8 minutes, 37 seconds
+what happens within our happy birthday song Let's convert this print statement to be a print F statement and we will
+4:08:44 4 hours, 8 minutes, 44 seconds
+insert our name variable replace U with the format specifier and we are displaying a string see we already have
+4:08:53 4 hours, 8 minutes, 53 seconds
+a warning cannot resolve symbol name I'll attempt to run this code and we'll see what happens
+4:09:00 4 hours, 9 minutes
+exactly Java cannot find variable name methods are not familiar with
+4:09:07 4 hours, 9 minutes, 7 seconds
+variables inside of other methods if we live in this method of main if it's our house so to say we can't see what's going on in our
+4:09:15 4 hours, 9 minutes, 15 seconds
+neighbor's house one way in which we can solve this is to pass arguments to this method from one method we can send
+4:09:22 4 hours, 9 minutes, 22 seconds
+information to another method these are known as arguments so when we sing Happy Birthday
+4:09:30 4 hours, 9 minutes, 30 seconds
+within the set of parentheses within the pair of telephones we can pass a value or a variable so let's send our variable
+4:09:37 4 hours, 9 minutes, 37 seconds
+of name to this method of happy birthday anything that you send a method is known as an argument but we have one issue
+4:09:47 4 hours, 9 minutes, 47 seconds
+though our method of happy birthday isn't set up to receive arguments if you send any values or variables to a method
+4:09:56 4 hours, 9 minutes, 56 seconds
+via arguments you need a matching set of what is called parameters our happy birthday method isn't set up to receive
+4:10:03 4 hours, 10 minutes, 3 seconds
+these arguments we need a matching set of parameters to set up some parameters we're going to list the data type of
+4:10:10 4 hours, 10 minutes, 10 seconds
+what we're receiving we're receiving a string Val value so the data type is going to be string and then we need a name for what we're receiving it doesn't
+4:10:20 4 hours, 10 minutes, 20 seconds
+have to be exactly the same but it might be helpful to keep these consistent so let's perform a test run after this
+4:10:27 4 hours, 10 minutes, 27 seconds
+print F statement I'm going to add a new line character happy birthday to you happy
+4:10:35 4 hours, 10 minutes, 35 seconds
+birthday dear your variable name so if I was to change my name to let's say sponge Bob we'll insert this
+4:10:45 4 hours, 10 minutes, 45 seconds
+value at this location within our method happy birthday dear
+4:10:53 4 hours, 10 minutes, 53 seconds
+SpongeBob let's also pass in our variable of age so any arguments you're sending to a method you're going to comma
+4:11:01 4 hours, 11 minutes, 1 second
+separate however we need a matching set of parameters our method isn't set up to receive this variable of age let's
+4:11:08 4 hours, 11 minutes, 8 seconds
+perform another test run so we have an error actual inform formal argument lists differ in length
+4:11:16 4 hours, 11 minutes, 16 seconds
+we need a matching set of parameters to the arguments we're receiving not only do we need a string variable we need an integer variable
+4:11:25 4 hours, 11 minutes, 25 seconds
+because we're receiving an integer so let's say int age we'll insert our age variable right
+4:11:33 4 hours, 11 minutes, 33 seconds
+here we're displaying an integer so we need percent D this will be a print F statement then I will include a new line
+4:11:41 4 hours, 11 minutes, 41 seconds
+character we are inserting our age variable let's say SpongeBob is 30 years
+4:11:48 4 hours, 11 minutes, 48 seconds
+old all right let's see how this works now happy birthday to you happy birthday
+4:11:55 4 hours, 11 minutes, 55 seconds
+dear SpongeBob you are 30 years old happy birthday to you so with these parameters you can
+4:12:03 4 hours, 12 minutes, 3 seconds
+rename them when you receive these arguments just be sure that the order and their data type is correct for example we could rename name as let's
+4:12:12 4 hours, 12 minutes, 12 seconds
+say birth day boy you know this would work too
+4:12:20 4 hours, 12 minutes, 20 seconds
+SpongeBob is the birthday boy the names of your parameters can be different from the
+4:12:29 4 hours, 12 minutes, 29 seconds
+arguments just be sure that you get the data type correct and the order in which you receive these arguments let's replace the name of
+4:12:37 4 hours, 12 minutes, 37 seconds
+SpongeBob with Patrick Patrick will be 38 so now now with the happy birthday
+4:12:44 4 hours, 12 minutes, 44 seconds
+method we're inserting new variables happy birthday dear Patrick you are 38 years
+4:12:51 4 hours, 12 minutes, 51 seconds
+old with methods they also have the capability to return a value so I'm going to collapse this happy birthday
+4:12:59 4 hours, 12 minutes, 59 seconds
+method we won't be working with it anymore let's create a method to square a number we'll create a method to square
+4:13:07 4 hours, 13 minutes, 7 seconds
+a number then return the result normally if we're not returning anything we would type this keyword avoid void but since
+4:13:15 4 hours, 13 minutes, 15 seconds
+we're returning a double we have to list the data type of what we're returning we're returning a double then we need a
+4:13:21 4 hours, 13 minutes, 21 seconds
+name for this method let's say double square all we're going to do is use the
+4:13:30 4 hours, 13 minutes, 30 seconds
+return keyword let me zoom in a little let's return a number times
+4:13:37 4 hours, 13 minutes, 37 seconds
+itself number we're going to receive one argument an argument of number we have to set up a matching parameter our
+4:13:46 4 hours, 13 minutes, 46 seconds
+number is going to be a double double number let's call the square method I will Square the number three and again
+4:13:55 4 hours, 13 minutes, 55 seconds
+since we're calling a method that's not static from another static method we need to add this keyword of static in order for it to run there'll be more on
+4:14:03 4 hours, 14 minutes, 3 seconds
+the static modifier in the future so if I was to run this we get no output we're returning a
+4:14:12 4 hours, 14 minutes, 12 seconds
+double back to the exact spot in which we call it we could assign it to a variable or print it
+4:14:18 4 hours, 14 minutes, 18 seconds
+directly let's say double result equals Square the number three then display the
+4:14:26 4 hours, 14 minutes, 26 seconds
+result so 3^ squar would give us nine so when returning something just
+4:14:33 4 hours, 14 minutes, 33 seconds
+imagine that after the method ends we're replacing that method call with whatever we're returning in this case nine picture it that way and then we're
+4:14:41 4 hours, 14 minutes, 41 seconds
+assigning nine to our double of result or we can just output it directly if you would prefer to do it that way
+4:14:49 4 hours, 14 minutes, 49 seconds
+let's print 3^ squar and that would also give us
+4:14:58 4 hours, 14 minutes, 58 seconds
+n now let's create a method to cube we're going to return a double double Cube we have one
+4:15:07 4 hours, 15 minutes, 7 seconds
+parameter a double of number we're going to return our number
+4:15:14 4 hours, 15 minutes, 14 seconds
+time number time number that would cube a number that we're given and again we need to add static
+4:15:22 4 hours, 15 minutes, 22 seconds
+because we're calling a method from another method that's static all right this time we will call the cube method
+4:15:29 4 hours, 15 minutes, 29 seconds
+and return the result so 3 cubed is 27 3 * 3 * 3 is
+4:15:37 4 hours, 15 minutes, 37 seconds
+27 one last example we'll create a method to return full name after being given a first name
+4:15:45 4 hours, 15 minutes, 45 seconds
+and a last name we're going to return a string we'll call this method get full
+4:15:52 4 hours, 15 minutes, 52 seconds
+name we'll have two parameters a string of first for first name and a string of last for last name
+4:16:02 4 hours, 16 minutes, 2 seconds
+we're going to return our first name plus a space to separate
+4:16:09 4 hours, 16 minutes, 9 seconds
+them plus our last name of last and again we have to add
+4:16:16 4 hours, 16 minutes, 16 seconds
+static okay let's declare a string variable of full name equals call be get
+4:16:25 4 hours, 16 minutes, 25 seconds
+full name method then pass in some arguments let's pass in
+4:16:31 4 hours, 16 minutes, 31 seconds
+SpongeBob then for the next argument SquarePants and then we'll print the full
+4:16:38 4 hours, 16 minutes, 38 seconds
+name print full name our method returns one long string of
+4:16:46 4 hours, 16 minutes, 46 seconds
+SpongeBob SquarePants the return keyword will return a value after the method ends it will return that value back to the place
+4:16:55 4 hours, 16 minutes, 55 seconds
+in which you call that method after this method of get full name is complete just imagine that we're replacing it with one
+4:17:03 4 hours, 17 minutes, 3 seconds
+long string of SpongeBob SquarePants like this and then assigning it to this
+4:17:09 4 hours, 17 minutes, 9 seconds
+variable okay so I lied I have one last good example to give you will create a method to verify a user's age normally
+4:17:17 4 hours, 17 minutes, 17 seconds
+in the United States at least you have to be 18 or older to sign up for things like a credit card we'll create a method to check a user's age again we're going
+4:17:26 4 hours, 17 minutes, 26 seconds
+to use static because we're calling a method from another method that's static let me zoom in we're going to return a
+4:17:33 4 hours, 17 minutes, 33 seconds
+Boolean this time the name of the method let's name it age
+4:17:41 4 hours, 17 minutes, 41 seconds
+check and there's going to be one parameter and integer of age if we're going to do an age verification check we
+4:17:50 4 hours, 17 minutes, 50 seconds
+could use an if statement so within our method we'll write an if statement if our age parameter is greater than or
+4:17:58 4 hours, 17 minutes, 58 seconds
+equal to 18 then let's return
+4:18:04 4 hours, 18 minutes, 4 seconds
+true else we're going to return false this can be simplified to the following
+4:18:13 4 hours, 18 minutes, 13 seconds
+return AG is greater than or equal to 18 you could do it either way for a beginner it might be easier to read if
+4:18:20 4 hours, 18 minutes, 20 seconds
+we have separate IFL statements but both work the same all right so we now have a method to check a user's
+4:18:28 4 hours, 18 minutes, 28 seconds
+age so now we can use this method I will create an integer variable of age set it equal to some
+4:18:37 4 hours, 18 minutes, 37 seconds
+age I'll use an if statement we're returning a Boolean value I can use that within an if
+4:18:44 4 hours, 18 minutes, 44 seconds
+statement if H check then pass in an argument we will pass in our variable of
+4:18:52 4 hours, 18 minutes, 52 seconds
+age if this is true if age is greater than or equal to 18 you return
+4:19:00 4 hours, 19 minutes
+true so let's print the following you may sign up maybe we're signing up for a credit
+4:19:08 4 hours, 19 minutes, 8 seconds
+card else let's print you must be 18 + 2 sign
+4:19:17 4 hours, 19 minutes, 17 seconds
+up our ages 21 you may sign up but if we were
+4:19:25 4 hours, 19 minutes, 25 seconds
+12 that method returns false you must be 18 plus to sign up so that's a method everybody it's a
+4:19:34 4 hours, 19 minutes, 34 seconds
+block of reusable code that is executed when called again I like to think of the parentheses after a method as a pair of
+4:19:42 4 hours, 19 minutes, 42 seconds
+telones talking to each other to use a method you have to call it and well everybody those are methods in
+4:19:51 4 hours, 19 minutes, 51 seconds
+Java hello everybody in this video I'm going to explain overloaded methods in Java in Java overloaded methods are
+4:19:58 4 hours, 19 minutes, 58 seconds
+methods that share the same name but they have different parameters a method's name plus its parameters will
+4:20:06 4 hours, 20 minutes, 6 seconds
+give you a unique method signature each method signature needs to be unique no two methods can share the same signature
+4:20:13 4 hours, 20 minutes, 13 seconds
+but they can share the same name let me give you a demonstration let's say we have a method it's going to return a
+4:20:20 4 hours, 20 minutes, 20 seconds
+double the method name will be add we'll add two numbers together add is the
+4:20:27 4 hours, 20 minutes, 27 seconds
+method name and then we'll set up some parameters we'll have double A for the first number and Double B all we're
+4:20:36 4 hours, 20 minutes, 36 seconds
+going to do is return a plus b it's a simple method so I'm I'm going to
+4:20:44 4 hours, 20 minutes, 44 seconds
+print add the numbers 1 + 2 and then print it this will give us
+4:20:52 4 hours, 20 minutes, 52 seconds
+three what if I would like to add a third number you can see that Java is already giving us a warning expected two arguments but three
+4:21:01 4 hours, 21 minutes, 1 second
+found so if I were to run this program we get an error actual and formal argument lists differ in
+4:21:11 4 hours, 21 minutes, 11 seconds
+length once solution is that I could create another method also named ad but it has different parameters where we
+4:21:18 4 hours, 21 minutes, 18 seconds
+accept three numbers so let me just copy this method paste it then I'll add another parameter for Double C return a
+4:21:28 4 hours, 21 minutes, 28 seconds
+plus b plus C and that should work now the number is six these two
+4:21:35 4 hours, 21 minutes, 35 seconds
+methods share the same name but they have different parameters so that's actually legal in Java
+4:21:43 4 hours, 21 minutes, 43 seconds
+a method's name plus its parameters will give you a unique method signature no two methods can share the same
+4:21:51 4 hours, 21 minutes, 51 seconds
+signature with our second method let's delete the last parameter of Double C and attempt to run this and we'll see
+4:21:58 4 hours, 21 minutes, 58 seconds
+what happens exactly well we get an error message method add is already defined in class
+4:22:05 4 hours, 22 minutes, 5 seconds
+main Java is saying that we have two methods that share the same name and the same exact parameters methods can share
+4:22:13 4 hours, 22 minutes, 13 seconds
+the same name but they need different parameters if that's the case now if I would like to add another number like four I could create another overloaded
+4:22:22 4 hours, 22 minutes, 22 seconds
+method also named add but this one will have four parameters Double D return a
+4:22:30 4 hours, 22 minutes, 30 seconds
+plus B+ C+ D and this works too let's go over another
+4:22:39 4 hours, 22 minutes, 39 seconds
+example let's pretend that we're baking a pizza we'll have a string variable of pizza we'll create a method to bake a
+4:22:48 4 hours, 22 minutes, 48 seconds
+pizza but we have to pass an ingredients we'll declare a method with static we'll return a string that's the return type
+4:22:57 4 hours, 22 minutes, 57 seconds
+the method name will be Bake Pizza our parameters are going to be a set of
+4:23:03 4 hours, 23 minutes, 3 seconds
+ingredients for this method we'll just accept a string of
+4:23:10 4 hours, 23 minutes, 10 seconds
+bread we'll just return our bread variable plus the word
+4:23:19 4 hours, 23 minutes, 19 seconds
+pizza so this could be for example a thick crust pizza or a flatbread pizza so to
+4:23:26 4 hours, 23 minutes, 26 seconds
+say let's set our pizza variable equal to called the bake pizza method now this method only has a bread
+4:23:35 4 hours, 23 minutes, 35 seconds
+setup as a parameter an ingredient let's say flat bread for the
+4:23:42 4 hours, 23 minutes, 42 seconds
+bread and then we'll print our pizza system. out. print line our string variable of
+4:23:50 4 hours, 23 minutes, 50 seconds
+pizza here's what we have we have a string of flatbread pizza so when baking a pizza there's a lot of different
+4:23:58 4 hours, 23 minutes, 58 seconds
+ingredients let's create another method of baked pizza but we have a parameter of bread and a parameter of cheese let's
+4:24:06 4 hours, 24 minutes, 6 seconds
+copy this method paste it but we have to change the parameters we're already receiving a warning we'll have string bread and string
+4:24:15 4 hours, 24 minutes, 15 seconds
+cheese no pun intended let me zoom in now those warnings have went away we have two methods with the same name but
+4:24:23 4 hours, 24 minutes, 23 seconds
+they have different parameters which is fine we can do that so this time let's return a string of cheese plus a space
+4:24:34 4 hours, 24 minutes, 34 seconds
+character plus our bread plus the word Pizza let's pass in a type of cheese Mozzarella
+4:24:43 4 hours, 24 minutes, 43 seconds
+I probably misspelled that actually I spelled it correctly okay now we'll bake our
+4:24:50 4 hours, 24 minutes, 50 seconds
+pizza we have a mozzarella flatbread pizza if there's two or more methods with the same name we'll end up using
+4:24:57 4 hours, 24 minutes, 57 seconds
+the method where the parameters match we'll create one more overloaded method we'll create another baked pizza method
+4:25:04 4 hours, 25 minutes, 4 seconds
+but this one will have a custom topping string topping we'll return topping
+4:25:13 4 hours, 25 minutes, 13 seconds
+plus a space character plus everything we had previously then we can pass in A new
+4:25:23 4 hours, 25 minutes, 23 seconds
+ingredient how do you spell pepperoni I can never spell it
+4:25:31 4 hours, 25 minutes, 31 seconds
+pepperoni now this time we have a pepperoni mozzarella flatbread pizza all right everybody so those are
+4:25:39 4 hours, 25 minutes, 39 seconds
+overloaded methods methods can share the same name but they need to have a different list of parameters a method's name plus its
+4:25:47 4 hours, 25 minutes, 47 seconds
+parameters will give you a unique method signature and no two methods can share the same signature and well everybody
+4:25:54 4 hours, 25 minutes, 54 seconds
+those are overloaded methods in Java I got a relatively quick video for you today today we're going to discuss
+4:26:03 4 hours, 26 minutes, 3 seconds
+variable scope in Java variable scope is where a variable can be accessed there's two levels we'll discuss today local and
+4:26:11 4 hours, 26 minutes, 11 seconds
+class we'll cover local first inside of a method if you declare a variable it has what is considered a
+4:26:19 4 hours, 26 minutes, 19 seconds
+local scope in this demonstration let's create a variable of x x will equal some number such as one and then you know we
+4:26:27 4 hours, 26 minutes, 27 seconds
+can print whatever X is xal 1 a variable declared inside of a method
+4:26:36 4 hours, 26 minutes, 36 seconds
+has a local scope and I'll just add a comment that this is a local variable outside of the set of curly braces where
+4:26:45 4 hours, 26 minutes, 45 seconds
+this variable is declared X isn't going to be recognized that's why if we create another method we would have to pass it as an
+4:26:52 4 hours, 26 minutes, 52 seconds
+argument let's create another method this will be a static method that doesn't return anything I'm just going to say it's the do something
+4:27:01 4 hours, 27 minutes, 1 second
+method inside of other methods you can declare variables that have the same name within this other method we're
+4:27:08 4 hours, 27 minutes, 8 seconds
+going to create an integer variable of X but X is going to equal two so Java isn't giving us any
+4:27:16 4 hours, 27 minutes, 16 seconds
+warnings it is legal to have variables with the same name as long as they're within different methods the moment I
+4:27:23 4 hours, 27 minutes, 23 seconds
+place this variable within my main method Java is giving us a warning variable X is already defined in the
+4:27:31 4 hours, 27 minutes, 31 seconds
+scope this local scope variable X within main has a local scope variable X within
+4:27:38 4 hours, 27 minutes, 38 seconds
+the do something method also has a local scope and I'll just add a comment that this is a local
+4:27:45 4 hours, 27 minutes, 45 seconds
+variable if I was to print X within this method and if I was to call this
+4:27:52 4 hours, 27 minutes, 52 seconds
+method what do you think will output one or two take a guess
+4:28:00 4 hours, 28 minutes
+two within the context of our do something method xal 2 this method isn't aware of the existence of this variable
+4:28:09 4 hours, 28 minutes, 9 seconds
+within this method of main they each have a local scope it's kind of like their neighbors they can't see inside of
+4:28:16 4 hours, 28 minutes, 16 seconds
+each other's house now a class variable is declared inside of a class but not within any methods you usually see them
+4:28:24 4 hours, 28 minutes, 24 seconds
+at the top let's create a static variable an integer of X where x equals
+4:28:32 4 hours, 28 minutes, 32 seconds
+3 variable X within this class of main has a class scope in our analogy of
+4:28:39 4 hours, 28 minutes, 39 seconds
+houses you could say that this variable is out in the street these two methods can look out their window and see variable X and that it equals
+4:28:48 4 hours, 28 minutes, 48 seconds
+three if I was to delete these two local variables and print X here's the
+4:28:56 4 hours, 28 minutes, 56 seconds
+result xal 3 or within our main method if I was to print
+4:29:04 4 hours, 29 minutes, 4 seconds
+x x also equals 3 let's say that each method is a house they're neighbors you
+4:29:12 4 hours, 29 minutes, 12 seconds
+you could say that a class variable is outside they're walking down the street both of these methods can look outside
+4:29:19 4 hours, 29 minutes, 19 seconds
+their window and see this variable now if you had a mix of both local and class variables that share the same name let's
+4:29:27 4 hours, 29 minutes, 27 seconds
+say int xals 1 and this was a local variable and within our method of do
+4:29:34 4 hours, 29 minutes, 34 seconds
+something xal two let's call the do something method
+4:29:43 4 hours, 29 minutes, 43 seconds
+we'll print X within the main method and then within the do something method what do you think the output is going to
+4:29:51 4 hours, 29 minutes, 51 seconds
+be well we have one and two even though there's a third X variable within the class scope Java
+4:30:00 4 hours, 30 minutes
+likes to use any local variables first if they share the same name as any class variables within our method of main this
+4:30:09 4 hours, 30 minutes, 9 seconds
+method thinks xal 1 it's going to use theal scope first you'll likely want to stick with local variables over class
+4:30:17 4 hours, 30 minutes, 17 seconds
+variables there are a few situations when a class variable would be better such as if you have constants where the value doesn't change or when working
+4:30:26 4 hours, 30 minutes, 26 seconds
+with object-oriented programming which is a whole another topic so that is variable scope in Java anything with the local scope is declared inside of a
+4:30:34 4 hours, 30 minutes, 34 seconds
+method or otherwise within a set of curly braces and is only recognized within this method other methods aren't
+4:30:41 4 hours, 30 minutes, 41 seconds
+aware of its existence that's sometimes why we pass them as arguments to other methods class variables are declared inside of a class they are recognized
+4:30:50 4 hours, 30 minutes, 50 seconds
+throughout the entire class and well everybody that is variable scope in Java hello everybody in this video we're
+4:30:59 4 hours, 30 minutes, 59 seconds
+going to create a very simple banking program using Java this video is meant to be a beginner's project to help us
+4:31:06 4 hours, 31 minutes, 6 seconds
+understand how methods work so if that sounds good to you let's get started as a beginner it might be helpful to you to break up your project into separate
+4:31:15 4 hours, 31 minutes, 15 seconds
+steps then tackle this project one step at a time I'll add a few comments of the different steps our program is going to
+4:31:21 4 hours, 31 minutes, 21 seconds
+take so first we're going to declare our variables I misspelled
+4:31:29 4 hours, 31 minutes, 29 seconds
+that then we will display a menu a user is going to pick a choice from this menu depending on what they
+4:31:37 4 hours, 31 minutes, 37 seconds
+want to do they can make a deposit show their balance make a withdrawal so on and so forth we will get and
+4:31:46 4 hours, 31 minutes, 46 seconds
+process users Choice we'll create a method of show
+4:31:53 4 hours, 31 minutes, 53 seconds
+balance in order to display the balance to the user let me zoom in another method to make a
+4:32:02 4 hours, 32 minutes, 2 seconds
+deposit then a method to withdraw withdraw funds we'll just say withdraw and then we will create an exit
+4:32:11 4 hours, 32 minutes, 11 seconds
+message at at the end once the user exits so again as a beginner it might be
+4:32:18 4 hours, 32 minutes, 18 seconds
+helpful to you to break up your program into different steps we'll start with our step of declare variables here's the different variables we'll need we have
+4:32:27 4 hours, 32 minutes, 27 seconds
+an account our account has a balance such as dollars and cents so a double would make sense for the balance because
+4:32:35 4 hours, 32 minutes, 35 seconds
+it includes a decimal portion sents so we have our balance we'll need a scanner because we're accepting us user input
+4:32:42 4 hours, 32 minutes, 42 seconds
+scanner scanner equals new scanner type system.in import this
+4:32:50 4 hours, 32 minutes, 50 seconds
+class import java.util.scanner and then we are going to close our scanner when we're done with it let's take care of
+4:32:58 4 hours, 32 minutes, 58 seconds
+that now because I'm probably going to forget we have our scanner our
+4:33:05 4 hours, 33 minutes, 5 seconds
+balance we're going to continue this program as long as a user doesn't exit we'll need a while loop we will declare
+4:33:12 4 hours, 33 minutes, 12 seconds
+and assign a Boolean variable of is running set that to be true continue
+4:33:19 4 hours, 33 minutes, 19 seconds
+this program while is running is true then we will accept a choice from
+4:33:25 4 hours, 33 minutes, 25 seconds
+the user this will be an integer a user is going to pick one to show balance two to deposit three to withdraw or four to
+4:33:34 4 hours, 33 minutes, 34 seconds
+exit the user is going to fill this in later using the scanner all right we have declared our variables now we'll a menu to the
+4:33:43 4 hours, 33 minutes, 43 seconds
+user I will print the following let's say banking program now you don't need to do this
+4:33:51 4 hours, 33 minutes, 51 seconds
+but I like to add some separators using a bunch of asterisks I just think it makes it look
+4:34:02 4 hours, 34 minutes, 2 seconds
+cool we will lay out the different options we will have option one option
+4:34:09 4 hours, 34 minutes, 9 seconds
+one will be to show balance option two will be to
+4:34:20 4 hours, 34 minutes, 20 seconds
+deposit option three will be to withdraw four will be to
+4:34:30 4 hours, 34 minutes, 30 seconds
+exit and then I'll add another separator again not necessary I think it would just look more organized now we
+4:34:38 4 hours, 34 minutes, 38 seconds
+need to get and process the user's choice we have a variable of choice we'll need
+4:34:46 4 hours, 34 minutes, 46 seconds
+to create a prompt we will say enter your choice
+4:34:53 4 hours, 34 minutes, 53 seconds
+then hint one through 4 I'll use print instead of print line because I like the user input on the
+4:35:01 4 hours, 35 minutes, 1 second
+same line as the prompt we will assign our variable of choice equal to use the
+4:35:07 4 hours, 35 minutes, 7 seconds
+scanner call the next int method ideally a user is going to type in a number 1 through 4 to do one of the
+4:35:16 4 hours, 35 minutes, 16 seconds
+following now we'll process the user's choice I think an enhanced switch would be great for this we will create a
+4:35:25 4 hours, 35 minutes, 25 seconds
+switch and examine our variable of choice we're examining our choice against matching cases if Choice equals
+4:35:33 4 hours, 35 minutes, 33 seconds
+a case of one we'll write an arrow to do something we'll do this we're going to call a method to show our B balance
+4:35:42 4 hours, 35 minutes, 42 seconds
+because one means the user wants to show their balance we'll fill that in later let's write a test message I'll use
+4:35:50 4 hours, 35 minutes, 50 seconds
+system.out.print LINE let's say show
+4:35:56 4 hours, 35 minutes, 56 seconds
+balance case two will be for deposit we'll just print a test message of deposit again we're going to fill
+4:36:05 4 hours, 36 minutes, 5 seconds
+this method in later and call it case three is for
+4:36:12 4 hours, 36 minutes, 12 seconds
+withdraw case three withdraw case four is to exit that we
+4:36:21 4 hours, 36 minutes, 21 seconds
+can actually fill in right away it's pretty simple we'll take our Boolean variable of is
+4:36:29 4 hours, 36 minutes, 29 seconds
+running and set it to be false then we'll add a default case in case somebody doesn't type in a number 1
+4:36:37 4 hours, 36 minutes, 37 seconds
+through four we'll output invalid
+4:36:44 4 hours, 36 minutes, 44 seconds
+Choice Let's test numbers 1 through three first enter a choice I'll pick one
+4:36:52 4 hours, 36 minutes, 52 seconds
+that's for show balance again we'll be calling a method later to show our balance two is for deposit we're
+4:37:02 4 hours, 37 minutes, 2 seconds
+depositing three is for withdraw four is to exit but it doesn't do anything
+4:37:09 4 hours, 37 minutes, 9 seconds
+currently then any other choice such as
+4:37:15 4 hours, 37 minutes, 15 seconds
+five prints out invalid choice we want this program to continue running as long as is running remains
+4:37:25 4 hours, 37 minutes, 25 seconds
+true so let's enclose our code within a loop a while loop
+4:37:33 4 hours, 37 minutes, 33 seconds
+while is running you don't necessarily need to say equals true if it's a Boolean you can just say the Boolean
+4:37:40 4 hours, 37 minutes, 40 seconds
+variables name name while is running is true then do all this code so I'm going to cut our code currently and paste it
+4:37:49 4 hours, 37 minutes, 49 seconds
+within the wild Loop now we can test is running one is to show
+4:37:58 4 hours, 37 minutes, 58 seconds
+balance we show our balance two is to deposit we
+4:38:04 4 hours, 38 minutes, 4 seconds
+deposit three is to withdraw withdraw four is to exit and we
+4:38:11 4 hours, 38 minutes, 11 seconds
+should exit processed finished with exit Code Zero we know that that works now our next step is to show balance and
+4:38:21 4 hours, 38 minutes, 21 seconds
+this is going to be a method outside of our main method we're going to create a new method of show
+4:38:31 4 hours, 38 minutes, 31 seconds
+balance this has to be a static method because our main method is also
+4:38:38 4 hours, 38 minutes, 38 seconds
+static there will be no return type the return type is void the method name will be show
+4:38:46 4 hours, 38 minutes, 46 seconds
+balance there's going to be one parameter a double of balance when we call this method we have to pass in our
+4:38:54 4 hours, 38 minutes, 54 seconds
+balance variable within this method we're going to use a print F
+4:39:03 4 hours, 39 minutes, 3 seconds
+statement and I'll zoom in a little within this print F statement pick a unit of currency you would like to use for this banking program all use
+4:39:11 4 hours, 39 minutes, 11 seconds
+American dollars we need a placeholder we'll use a percent sign and then F to display a double f means floating Point
+4:39:19 4 hours, 39 minutes, 19 seconds
+number we will display our balance and from the beginning I'm actually going to set my balance equal
+4:39:27 4 hours, 39 minutes, 27 seconds
+to zero we're going to be testing it then let me zoom out for case one
+4:39:36 4 hours, 39 minutes, 36 seconds
+we're going to call the show balance method but we have to pass in our balance variable
+4:39:44 4 hours, 39 minutes, 44 seconds
+all right let's test it enter a choice I'll pick one to show our balance uh here's what we got currently
+4:39:53 4 hours, 39 minutes, 53 seconds
+0 and a bunch of zeros after the decimal we are forgetting that new line character too so let's add a new line
+4:40:00 4 hours, 40 minutes
+character to the end before I forget if you would like to display two digits after the decimal for
+4:40:09 4 hours, 40 minutes, 9 seconds
+example normally when you display a floating Point number using print F you display six digits after the decimal to
+4:40:16 4 hours, 40 minutes, 16 seconds
+limit it to two we can add the following after our placeholder our percent sign we're going to add
+4:40:25 4 hours, 40 minutes, 25 seconds
+02 and to your choice I will type in one to show our balance our balance is $0 and0 we're displaying two digits after
+4:40:34 4 hours, 40 minutes, 34 seconds
+the decimal let's change our initial balance to be $10 and
+4:40:44 4 hours, 40 minutes, 44 seconds
+99 ENT to your choice I will type in one our balance is $10 and 99 I think I'm also going to add a separator before
+4:40:52 4 hours, 40 minutes, 52 seconds
+displaying the balance too to help with readability although it's not necessary so I'm going to cut one of these lines where we display a bunch of
+4:41:01 4 hours, 41 minutes, 1 second
+asterisks and print it right before displaying the balance let's show our balance and
+4:41:09 4 hours, 41 minutes, 9 seconds
+here's our balance $10 and 99 and we have some of those separators before and after which I think looks
+4:41:16 4 hours, 41 minutes, 16 seconds
+nice our show balance method is complete I'm going to collapse this method we don't need to code within it
+4:41:24 4 hours, 41 minutes, 24 seconds
+anymore our next method is to make a deposit we'll create a method of deposit oh and then be sure to set your
+4:41:33 4 hours, 41 minutes, 33 seconds
+balance back to zero we will create a static method the
+4:41:41 4 hours, 41 minutes, 41 seconds
+return type is going to be double we will declare this method as the deposit method there will be no parameters but
+4:41:49 4 hours, 41 minutes, 49 seconds
+we will be returning something a double inside of this method I will create a local variable the data type is double the
+4:41:58 4 hours, 41 minutes, 58 seconds
+name will be amount a user is going to type in an amount the amount that they're depositing using this method this method isn't going to work properly
+4:42:07 4 hours, 42 minutes, 7 seconds
+until we return something add return statement just temporarily so everything runs fine
+4:42:14 4 hours, 42 minutes, 14 seconds
+I'm just going to return zero we'll take care of this later I just want everything to run a compile fine we will prompt a user to type in an
+4:42:23 4 hours, 42 minutes, 23 seconds
+amount I will use print instead of print line that's my own preference for
+4:42:28 4 hours, 42 minutes, 28 seconds
+prompts enter an amount to be
+4:42:35 4 hours, 42 minutes, 35 seconds
+deposited now here's one issue we're accepting user input from a user amount equals if I attempt to use our scanner
+4:42:44 4 hours, 42 minutes, 44 seconds
+scanner. next Double there's an issue our method isn't aware what the scanner is because we declared the
+4:42:53 4 hours, 42 minutes, 53 seconds
+scanner within a separate method our main method methods can't see inside of each other there's a few different
+4:43:01 4 hours, 43 minutes, 1 second
+options one we could create a local scanner within this method you know scanner scanner equals new scanner and
+4:43:08 4 hours, 43 minutes, 8 seconds
+all that I don't like the idea of creating creting several different scanners within this project because then we're leaving them all open to
+4:43:15 4 hours, 43 minutes, 15 seconds
+accept user input so why don't we do this let's take our scanner move it from this local scope and put it within a
+4:43:23 4 hours, 43 minutes, 23 seconds
+class scope so let's cut our scanner within the main method and stick it within the main
+4:43:32 4 hours, 43 minutes, 32 seconds
+class but it does need to be static because some static methods are using it this one scanner is accessible
+4:43:39 4 hours, 43 minutes, 39 seconds
+throughout the whole program now and that warning goes away so I think this would be better than creating several different scanners and leaving
+4:43:48 4 hours, 43 minutes, 48 seconds
+them all open throughout this program we're just going to reuse the same one at this point we're going to verify the amount that the user types
+4:43:56 4 hours, 43 minutes, 56 seconds
+in I'll use an if statement first if a user types in an amount that's negative well they can't make a deposit they
+4:44:04 4 hours, 44 minutes, 4 seconds
+can't deposit negative money that's stupid so we will check if our amount variable that the user types in is less
+4:44:11 4 hours, 44 minutes, 11 seconds
+than zero if that's the case we will print the following amount can't be
+4:44:21 4 hours, 44 minutes, 21 seconds
+negative and then we will return zero if the user does type in an amount
+4:44:29 4 hours, 44 minutes, 29 seconds
+that's valid we'll execute an lse statement where we're going to return let's cut our return statement at the
+4:44:36 4 hours, 44 minutes, 36 seconds
+end we'll return our amount now when we call our method we can
+4:44:44 4 hours, 44 minutes, 44 seconds
+delete this print line statement if a user selects two to make a deposit we're going to assign our balance
+4:44:53 4 hours, 44 minutes, 53 seconds
+variable balance equals our balance plus call the deposit
+4:45:02 4 hours, 45 minutes, 2 seconds
+method our deposit method is going to return a number an amount if it's valid we're going to return it back to the
+4:45:09 4 hours, 45 minutes, 9 seconds
+place in which we call it it we will add this to our current balance and reassign it to balance our balance will equal our
+4:45:17 4 hours, 45 minutes, 17 seconds
+current balance plus the deposit that we make we can shorten this too we could just say balance plus equals
+4:45:25 4 hours, 45 minutes, 25 seconds
+deposit okay let's do a test run banking program let's show our
+4:45:32 4 hours, 45 minutes, 32 seconds
+balance our balance is currently zero we'll select two to make a deposit two enter an amount to be
+4:45:40 4 hours, 45 minutes, 40 seconds
+deposited let's try and break it first let's say1
+4:45:47 4 hours, 45 minutes, 47 seconds
+million amount can't be negative then we're brought back to the menu let's try and make a deposit again
+4:45:54 4 hours, 45 minutes, 54 seconds
+enter an amount to be deposited let's say $150 and a nickel 5
+4:46:02 4 hours, 46 minutes, 2 seconds
+cents that seems to have worked let's show our balance again and here's our New Balance $150
+4:46:11 4 hours, 46 minutes, 11 seconds
+and 5 cents all right the deposit method is done we can collapse it we no longer need to code within it and now we need a
+4:46:20 4 hours, 46 minutes, 20 seconds
+withdraw method we will declare a new method it's a static method we'll be
+4:46:28 4 hours, 46 minutes, 28 seconds
+returning a double the name of this method will be
+4:46:36 4 hours, 46 minutes, 36 seconds
+withdraw there will be one parameter we will pass in a balance double balance we do need to return something
+4:46:45 4 hours, 46 minutes, 45 seconds
+so temporarily just so our program runs correctly I'm just going to return zero we'll change that later within this method I'm going to
+4:46:54 4 hours, 46 minutes, 54 seconds
+create a local variable of amount double amount we will prompt a
+4:47:03 4 hours, 47 minutes, 3 seconds
+user enter amount to be withdrawn
+4:47:12 4 hours, 47 minutes, 12 seconds
+we will assign our amount equal to we're going to use our scanner and remember it's within the class scope so we have access to it within this method scanner.
+4:47:23 4 hours, 47 minutes, 23 seconds
+nextt double to accept a double if somebody tries to withdraw money that they don't have we can check
+4:47:32 4 hours, 47 minutes, 32 seconds
+that within an if statement if the amount is greater than our balance we're passing in our balance
+4:47:40 4 hours, 47 minutes, 40 seconds
+so we know what what it is if somebody tries to withdraw a million dollars but they have no money in their bank account well they can't do
+4:47:48 4 hours, 47 minutes, 48 seconds
+that we will print insufficient
+4:47:57 4 hours, 47 minutes, 57 seconds
+funds what if they try and withdraw negative money we can check that within an else if statement else if our amount that the
+4:48:06 4 hours, 48 minutes, 6 seconds
+user types in is less than zero will
+4:48:12 4 hours, 48 minutes, 12 seconds
+output amount can't be
+4:48:20 4 hours, 48 minutes, 20 seconds
+negative else if everything checks out we'll return the amount I will cut our current return statement we will return
+4:48:29 4 hours, 48 minutes, 29 seconds
+the amount that the user types in return amount So within our if statement return
+4:48:37 4 hours, 48 minutes, 37 seconds
+zero within our else if statement return zero when we reach the end we do need to return something even if it is
+4:48:46 4 hours, 48 minutes, 46 seconds
+zero and I'm going to use print instead of print line so let's go back to our switch
+4:48:53 4 hours, 48 minutes, 53 seconds
+right here we're going to be returning a double we will take our
+4:48:59 4 hours, 48 minutes, 59 seconds
+balance equals we're assigning it take our current balance minus call the withdraw
+4:49:08 4 hours, 49 minutes, 8 seconds
+method but we have to pass in our our balance our original balance from our current balance we're
+4:49:16 4 hours, 49 minutes, 16 seconds
+subtracting the amount that we're withdrawing we can simplify this expression too we could say balance
+4:49:23 4 hours, 49 minutes, 23 seconds
+minus equals then call the withdraw method all right let's do a test
+4:49:30 4 hours, 49 minutes, 30 seconds
+run first we'll make a deposit I will deposit $100 to keep the simple I will show our balance we have

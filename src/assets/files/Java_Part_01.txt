@@ -1,0 +1,1068 @@
+﻿0:00 hey how's it going everybody in this video I'm going to teach you everything you need to know to start coding with Java this series even contains about 15
+0:08 8 seconds
+Hands-On projects that we're going to code together our final project will be a functioning alarm clock that plays music of your choice if you've never
+0:16 16 seconds
+coded anything in your life don't worry we're going to start from the very beginning I encourage you to sit back
+0:22 22 seconds
+relax and enjoy the show I don't like boring introductions so we're just going to Jump Right In to
+0:30 30 seconds
+start coding with Java you'll need two things a Java development kit also known as a jdk a jdk contains a compiler a
+0:38 38 seconds
+compiler will compile your source code your written code into bite code which can run on a machine you'll also need an integrated development environment IDE
+0:48 48 seconds
+an IDE is a fancy term for a workspace in which we can write code because sometimes notepad just doesn't cut it
+0:55 55 seconds
+we'll get started by downloading a jdk a Java development kit okay here's how to download the jdk the Java development
+1:03 1 minute, 3 seconds
+kit you can easily just Google or do a search for jdk download we're going to use the one by Oracle so we'll click on
+1:10 1 minute, 10 seconds
+this link I'll also post the link in the description of this video if you would like to access it that way we will
+1:17 1 minute, 17 seconds
+download the latest jdk version as of the filming of this video we're on jdk 23 we're going to look for our operating
+1:26 1 minute, 26 seconds
+system I'm running Windows I will download the 64- bit installer by clicking this
+1:32 1 minute, 32 seconds
+link then we just have to wait for it to download the download is complete we're going to open this
+1:41 1 minute, 41 seconds
+executable select next next our jdk has been successfully
+1:52 1 minute, 52 seconds
+installed we can close it and that's all we got to do for the jdk now we need to install an IDE an
+1:59 1 minute, 59 seconds
+integrated development environment one I recommend is intellig you can easily just Google or do a
+2:07 2 minutes, 7 seconds
+search for intellig download we'll select the top link now if you're not brought to this
+2:14 2 minutes, 14 seconds
+page let's say you're at a different page go to the top right where it says get intellig click it and you should be
+2:23 2 minutes, 23 seconds
+brought to a download page this version is a 30-day trial but if you scroll down there is a free version this is the
+2:30 2 minutes, 30 seconds
+Community Edition because I don't like to pay for things select the correct download for your operating system I'm
+2:36 2 minutes, 36 seconds
+running Windows I will download the executable once the download is complete
+2:43 2 minutes, 43 seconds
+we will open this executable for intellig select next choose a destination folder I'll
+2:52 2 minutes, 52 seconds
+keep it as is Click next you can create a desktop shortcut I
+2:58 2 minutes, 58 seconds
+think I will just for convenience now this is important too you can update the path variable it basically tells
+3:06 3 minutes, 6 seconds
+your operating system where to find the executable files this is useful if you're going to be running Java code from command prompt or terminal but we
+3:14 3 minutes, 14 seconds
+won't be doing that in this series you can always come back later and update this but we'll just select next and
+3:24 3 minutes, 24 seconds
+install all right and we can finish we might as well start intellig right away I'm going to check this check boox to
+3:30 3 minutes, 30 seconds
+run intellig and finish we should now be at a welcome screen for intellig we need to create a
+3:38 3 minutes, 38 seconds
+project select new project I'll name my project my first
+3:45 3 minutes, 45 seconds
+project select the latest version of your jdk I have jdk version 23 there is a checkbox and it's most likely going to
+3:54 3 minutes, 54 seconds
+be checked that says add sample code just as a beginner I recommend unchecking this it'll autogenerate some
+4:01 4 minutes, 1 second
+sample code for us but we're going to do that ourselves I'll show you how and then
+4:09 4 minutes, 9 seconds
+create within our project folder navigate to your Source folder it has a name of SRC we need to create a main Java file
+4:18 4 minutes, 18 seconds
+go to the top toolbar go to file new Java class we'll name this class main it's going to contain the main body of
+4:26 4 minutes, 26 seconds
+our code then select class now the font is probably going to be really
+4:34 4 minutes, 34 seconds
+small here's how to change that go to the top toolbar go to settings go to
+4:44 4 minutes, 44 seconds
+editor General and you can check this checkbox for change font size with Control Plus
+4:50 4 minutes, 50 seconds
+Mouse wheel apply okay now you should be able to zoom in if you hold control and
+4:57 4 minutes, 57 seconds
+scroll your mouse wheel now we can actually read something in Java in order to get some code to run you need a main
+5:05 5 minutes, 5 seconds
+method within our class of main there's a set of curly braces we'll type the
+5:11 5 minutes, 11 seconds
+following public static void main add a set of parentheses then a set of curly
+5:19 5 minutes, 19 seconds
+braces within the set of parentheses you're going to type the following string straight brackets
+5:27 5 minutes, 27 seconds
+args like you're a pirate you need this method in order for your program to run over the course of this series we'll learn what each of these
+5:36 5 minutes, 36 seconds
+keywords means but as a beginner think of it as a magic spell that you have to say in order to get your program to run to run your program you're going to
+5:44 5 minutes, 44 seconds
+click the screen Arrow or you can hold shift plus F10 if we have written the main method
+5:54 5 minutes, 54 seconds
+successfully we should have no errors it says processed finished with exit code zero that means everything is
+6:01 6 minutes, 1 second
+running fine if I were to delete this main method we can't actually run the program so be sure that that method is
+6:09 6 minutes, 9 seconds
+in to Output some text to the console window we're going to type system with a capital s. out. print add a set of
+6:19 6 minutes, 19 seconds
+parentheses then a semicolon in Java you'll end most of your statements with a semicolon it's kind of like a period at the end of a
+6:28 6 minutes, 28 seconds
+sentence in the English language within the set of parentheses we'll add a set of double quotes whatever we would
+6:35 6 minutes, 35 seconds
+like to Output we're going to type within the set of double quotes think of a food you like I'll type I like
+6:43 6 minutes, 43 seconds
+pizza and then we can run this and this should be the output again I'm going to go to the Green Arrow or you can hold shift
+6:52 6 minutes, 52 seconds
+F10 and a console window should pop up that says I like pizza or whatever your
+6:59 6 minutes, 59 seconds
+favorite food is whatever you typed here let's add another line of
+7:05 7 minutes, 5 seconds
+code again type system.out.print end it with the
+7:13 7 minutes, 13 seconds
+semicolon within quotes which we type I like pizza it's really
+7:20 7 minutes, 20 seconds
+good let's run it again all right here's our output I like
+7:27 7 minutes, 27 seconds
+pizza it's really good now these are both on the same line to move your output down to the next line
+7:35 7 minutes, 35 seconds
+you can use print Ln meaning print line now it should look something like
+7:42 7 minutes, 42 seconds
+this I like pizza it's really good if you type back sln that's an
+7:51 7 minutes, 51 seconds
+escape sequence for a new line and that works too besides print line I like pizza it's really good
+8:00 8 minutes
+let's add another line of text system.out.print or print
+8:07 8 minutes, 7 seconds
+line I like pizza it's really good buy me pizza and I'll add a new line
+8:17 8 minutes, 17 seconds
+character I like pizza it's really good buy me pizza or again you could use print
+8:26 8 minutes, 26 seconds
+line so print Ln for print line and this will do the same
+8:35 8 minutes, 35 seconds
+thing now you can write a comment comments aren't displayed as output to write a comment you use two forward
+8:43 8 minutes, 43 seconds
+slashes and the text should be gray out comments are good as notes for yourself or for other developers let's add a
+8:50 8 minutes, 50 seconds
+comment that this is my first Java program when we run this this won't
+8:58 8 minutes, 58 seconds
+display us out output it's really just used as notes we still have our output it hasn't
+9:06 9 minutes, 6 seconds
+changed you can even add a multi-line comment with a forward slash then an asterisk to end a multi-line comment you
+9:15 9 minutes, 15 seconds
+need an asterisk then a forward slash I'll write this is a
+9:23 9 minutes, 23 seconds
+multi- line comment this won't output either
+9:31 9 minutes, 31 seconds
+we don't see either of these comments this is specific for intellig but you can change the console font and the colors I kind of find this hard to
+9:40 9 minutes, 40 seconds
+read to do that we're going to go to the top menu under file go to settings under color scheme go to
+9:48 9 minutes, 48 seconds
+console font here you can change the font if you would like or the colors I'll change the colors I'll make the output bright green so it's easier to
+9:57 9 minutes, 57 seconds
+read I'll go to console standard output and select a new color I'll select something
+10:04 10 minutes, 4 seconds
+green apply and I think that looks pretty good it's more readable that way I'll also change the system output
+10:13 10 minutes, 13 seconds
+too I'll make it kind of gray out that's pretty good yeah and there's our output I like
+10:22 10 minutes, 22 seconds
+pizza it's really good buy me pizza now a shortcut to type system. out at print line if you're using intellig
+10:30 10 minutes, 30 seconds
+is to type s o u t then hit tab that's going to autogenerate a print line statement for you I didn't realize this
+10:37 10 minutes, 37 seconds
+trick until a little bit later so you don't always need to type out this statement you can just autogenerate it all right everybody and that is your
+10:44 10 minutes, 44 seconds
+first Java program your homework in the comment section is to post three print line statements maybe type A poem or
+10:51 10 minutes, 51 seconds
+some song lyrics or something and well everybody that is your first Java program
+10:59 10 minutes, 59 seconds
+all right everybody so we are moving on to variables in Java probably back in elementary school or middle school you
+11:06 11 minutes, 6 seconds
+learned about variables in algebra a variable was a representation of a number well in programming we have
+11:13 11 minutes, 13 seconds
+variables too a variable is a reusable container for a value a variable behaves as if it was the value it contains but
+11:22 11 minutes, 22 seconds
+variables can contain more than just numbers they can contain characters and even entire words there's different data
+11:29 11 minutes, 29 seconds
+types a whole number would be an integer a number that includes a decimal would be a double there's two categories of
+11:36 11 minutes, 36 seconds
+variables we'll discuss primitive and reference primitive variables are simple values like numbers they're stored
+11:45 11 minutes, 45 seconds
+directly in memory usually in a location known as the stack reference variables actually hold memory addresses on the
+11:54 11 minutes, 54 seconds
+stack they point to a location in a different area known as the Heap think of it this way if I give you a primitive
+12:02 12 minutes, 2 seconds
+variable that would be the same as me handing you $10 but if I give you a reference variable a memory address that would be
+12:11 12 minutes, 11 seconds
+the same as me giving you an IOU that says I owe you $10 but the actual money I owe you is at the bank that might be a
+12:19 12 minutes, 19 seconds
+beginner's way of thinking of the difference between a primitive and reference data type primitive I'm giving you $10 a reference data type I'm giving
+12:27 12 minutes, 27 seconds
+you an IOU that I owe you $10 we'll discuss the different data types we'll begin with integers an INT short for
+12:36 12 minutes, 36 seconds
+integer is a primitive data type I'll show you how we can create an integer variable in Java there's two steps to
+12:44 12 minutes, 44 seconds
+creating a variable the first is declaration the second is assignment let's say we would like to create a
+12:51 12 minutes, 51 seconds
+variable that stores a whole number an integer with the first step of Declaration we're going to first type the data type of what we would like to
+12:59 12 minutes, 59 seconds
+store exactly so for integers we will type int then we should think of a unique variable name we don't want to
+13:06 13 minutes, 6 seconds
+say X or something similar that would make sense in basic algebra but in programming you want your variables to
+13:13 13 minutes, 13 seconds
+be descriptive like shut up in programming you want your variables to be descriptive so let's say we are
+13:20 13 minutes, 20 seconds
+working with let's say in age end this line with a semicolon so this is declaration step one we are creating a
+13:30 13 minutes, 30 seconds
+variable named age if I was to print my variable of age system.out.print
+13:38 13 minutes, 38 seconds
+line let's print age and see what it is variable age might not have been
+13:48 13 minutes, 48 seconds
+initialized we're using a variable but we've never given it a value we've never completed step two of
+13:54 13 minutes, 54 seconds
+assignment so we can set age equal to a value so on my YouTube channel the average age of my viewers is
+14:02 14 minutes, 2 seconds
+approximately 21 or so so let's set age to be 21 and then we'll print
+14:09 14 minutes, 9 seconds
+it so that outputs 21 if I were to change this to
+14:15 14 minutes, 15 seconds
+30 then my variable age would behave as if it was the number 30 so those are integers they're whole numbers let's say
+14:24 14 minutes, 24 seconds
+that I'm 30.5 let's see what happens exactly you can see that intellig is already giving us a warning that we're working with a
+14:32 14 minutes, 32 seconds
+different data type known as doubles so if I were to run this we get an error message we have incompatible types from
+14:42 14 minutes, 42 seconds
+double to in if we declare a variable as an integer they can only store whole
+14:49 14 minutes, 49 seconds
+integers let's think of a few more examples another example of an integer could be a year so let's say the year is
+14:57 14 minutes, 57 seconds
+2025 then we'll print our year
+15:04 15 minutes, 4 seconds
+2025 or maybe a quantity int quantity equals
+15:11 15 minutes, 11 seconds
+1 then we'll print our quantity one so in working with quantities they're whole numbers usually
+15:20 15 minutes, 20 seconds
+right we wouldn't have let's say half a product 1.5 I would like 1.5 Nintendo switches that wouldn't make sense right
+15:28 15 minutes, 28 seconds
+they would would be whole numbers like one or two now you can output a variable with a
+15:36 15 minutes, 36 seconds
+string of text as well let's say the year
+15:43 15 minutes, 43 seconds
+is then I'll add plus a variable year make sure that the variable is not within
+15:51 15 minutes, 51 seconds
+quotes So currently this says the year is 2025 you do have to pay attention to the spacing so after the word is I'm going
+16:00 16 minutes
+to add a space to separate is and the variable year the year is
+16:07 16 minutes, 7 seconds
+2025 now if our variable was within quotes we would literally be printing
+16:14 16 minutes, 14 seconds
+the word year the year is year so don't do that unless it's intentional let's go on to the next data
+16:23 16 minutes, 23 seconds
+type the next data type is double double is a number but it can contain a decimal
+16:29 16 minutes, 29 seconds
+portion unlike int ins are whole numbers so this time we will create a variable type of double what are some
+16:38 16 minutes, 38 seconds
+examples of a variable that could be a double let's say a price there could be dollars and cents
+16:48 16 minutes, 48 seconds
+$19.99 or perhaps a GPA a grade point average double GPA equal
+16:57 16 minutes, 57 seconds
+3.5 or a temperature double temperature
+17:04 17 minutes, 4 seconds
+equals 12.5 all right let's output some of these let's do
+17:13 17 minutes, 13 seconds
+Price system.out.print Line let's output the
+17:23 17 minutes, 23 seconds
+price 19.99 let's add a unit of currency I'll pick American dollars
+17:31 17 minutes, 31 seconds
+so Dollar Sign Plus price $19.99 if you were to assign a variable
+17:38 17 minutes, 38 seconds
+that's a double data type but store an integer here's what would happen we would just add 0 Z to the end
+17:47 17 minutes, 47 seconds
+it's still a double so those are doubles they're numbers that can contain a decimal portion unlike
+17:55 17 minutes, 55 seconds
+integers okay then the next data type we have is charart meaning character Char pronounced like the word
+18:04 18 minutes, 4 seconds
+Charizard so with chars what are a few examples of single characters we could use let's say a grade like a letter
+18:13 18 minutes, 13 seconds
+grade with chars characters we enclose them within single quotes let's say we have the letter A that's the grade we
+18:22 18 minutes, 22 seconds
+got on the last test or something or maybe a symbol
+18:29 18 minutes, 29 seconds
+maybe I'll put an exclamation point or something or currency Char currency
+18:37 18 minutes, 37 seconds
+equals pick a unit of currency I'll pick dollars okay then let's output some of these
+18:45 18 minutes, 45 seconds
+system.out.print line let's print our
+18:53 18 minutes, 53 seconds
+grade which is an A or our symbol an exclamation point or our
+19:03 19 minutes, 3 seconds
+currency which is American dollars so then we have something called booleans booleans are either true or
+19:13 19 minutes, 13 seconds
+false we will declare this variable as a Boolean let's check to see if somebody is a student our variable name will be
+19:22 19 minutes, 22 seconds
+is student and this equals true or false so if I am a student I would say true
+19:31 19 minutes, 31 seconds
+now a common naming convention in Java is called camel case naming convention if your variable name takes up two words
+19:39 19 minutes, 39 seconds
+such as is and student when you combine them the first letter of the first word should be lowercase then any word after
+19:48 19 minutes, 48 seconds
+the first letter is going to be uppercase so is student and I will set that to be true maybe something is for
+19:57 19 minutes, 57 seconds
+sale or not Boolean for sale equals false it's not for sale is somebody
+20:06 20 minutes, 6 seconds
+online Boolean is online now I will set that to be true these are a few examples
+20:14 20 minutes, 14 seconds
+of Boolean variables now you could output them directly using system.out.print line
+20:22 20 minutes, 22 seconds
+Let's test it system.out.print line let's output is student
+20:29 20 minutes, 29 seconds
+are we a student that is true is something for sale for sale that is false now with Boolean
+20:39 20 minutes, 39 seconds
+variables we don't typically output them directly to the console we tend to use them more internally within a
+20:46 20 minutes, 46 seconds
+program one place in which you might see them is with the use of if statements and this is a future topic we'll revisit it later but I want to demonstrate the
+20:55 20 minutes, 55 seconds
+usefulness of booleans so this is an if statement we can check some condition parenthesis then curly
+21:03 21 minutes, 3 seconds
+braces if our condition is true if is student double equals true but we could
+21:12 21 minutes, 12 seconds
+simplify this to if is student if this variable contains true which it does we can
+21:20 21 minutes, 20 seconds
+execute some code system.out.print line we will print the following
+21:28 21 minutes, 28 seconds
+you are a student if this Boolean variable contains true we will print the
+21:37 21 minutes, 37 seconds
+following you are a student or we could add else an else Clause else let's
+21:46 21 minutes, 46 seconds
+print you are not a student So currently we're still a student but if this Boolean variable
+21:55 21 minutes, 55 seconds
+contained a value of false we would perform form the else statement you are not a student so we'll
+22:04 22 minutes, 4 seconds
+cover if statements in a future topic you don't necessarily need to know how these work right now but that's one of the uses of booleans they can only
+22:12 22 minutes, 12 seconds
+contain true or false these are a few of the basic primitive data types for beginners int
+22:20 22 minutes, 20 seconds
+for integers they contain whole numbers doubles are numbers but they can contain a decimal chars meaning characters are
+22:28 22 minutes, 28 seconds
+single characters and booleans which are either true or false these are a few of the beginner primitive data types but
+22:37 22 minutes, 37 seconds
+there's still a lot more than this there's floats there's long doubles all sorts of different data types but you don't need to know those as a beginner I
+22:45 22 minutes, 45 seconds
+would just stick to these four for now so then we have the reference data types A few of which include strings arrays
+22:52 22 minutes, 52 seconds
+and objects in this topic we're only going to discuss strings a series of characters phas and objects are really
+22:59 22 minutes, 59 seconds
+complex we'll revisit these later so we're going to create a string a series of characters so the data type is going to
+23:08 23 minutes, 8 seconds
+be string an example of a series of characters could be a name what's your name with strings we enclose them within
+23:16 23 minutes, 16 seconds
+double quotes chars single characters are single quotes it's really easy to mix the two up you might do it a few
+23:25 23 minutes, 25 seconds
+times as a beginner so type in your name in including a space I'll use my YouTube channel
+23:32 23 minutes, 32 seconds
+name and then we will output our name system.out.print Line Print your
+23:41 23 minutes, 41 seconds
+name and your first and last name should appear now we could use this variable of name within another string this is known
+23:49 23 minutes, 49 seconds
+as string concatenation so let's say hello plus our name
+23:59 23 minutes, 59 seconds
+hello bro code or whatever your name is what are a few other examples of strings we could
+24:06 24 minutes, 6 seconds
+write let's add string food equals again within a set of double
+24:13 24 minutes, 13 seconds
+quotes add your favorite food mine is pizza then let's type again
+24:20 24 minutes, 20 seconds
+system.out.print line your favorite food is
+24:29 24 minutes, 29 seconds
+plus the variable food your favorite food is
+24:38 24 minutes, 38 seconds
+pizza what about an email string email equals make up an email fake1
+24:46 24 minutes, 46 seconds
+123@gmail.com strings they can contain numbers but we
+24:54 24 minutes, 54 seconds
+treat them more as characters rather than actual numbers that we can use for any sort of math or
+25:00 25 minutes
+arithmetic so let's print our email your email is plus
+25:10 25 minutes, 10 seconds
+email your email is fake1 123@gmail.com or what about a
+25:18 25 minutes, 18 seconds
+car string car think of a car that you like I will pick a Mustang that's another example of
+25:26 25 minutes, 26 seconds
+a string or a color string color equals
+25:33 25 minutes, 33 seconds
+red so strings are a series of characters they have a reference data type you may have also noticed that the
+25:41 25 minutes, 41 seconds
+font color of strings is different from the primitive data types too of booleans chars doubles and Ins at least within my
+25:48 25 minutes, 48 seconds
+workspace the font color is orange and with strings the font color of these data types is white now we're going to
+25:56 25 minutes, 56 seconds
+cover a few exercises so let's start with our name system.out.print line we will print
+26:06 26 minutes, 6 seconds
+hello plus our name variable it's a string hello your first and last
+26:15 26 minutes, 15 seconds
+name let's print our age system.out.print line u
+26:23 26 minutes, 23 seconds
+r we're going to insert our variable age then add another string another string
+26:28 26 minutes, 28 seconds
+literal you are age years old again do pay attention to the
+26:35 26 minutes, 35 seconds
+spacing you are 30 years old let's use my
+26:42 26 minutes, 42 seconds
+GPA that's a double system.out.print
+26:51 26 minutes, 51 seconds
+line your GPA is then we will insert our GPA
+26:59 26 minutes, 59 seconds
+your GPA is 3.5 okay let's use our Char of
+27:08 27 minutes, 8 seconds
+grade system.out.print line your average letter
+27:17 27 minutes, 17 seconds
+grade is our variable
+27:25 27 minutes, 25 seconds
+grade your average letter grade is is a now within a single print line statement we're going to combine multiple
+27:33 27 minutes, 33 seconds
+variables let's say we're going to Output our color a year and our
+27:41 27 minutes, 41 seconds
+car all within one print statement system.out.print
+27:48 27 minutes, 48 seconds
+line let's say we're choosing a car your choice is a We'll add our color variable
+27:59 27 minutes, 59 seconds
+plus the year plus our car let's see what happens exactly if we attempt
+28:07 28 minutes, 7 seconds
+this so we've combined all three variables red 2025 and our car of Mustang so we're going to add some space
+28:16 28 minutes, 16 seconds
+characters between each to separate them so plus a space character add that after the
+28:23 28 minutes, 23 seconds
+color after the year we'll add a space between color and year and year and
+28:32 28 minutes, 32 seconds
+car so your choice is a red 2025 Mustang let's display the
+28:41 28 minutes, 41 seconds
+currency and a price system.out.print
+28:50 28 minutes, 50 seconds
+line the price is plus currency
+28:58 28 minutes, 58 seconds
+I picked American dollars plus price the price is
+29:07 29 minutes, 7 seconds
+$9.99 uh for a car let's up that that's way too cheap that's too good to be true let's say
+29:15 29 minutes, 15 seconds
+$9,999 99 that's more realistic now we're going to use this
+29:24 29 minutes, 24 seconds
+Boolean variable of for sale if for sale if this is true then we're
+29:33 29 minutes, 33 seconds
+going to print there
+29:42 29 minutes, 42 seconds
+is a plus Car Plus the text of for
+29:52 29 minutes, 52 seconds
+sale else we will print something else I'll just copy this let's
+30:01 30 minutes, 1 second
+say the plus Car Plus is not for sale for
+30:11 30 minutes, 11 seconds
+sale currently that's set to false the Mustang is not for sale but if this were
+30:20 30 minutes, 20 seconds
+true there is a Mustang for sale for sale is set to true all right everybody
+30:27 30 minutes, 27 seconds
+so those are variables in Java a variable is a reusable container for a value a variable behaves as if it was
+30:36 30 minutes, 36 seconds
+the value that it contains there's two different categories of variables primitive and reference primitive data
+30:43 30 minutes, 43 seconds
+types are simple values like integers floats single characters and
+30:51 30 minutes, 51 seconds
+booleans they're stored directly in memory usually in a location known as the stack reference variables such as
+30:59 30 minutes, 59 seconds
+strings which are a series of characters like your name or an email they're more complicated we store a memory address
+31:08 31 minutes, 8 seconds
+that points to a location in the Heap and your homework assignment is in the comment section post five variables a
+31:16 31 minutes, 16 seconds
+string an integer a double A Char and a Boolean and if you don't do your homework you're going to make me sad and
+31:24 31 minutes, 24 seconds
+well everybody that is an introduction to variables in Java hello again friends so today I'm
+31:32 31 minutes, 32 seconds
+going to show you how we can accept user input in Java we will need the help of what is called a scanner a scanner is an
+31:40 31 minutes, 40 seconds
+object that allows us to accept user input in Java however in order to use a scanner we actually need to import it from the certain package called
+31:48 31 minutes, 48 seconds
+utilities or util at the top of our Java file we're going to write the following statement import Java do
+31:58 31 minutes, 58 seconds
+util this is a package do scanner scanner is a class so make sure you have
+32:06 32 minutes, 6 seconds
+this import at the top before we get started to sum up programming we typically accept input process it then
+32:13 32 minutes, 13 seconds
+produce output so that's why accepting user input is important we would like to do something with the input so to accept
+32:21 32 minutes, 21 seconds
+user input we're going to create a scanner object so type this scanner that's the name of the class
+32:28 32 minutes, 28 seconds
+class scanner that's going to be the name of the object we'll be working with do pay attention to the
+32:35 32 minutes, 35 seconds
+capitalization our scanner object is all lowercase characters whereas in the first scanner has an uppercase
+32:42 32 minutes, 42 seconds
+s scanner scanner equals new scanner add a set of parenthesis then a semicolon
+32:50 32 minutes, 50 seconds
+within the set of parentheses we're going to type system.in our scanner object can read
+32:57 32 minutes, 57 seconds
+user input however it is good practice if you create a scanner object at the end of your program when you're done
+33:04 33 minutes, 4 seconds
+we're going to take our scanner object and use the close
+33:10 33 minutes, 10 seconds
+method so scanner. close parenthesis semicolon if you don't close your scanner it can lead to unexpected
+33:19 33 minutes, 19 seconds
+behavior for example let's say that we read a file well after we're done reading the file we'll want to close the file when we open something we typically
+33:28 33 minutes, 28 seconds
+want to close it we're going to create a prompt within our console that says enter your name then a user will be able to type in
+33:36 33 minutes, 36 seconds
+their name we'll need a user prompt to work with so let's say system.out.print
+33:42 33 minutes, 42 seconds
+Line enter your name after receiving this prompt a user
+33:51 33 minutes, 51 seconds
+is going to be able to type in their name we're going to use our scanner object scanner
+33:58 33 minutes, 58 seconds
+next line parentheses semicolon so a user is going to be able to type in a string of text so let's type in our full
+34:07 34 minutes, 7 seconds
+name then hit enter however with this user input we're not doing anything with it so let's assign it to a variable so with our line of scanner.
+34:19 34 minutes, 19 seconds
+next line we will declare a variable and assign it string name equals scanner.
+34:26 34 minutes, 26 seconds
+nextline we have declaration and assignment those two steps and then once we have our name
+34:35 34 minutes, 35 seconds
+let's output it system.out.print line let's say hello plus
+34:44 34 minutes, 44 seconds
+name so enter your name type in your full name hit enter and the output should be hello whatever your first and
+34:53 34 minutes, 53 seconds
+last name is now if you prefer we can put the input on the same line as the prompt we're going to use print instead
+35:02 35 minutes, 2 seconds
+of print Line Print line will add a new line character to the end so let's stick with
+35:09 35 minutes, 9 seconds
+print so the input will be on the same line as the prompt if you prefer it that way so the next line method of our
+35:18 35 minutes, 18 seconds
+scanner object it reads A String of characters including any spaces if you
+35:23 35 minutes, 23 seconds
+don't want any spaces you can use next so if I were to type in my full name
+35:31 35 minutes, 31 seconds
+with the first and last name separated with the space we only get the first name next doesn't read any
+35:40 35 minutes, 40 seconds
+spaces so use what you would prefer I typically just use next line to read an integer there's a
+35:48 35 minutes, 48 seconds
+different method called Next int this time let's create a prompt of enter your
+35:55 35 minutes, 55 seconds
+age I'll use print instead of print line we will assign a variable of age int age
+36:03 36 minutes, 3 seconds
+equals use our scanner object use the built-in next int
+36:10 36 minutes, 10 seconds
+method then once we have our integer of age let's output it system.out.print
+36:17 36 minutes, 17 seconds
+line u r plus our variable age plus years old
+36:30 36 minutes, 30 seconds
+enter your name type in your name enter your age oops I'm going to add a colon and a space after my prompt just because
+36:38 36 minutes, 38 seconds
+I think it'll look better okay enter your full
+36:44 36 minutes, 44 seconds
+name enter your age hello your name you are whatever your age is years old so
+36:53 36 minutes, 53 seconds
+that's how to accept an integer if you were to type in a floating point number or a double anything that includes a
+37:00 37 minutes
+decimal now check this out our variable of age should be an integer if we type in something that contains a decimal
+37:08 37 minutes, 8 seconds
+like a floating Point number or a double let's say that I'm 25.9 well we get an error here it says
+37:16 37 minutes, 16 seconds
+we have an error at line 12 where we accept an integer so if you need a
+37:22 37 minutes, 22 seconds
+double there's a next Double method of scanners so this time let's ask for a
+37:30 37 minutes, 30 seconds
+GPA what is your GPA your grade point average we will assign a variable that's
+37:37 37 minutes, 37 seconds
+going to be of the double data type double GPA equals again use our
+37:44 37 minutes, 44 seconds
+scanner use the next Double method and then let's output
+37:52 37 minutes, 52 seconds
+it system.out.print line your GPA is plus our variable
+38:02 38 minutes, 2 seconds
+GPA so again let's go through the prompts type in your name type in your age what is your GPA uh let's use print
+38:11 38 minutes, 11 seconds
+instead of print Line enter your name enter your age what
+38:20 38 minutes, 20 seconds
+is your GPA let's say my GPA is 2.1 I'm just barely passing hey C get degrees
+38:28 38 minutes, 28 seconds
+right your GPA is the GPA variable so that's how to accept the double use the
+38:35 38 minutes, 35 seconds
+next Double method of scanners now for some reason if you need a Boolean booleans are either true or false here's
+38:43 38 minutes, 43 seconds
+how we can accept that system.out.print line let's ask are you a
+38:51 38 minutes, 51 seconds
+student then I'll add a prompt for true or false so the US user knows to
+38:58 38 minutes, 58 seconds
+type in one of these instead of yes or no so we will create a Boolean variable
+39:04 39 minutes, 4 seconds
+of is student equals use our scanner object use the next Boolean
+39:13 39 minutes, 13 seconds
+method and then let's output it system.out.print
+39:19 39 minutes, 19 seconds
+line let's say student colon space plus is student I think an if statement would
+39:26 39 minutes, 26 seconds
+be better we'll cover that in a moment again go through the prompts type in your name type in your age type in a
+39:35 39 minutes, 35 seconds
+GPA are you a student true or false let's say that's true student
+39:43 39 minutes, 43 seconds
+true and again I'm going to use print instead of print line not necessary but I think it looks better let's use an if statement instead
+39:52 39 minutes, 52 seconds
+when checking is student is true or not so if is student again if statements will be a future lesson we'll cover
+40:00 40 minutes
+pretty soon if is student if that's true then we will
+40:06 40 minutes, 6 seconds
+print let's print you are enrolled as a
+40:14 40 minutes, 14 seconds
+student else we will print something else if that's not true if it's false you
+40:23 40 minutes, 23 seconds
+are not enrolled
+40:32 40 minutes, 32 seconds
+okay enter your name enter your age enter a GPA are you a student let's say that it's
+40:40 40 minutes, 40 seconds
+false okay we have our name our age our GPA and then we're outputting you are not enrolled you are not enrolled in
+40:49 40 minutes, 49 seconds
+classes because we said false now if we put true
+41:00 41 minutes
+well then we get the output you are enrolled as a student that's how to accept user input of different data
+41:07 41 minutes, 7 seconds
+types A few of which include strings integers doubles and booleans now there's one common issue
+41:15 41 minutes, 15 seconds
+when accepting an integer or double than accepting a string let me
+41:24 41 minutes, 24 seconds
+demonstrate so we have our scanner let's say we ask for a user's age enter your
+41:33 41 minutes, 33 seconds
+age and I'll make this a print statement instead of print line int age equals use our scanner use
+41:41 41 minutes, 41 seconds
+the next int method and then let's ask what the user's favorite color is enter your
+41:51 41 minutes, 51 seconds
+favorite color we will store that within a variable named color and it's going to be of the string data type string color
+41:59 41 minutes, 59 seconds
+equals use our scanner object use the in next line method then we'll output the
+42:08 42 minutes, 8 seconds
+following system.out.print line you are Plus
+42:15 42 minutes, 15 seconds
+Age years old as well as you like the
+42:24 42 minutes, 24 seconds
+color plus our variable color here's what
+42:35 42 minutes, 35 seconds
+happens enter your age 25 hit enter enter your favorite color you are
+42:42 42 minutes, 42 seconds
+25 years old you like the color so what's going on here exactly so when we type in a number for example 25 then hit
+42:51 42 minutes, 51 seconds
+enter within the input buffer there's still a new line character because we hit enter so the next line method is picking up
+42:59 42 minutes, 59 seconds
+that new line character and using that as the input so we need to get rid of that new line character this is a common problem
+43:08 43 minutes, 8 seconds
+that you might see in Java if you accept an integer or a double then accept a string of text so one way in which we
+43:15 43 minutes, 15 seconds
+can clear the input buffer to get rid of that new line character is after accepting an integer or a double we can
+43:22 43 minutes, 22 seconds
+use our scanner and call the next line method but don't assign it to anything that should get rid of that new line
+43:30 43 minutes, 30 seconds
+character in the input buffer if that problem comes up so let's try this again enter an age enter a color you are 25
+43:39 43 minutes, 39 seconds
+years old you like the color red so if you encounter that problem I would just call the next line method of your
+43:47 43 minutes, 47 seconds
+scanner object to clear the input buffer now we're going to cover an exercise in this exercise we're going to
+43:55 43 minutes, 55 seconds
+calculate the area of a rectangle what I like to do when creating a project is declare all of my variables
+44:01 44 minutes, 1 second
+at the top again make sure that you're importing the scanner class I will create a double variable of width I'll
+44:11 44 minutes, 11 seconds
+set that to be zero and a double variable of height also
+44:18 44 minutes, 18 seconds
+zero and double area I will set that to be zero we're going to accept some user
+44:26 44 minutes, 26 seconds
+input and reassign width and height so we need a scanner object to
+44:33 44 minutes, 33 seconds
+accept user input scanner scanner equals new scanner parentheses semicolon within
+44:40 44 minutes, 40 seconds
+the parenthesis we will type system.in and again since we're opening a scanner it's good practice to close it I sometimes forget to do that scanner.
+44:52 44 minutes, 52 seconds
+close we'll create a prompt to tell the user to enter in a width we can use system.out.print line or print for
+45:01 45 minutes, 1 second
+prompts I like to use print enter the width we will take our width we've
+45:10 45 minutes, 10 seconds
+already declared our width once we don't need to type the data type again we can reuse it width equals use our scanner
+45:19 45 minutes, 19 seconds
+object use the an next Double method because we're accepting a double a width
+45:27 45 minutes, 27 seconds
+let's do this with height I'll just copy these two lines then change width to
+45:38 45 minutes, 38 seconds
+height all right let's test it currently let's make up some numbers 3.1 and
+45:46 45 minutes, 46 seconds
+4.2 all right once we have the width and the height we have to calculate the area so we're going to take our area variable
+45:56 45 minutes, 56 seconds
+equals our width times our height and then let's output
+46:05 46 minutes, 5 seconds
+it system.out.print line the area is plus our variable
+46:14 46 minutes, 14 seconds
+area so let's say 3.2 and 4.3 the area is
+46:27 46 minutes, 27 seconds
+after area We'll add centimeters you could do centimet squared if you prefer or you could even add a superscript of
+46:35 46 minutes, 35 seconds
+two so if you're on Windows make sure num lock is on hold alt then type 0178 on the
+46:43 46 minutes, 43 seconds
+numpad if you would like a superscript of two you know because we're working with areas so let's say
+46:52 46 minutes, 52 seconds
+5.3 and 6.4 the area is is
+47:27 47 minutes, 27 seconds
+we're going to create a game of Mad Libs Mad Libs is a game where you have a story and a user fills in different words the result is that it gives you a
+47:35 47 minutes, 35 seconds
+story that's really silly or doesn't necessarily make sense at times but that's what we'll be doing in this video it will help us practice accepting user
+47:43 47 minutes, 43 seconds
+input since we're accepting user input we'll need to import the scanner class at the top of our Java file import
+47:52 47 minutes, 52 seconds
+java.util.scanner a scanner is going to help us accept user input we'll declare that and assign
+48:00 48 minutes
+it scanner scanner equals new scanner parenthesis semicolon then within the parenthesis we
+48:08 48 minutes, 8 seconds
+will type system.in when writing a program I like to declare all of my variables first all
+48:16 48 minutes, 16 seconds
+these variables are going to be of the string data type we will need an adjective you're going to get an English lesson today
+48:24 48 minutes, 24 seconds
+too adjective one an adjective describes something like Fast slow cheap
+48:32 48 minutes, 32 seconds
+expensive we'll need a noun string noun one a noun is a person place or thing
+48:41 48 minutes, 41 seconds
+we'll need another adjective adjective two we'll need a verb a verb is an
+48:49 48 minutes, 49 seconds
+action like sleeping or running verb one then another adjective a again an
+48:57 48 minutes, 57 seconds
+adjective describe something all right so let's work on our story we'll have four
+49:10 49 minutes, 10 seconds
+lines so for the first line we'll say today I went to
+49:18 49 minutes, 18 seconds
+a we'll insert an adjective adjective one we're going to describe a zoo that
+49:24 49 minutes, 24 seconds
+we went to we haven't asked for user input yet we're getting a warning that this variable has not been initialized that's
+49:34 49 minutes, 34 seconds
+okay we'll take care of that soon so today I went to a a description an adjective
+49:42 49 minutes, 42 seconds
+zoo in an exhibit I saw
+49:50 49 minutes, 50 seconds
+a plus a noun a noun is a person place or thing like a gorilla or
+49:59 49 minutes, 59 seconds
+harambe then we'll add some punctuation a period we'll say noun
+50:08 50 minutes, 8 seconds
+one was plus adjective
+50:18 50 minutes, 18 seconds
+two and our verb verb one then add some
+50:25 50 minutes, 25 seconds
+punctuation so we could say that harambe was big and
+50:35 50 minutes, 35 seconds
+sleeping so a verb is an action I
+50:43 50 minutes, 43 seconds
+was plus adjective three then add some punctuation all right now we just need
+50:50 50 minutes, 50 seconds
+to accept user input so let's do that after assigning the variables we'll need five print
+51:06 51 minutes, 6 seconds
+statements we will prompt the user to enter an adjective enter an adjective I'll give a
+51:14 51 minutes, 14 seconds
+hint that an adjective is a description we're describing
+51:21 51 minutes, 21 seconds
+something enter a noun enter a
+51:29 51 minutes, 29 seconds
+noun I'll give a hint that we are looking for a animal or
+51:40 51 minutes, 40 seconds
+person we'll need another adjective we can just copy this line then we need a
+51:46 51 minutes, 46 seconds
+verb enter a verb and we want it in present tense so ending with ing like
+51:58 51 minutes, 58 seconds
+running I'll give a hint that a verb is an action and then another
+52:05 52 minutes, 5 seconds
+adjective all right now we just need to assign these variables we've already declared them adjective one equals take our
+52:14 52 minutes, 14 seconds
+scanner use the next line method and really we can just copy this
+52:22 52 minutes, 22 seconds
+line paste it and then change what we're assigning it to we're accepting strings for each of
+52:29 52 minutes, 29 seconds
+these lines we have adjective one noun one adjective 2 verb one and adjective
+52:39 52 minutes, 39 seconds
+3 all right now the last thing that I'm forgetting since we opened up a scanner it is good practice to close it at the
+52:46 52 minutes, 46 seconds
+end of our file if we don't it can lead to unexpected Behavior if we leave any open resources scanner. close all right we
+52:55 52 minutes, 55 seconds
+are ready to run this I'm going to prefix a new line character before displaying our story just so that it's not so close to
+53:03 53 minutes, 3 seconds
+the prompts when outputting it enter an adjective a description I'm going to say
+53:13 53 minutes, 13 seconds
+suspicious enter a noun so I like making fun of Mark Zuckerberg I'm going to write the name of a person Mark
+53:24 53 minutes, 24 seconds
+Zuckerberg enter an adjective smelly enter a verb ending with ing
+53:32 53 minutes, 32 seconds
+screaming enter an adjective happy and here's our Mad Libs game today
+53:39 53 minutes, 39 seconds
+I went to a suspicious zoo in an exhibit I saw a Mark Zuckerberg Mark Zuckerberg was smelly
+53:47 53 minutes, 47 seconds
+and screaming I was happy so for your Mad Libs game post your results in the comment section because I would like to read them I want to see what you you
+53:56 53 minutes, 56 seconds
+guys wrote or if you wrote a different story post that too and well everybody that is a simple Mad Libs game that we
+54:04 54 minutes, 4 seconds
+can write using Java all right everybody so we got a really important topic to discuss today
+54:12 54 minutes, 12 seconds
+although I can be a little dry and that is the use of different arithmetic operators in Java when it comes to programming you got to math sometimes
+54:20 54 minutes, 20 seconds
+it's a pretty important topic so let's start with some basic addition in this demonstration we will have three
+54:25 54 minutes, 25 seconds
+variables X will equal 10 y will equal 2 and Z will store the result we'll
+54:34 54 minutes, 34 seconds
+declare it but not yet assign it so for basic addition we'll store our result within z z equals X for addition you can
+54:42 54 minutes, 42 seconds
+use the plus sign Y what is 10 + 2 then we'll display
+54:49 54 minutes, 49 seconds
+it we're storing the result within Z which gives us 12
+54:58 54 minutes, 58 seconds
+then we have subtraction z = x - y 10 - 2 is
+55:07 55 minutes, 7 seconds
+8 multiplication for multiplication we're going to use an asterisk 10 *
+55:15 55 minutes, 15 seconds
+2 is 20 for division we use a forward slash z
+55:22 55 minutes, 22 seconds
+= x / y 10 / 2 is
+55:30 55 minutes, 30 seconds
+5 there's also the modulus operator which is a percent sign that would give you the remainder of any
+55:36 55 minutes, 36 seconds
+division Z is going to store the remainder this time x modulus y so
+55:44 55 minutes, 44 seconds
+modulus is a percent sign 10 divides by two evenly so the remainder is going to be
+55:51 55 minutes, 51 seconds
+zero but if we divided 10 by three that doesn't divide evenly
+55:57 55 minutes, 57 seconds
+10 modulus 3 gives us a remainder of one the modulus operator is really useful if you need to determine if a number is
+56:05 56 minutes, 5 seconds
+even or not or when working with time you need to see if something is divisible by 60 seconds or 60
+56:13 56 minutes, 13 seconds
+minutes we'll get more into that later but you should at least know what the modulus operator is now we have something called
+56:20 56 minutes, 20 seconds
+augmented assignment operators instead of storing the result within Z this time we're going to reassign the result to
+56:27 56 minutes, 27 seconds
+variable X so let's say we would like to add 10 and 3 together but store it
+56:33 56 minutes, 33 seconds
+within X well we could say x = x + y this would technically
+56:41 56 minutes, 41 seconds
+work so 10 + 3 is 13 but there is a shortcut though that we could use and
+56:48 56 minutes, 48 seconds
+that is by using augmented assignment operators we'll condense some of these steps instead of saying x = x + y we
+56:56 56 minutes, 56 seconds
+simply say x + = y and that does the same thing 10 + 3 is
+57:05 57 minutes, 5 seconds
+13 there's also subtraction x = X -
+57:13 57 minutes, 13 seconds
+y 10 - 3 is 7 but we could condense it to be x - equal
+57:21 57 minutes, 21 seconds
+y that gives us 7 or multiplication x = x * y 10 * 3 is
+57:31 57 minutes, 31 seconds
+30 but we can condense it to be x * = y that is also
+57:40 57 minutes, 40 seconds
+30 for division x = x / y that gives us three now one thing to
+57:49 57 minutes, 49 seconds
+pay attention to with division all right so 10 / 3 should be 3.33 repeating right well we're using something called
+57:57 57 minutes, 57 seconds
+integer division we're not able to store the decimal portion because we're working with whole integers so that's something to pay attention to when
+58:04 58 minutes, 4 seconds
+you're using integer Division if we were working with doubles then we would retain that decimal portion so do pay attention to
+58:14 58 minutes, 14 seconds
+that we'll discuss that in another video when it comes to typ casting for the augmented assignment version that would
+58:20 58 minutes, 20 seconds
+be x / = Y and let's change that to be 2 so 10 / 2 is
+58:29 58 minutes, 29 seconds
+5 then we have the modulus operator x = x modulus y 10 divides by 2
+58:39 58 minutes, 39 seconds
+evenly X will be zero the augmented assignment version of this would be X modulus equals
+58:47 58 minutes, 47 seconds
+y and that would also be 0o but if y were three then that would be one now we have
+58:55 58 minutes, 55 seconds
+increment and decrement operators you see this a lot with looping structures let's say that x equal 1 this time
+59:04 59 minutes, 4 seconds
+instead of saying x = x + 1 which would give us 2 or even the augmented
+59:11 59 minutes, 11 seconds
+assignment inversion which would be X+ = 1 well there's even a shortcut for this
+59:19 59 minutes, 19 seconds
+if we're only incrementing by one and that is x++ we're incrementing X by
+59:27 59 minutes, 27 seconds
+one you tend to see this in a lot of looping structures but that's a topic for another day each time I increment X by
+59:35 59 minutes, 35 seconds
+1 it's going to be retained so now x = 3 x ++ again well now X is
+59:44 59 minutes, 44 seconds
+4 now there's also the decrement operator x = X - one of course that's
+59:52 59 minutes, 52 seconds
+going to be zero this time so to decrement you can use x -
+59:59 59 minutes, 59 seconds
+minus so now X is zero let's do it again X -- now X is -1 x
+1:00:08 1 hour, 8 seconds
+-- X is -2 so those are the increment and decrement operators you'll see these
+1:00:16 1 hour, 16 seconds
+again when we reach the topic on Loops the last thing I need to discuss today is the order of operations and there's
+1:00:23 1 hour, 23 seconds
+an acronym PEMDAS it's parentheses exponents multiplication division addition then subtraction in that order
+1:00:32 1 hour, 32 seconds
+you may hear the phrase to remember this please excuse my dear Aunt Sally but I like the phrase please excuse my dope
+1:00:40 1 hour, 40 seconds
+ass swag that's my version that I like to use let's say we have the equation
+1:00:45 1 hour, 45 seconds
+double result equals 3 + 4 time
+1:00:52 1 hour, 52 seconds
+parentheses 7 - 5 divided by 2.0 I'm dividing by 2.0 because right
+1:01:01 1 hour, 1 minute, 1 second
+now we're using integer division which we previously talked about so I'm going to use 2.0 so we retain that decimal
+1:01:07 1 hour, 1 minute, 7 seconds
+portion again that's a topic for another day let's display the result so I don't know what the result
+1:01:15 1 hour, 1 minute, 15 seconds
+is but it is 7 7.0 in what order do we solve this equation exactly well we can use that
+1:01:24 1 hour, 1 minute, 24 seconds
+acronym of pendos from the left to the right we solve anything within parentheses first so going from the left to the right we skip
+1:01:33 1 hour, 1 minute, 33 seconds
+over any addition multiplication we're looking for parentheses which we have right here if you enclose part of an equation within parentheses you would
+1:01:41 1 hour, 1 minute, 41 seconds
+solve that first 7 - 5 is 2 there's no more parentheses then we check any exponents
+1:01:51 1 hour, 1 minute, 51 seconds
+there are no exponents multiplication well we have multiplication right here we would solve
+1:01:57 1 hour, 1 minute, 57 seconds
+that next 4 * 2 is 8 there's no more multiplication then we have
+1:02:04 1 hour, 2 minutes, 4 seconds
+division we have 8 / 2 which gives us 4 then any addition 3 + 4 is 7 and that
+1:02:14 1 hour, 2 minutes, 14 seconds
+was our original result and then you would do any subtraction last so that is the order of operations when it comes to arithmetic operators all right everybody
+1:02:23 1 hour, 2 minutes, 23 seconds
+so that is some basic arithmetic and different operators you can use in Java hey everybody so in this video
+1:02:31 1 hour, 2 minutes, 31 seconds
+we're going to create a shopping cart program a user is going to be able to type in an item set a price for each and then ask for a quantity the output is
+1:02:40 1 hour, 2 minutes, 40 seconds
+that it's going to give you a total based on the price and how much you're buying this would be a good exercise for us to get us more comfortable with accepting user input all right let's get
+1:02:48 1 hour, 2 minutes, 48 seconds
+started everybody we'll need the help of a scanner the scanner allows us to accept user input we'll need to import that at the at the top so be sure that
+1:02:56 1 hour, 2 minutes, 56 seconds
+you have this line of code import java.util.scanner
+1:03:03 1 hour, 3 minutes, 3 seconds
+we'll create a scanner object scanner scanner equals new scanner parentheses
+1:03:11 1 hour, 3 minutes, 11 seconds
+semicolon type system.in then if we open a scanner it's good practice to close it when we're
+1:03:19 1 hour, 3 minutes, 19 seconds
+done with it scanner. close if you leave resources open it can lead to unexpected
+1:03:25 1 hour, 3 minutes, 25 seconds
+behavior when creating a project I like to declare all of my variables at the top let's say we have an item name that
+1:03:33 1 hour, 3 minutes, 33 seconds
+data type is going to be a string string item what are we buying exactly we need a price that would be a
+1:03:41 1 hour, 3 minutes, 41 seconds
+double because there might be dollars and cents a quantity how many of
+1:03:48 1 hour, 3 minutes, 48 seconds
+something are we buying int quantity pick a unit of currency this could be a character char
+1:03:56 1 hour, 3 minutes, 56 seconds
+currency I'm going to initialize this right away American dollars and then a total we're going to
+1:04:04 1 hour, 4 minutes, 4 seconds
+multiply the price by the quantity to give a total double total now if you would like
+1:04:12 1 hour, 4 minutes, 12 seconds
+you can initialize some of these right away and assign them for example let's say we are at a pizza restaurant I could set the item to be
+1:04:21 1 hour, 4 minutes, 21 seconds
+pizza right away or within this program we could fill it in then let's create some
+1:04:28 1 hour, 4 minutes, 28 seconds
+prompts I'll use system.out.print what item would you
+1:04:36 1 hour, 4 minutes, 36 seconds
+like to buy then let's accept user input we're going to assign our string of item equal
+1:04:44 1 hour, 4 minutes, 44 seconds
+to use our scanner object and use the in next line method then let's just print it to
+1:04:53 1 hour, 4 minutes, 53 seconds
+verify that it's working what item would you like to buy maybe
+1:05:00 1 hour, 5 minutes
+this time I am buying a hamburger that will output hamburger we know that we can get user input so let's delete this
+1:05:08 1 hour, 5 minutes, 8 seconds
+line I was just testing it let's ask for a price you could set an initial
+1:05:16 1 hour, 5 minutes, 16 seconds
+price if you would like or we could ask for one depending on how you want to write this
+1:05:23 1 hour, 5 minutes, 23 seconds
+program so let's system. about the print what is the price for
+1:05:34 1 hour, 5 minutes, 34 seconds
+each if we're working with a price a double we'll use the next Double method
+1:05:40 1 hour, 5 minutes, 40 seconds
+we're going to assign our price equal to use our scanner. next
+1:05:48 1 hour, 5 minutes, 48 seconds
+Double and then let's test it by outputting the price okay let's say I'm buying a pizza
+1:05:57 1 hour, 5 minutes, 57 seconds
+this time what is the price for each $4.99 and that outputs
+1:06:03 1 hour, 6 minutes, 3 seconds
+$4.99 so it is a good idea every once in a while to test your code just to be sure that it all works as you go
+1:06:11 1 hour, 6 minutes, 11 seconds
+along then we'll need a quantity let's ask how many would you
+1:06:22 1 hour, 6 minutes, 22 seconds
+like we will assign our quantity variable equals scanner. next int since we're working
+1:06:31 1 hour, 6 minutes, 31 seconds
+with whole numbers this time then let's test our quantity to see if it works I don't know maybe I'm buying a
+1:06:40 1 hour, 6 minutes, 40 seconds
+hot dog this time what is the price per each $4.99 how many would you like I would like 12 hot dogs
+1:06:49 1 hour, 6 minutes, 49 seconds
+12 and I'm just going to make sure I'm using print instead of print line just because I think it looks better
+1:06:57 1 hour, 6 minutes, 57 seconds
+now we'll create a total we don't need user input for that we're going to use the variables that we've already had
+1:07:04 1 hour, 7 minutes, 4 seconds
+after assigning them total equals the price times the
+1:07:13 1 hour, 7 minutes, 13 seconds
+quantity and then I will just test the total maybe I'm buying a pizza or
+1:07:22 1 hour, 7 minutes, 22 seconds
+pizzas each is $4.99 and I buying three of them
+1:07:31 1 hour, 7 minutes, 31 seconds
+44.97 instead let's output the following I'm going to use a new line character just to separate our output
+1:07:40 1 hour, 7 minutes, 40 seconds
+from the prompts you have bought plus our variable of
+1:07:51 1 hour, 7 minutes, 51 seconds
+quantity plus a space character plus our variable item but it might be more than one so
+1:07:59 1 hour, 7 minutes, 59 seconds
+let's say/ s it might be pizza or pizzas then we will display the price
+1:08:08 1 hour, 8 minutes, 8 seconds
+including the unit of currency your total
+1:08:15 1 hour, 8 minutes, 15 seconds
+is I'll add our unit of currency it's a character I picked American dollars but
+1:08:22 1 hour, 8 minutes, 22 seconds
+pick whatever you would like plus our total that we have calculated all right let's see the
+1:08:31 1 hour, 8 minutes, 31 seconds
+result what item would you like to buy I would like to buy a pizza what is the price for each
+1:08:38 1 hour, 8 minutes, 38 seconds
+$4.99 how many would you like I would like eight pizzas maybe it's for a party
+1:08:44 1 hour, 8 minutes, 44 seconds
+you have bought eight pizzas your total is $19.92 all right everybody so that is a
+1:08:54 1 hour, 8 minutes, 54 seconds
+shopping cart program that you can write as an exercise using Java hello everybody today we're going
+1:09:01 1 hour, 9 minutes, 1 second
+to discuss if statements in Java an if statement performs a block of code if its condition is true we've discussed
+1:09:10 1 hour, 9 minutes, 10 seconds
+how Boolean variables can be used within if statements we may be a little familiar with them already in this demonstration we will have a variable of
+1:09:19 1 hour, 9 minutes, 19 seconds
+age set it equal to be some age age will be an integer I would like to check if my variable of age is
+1:09:27 1 hour, 9 minutes, 27 seconds
+greater than or equal to 18 if so we can print a message that you are an adult to write an if statement will type if
+1:09:35 1 hour, 9 minutes, 35 seconds
+parentheses curly braces within the set of curly braces we can check a condition to see if it's true so let's check to
+1:09:43 1 hour, 9 minutes, 43 seconds
+see if age is greater than or equal to
+1:09:50 1 hour, 9 minutes, 50 seconds
+18 if that's true we'll print the following you are an
+1:09:59 1 hour, 9 minutes, 59 seconds
+adult that would result in US outputting you are an adult now if this condition was false if
+1:10:08 1 hour, 10 minutes, 8 seconds
+it's not true let's say that my age is 12 well then we skip over the if
+1:10:15 1 hour, 10 minutes, 15 seconds
+statement we check if this condition is true if it is we perform this code if not we skip it alternatively we could
+1:10:24 1 hour, 10 minutes, 24 seconds
+add an else clause this would be another statement we would add else if this is false then do
+1:10:31 1 hour, 10 minutes, 31 seconds
+something else so let's output the following you are a
+1:10:38 1 hour, 10 minutes, 38 seconds
+child since the age is 12 we would output you are a
+1:10:46 1 hour, 10 minutes, 46 seconds
+child there's also an else if Clause so we have one of two possibilities do this or do that now we
+1:10:54 1 hour, 10 minutes, 54 seconds
+could add something called else if Clause let's check else
+1:11:00 1 hour, 11 minutes
+if age is less than zero if this statement is
+1:11:07 1 hour, 11 minutes, 7 seconds
+true then let's say you haven't been born
+1:11:14 1 hour, 11 minutes, 14 seconds
+yet now we're doing one of three things but it all depends on these
+1:11:21 1 hour, 11 minutes, 21 seconds
+conditions our else Clause is kind of like the default if none of the above conditions are true so let's test this my age variable
+1:11:31 1 hour, 11 minutes, 31 seconds
+is set to 19 this would display you are an adult if my age variable was -1 we would
+1:11:40 1 hour, 11 minutes, 40 seconds
+display you haven't been born yet this statement was false so we go down to the next
+1:11:47 1 hour, 11 minutes, 47 seconds
+one this is true NE 1 is less than zero so we do this or if I was 10
+1:11:56 1 hour, 11 minutes, 56 seconds
+well then these top two conditions are both false so we do whatever is within the lse statement you can add as many else if
+1:12:04 1 hour, 12 minutes, 4 seconds
+Clauses as you would like so here's another one else
+1:12:12 1 hour, 12 minutes, 12 seconds
+if our variable age is equal to zero exactly double equals is the comparison
+1:12:20 1 hour, 12 minutes, 20 seconds
+operator we're checking if a variable or a value is equal to another value or variable you don't want to use single
+1:12:29 1 hour, 12 minutes, 29 seconds
+equals because that's the assignment operator Java thinks we're trying to assign a variable when making a comparison you use double
+1:12:38 1 hour, 12 minutes, 38 seconds
+equals is our variable age equal to zero then we'll print something else
+1:12:45 1 hour, 12 minutes, 45 seconds
+okay we're going to print you are a baby I will set variable H to be zero
+1:12:55 1 hour, 12 minutes, 55 seconds
+you are a baby because our variable age is equal to zero exactly let's add another L
+1:13:05 1 hour, 13 minutes, 5 seconds
