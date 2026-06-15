@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Menu } from 'lucide-react';
 import IDEMock from './IDEMock';
 
 const BULLET_ANIMATION = `
@@ -14,6 +14,7 @@ export default function Slideshow({
   lessonTitle = '',
   currentSlideIndex,
   onSlideChange,
+  onMenuOpen,
 }) {
   const total = slides.length;
   const slide = slides[currentSlideIndex] ?? null;
@@ -39,11 +40,22 @@ export default function Slideshow({
 
   if (!slide) {
     return (
-      <div className="flex-1 flex flex-col items-center justify-center gap-3 text-slate-700">
-        <div className="w-12 h-12 rounded-xl border border-slate-800 flex items-center justify-center">
-          <ChevronRight className="w-5 h-5" />
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <div className="px-4 pt-4 md:px-10 md:pt-8 shrink-0">
+          <button
+            onClick={onMenuOpen}
+            className="md:hidden p-1.5 -ml-1 text-slate-500 hover:text-white transition-colors"
+            aria-label="Open menu"
+          >
+            <Menu className="w-5 h-5" />
+          </button>
         </div>
-        <p className="text-sm">Select a lesson from the sidebar to begin</p>
+        <div className="flex-1 flex flex-col items-center justify-center gap-3 text-slate-700">
+          <div className="w-12 h-12 rounded-xl border border-slate-800 flex items-center justify-center">
+            <ChevronRight className="w-5 h-5" />
+          </div>
+          <p className="text-sm">Select a lesson from the sidebar to begin</p>
+        </div>
       </div>
     );
   }
@@ -52,21 +64,28 @@ export default function Slideshow({
     <div className="flex-1 flex flex-col overflow-hidden min-h-0">
       <style>{BULLET_ANIMATION}</style>
 
-      {/* Lesson label */}
-      <div className="px-10 pt-8 pb-0 flex-shrink-0">
+      {/* Lesson label row + hamburger */}
+      <div className="px-4 pt-4 pb-0 md:px-10 md:pt-8 shrink-0 flex items-center gap-3">
+        <button
+          onClick={onMenuOpen}
+          className="md:hidden p-1.5 -ml-1 text-slate-500 hover:text-white transition-colors shrink-0"
+          aria-label="Open menu"
+        >
+          <Menu className="w-5 h-5" />
+        </button>
         <p className="text-slate-500 text-[10px] tracking-[0.2em] uppercase font-medium">
           {lessonTitle}
         </p>
       </div>
 
-      {/* Two-column slide content */}
-      <div className="flex-1 grid grid-cols-2 gap-10 px-10 py-6 overflow-hidden min-h-0">
+      {/* Slide content — 1-col on mobile, 2-col on desktop */}
+      <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-4 py-4 md:px-10 md:py-6 overflow-y-auto md:overflow-hidden md:min-h-0">
 
-        {/* Left: slide title + bullets */}
-        <div className="flex flex-col justify-center overflow-y-auto">
+        {/* Slide title + bullets */}
+        <div className="flex flex-col justify-center">
           <h2
             className="text-white font-bold leading-tight mb-8"
-            style={{ fontSize: 'clamp(1.5rem, 2.4vw, 2.25rem)' }}
+            style={{ fontSize: 'clamp(1.25rem, 5vw, 2.25rem)' }}
           >
             {slide.title}
           </h2>
@@ -83,15 +102,15 @@ export default function Slideshow({
                   animationDelay: `${i * 70}ms`,
                 }}
               >
-                <span className="text-emerald-400 mt-0.5 text-sm flex-shrink-0 select-none">▸</span>
+                <span className="text-emerald-400 mt-0.5 text-sm shrink-0 select-none">▸</span>
                 <span>{bullet}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Right: IDEMock code viewer */}
-        <div className="flex flex-col justify-center overflow-hidden">
+        {/* IDEMock — stacks below bullets on mobile */}
+        <div className="flex flex-col justify-center overflow-hidden order-last md:order-0">
           {slide.code
             ? <IDEMock code={slide.code} />
             : (
@@ -104,7 +123,7 @@ export default function Slideshow({
       </div>
 
       {/* Navigation bar */}
-      <div className="flex-shrink-0 px-10 py-4 border-t border-slate-800 flex items-center justify-between">
+      <div className="flex-shrink-0 px-4 py-3 md:px-10 md:py-4 border-t border-slate-800 flex items-center justify-between">
 
         <button
           onClick={() => onSlideChange(prev => Math.max(prev - 1, 0))}
