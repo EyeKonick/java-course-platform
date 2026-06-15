@@ -145,7 +145,7 @@ export default function IDEMock({ code = '' }) {
       </div>
 
       {/* Code viewport — single scroll container to avoid double scrollbar */}
-      <div className="overflow-auto max-h-96 text-sm leading-6" style={MONO}>
+      <div className="overflow-auto max-h-52 md:max-h-96 text-sm leading-6" style={MONO}>
         <div className="flex min-w-max p-4">
           {/* Line number gutter — sticky so it stays visible during horizontal scroll */}
           <div className="select-none text-right pr-4 border-r border-slate-800 w-10 shrink-0 sticky left-0 bg-slate-900 z-10">
