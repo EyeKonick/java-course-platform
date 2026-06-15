@@ -36,7 +36,7 @@ export default function Sidebar({ curriculum, activeLessonId, onSelectLesson, is
 
         {/* Header */}
         <div className="px-5 py-6 border-b border-slate-800">
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 mb-4">
             <div className="w-7 h-7 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0">
               <BookMarked className="w-3.5 h-3.5 text-emerald-400" />
             </div>
@@ -51,6 +51,12 @@ export default function Sidebar({ curriculum, activeLessonId, onSelectLesson, is
               <X className="w-4 h-4" />
             </button>
           </div>
+          <h1 className="text-white text-sm font-semibold leading-snug">
+            {curriculum.courseTitle}
+          </h1>
+          <p className="text-slate-500 text-xs mt-1.5">
+            {curriculum.totalDurationHours}h · {totalLessons} lesson{totalLessons !== 1 ? 's' : ''}
+          </p>
         </div>
 
         {/* Chapter / lesson navigation tree */}
