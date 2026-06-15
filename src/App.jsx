@@ -8,12 +8,14 @@ const ALL_LESSONS = curriculum.chapters.flatMap(ch => ch.lessons);
 function App() {
   const [activeLessonId, setActiveLessonId]       = useState(ALL_LESSONS[0]?.id ?? null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [sidebarOpen, setSidebarOpen]             = useState(false);
 
   const activeLesson = ALL_LESSONS.find(l => l.id === activeLessonId) ?? null;
 
   const handleSelectLesson = (lessonId) => {
     setActiveLessonId(lessonId);
     setCurrentSlideIndex(0);
+    setSidebarOpen(false);
   };
 
   return (
@@ -22,6 +24,8 @@ function App() {
         curriculum={curriculum}
         activeLessonId={activeLessonId}
         onSelectLesson={handleSelectLesson}
+        isOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
       />
 
       <Slideshow
@@ -29,6 +33,7 @@ function App() {
         lessonTitle={activeLesson?.title ?? ''}
         currentSlideIndex={currentSlideIndex}
         onSlideChange={setCurrentSlideIndex}
+        onMenuOpen={() => setSidebarOpen(true)}
       />
     </div>
   );
