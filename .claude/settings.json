@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" log --oneline 3b15220..5e358e6)"
+    ]
+  }
+}

@@ -5,7 +5,20 @@
       "Skill(run)",
       "Skill(run:*)",
       "Bash(npm run *)",
-      "Bash(node -e \"const j = require\\('./src/data/curriculum.json'\\); const lessons = j.chapters[0].lessons; console.log\\('Lessons:', lessons.length\\); lessons.forEach\\(l => console.log\\(' ', l.title, '—', l.slides.length, 'slides'\\)\\);\")"
+      "Bash(node -e \"const j = require\\('./src/data/curriculum.json'\\); const lessons = j.chapters[0].lessons; console.log\\('Lessons:', lessons.length\\); lessons.forEach\\(l => console.log\\(' ', l.title, '—', l.slides.length, 'slides'\\)\\);\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff --stat 3b15220..8b23ccb)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff 3b15220..8b23ccb)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" log --oneline -3)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff --stat 8b23ccb..1ecda47)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff 8b23ccb..1ecda47)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff --stat 1ecda47..bc878db)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff 1ecda47..bc878db)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" log --oneline -10)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" log --oneline -4)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff bc878db..5e358e6)",
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff --stat 3b15220..5e358e6)"
     ]
   }
 }
