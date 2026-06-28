@@ -18,7 +18,9 @@
       "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" log --oneline -10)",
       "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" log --oneline -4)",
       "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff bc878db..5e358e6)",
-      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff --stat 3b15220..5e358e6)"
+      "Bash(git -C \"d:\\\\Program Projects\\\\React\\\\java-course-platform\" diff --stat 3b15220..5e358e6)",
+      "Bash(git commit -m 'docs: add implementation plan for curriculum Parts 4 & 5 *)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/data/curriculum.json','utf8'\\)\\);console.log\\('Valid JSON'\\)\")"
     ]
   }
 }
