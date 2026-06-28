@@ -1625,6 +1625,259 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ch-05",
+      "title": "Part 5: Methods",
+      "description": "Break programs into reusable, named methods — the foundation of structured and maintainable Java code.",
+      "lessons": [
+        {
+          "id": "le-05-01",
+          "title": "Defining Methods",
+          "slides": [
+            {
+              "id": "sl-05-01-01",
+              "timestamp": "4:40:00",
+              "title": "What is a Method?",
+              "content": "A method is a named, reusable block of code — call it by name to run its body from anywhere in the class.",
+              "bullets": [
+                "A method packages code under a name so you can run it anywhere by calling that name",
+                "Without methods every program lives in main() — repetition, no structure, hard to maintain",
+                "Syntax: static void methodName() { // body } — static lets main() call it without creating an object",
+                "Call it: methodName(); — the JVM jumps to the method, runs it, then returns to the caller"
+              ],
+              "code": "public class Main {\n\n    // Method definition — outside main(), inside the class\n    static void sayHello() {\n        System.out.println(\"Hello from a method!\");\n    }\n\n    public static void main(String[] args) {\n        sayHello();  // call the method — reuse without rewriting\n        sayHello();\n        System.out.println(\"Back in main.\");\n    }\n}\n// Hello from a method!\n// Hello from a method!\n// Back in main.",
+              "instructorNotes": "Video: 4:40:00"
+            },
+            {
+              "id": "sl-05-01-02",
+              "timestamp": "4:43:00",
+              "title": "void Methods & Naming Conventions",
+              "content": "void means the method performs an action but produces no return value — name methods with action verbs.",
+              "bullets": [
+                "void = 'this method produces no value' — it performs an action then exits",
+                "Use camelCase starting with a verb: printMenu(), displayResults(), rollDice()",
+                "Methods live inside the class but outside main() — they are siblings of main, not nested inside it",
+                "A method can call other methods — this is how programs build complex behaviour from simple parts"
+              ],
+              "code": "public class Main {\n\n    static void printDivider() {\n        System.out.println(\"--------------------\");\n    }\n\n    static void printWelcome() {\n        System.out.println(\"Welcome to Java!\");\n    }\n\n    public static void main(String[] args) {\n        printDivider();\n        printWelcome();\n        printDivider();\n    }\n}\n// --------------------\n// Welcome to Java!\n// --------------------",
+              "instructorNotes": "Video: 4:43:00"
+            },
+            {
+              "id": "sl-05-01-03",
+              "timestamp": "4:46:00",
+              "title": "Execution Flow",
+              "content": "When a method is called, execution jumps to it and returns to the caller when the method body ends.",
+              "bullets": [
+                "The JVM pauses the caller, jumps to the called method, runs it top to bottom, then resumes the caller",
+                "The call stack is the record of which methods are paused and waiting to resume",
+                "Methods can call other methods — each is pushed onto and eventually popped from the call stack",
+                "A void method ends when it reaches its closing brace; a return; statement exits early"
+              ],
+              "code": "public class Main {\n\n    static void methodA() {\n        System.out.println(\"Start A\");\n        methodB();  // A pauses, jumps to B\n        System.out.println(\"End A\");\n    }\n\n    static void methodB() {\n        System.out.println(\"Inside B\");\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Start main\");\n        methodA();\n        System.out.println(\"End main\");\n    }\n}\n// Start main  -> Start A  -> Inside B  -> End A  -> End main",
+              "instructorNotes": "Video: 4:46:00"
+            }
+          ]
+        },
+        {
+          "id": "le-05-02",
+          "title": "Parameters & Arguments",
+          "slides": [
+            {
+              "id": "sl-05-02-01",
+              "timestamp": "4:49:00",
+              "title": "Parameters — Passing Data In",
+              "content": "Parameters let callers pass data into a method — declared as typed variables inside the parentheses.",
+              "bullets": [
+                "Parameter: the variable declared in the method signature — static void greet(String name)",
+                "Argument: the actual value passed at the call site — greet(\"Alice\");",
+                "Parameters are local to the method — they do not exist outside it",
+                "Multiple parameters are listed comma-separated: static void add(int a, int b)"
+              ],
+              "code": "public class Main {\n\n    static void greet(String name) {\n        System.out.println(\"Hello, \" + name + \"!\");\n    }\n\n    static void printSquare(int n) {\n        System.out.println(n + \" squared = \" + (n * n));\n    }\n\n    public static void main(String[] args) {\n        greet(\"Alice\");   // \"Alice\" is the argument\n        greet(\"Bob\");\n        printSquare(5);   // 5 squared = 25\n        printSquare(12);  // 12 squared = 144\n    }\n}",
+              "instructorNotes": "Video: 4:49:00"
+            },
+            {
+              "id": "sl-05-02-02",
+              "timestamp": "4:53:00",
+              "title": "Multiple Parameters & Pass by Value",
+              "content": "Java passes primitives by value — the method receives a copy, so modifying it never affects the caller's variable.",
+              "bullets": [
+                "When you pass an int, a copy of the value is made — changing it inside the method has no effect outside",
+                "Pass by value means the caller's variable is never modified by a method that receives a primitive",
+                "Multiple parameters: list them comma-separated — static void display(String name, int score)",
+                "Argument order must match parameter order — Java matches by position, not by name"
+              ],
+              "code": "public class Main {\n\n    static void display(String name, int score) {\n        System.out.printf(\"%-10s %d%n\", name, score);\n    }\n\n    static void tryToModify(int x) {\n        x = 999;  // changes only the local copy\n    }\n\n    public static void main(String[] args) {\n        display(\"Alice\", 92);\n        display(\"Bob\",   87);\n\n        int num = 42;\n        tryToModify(num);\n        System.out.println(\"num is still: \" + num);  // 42\n    }\n}",
+              "instructorNotes": "Video: 4:53:00"
+            }
+          ]
+        },
+        {
+          "id": "le-05-03",
+          "title": "Return Types",
+          "slides": [
+            {
+              "id": "sl-05-03-01",
+              "timestamp": "4:57:00",
+              "title": "Return Types & the return Statement",
+              "content": "Replace void with a type to declare that the method produces a value — return sends it back to the caller.",
+              "bullets": [
+                "Replace void with the return type: static int add(int a, int b) promises to return an int",
+                "The return statement ends the method immediately and sends the value back to the caller",
+                "Every non-void code path must reach a return statement — missing one is a compile error",
+                "The caller receives the value: int result = add(5, 3); stores it for later use"
+              ],
+              "code": "public class Main {\n\n    static int add(int a, int b) {\n        return a + b;\n    }\n\n    static int max(int a, int b) {\n        if (a > b) return a;\n        return b;  // every path must return an int\n    }\n\n    public static void main(String[] args) {\n        int sum = add(10, 5);\n        System.out.println(\"Sum: \" + sum);        // 15\n        System.out.println(\"Max: \" + max(8, 3));  // 8\n        System.out.println(\"Max: \" + max(4, 7));  // 7\n    }\n}",
+              "instructorNotes": "Video: 4:57:00"
+            },
+            {
+              "id": "sl-05-03-02",
+              "timestamp": "5:01:00",
+              "title": "String and boolean Return Types",
+              "content": "Methods can return any type — String, double, boolean — not just numeric primitives.",
+              "bullets": [
+                "static boolean isEven(int n) can return the expression n % 2 == 0 directly",
+                "static String getGrade(int score) builds and returns a grade label String",
+                "A method can return early — if a condition is met, return before the final line",
+                "A void method can use return; (no value) to exit early — the semicolon is required"
+              ],
+              "code": "public class Main {\n\n    static boolean isEven(int n) {\n        return n % 2 == 0;  // boolean expression as return value\n    }\n\n    static String getGrade(int score) {\n        if      (score >= 90) return \"A\";\n        else if (score >= 80) return \"B\";\n        else if (score >= 70) return \"C\";\n        else if (score >= 60) return \"D\";\n        else                  return \"F\";\n    }\n\n    public static void main(String[] args) {\n        System.out.println(isEven(4));    // true\n        System.out.println(isEven(7));    // false\n        System.out.println(getGrade(85)); // B\n        System.out.println(getGrade(52)); // F\n    }\n}",
+              "instructorNotes": "Video: 5:01:00"
+            },
+            {
+              "id": "sl-05-03-03",
+              "timestamp": "5:04:00",
+              "title": "Practice: Temperature Converter as Methods",
+              "content": "Refactor the temperature formulas into dedicated methods — encapsulate once, call anywhere.",
+              "bullets": [
+                "static double celsiusToFahrenheit(double c) returns c * (9.0 / 5.0) + 32",
+                "static double fahrenheitToCelsius(double f) returns (f - 32) * (5.0 / 9.0)",
+                "Caller: double f = celsiusToFahrenheit(100.0); — readable and reusable",
+                "Getting the formula right once in a method means it can never drift out of sync across the program"
+              ],
+              "code": "public class TempConverter {\n\n    static double celsiusToFahrenheit(double c) {\n        return c * (9.0 / 5.0) + 32;\n    }\n\n    static double fahrenheitToCelsius(double f) {\n        return (f - 32) * (5.0 / 9.0);\n    }\n\n    public static void main(String[] args) {\n        System.out.printf(\"100 C = %.1f F%n\", celsiusToFahrenheit(100.0)); // 212.0 F\n        System.out.printf(\"32 F  = %.1f C%n\", fahrenheitToCelsius(32.0));  // 0.0 C\n        System.out.printf(\"Body: %.1f C%n\",   fahrenheitToCelsius(98.6));  // 37.0 C\n    }\n}",
+              "instructorNotes": "Video: 5:04:00"
+            }
+          ]
+        },
+        {
+          "id": "le-05-04",
+          "title": "Overloaded Methods",
+          "slides": [
+            {
+              "id": "sl-05-04-01",
+              "timestamp": "5:08:00",
+              "title": "Method Overloading",
+              "content": "Two methods can share a name if their parameter lists differ — Java picks the correct overload at compile time.",
+              "bullets": [
+                "Method signature = name + parameter types — overloading means same name, different parameter list",
+                "Java selects the matching overload at compile time based on the argument types you pass",
+                "You cannot overload by return type alone — the parameter list must differ",
+                "Overloading gives callers a natural API: add(int, int), add(double, double), add(int, int, int)"
+              ],
+              "code": "public class Main {\n\n    static int    add(int a, int b)        { return a + b; }\n    static double add(double a, double b)  { return a + b; }\n    static int    add(int a, int b, int c) { return a + b + c; }\n\n    public static void main(String[] args) {\n        System.out.println(add(5, 3));       // 8    — int version\n        System.out.println(add(2.5, 1.7));   // 4.2  — double version\n        System.out.println(add(1, 2, 3));    // 6    — three-int version\n    }\n}",
+              "instructorNotes": "Video: 5:08:00"
+            },
+            {
+              "id": "sl-05-04-02",
+              "timestamp": "5:12:00",
+              "title": "When to Use Overloading",
+              "content": "Overload when the same logical operation makes sense for multiple input types — avoid overloading unrelated logic.",
+              "bullets": [
+                "Good use: print(String), print(int), print(double) — same action, different input types",
+                "Bad use: methods that do entirely different things under the same name — use distinct names instead",
+                "Java's System.out.println is itself a set of overloads — one for each common type",
+                "Overloaded methods are resolved at compile time — there is no runtime performance cost"
+              ],
+              "code": "public class Main {\n\n    static void print(String s) { System.out.println(\"[String] \" + s); }\n    static void print(int    n) { System.out.println(\"[int]    \" + n); }\n    static void print(double d) { System.out.printf(\"[double] %.2f%n\", d); }\n\n    public static void main(String[] args) {\n        print(\"Hello\");  // [String] Hello\n        print(42);       // [int]    42\n        print(3.14);     // [double] 3.14\n\n        // Java's println uses the same pattern:\n        System.out.println(\"text\");  // String overload\n        System.out.println(42);      // int overload\n    }\n}",
+              "instructorNotes": "Video: 5:12:00"
+            }
+          ]
+        },
+        {
+          "id": "le-05-05",
+          "title": "Variable Scope",
+          "slides": [
+            {
+              "id": "sl-05-05-01",
+              "timestamp": "5:16:00",
+              "title": "Local Scope",
+              "content": "A variable declared inside a method exists only for that method's lifetime — it cannot be accessed from outside.",
+              "bullets": [
+                "Local variable: declared inside a method — created when the method starts, destroyed when it ends",
+                "You cannot access a local variable from outside the method that declared it",
+                "Two methods can each have a local variable with the same name — they are independent copies",
+                "Scope limits visibility intentionally — it prevents distant code from interfering with local state"
+              ],
+              "code": "public class Main {\n\n    static void methodA() {\n        int x = 10;  // local to methodA only\n        System.out.println(\"A: \" + x);\n    }\n\n    static void methodB() {\n        int x = 99;  // independent — same name, different variable\n        System.out.println(\"B: \" + x);\n    }\n\n    public static void main(String[] args) {\n        methodA();  // A: 10\n        methodB();  // B: 99\n        // COMPILE ERROR — x is not defined in main:\n        // System.out.println(x);\n    }\n}",
+              "instructorNotes": "Video: 5:16:00"
+            },
+            {
+              "id": "sl-05-05-02",
+              "timestamp": "5:20:00",
+              "title": "Block Scope & Common Mistakes",
+              "content": "A variable declared inside {} braces only lives within those braces — declaring inside a loop or if limits its scope.",
+              "bullets": [
+                "A for loop counter (int i = 0) exists only inside that loop's body — i is gone after the closing brace",
+                "Declaring a variable inside an if block: it disappears after the if closes",
+                "Fix: declare the variable before the block if you need to read it afterwards",
+                "Scope bugs produce 'cannot find symbol' compile errors — check where the variable was declared"
+              ],
+              "code": "public class Main {\n    public static void main(String[] args) {\n\n        // Bug: result declared inside if — can't use it after\n        int score = 75;\n        // COMPILE ERROR:\n        // if (score >= 60) { int result = score * 2; }\n        // System.out.println(result); // 'result' not in scope\n\n        // Fix: declare before the block\n        int result = 0;\n        if (score >= 60) {\n            result = score * 2;\n        }\n        System.out.println(\"Result: \" + result);  // 150\n\n        // Loop variable 'i' only lives inside the for loop\n        for (int i = 0; i < 3; i++) { System.out.println(i); }\n        // COMPILE ERROR: System.out.println(i);\n    }\n}",
+              "instructorNotes": "Video: 5:20:00"
+            }
+          ]
+        },
+        {
+          "id": "le-05-06",
+          "title": "Bank Account Project",
+          "slides": [
+            {
+              "id": "sl-05-06-01",
+              "timestamp": "5:24:00",
+              "title": "Project: Bank Account Simulator",
+              "content": "Build a console bank account using separate methods for deposit, withdraw, and balance check.",
+              "bullets": [
+                "Three operations: deposit (add to balance), withdraw (subtract if sufficient funds), checkBalance (display)",
+                "Each operation becomes its own method — main() just orchestrates calls and holds the balance variable",
+                "Pass balance in as a parameter and return the updated value — keeps side effects explicit",
+                "This project applies methods, parameters, return types, and conditional logic all together"
+              ],
+              "code": "public class BankAccount {\n\n    static double deposit(double balance, double amount) {\n        System.out.printf(\"Deposited:  $%.2f%n\", amount);\n        return balance + amount;\n    }\n\n    static double withdraw(double balance, double amount) {\n        if (amount > balance) {\n            System.out.println(\"Insufficient funds. Transaction declined.\");\n            return balance;  // unchanged\n        }\n        System.out.printf(\"Withdrew:   $%.2f%n\", amount);\n        return balance - amount;\n    }\n\n    static void checkBalance(double balance) {\n        System.out.printf(\"Balance:    $%.2f%n\", balance);\n    }\n\n    // main() and menu on next slide\n}",
+              "instructorNotes": "Video: 5:24:00"
+            },
+            {
+              "id": "sl-05-06-02",
+              "timestamp": "5:27:00",
+              "title": "Menu-Driven Bank Loop",
+              "content": "Wrap the account operations in a do-while menu loop for an interactive session.",
+              "bullets": [
+                "Use a do-while so the menu displays at least once before any condition is checked",
+                "Enhanced switch on choice routes each menu option to the correct method call",
+                "Update balance with the return value: balance = deposit(balance, amount); — captures the new total",
+                "This do-while + switch + methods pattern is the standard interactive console program structure"
+              ],
+              "code": "import java.util.Scanner;\n\npublic class BankAccount {\n    // (deposit, withdraw, checkBalance from previous slide)\n\n    public static void main(String[] args) {\n        Scanner sc      = new Scanner(System.in);\n        double  balance = 1000.00;\n        int     choice;\n\n        do {\n            System.out.println(\"\\n1. Deposit  2. Withdraw  3. Balance  4. Quit\");\n            System.out.print(\"Choice: \");\n            choice = sc.nextInt();\n\n            switch (choice) {\n                case 1 -> { System.out.print(\"Amount: $\"); balance = deposit(balance,  sc.nextDouble()); }\n                case 2 -> { System.out.print(\"Amount: $\"); balance = withdraw(balance, sc.nextDouble()); }\n                case 3 -> checkBalance(balance);\n                case 4 -> System.out.println(\"Goodbye!\");\n                default -> System.out.println(\"Invalid option.\");\n            }\n        } while (choice != 4);\n        sc.close();\n    }\n}",
+              "instructorNotes": "Video: 5:27:00"
+            },
+            {
+              "id": "sl-05-06-03",
+              "timestamp": "5:30:00",
+              "title": "Challenge — Transaction History",
+              "content": "Extend the bank account to log every deposit and withdrawal in a String array.",
+              "bullets": [
+                "Declare String[] transactions = new String[20]; and int txCount = 0; before the loop",
+                "Inside deposit: transactions[txCount++] = String.format(\"Deposit:  +$%.2f\", amount);",
+                "Inside withdraw (success only): transactions[txCount++] = String.format(\"Withdraw: -$%.2f\", amount);",
+                "Add menu option 5 to print all recorded transactions with a for loop from 0 to txCount"
+              ],
+              "code": "// Declare alongside balance in main()\nString[] transactions = new String[20];\nint      txCount      = 0;\n\n// In deposit method — record the transaction\ntransactions[txCount++] = String.format(\"Deposit:  +$%.2f\", amount);\n\n// In withdraw method (after confirming sufficient funds)\ntransactions[txCount++] = String.format(\"Withdraw: -$%.2f\", amount);\n\n// Menu option 5 — print history\ncase 5 -> {\n    System.out.println(\"--- Transaction History ---\");\n    for (int i = 0; i < txCount; i++) {\n        System.out.println(transactions[i]);\n    }\n}",
+              "instructorNotes": "Video: 5:30:00"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
