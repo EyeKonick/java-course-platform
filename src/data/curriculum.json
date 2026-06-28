@@ -719,7 +719,7 @@
                 "Multiply the result by P to get the final amount A",
                 "printf with %.2f displays the dollar amounts cleanly"
               ],
-              "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Principal ($): \");          double P = sc.nextDouble();\n        System.out.print(\"Annual rate (e.g. 0.05): \"); double r = sc.nextDouble();\n        System.out.print(\"Times/year compounded: \");  int    n = sc.nextInt();\n        System.out.print(\"Years: \");                  int    t = sc.nextInt();\n        sc.close();\n\n        double A = P * Math.pow(1 + r / n, n * t);\n        System.out.printf(\"Final amount:    $%.2f%n\", A);\n        System.out.printf(\"Interest earned: $%.2f%n\", A - P);\n    }\n}",
+              "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        // Collect inputs from user\n        System.out.print(\"Principal ($): \");           double P = sc.nextDouble(); // starting amount\n        System.out.print(\"Annual rate (e.g. 0.05): \"); double r = sc.nextDouble(); // rate as decimal\n        System.out.print(\"Times/year compounded: \");   int    n = sc.nextInt();    // e.g. 12 = monthly\n        System.out.print(\"Years: \");                   int    t = sc.nextInt();    // investment duration\n        sc.close();\n\n        // Apply formula: A = P * (1 + r/n)^(n*t)\n        double A = P * Math.pow(1 + r / n, n * t); // A = final amount\n        System.out.printf(\"Final amount:    $%.2f%n\", A);\n        System.out.printf(\"Interest earned: $%.2f%n\", A - P); // interest = A minus principal\n    }\n}",
               "instructorNotes": "Video: 1:58:00"
             },
             {
@@ -733,7 +733,7 @@
                 "The gap shows why banks advertise compounding frequency — it matters",
                 "Challenge: compute how many years to double the money: t = ln(2) / (n * ln(1 + r/n))"
               ],
-              "code": "double P = 5000.0;\ndouble r = 0.07;  // 7% annual\nint    t = 20;    // 20 years\n\ndouble monthly = P * Math.pow(1 + r / 12, 12 * t);\ndouble annual  = P * Math.pow(1 + r,       1  * t);\n\nSystem.out.printf(\"Monthly compounding: $%.2f%n\", monthly);\nSystem.out.printf(\"Annual  compounding: $%.2f%n\", annual);\nSystem.out.printf(\"Difference:          $%.2f%n\", monthly - annual);",
+              "code": "double P = 5000.0;\ndouble r = 0.07;  // 7% annual rate\nint    t = 20;    // investment period in years\n\n// Same formula, different n: 12 = monthly, 1 = yearly\ndouble monthly = P * Math.pow(1 + r / 12, 12 * t); // compounded every month\ndouble annual  = P * Math.pow(1 + r,       1  * t); // compounded once a year\n\nSystem.out.printf(\"Monthly compounding: $%.2f%n\", monthly);\nSystem.out.printf(\"Annual  compounding: $%.2f%n\", annual);\nSystem.out.printf(\"Difference:          $%.2f%n\", monthly - annual); // more frequent = more growth",
               "instructorNotes": "Video: 2:01:00"
             }
           ]
@@ -1264,6 +1264,363 @@
               ],
               "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int age = -1;\n\n        while (age < 0 || age > 120) {\n            System.out.print(\"Enter your age (0-120): \");\n            age = sc.nextInt();\n\n            if (age < 0 || age > 120) {\n                System.out.println(\"Invalid. Try again.\");\n            }\n        }\n\n        System.out.println(\"Valid age: \" + age);\n        sc.close();\n    }\n}",
               "instructorNotes": "Video: 3:31:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch-04",
+      "title": "Part 4: For Loops & Arrays",
+      "description": "Master the for loop and Java arrays — the backbone of data iteration and collection.",
+      "lessons": [
+        {
+          "id": "le-04-01",
+          "title": "For Loops",
+          "slides": [
+            {
+              "id": "sl-04-01-01",
+              "timestamp": "3:35:00",
+              "title": "For Loop Syntax",
+              "content": "A for loop compresses counter setup, condition, and update into one line — use it when the iteration count is known.",
+              "bullets": [
+                "Syntax: for (initialiser; condition; update) { // body } — three sections separated by semicolons",
+                "The initialiser runs once; the condition is checked before each iteration; the update runs after each body execution",
+                "Conventional counter variable: int i = 0 — 'i' is shorthand for index, universally understood",
+                "When the condition is false, the loop exits and execution continues after the closing brace"
+              ],
+              "code": "public class Main {\n    public static void main(String[] args) {\n\n        // Count 1 to 5\n        for (int i = 1; i <= 5; i++) {\n            System.out.println(\"Count: \" + i);\n        }\n        // Count: 1\n        // Count: 2\n        // Count: 3\n        // Count: 4\n        // Count: 5\n    }\n}",
+              "instructorNotes": "Video: 3:35:00"
+            },
+            {
+              "id": "sl-04-01-02",
+              "timestamp": "3:38:00",
+              "title": "Counting Down & Step Sizes",
+              "content": "Change the initialiser and update expression to count backwards or skip values.",
+              "bullets": [
+                "Count down: start high, condition >= 1, decrement with i-- — for (int i = 5; i >= 1; i--)",
+                "Skip values: i += 2 steps by 2 — produces 0, 2, 4, 6, 8, 10 from a single loop",
+                "The update expression can be any valid statement — i += 10, i *= 2, or i = i + 3",
+                "Counting direction and step size are independent — increment or decrement by any amount"
+              ],
+              "code": "// Count down from 5 to 1\nfor (int i = 5; i >= 1; i--) {\n    System.out.print(i + \" \");  // 5 4 3 2 1\n}\nSystem.out.println(\"Liftoff!\");\n\n// Even numbers 0 to 10 (step +2)\nfor (int i = 0; i <= 10; i += 2) {\n    System.out.print(i + \" \");  // 0 2 4 6 8 10\n}",
+              "instructorNotes": "Video: 3:38:00"
+            },
+            {
+              "id": "sl-04-01-03",
+              "timestamp": "3:41:00",
+              "title": "for vs while — When to Choose",
+              "content": "Use for when the iteration count is known up front; use while when the exit condition depends on runtime state.",
+              "bullets": [
+                "Use for when you know exactly how many iterations are needed: 5 times, N times, array.length times",
+                "Use while when the exit depends on user input, a search result, or other data known only at runtime",
+                "A for loop compiles to the same bytecode as an equivalent while loop — it is a style and readability choice",
+                "Both for and while support break (exit early) and continue (skip to the next iteration)"
+              ],
+              "code": "// Both loops print 1 to 5 identically\n\n// for — preferred when the count is known\nfor (int i = 1; i <= 5; i++) {\n    System.out.println(\"for: \" + i);\n}\n\n// while — equivalent but more verbose for counted loops\nint i = 1;\nwhile (i <= 5) {\n    System.out.println(\"while: \" + i);\n    i++;\n}",
+              "instructorNotes": "Video: 3:41:00"
+            },
+            {
+              "id": "sl-04-01-04",
+              "timestamp": "3:43:00",
+              "title": "break and continue",
+              "content": "break exits the loop immediately; continue skips the rest of the current iteration and jumps to the update.",
+              "bullets": [
+                "break: immediately exits the loop — execution resumes after the closing brace",
+                "continue: skips the remainder of this iteration and jumps to the update expression (i++)",
+                "Use break to stop early once a target is found; use continue to skip unwanted values",
+                "Overusing break and continue in complex loops makes code hard to follow — prefer a clear condition"
+              ],
+              "code": "// break — stop at the first even number\nfor (int i = 1; i <= 10; i++) {\n    if (i % 2 == 0) {\n        System.out.println(\"First even: \" + i);  // 2\n        break;\n    }\n}\n\n// continue — skip even numbers, print only odd\nfor (int i = 1; i <= 10; i++) {\n    if (i % 2 == 0) continue;\n    System.out.print(i + \" \");  // 1 3 5 7 9\n}",
+              "instructorNotes": "Video: 3:43:00"
+            }
+          ]
+        },
+        {
+          "id": "le-04-02",
+          "title": "Nested For Loops",
+          "slides": [
+            {
+              "id": "sl-04-02-01",
+              "timestamp": "3:46:00",
+              "title": "Nested Loop Concept",
+              "content": "A nested loop places one for loop inside another — the inner loop runs fully for each single outer iteration.",
+              "bullets": [
+                "The inner loop runs completely from start to finish for every single iteration of the outer loop",
+                "Use distinct counter names: outer i, inner j — never reuse the same variable in both loops",
+                "Total iterations = outer count × inner count — a 3×3 nested loop executes 9 times total",
+                "Nesting more than 2 levels deep usually signals the logic should be extracted into a method"
+              ],
+              "code": "// Outer runs 3 times; inner runs 3 times per outer — 9 total\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= 3; j++) {\n        System.out.print(\"* \");\n    }\n    System.out.println();  // newline after each row\n}\n// * * *\n// * * *\n// * * *",
+              "instructorNotes": "Video: 3:46:00"
+            },
+            {
+              "id": "sl-04-02-02",
+              "timestamp": "3:49:00",
+              "title": "Multiplication Table",
+              "content": "A 10×10 multiplication table is the classic nested loop exercise — outer loop is the row, inner is the column multiplier.",
+              "bullets": [
+                "Outer loop: row 1-10; inner loop: column multiplier 1-10",
+                "Cell value: i * j — row i times column j gives the table entry at that position",
+                "printf with %4d right-aligns each number in a 4-character field, keeping columns neat",
+                "Call System.out.println() after the inner loop ends to move the cursor to the next row"
+              ],
+              "code": "for (int i = 1; i <= 10; i++) {\n    for (int j = 1; j <= 10; j++) {\n        System.out.printf(\"%4d\", i * j);\n    }\n    System.out.println();\n}\n// Row 1:   1   2   3   4   5   6   7   8   9  10\n// Row 2:   2   4   6   8  10  12  14  16  18  20\n// ...",
+              "instructorNotes": "Video: 3:49:00"
+            },
+            {
+              "id": "sl-04-02-03",
+              "timestamp": "3:52:00",
+              "title": "Triangle Pattern",
+              "content": "Tie the inner loop's upper bound to the outer counter to print shapes where each row has a different item count.",
+              "bullets": [
+                "Setting the inner condition to j <= i prints one more star per row — row 1: 1 star, row N: N stars",
+                "This 'inner bound equals outer counter' pattern is the standard way to draw triangle shapes",
+                "Inverted triangle: reverse the outer loop (count i downward from rows to 1) and keep j <= i",
+                "The pattern is a classic interview question — practise explaining it step by step"
+              ],
+              "code": "int rows = 5;\n\n// Right triangle\nfor (int i = 1; i <= rows; i++) {\n    for (int j = 1; j <= i; j++) {\n        System.out.print(\"* \");\n    }\n    System.out.println();\n}\n// *\n// * *\n// * * *\n// * * * *\n// * * * * *",
+              "instructorNotes": "Video: 3:52:00"
+            }
+          ]
+        },
+        {
+          "id": "le-04-03",
+          "title": "Number Guessing Game",
+          "slides": [
+            {
+              "id": "sl-04-03-01",
+              "timestamp": "3:55:00",
+              "title": "Project: Guessing Game Overview",
+              "content": "The guessing game picks a secret random number and loops until the player finds it, counting every attempt.",
+              "bullets": [
+                "Random picks a secret integer from 1 to 100 — the player guesses until they match it",
+                "Use a while loop — the number of guesses is unknown in advance, so for is not appropriate",
+                "Track attempts with an int counter incremented on each guess",
+                "Give directional feedback after each wrong guess: Too high!, Too low!, or Correct!"
+              ],
+              "code": "import java.util.Random;\nimport java.util.Scanner;\n\npublic class GuessingGame {\n    public static void main(String[] args) {\n        Scanner sc     = new Scanner(System.in);\n        Random  random = new Random();\n\n        int secret  = random.nextInt(100) + 1;  // 1 to 100\n        int guess   = 0;\n        int counter = 0;\n\n        System.out.println(\"Guess a number between 1 and 100:\");\n        // Game loop — see next slide\n        sc.close();\n    }\n}",
+              "instructorNotes": "Video: 3:55:00"
+            },
+            {
+              "id": "sl-04-03-02",
+              "timestamp": "3:58:00",
+              "title": "Game Loop & Feedback",
+              "content": "The while loop repeats until the guess matches the secret — counter tracks attempts automatically.",
+              "bullets": [
+                "Initialise guess = 0 before the loop so the variable is in scope for the while condition",
+                "Loop condition: while (guess != secret) — the loop exits automatically on a correct guess",
+                "Increment counter inside the loop — after the loop ends, it holds the exact attempt count",
+                "Use if/else-if to give feedback: Too low, Too high, or Correct after each guess"
+              ],
+              "code": "while (guess != secret) {\n    System.out.print(\"Guess #\" + (counter + 1) + \": \");\n    guess = sc.nextInt();\n    counter++;\n\n    if      (guess < secret) System.out.println(\"Too low!\");\n    else if (guess > secret) System.out.println(\"Too high!\");\n    else System.out.println(\"Correct! Guessed in \" + counter + \" tries.\");\n}",
+              "instructorNotes": "Video: 3:58:00"
+            },
+            {
+              "id": "sl-04-03-03",
+              "timestamp": "4:01:00",
+              "title": "Challenge — Add a Guess Limit",
+              "content": "Extend the game with a maximum attempts cap and a win/lose outcome.",
+              "bullets": [
+                "Add int maxGuesses = 7; and update the condition: while (guess != secret && counter < maxGuesses)",
+                "Track a boolean won flag — set it true when the guess matches the secret",
+                "After the loop: if (!won) reveal the secret and print 'Game over!'",
+                "Challenge: add difficulty levels — Easy = 10 guesses, Medium = 7, Hard = 5 — via a Scanner menu"
+              ],
+              "code": "int maxGuesses = 7;\nboolean won    = false;\n\nwhile (counter < maxGuesses && !won) {\n    System.out.print(\"Guess \" + (counter + 1) + \"/\" + maxGuesses + \": \");\n    guess = sc.nextInt();\n    counter++;\n\n    if      (guess < secret) System.out.println(\"Too low!\");\n    else if (guess > secret) System.out.println(\"Too high!\");\n    else { System.out.println(\"You won in \" + counter + \" tries!\"); won = true; }\n}\n\nif (!won) System.out.println(\"Game over! The number was \" + secret + \".\");",
+              "instructorNotes": "Video: 4:01:00"
+            }
+          ]
+        },
+        {
+          "id": "le-04-04",
+          "title": "Arrays",
+          "slides": [
+            {
+              "id": "sl-04-04-01",
+              "timestamp": "4:04:00",
+              "title": "What is an Array?",
+              "content": "An array is a fixed-size, ordered collection of values all sharing one type and one variable name.",
+              "bullets": [
+                "Declare: int[] scores; — type followed by [] then the variable name",
+                "Allocate: scores = new int[5]; — reserves space for exactly 5 integers in memory",
+                "Combined (most common): int[] scores = new int[5]; — declares and allocates in one line",
+                "Size is fixed at creation — you cannot add or remove slots after an array is made"
+              ],
+              "code": "// Separate declaration and allocation\nint[] scores;\nscores = new int[5];\n\n// Combined form — most common\nint[]    grades = new int[3];\ndouble[] prices = new double[4];\nString[] names  = new String[2];\n\nSystem.out.println(grades.length);  // 3\nSystem.out.println(prices.length);  // 4\n// All int elements default to 0, double to 0.0, String to null",
+              "instructorNotes": "Video: 4:04:00"
+            },
+            {
+              "id": "sl-04-04-02",
+              "timestamp": "4:07:00",
+              "title": "Indexing and Assignment",
+              "content": "Arrays are zero-indexed — the first element is at index 0, the last is at length-1.",
+              "bullets": [
+                "Access an element: scores[0] = 95; — square brackets with the zero-based index",
+                "A 5-element array has valid indices 0, 1, 2, 3, 4 — index 5 does not exist",
+                "Accessing an out-of-bounds index throws ArrayIndexOutOfBoundsException at runtime",
+                "array.length gives the element count — always use it instead of hardcoding the size"
+              ],
+              "code": "int[] scores = new int[5];\n\nscores[0] = 92;\nscores[1] = 85;\nscores[2] = 78;\nscores[3] = 94;\nscores[4] = 88;\n\nSystem.out.println(\"First: \" + scores[0]);     // 92\nSystem.out.println(\"Last:  \" + scores[4]);     // 88\nSystem.out.println(\"Size:  \" + scores.length); // 5\n\n// RUNTIME ERROR — uncomment to see:\n// System.out.println(scores[5]); // ArrayIndexOutOfBoundsException",
+              "instructorNotes": "Video: 4:07:00"
+            },
+            {
+              "id": "sl-04-04-03",
+              "timestamp": "4:09:00",
+              "title": "Array Initialiser Syntax",
+              "content": "Declare, allocate, and fill an array in one line using a curly-brace initialiser.",
+              "bullets": [
+                "int[] nums = {10, 20, 30, 40, 50}; — declares, allocates, and fills in a single statement",
+                "The size is inferred from the number of values — no need to write new int[5] separately",
+                "Works for any type: String[] days = {\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\"};",
+                "Elements remain mutable after initialisation — you can still overwrite any index at any time"
+              ],
+              "code": "int[]    nums  = {10, 20, 30, 40, 50};\nString[] days  = {\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\"};\ndouble[] temps = {36.6, 37.1, 36.8};\n\nSystem.out.println(nums[0]);   // 10\nSystem.out.println(days[2]);   // Wed\nSystem.out.println(temps[1]);  // 37.1\n\n// Iterate with a for loop\nfor (int i = 0; i < nums.length; i++) {\n    System.out.print(nums[i] + \" \");  // 10 20 30 40 50\n}",
+              "instructorNotes": "Video: 4:09:00"
+            },
+            {
+              "id": "sl-04-04-04",
+              "timestamp": "4:11:00",
+              "title": "Iterating an Array with for",
+              "content": "Loop from index 0 to array.length-1 to visit every element — use strictly less-than, not less-than-or-equal.",
+              "bullets": [
+                "Standard pattern: for (int i = 0; i < arr.length; i++) — condition is strictly less than",
+                "Using <= arr.length causes ArrayIndexOutOfBoundsException on the final iteration",
+                "Inside the loop, arr[i] gives the current value and i gives its position",
+                "Use indexed for when you need both the value and position; use for-each when only the value is needed"
+              ],
+              "code": "int[] scores = {72, 85, 91, 67, 88};\n\n// Sum all elements\nint sum = 0;\nfor (int i = 0; i < scores.length; i++) {\n    sum += scores[i];\n}\nSystem.out.println(\"Sum: \" + sum);  // 403\nSystem.out.printf(\"Avg: %.1f%n\", (double) sum / scores.length);  // 80.6\n\n// Find the largest value\nint max = scores[0];\nfor (int i = 1; i < scores.length; i++) {\n    if (scores[i] > max) max = scores[i];\n}\nSystem.out.println(\"Max: \" + max);  // 91",
+              "instructorNotes": "Video: 4:11:00"
+            }
+          ]
+        },
+        {
+          "id": "le-04-05",
+          "title": "For-Each Loop",
+          "slides": [
+            {
+              "id": "sl-04-05-01",
+              "timestamp": "4:15:00",
+              "title": "Enhanced for Syntax",
+              "content": "The for-each loop iterates every element of an array without requiring an index variable.",
+              "bullets": [
+                "Syntax: for (type element : array) { // use element } — reads as 'for each int in scores'",
+                "No index variable needed — cleaner and less error-prone than the standard indexed for loop",
+                "The element variable is a copy of each value — assigning to it does NOT change the original array",
+                "Works with any array type and, later, any Java Collection (ArrayList, Set, etc.)"
+              ],
+              "code": "int[] scores = {72, 85, 91, 67, 88};\n\n// Print every element — no index needed\nfor (int score : scores) {\n    System.out.println(score);\n}\n\n// Sum using for-each\nint total = 0;\nfor (int score : scores) {\n    total += score;\n}\nSystem.out.println(\"Total: \" + total);  // 403\n\n// Works with String arrays too\nString[] names = {\"Alice\", \"Bob\", \"Carol\"};\nfor (String name : names) {\n    System.out.println(\"Hello, \" + name + \"!\");\n}",
+              "instructorNotes": "Video: 4:15:00"
+            },
+            {
+              "id": "sl-04-05-02",
+              "timestamp": "4:18:00",
+              "title": "for-each vs for — When to Choose",
+              "content": "Default to for-each for reading values; switch to indexed for when you need the position or must modify elements.",
+              "bullets": [
+                "for-each: cleaner, no off-by-one risk — preferred whenever you only need the values",
+                "Indexed for: required when you need the index, want to modify contents, or must traverse backwards",
+                "Assigning to the for-each variable only changes the local copy — the original array is unaffected",
+                "Rule of thumb: start with for-each, switch to indexed for only when the index is genuinely needed"
+              ],
+              "code": "int[] data = {5, 10, 15, 20};\n\n// for-each — clean, index-free\nSystem.out.print(\"for-each: \");\nfor (int n : data) {\n    System.out.print(n + \" \");  // 5 10 15 20\n}\n\n// Indexed for — when position matters\nSystem.out.print(\"\\nindexed:  \");\nfor (int i = 0; i < data.length; i++) {\n    System.out.print(\"[\" + i + \"]=\" + data[i] + \" \");\n}\n\n// for-each CANNOT modify elements — n is a copy\nfor (int n : data) { n *= 2; }  // data is unchanged\nSystem.out.println(\"\\ndata[0] still: \" + data[0]);  // 5",
+              "instructorNotes": "Video: 4:18:00"
+            }
+          ]
+        },
+        {
+          "id": "le-04-06",
+          "title": "2D Arrays",
+          "slides": [
+            {
+              "id": "sl-04-06-01",
+              "timestamp": "4:21:00",
+              "title": "What is a 2D Array?",
+              "content": "A 2D array is an array of arrays — think of it as a grid with rows and columns.",
+              "bullets": [
+                "Declare: int[][] grid = new int[3][4]; — 3 rows, 4 columns, 12 cells total",
+                "Access: grid[row][col] — row index first, then column index",
+                "grid.length gives the row count; grid[0].length gives the column count of the first row",
+                "Initialiser: int[][] m = {{1,2},{3,4},{5,6}}; — each inner {} block is one row"
+              ],
+              "code": "// 3 rows, 3 columns — initialiser form\nint[][] matrix = {\n    {1, 2, 3},\n    {4, 5, 6},\n    {7, 8, 9}\n};\n\nSystem.out.println(\"Rows:   \" + matrix.length);     // 3\nSystem.out.println(\"Cols:   \" + matrix[0].length);  // 3\nSystem.out.println(\"Center: \" + matrix[1][1]);      // 5\nSystem.out.println(\"Corner: \" + matrix[2][2]);      // 9\n\n// Blank grid with new keyword\nint[][] grid = new int[4][5];  // 4 rows, 5 cols, all zeros",
+              "instructorNotes": "Video: 4:21:00"
+            },
+            {
+              "id": "sl-04-06-02",
+              "timestamp": "4:24:00",
+              "title": "Traversing a 2D Array",
+              "content": "Use nested for loops — the outer loop iterates rows, the inner loop iterates columns within each row.",
+              "bullets": [
+                "Outer loop: for (int r = 0; r < grid.length; r++) — one pass per row",
+                "Inner loop: for (int c = 0; c < grid[r].length; c++) — one pass per column in that row",
+                "grid[r][c] reads or writes the element at row r, column c",
+                "Call System.out.println() after the inner loop to advance the display to the next row"
+              ],
+              "code": "int[][] table = new int[3][3];\n\n// Fill: each cell = (row+1) * (col+1)\nfor (int r = 0; r < table.length; r++) {\n    for (int c = 0; c < table[r].length; c++) {\n        table[r][c] = (r + 1) * (c + 1);\n    }\n}\n\n// Print the grid\nfor (int r = 0; r < table.length; r++) {\n    for (int c = 0; c < table[r].length; c++) {\n        System.out.printf(\"%4d\", table[r][c]);\n    }\n    System.out.println();\n}\n//    1   2   3\n//    2   4   6\n//    3   6   9",
+              "instructorNotes": "Video: 4:24:00"
+            },
+            {
+              "id": "sl-04-06-03",
+              "timestamp": "4:27:00",
+              "title": "Practice: Seating Chart",
+              "content": "Model a cinema seating grid as a 2D char array — O for open seats, X for taken.",
+              "bullets": [
+                "char[][] seats = new char[rows][cols]; — a grid of characters is perfect for a seat map",
+                "Fill all seats as open with nested for loops: seats[r][c] = 'O';",
+                "Mark specific seats as taken: seats[0][2] = 'X'; — direct index assignment",
+                "Real-world 2D arrays: image pixel grids, spreadsheet cells, chess/game boards"
+              ],
+              "code": "char[][] seats = new char[3][5];\n\n// Fill all seats as open\nfor (int r = 0; r < seats.length; r++) {\n    for (int c = 0; c < seats[r].length; c++) {\n        seats[r][c] = 'O';\n    }\n}\n\n// Mark some as taken\nseats[0][2] = 'X';\nseats[1][0] = 'X';\nseats[2][4] = 'X';\n\n// Display\nfor (char[] row : seats) {\n    for (char seat : row) System.out.print(seat + \" \");\n    System.out.println();\n}\n// O O X O O\n// X O O O O\n// O O O O X",
+              "instructorNotes": "Video: 4:27:00"
+            }
+          ]
+        },
+        {
+          "id": "le-04-07",
+          "title": "Array Sorting & Searching",
+          "slides": [
+            {
+              "id": "sl-04-07-01",
+              "timestamp": "4:30:00",
+              "title": "Arrays.sort() and Arrays.toString()",
+              "content": "The Arrays utility class provides sort and display helpers — add import java.util.Arrays before using them.",
+              "bullets": [
+                "Arrays.sort(arr) sorts in ascending order in-place — it permanently modifies the original array",
+                "Arrays.toString(arr) converts an array to a readable string like [1, 2, 3, 5, 8, 9]",
+                "Without Arrays.toString(), printing an array directly gives a useless memory address like [I@6d06d69c",
+                "Import: import java.util.Arrays; — Arrays is in java.util and must be imported, unlike Math"
+              ],
+              "code": "import java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        int[] nums = {5, 2, 8, 1, 9, 3};\n\n        System.out.println(\"Before: \" + Arrays.toString(nums));\n        // Before: [5, 2, 8, 1, 9, 3]\n\n        Arrays.sort(nums);  // sorts in-place, ascending\n\n        System.out.println(\"After:  \" + Arrays.toString(nums));\n        // After:  [1, 2, 3, 5, 8, 9]\n    }\n}",
+              "instructorNotes": "Video: 4:30:00"
+            },
+            {
+              "id": "sl-04-07-02",
+              "timestamp": "4:33:00",
+              "title": "Finding Min and Max",
+              "content": "Iterate the array to track the smallest and largest values seen — initialise both to the first element.",
+              "bullets": [
+                "Initialise min and max to the first element: int min = arr[0]; int max = arr[0];",
+                "Start the loop from index 1 — index 0 is already the initial reference",
+                "Update min when a smaller value appears: if (arr[i] < min) min = arr[i];",
+                "After the loop, min and max hold the final answer — no sorting required"
+              ],
+              "code": "int[] scores = {88, 72, 95, 61, 84};\n\nint min = scores[0];\nint max = scores[0];\n\nfor (int i = 1; i < scores.length; i++) {\n    if (scores[i] < min) min = scores[i];\n    if (scores[i] > max) max = scores[i];\n}\n\nSystem.out.println(\"Min: \" + min);  // 61\nSystem.out.println(\"Max: \" + max);  // 95",
+              "instructorNotes": "Video: 4:33:00"
+            },
+            {
+              "id": "sl-04-07-03",
+              "timestamp": "4:35:00",
+              "title": "Linear Search",
+              "content": "Linear search scans every element until the target is found — returns the index, or -1 if the value is absent.",
+              "bullets": [
+                "Loop through each element; if arr[i] equals the target, return i immediately",
+                "Return -1 when the loop ends without a match — -1 is the universal 'not found' sentinel",
+                "Linear search works on unsorted arrays; binary search is faster but requires sorted input",
+                "Time complexity O(n) — in the worst case every element is checked before concluding absence"
+              ],
+              "code": "public class Main {\n\n    static int linearSearch(int[] arr, int target) {\n        for (int i = 0; i < arr.length; i++) {\n            if (arr[i] == target) return i;\n        }\n        return -1;  // not found\n    }\n\n    public static void main(String[] args) {\n        int[] data = {14, 32, 7, 55, 19, 42};\n\n        int idx = linearSearch(data, 55);\n        if (idx != -1)\n            System.out.println(\"Found 55 at index \" + idx);  // 3\n        else\n            System.out.println(\"Not found.\");\n    }\n}",
+              "instructorNotes": "Video: 4:35:00"
             }
           ]
         }
